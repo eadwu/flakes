@@ -12,8 +12,12 @@
           inherit system;
           config.allowUnfree = true;
         };
-      in {
+      in rec {
         vivaldi-snapshot = import ./vivaldi-snapshot { inherit (pkgs) fetchurl vivaldi; };
+        vscode-insiders = import ./vscode-insiders { inherit (pkgs) fetchurl vscode; };
+        vscode-insiders-with-extensions = pkgs.vscode-with-extensions.override {
+          vscode = vscode-insiders;
+        };
       });
     };
 }
