@@ -1,6 +1,10 @@
-{ fetchurl, vivaldi }:
+{ fetchurl, vivaldi
+, enableWidevine ? true, proprietaryCodecs ? true }:
 
-vivaldi.overrideAttrs(_: rec {
+(vivaldi.override {
+  isSnapshot = true;
+  inherit enableWidevine proprietaryCodecs;
+}).overrideAttrs(_: rec {
   pname = "vivaldi-snapshot";
   version = "2.12.1867.3";
 
