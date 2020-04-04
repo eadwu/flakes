@@ -13,7 +13,7 @@
           config.allowUnfree = true;
         };
       in rec {
-        vivaldi-snapshot = import ./vivaldi-snapshot { inherit (pkgs) fetchurl vivaldi; };
+        vivaldi-snapshot = import ./vivaldi-snapshot { inherit (pkgs) fetchurl vivaldi lib libdrm mesa; };
         vscode-insiders = import ./vscode-insiders { inherit (pkgs) fetchurl vscode; };
         vscode-insiders-with-extensions = pkgs.vscode-with-extensions.override {
           vscode = vscode-insiders;
