@@ -29,3 +29,8 @@ source_file="$current_dir/default.nix"
 sed -i "$source_file" -re "s|\"$old_url_escaped\"|\"$new_url\"|"
 sed -i "$source_file" -re "s|\"$old_version_escaped\"|\"$new_version\"|"
 sed -i "$source_file" -re "s|\"$old_hash\"|\"$new_hash\"|"
+
+if [[ "$new_version" != "$old_version" ]]; then
+  git add "$source_file"
+  git commit -m "$attr: $old_version -> $new_version"
+fi
