@@ -19,5 +19,7 @@
           vscode = vscode-insiders;
         };
       });
+
+      rev = nixpkgs.lib.mkIf (self ? rev) self.rev;
     };
 }
