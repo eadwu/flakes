@@ -3,6 +3,7 @@
 
 current_dir="$(pwd)/$(dirname ${BASH_SOURCE[0]})"
 root="$(readlink -f "$current_dir/..")"
+attr="vivaldi-snapshot"
 
 get_version () {
   curl --silent "https://update.vivaldi.com/update/1.0/win/appcast.xml" | \
@@ -13,7 +14,7 @@ new_version="$(get_version)"
 new_url="https://downloads.vivaldi.com/snapshot/vivaldi-snapshot_${new_version}-1_amd64.deb"
 new_hash="$(nix-prefetch-url "$new_url")"
 
-drv="$root#packages.x86_64-linux.vivaldi-snapshot"
+drv="$root#packages.x86_64-linux.$attr"
 old_version="$(nix show-derivation "$drv" | jq -r '.[].env.version')"
 old_src_drv="$(nix show-derivation "$drv" | jq -r '.[].env.src')"
 old_url="$(nix show-derivation "$old_src_drv" | jq -r '.[].env.urls')"
