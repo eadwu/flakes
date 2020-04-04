@@ -14,6 +14,7 @@
         };
       in rec {
         dwm = import ./dwm { inherit (pkgs) fetchFromGitLab dwm; };
+        st = import ./st { inherit (pkgs) fetchFromGitLab st; };
 
         discord-canary = import ./discord-canary { inherit (pkgs) fetchurl discord-canary; };
         vivaldi-snapshot = import ./vivaldi-snapshot { inherit (pkgs) fetchurl vivaldi lib libdrm mesa; };
