@@ -13,6 +13,8 @@
           config.allowUnfree = true;
         };
       in rec {
+        dwm = import ./dwm { inherit (pkgs) fetchFromGitLab dwm; };
+
         discord-canary = import ./discord-canary { inherit (pkgs) fetchurl discord-canary; };
         vivaldi-snapshot = import ./vivaldi-snapshot { inherit (pkgs) fetchurl vivaldi lib libdrm mesa; };
         vscode-insiders = import ./vscode-insiders { inherit (pkgs) fetchurl vscode; };
