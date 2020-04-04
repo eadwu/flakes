@@ -13,6 +13,7 @@
           config.allowUnfree = true;
         };
       in rec {
+        discord-canary = import ./discord-canary { inherit (pkgs) fetchurl discord-canary; };
         vivaldi-snapshot = import ./vivaldi-snapshot { inherit (pkgs) fetchurl vivaldi lib libdrm mesa; };
         vscode-insiders = import ./vscode-insiders { inherit (pkgs) fetchurl vscode; };
         vscode-insiders-with-extensions = pkgs.vscode-with-extensions.override {
