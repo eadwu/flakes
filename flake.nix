@@ -12,13 +12,16 @@
           inherit system;
           config.allowUnfree = true;
         };
-      in rec {
-        dwm = import ./dwm { inherit (pkgs) fetchFromGitLab dwm; };
-        st = import ./st { inherit (pkgs) fetchFromGitLab st; };
 
-        discord-canary = import ./discord-canary { inherit (pkgs) fetchurl discord-canary; };
-        vivaldi-snapshot = import ./vivaldi-snapshot { inherit (pkgs) fetchurl vivaldi lib libdrm mesa; };
-        vscode-insiders = import ./vscode-insiders { inherit (pkgs) fetchurl vscode; };
+        callPackage = pkgs.newScope pkgs;
+      in rec {
+        dwm = callPackage ./dwm { };
+        st = callPackage ./st { };
+
+        discord-canary = callPackage ./discord-canary { };
+        vivaldi-snapshot = callPackage ./vivaldi-snapshot { };
+
+        vscode-insiders = callPackage ./vscode-insiders { };
         vscode-insiders-with-extensions = pkgs.vscode-with-extensions.override {
           vscode = vscode-insiders;
         };
