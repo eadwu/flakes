@@ -25,6 +25,11 @@
         vscode-insiders-with-extensions = pkgs.vscode-with-extensions.override {
           vscode = vscode-insiders;
         };
+
+        rofi-unwrapped = callPackage ./rofi-unwrapped {
+          inherit (pkgs.xorg) libxcb xcbutil xcbutilwm;
+        };
+        rofi = pkgs.rofi.override { inherit rofi-unwrapped; };
       });
 
       rev = nixpkgs.lib.mkIf (self ? rev) self.rev;
