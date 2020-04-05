@@ -5,6 +5,6 @@
   inputs.rolling.url = "github:eadwu/flakes/rolling";
 
   outputs = inputs@{ self, nixpkgs, rolling }: with nixpkgs.lib;
-    foldl recursiveUpdate {} (attrValues (removeAttrs inputs [ "self" "nixpkgs" ]))
-    // { rev = mkIf (self ? rev) self.rev; };
+    foldl recursiveUpdate {}
+      (map (v: v.outputs) (attrValues (removeAttrs inputs [ "self" "nixpkgs" ])));
 }
