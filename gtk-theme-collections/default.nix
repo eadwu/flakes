@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   pname = "gtk-theme-collections";
-  version = "master";
+  version = "2018-12-15";
 
   src = fetchFromGitHub {
     owner = "addy-dclxvi";
