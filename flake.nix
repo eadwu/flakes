@@ -34,7 +34,5 @@
         gtk-theme-collections = callPackage ./gtk-theme-collections { };
         plymouth-geshin-impact-start = callPackage ./plymouth-geshin-impact-start { };
       });
-
-      rev = nixpkgs.lib.mkIf (self ? rev) self.rev;
     };
 }
