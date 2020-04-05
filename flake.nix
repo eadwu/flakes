@@ -30,6 +30,8 @@
           inherit (pkgs.xorg) libxcb xcbutil xcbutilwm;
         };
         rofi = pkgs.rofi.override { inherit rofi-unwrapped; };
+
+        plymouth-geshin-impact-start = callPackage ./plymouth-geshin-impact-start { };
       });
 
       rev = nixpkgs.lib.mkIf (self ? rev) self.rev;
