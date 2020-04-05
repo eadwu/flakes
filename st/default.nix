@@ -3,7 +3,7 @@
 st.overrideAttrs (_: rec {
   name = "${pname}-${version}";
   pname = "st";
-  version = "2019-04-22";
+  version = "2019-06-02";
 
   src = fetchFromGitLab {
     owner = "eadwu";
