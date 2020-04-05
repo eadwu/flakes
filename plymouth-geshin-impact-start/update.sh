@@ -13,11 +13,12 @@ old_hash="$(nix show-derivation "$old_src_drv" | jq -r '.[].env.outputHash')"
 old_rev="$(nix show-derivation "$old_src_drv" | jq -r '.[].env.rev')"
 repo="$(nix show-derivation "$old_src_drv" | jq -r '.[].env.url')"
 
-tmpdir="$current_dir/result"
-git clone --quiet "$repo" "$tmpdir"
+tmpdir="$(mktemp -d)"
+dest="$tmpdir/result"
+git clone --quiet "$repo" "$dest"
 
-new_version="$(cd $tmpdir && git log -1 --format=%cs "origin/$branch")"
-new_revision="$(cd "$tmpdir" && git rev-parse "origin/$branch")"
+new_version="$(cd "$dest" && git log -1 --format=%cs "origin/$branch")"
+new_revision="$(cd "$dest" && git rev-parse "origin/$branch")"
 new_hash="$(nix-prefetch-git "$repo" --rev "$new_revision" --quiet | jq -r '.sha256')"
 
 rm -rf "$tmpdir"

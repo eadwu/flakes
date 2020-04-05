@@ -13,11 +13,12 @@ old_hash="$(nix show-derivation "$old_src_drv" | jq -r '.[].env.outputHash')"
 old_rev="$(nix show-derivation "$old_src_drv" | jq -r '.[].env.urls' | grep -Po '(?<=sha=).+')"
 repo_src="$(nix show-derivation "$old_src_drv" | jq -r '.[].env.urls' | grep -Po '(?<=projects/).+(?=/repository)' | sed 's@%2F@/@')"
 
-tmpdir="$current_dir/result"
-git clone --quiet "https://gitlab.com/$repo_src.git" "$tmpdir"
+tmpdir="$(mktemp -d)"
+dest="$tmpdir/result"
+git clone --quiet "https://gitlab.com/$repo_src.git" "$dest"
 
-new_version="$(cd $tmpdir && git log -1 --format=%cs "origin/$branch")"
-new_revision="$(cd "$tmpdir" && git rev-parse "origin/$branch")"
+new_version="$(cd "$dest" && git log -1 --format=%cs "origin/$branch")"
+new_revision="$(cd "$dest" && git rev-parse "origin/$branch")"
 new_hash="$(nix-prefetch-git "https://gitlab.com/$repo_src.git" --rev "$new_revision" --quiet | jq -r '.sha256')"
 
 rm -rf "$tmpdir"
