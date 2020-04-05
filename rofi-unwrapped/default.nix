@@ -6,13 +6,13 @@
 , xkeyboard_config }:
 
 rofi-unwrapped.overrideAttrs (_: rec {
-  version = "2020-04-01";
+  version = "2020-04-05";
 
   src = fetchFromGitHub {
     owner = "davatorium";
     repo = "rofi";
-    rev = "c1ac4804c2dccb6a6b96fff5ca2c78448e9e5518";
-    sha256 = "1achgk3220h0h2p73wnajah6nl6y2dgq199zc9wvz4rc0xxafbpp";
+    rev = "825fe4ae58e169f92ce940b672054e9fbdefb1ad";
+    sha256 = "19f9wjzpqqh79qga6gcll9jn6bwm3nc0mcj3mgcwzzsbi18mvrj7";
     fetchSubmodules = true;
   };
 

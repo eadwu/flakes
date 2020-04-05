@@ -18,7 +18,7 @@ git clone --quiet "$repo" "$tmpdir"
 
 new_version="$(cd $tmpdir && git log -1 --format=%cs "origin/$branch")"
 new_revision="$(cd "$tmpdir" && git rev-parse "origin/$branch")"
-new_hash="$(nix-prefetch-git "$repo" --fetchSubmodules --rev "$new_revision" --quiet | jq -r '.sha256')"
+new_hash="$(nix-prefetch-git "$repo" --rev "$new_revision" --fetch-submodules --quiet | jq -r '.sha256')"
 
 rm -rf "$tmpdir"
 
