@@ -20,6 +20,8 @@
           in rec { }
       );
 
-      nixosModules = { };
+      nixosModules = {
+        apropos = import ./modules/apropos.nix;
+      };
     };
 }
