@@ -2,7 +2,10 @@
   edition = 201909;
   description = "Nix flake for my custom settings and stable packages";
 
-  outputs = { self, nixpkgs }:
+  inputs.cachix.uri = github:eadwu/cachix;
+  inputs.cachix.flake = false;
+
+  outputs = { self, nixpkgs, ... }@inputs:
     let
       lib = nixpkgs.lib;
       systems = [ "x86_64-linux" ];
@@ -17,7 +20,9 @@
             };
 
             callPackage = pkgs.newScope pkgs;
-          in rec { }
+          in rec {
+            cachix = import inputs.cachix { inherit system; };
+          }
       );
 
       nixosModules = {
