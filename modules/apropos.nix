@@ -9,14 +9,11 @@ let
       sed -i 's/^MANPATH_MAP/# &/' src/man_db.conf.in
       sed -i 's/^MANDB_MAP/# &/' src/man_db.conf.in
     '';
-
-    # https://github.com/NixOS/nixpkgs/blob/076860e0340a5e4a909b9a710e186508b14d1c90/nixos/modules/config/system-path.nix
-    buildInputs = (oldAttrs.buildInputs or [])
-      ++ (with pkgs; [ xz gzip bzip2 ]);
   });
 
   db = pkgs.runCommand "manual-page-index-cache" {
-    nativeBuildInputs = [ man-db ];
+    # https://github.com/NixOS/nixpkgs/blob/076860e0340a5e4a909b9a710e186508b14d1c90/nixos/modules/config/system-path.nix
+    nativeBuildInputs = with pkgs; [ man-db xz gzip bzip2 ];
   } ''
     mkdir -p $out
     echo "MANPATH_MAP	${config.system.path}/bin	${config.system.path}/share/man" >> .manpath
