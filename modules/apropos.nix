@@ -8,9 +8,6 @@ let
       # Remove all mappings, none of these even need to exist for the system build
       sed -i 's/^MANPATH_MAP/# &/' src/man_db.conf.in
       sed -i 's/^MANDB_MAP/# &/' src/man_db.conf.in
-
-      echo "MANPATH_MAP	${config.system.path}/bin	${config.system.path}/share/man" >> src/man_db.conf.in
-      echo "MANPATH_MAP	/run/wrappers/bin	${config.system.path}/share/man" >> src/man_db.conf.in
     '';
 
     # https://github.com/NixOS/nixpkgs/blob/076860e0340a5e4a909b9a710e186508b14d1c90/nixos/modules/config/system-path.nix
@@ -22,6 +19,7 @@ let
     nativeBuildInputs = [ man-db ];
   } ''
     mkdir -p $out/man
+    echo "MANPATH_MAP	${config.system.path}/bin	${config.system.path}/share/man" >> .manpath
     echo "MANDB_MAP	${config.system.path}/share/man	$out/man" >> .manpath
     mandb --create --config-file="$(pwd)/.manpath"
   '';
