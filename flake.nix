@@ -2,8 +2,8 @@
   edition = 201909;
   description = "A collection of Nix flakes";
 
-  inputs.custom.url = "github:eadwu/flakes/custom";
-  inputs.rolling.url = "github:eadwu/flakes/rolling";
+  inputs.custom.uri = github:eadwu/flakes/custom;
+  inputs.rolling.uri = github:eadwu/flakes/rolling;
 
   outputs = inputs@{ self, nixpkgs, rolling }: with nixpkgs.lib;
     foldl recursiveUpdate {}
