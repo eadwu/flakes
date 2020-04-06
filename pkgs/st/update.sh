@@ -2,7 +2,7 @@
 #! nix-shell -i bash -p jq wget nix-prefetch-scripts
 
 current_dir="$(pwd)/$(dirname ${BASH_SOURCE[0]})"
-root="$(readlink -f "$current_dir/..")"
+root="$(readlink -f "$current_dir/../..")"
 attr="st"
 branch="develop"
 

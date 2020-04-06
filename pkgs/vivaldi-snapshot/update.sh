@@ -2,7 +2,7 @@
 #! nix-shell -i bash -p jq yq curl
 
 current_dir="$(pwd)/$(dirname ${BASH_SOURCE[0]})"
-root="$(readlink -f "$current_dir/..")"
+root="$(readlink -f "$current_dir/../..")"
 attr="vivaldi-snapshot"
 
 get_version () {

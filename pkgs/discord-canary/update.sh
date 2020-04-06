@@ -2,7 +2,7 @@
 #! nix-shell -i bash -p jq wget
 
 current_dir="$(pwd)/$(dirname ${BASH_SOURCE[0]})"
-root="$(readlink -f "$current_dir/..")"
+root="$(readlink -f "$current_dir/../..")"
 attr="discord-canary"
 
 get_latest_url () {
