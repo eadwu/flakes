@@ -5,6 +5,12 @@
   inputs.cachix.uri = github:eadwu/cachix;
   inputs.cachix.flake = false;
 
+  inputs.boxpub.uri = github:eadwu/boxpub;
+  inputs.boxpub.flake = false;
+
+  inputs.stable.uri = github:NixOS/nixpkgs/0abc66e252ea7f11c18845a79cbfc59335356543;
+  inputs.stable.flake = false;
+
   outputs = { self, nixpkgs, ... }@inputs:
     let
       lib = nixpkgs.lib;
@@ -20,9 +26,12 @@
             };
 
             callPackage = pkgs.newScope pkgs;
-          in rec {
-            cachix = import inputs.cachix { inherit system; };
-          }
+          in (
+            rec {
+              boxpub = import inputs.boxpub { inherit system; nixpkgs = inputs.stable; };
+              cachix = import inputs.cachix { inherit system; };
+            }
+          )
       );
 
       nixosModules = {
