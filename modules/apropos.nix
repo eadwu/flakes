@@ -18,13 +18,13 @@ let
   db = pkgs.runCommand "manual-page-index-cache" {
     nativeBuildInputs = [ man-db ];
   } ''
-    mkdir -p $out/man
+    mkdir -p $out
     echo "MANPATH_MAP	${config.system.path}/bin	${config.system.path}/share/man" >> .manpath
-    echo "MANDB_MAP	${config.system.path}/share/man	$out/man" >> .manpath
+    echo "MANDB_MAP	${config.system.path}/share/man	$out" >> .manpath
     mandb --create --config-file="$(pwd)/.manpath"
   '';
 in {
   config = mkIf config.documentation.man.enable {
-    systemd.tmpfiles.rules = [ "L+ /var/cache/man - - - - ${db}/man" ];
+    systemd.tmpfiles.rules = [ "L+ /var/cache/man/nixos - - - - ${db}" ];
   };
 }
