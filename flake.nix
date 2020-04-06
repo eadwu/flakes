@@ -5,7 +5,7 @@
   inputs.custom.uri = github:eadwu/flakes/custom;
   inputs.rolling.uri = github:eadwu/flakes/rolling;
 
-  outputs = inputs@{ self, nixpkgs, rolling }: with nixpkgs.lib;
+  outputs = { self, nixpkgs, ... }@inputs: with nixpkgs.lib;
     foldl recursiveUpdate {}
       (map (v: v.outputs) (attrValues (removeAttrs inputs [ "self" "nixpkgs" ])));
 }
