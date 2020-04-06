@@ -18,24 +18,24 @@
 
             callPackage = pkgs.newScope pkgs;
           in rec {
-            dwm = callPackage ./dwm {};
-            st = callPackage ./st {};
+            dwm = callPackage ./pkgs/dwm {};
+            st = callPackage ./pkgs/st {};
 
-            discord-canary = callPackage ./discord-canary {};
-            vivaldi-snapshot = callPackage ./vivaldi-snapshot {};
+            discord-canary = callPackage ./pkgs/discord-canary {};
+            vivaldi-snapshot = callPackage ./pkgs/vivaldi-snapshot {};
 
-            vscode-insiders = callPackage ./vscode-insiders {};
+            vscode-insiders = callPackage ./pkgs/vscode-insiders {};
             vscode-insiders-with-extensions = pkgs.vscode-with-extensions.override {
               vscode = vscode-insiders;
             };
 
-            rofi-unwrapped = callPackage ./rofi-unwrapped {
+            rofi-unwrapped = callPackage ./pkgs/rofi-unwrapped {
               inherit (pkgs.xorg) libxcb xcbutil xcbutilwm;
             };
             rofi = pkgs.rofi.override { inherit rofi-unwrapped; };
 
-            gtk-theme-collections = callPackage ./gtk-theme-collections {};
-            plymouth-geshin-impact-start = callPackage ./plymouth-geshin-impact-start {};
+            gtk-theme-collections = callPackage ./pkgs/gtk-theme-collections {};
+            plymouth-geshin-impact-start = callPackage ./pkgs/plymouth-geshin-impact-start {};
           }
       );
     };
