@@ -1,6 +1,43 @@
 {
   "nodes": {
+    "custom": {
+      "info": {
+        "lastModified": 1586140679,
+        "narHash": "sha256-tK0QmTc5u5b87p6YSB/nns02C3MBMNyQ7YwTUNTmIxs="
+      },
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "owner": "eadwu",
+        "repo": "flakes",
+        "rev": "baa91e77cd27889d444a5208a7b5e50166b2d01e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "eadwu",
+        "ref": "custom",
+        "repo": "flakes",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
+      "info": {
+        "lastModified": 1586139812,
+        "narHash": "sha256-KfkWhYLXR6j+sT4IhqqE3uyP1mDS65HPtyjS2P4+6/8="
+      },
+      "locked": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "92e9009172a8ae5d26a5ddc6eb0b2a8cbb394637",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
       "info": {
         "lastModified": 1586111369,
         "narHash": "sha256-mDjIKMdwLnmmed+0T/t4A1vQvJzv94FFXJSprNtRtiY="
@@ -16,7 +53,7 @@
         "type": "indirect"
       }
     },
-    "nixpkgs_2": {
+    "nixpkgs_3": {
       "info": {
         "lastModified": 1586099720,
         "narHash": "sha256-P9gg7ge6ndfldqB3IcxTYO6HhIya5BTbmrvPcZhd2Cg="
@@ -38,7 +75,7 @@
         "narHash": "sha256-O55cjSQhXC3oVQ955fQ3QCAcZKZpz0cJTmetnwNslP4="
       },
       "inputs": {
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "owner": "eadwu",
@@ -55,7 +92,8 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs",
+        "custom": "custom",
+        "nixpkgs": "nixpkgs_2",
         "rolling": "rolling"
       }
     }
