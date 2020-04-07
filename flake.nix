@@ -25,11 +25,14 @@
               config.allowUnfree = true;
             };
 
-            callPackage = pkgs.newScope pkgs;
+            _callPackage = pkgs.newScope pkgs;
+            callPackage = pkgs.newScope { inherit pkgs; callPackage = _callPackage; };
           in (
             rec {
               boxpub = import inputs.boxpub { inherit system; nixpkgs = inputs.stable; };
               cachix = import inputs.cachix { inherit system; };
+
+              clight-modules = callPackage ./pkgs/clight-modules {};
             }
           )
       );
