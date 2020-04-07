@@ -11,13 +11,20 @@
       packages = forAllSystems (
         system:
           let
-            pkgs = import nixpkgs {
+            args = {
               inherit system;
               config.allowUnfree = true;
             };
 
+            pkgs = import nixpkgs args;
             callPackage = pkgs.newScope pkgs;
           in rec {
+            nixpkgs-mozilla = (
+              import nixpkgs (args // { overlays = [ (import (import ./overlays/rust)) ]; })
+            );
+            rustChannels = import ./overlays/rust/channels.nix { inherit nixpkgs-mozilla; };
+            rustPlatform = rustChannels.latest.nightly;
+
             dwm = callPackage ./pkgs/dwm {};
             st = callPackage ./pkgs/st {};
 
