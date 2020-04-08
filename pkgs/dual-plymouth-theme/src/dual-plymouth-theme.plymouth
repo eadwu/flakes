@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=dual-plymouth-theme
+Description=Custom boot/shutdown theme
+ModuleName=script
+
+[script]
+ImageDir=@theme_dir@/dual-plymouth-theme/images
+ScriptFile=@theme_dir@/dual-plymouth-theme/dual-plymouth-theme.script

@@ -1,0 +1,169 @@
+Window.SetBackgroundColor(000000);
+
+settings.margin = 10;
+settings.z.background = 20;
+settings.z.dialog = 50;
+settings.z.message = 100;
+settings.message.history = 5;
+
+file_prefix = "";
+
+if (Plymouth.GetMode() == "shutdown")
+  file_prefix = "shutdown-";
+
+for (i = 0; i < 900; i++)
+  image_cache[i] = Image(file_prefix + "frame" + (i+1) + ".png");
+
+# Initialize background
+background.sprite = Sprite(image_cache[0]);
+background.x = Window.GetX() + (Window.GetWidth()/2 - image_cache[0].GetWidth()/2);
+background.y = Window.GetY() + (Window.GetHeight()/2 - image_cache[0].GetHeight()/2);
+background.z = settings.z.background;
+background.sprite.SetPosition(background.x, background.y, background.z);
+
+counter = 1;
+
+fun refresh_callback()
+  {
+    if (global.background)
+      {
+        background.sprite.SetImage(image_cache[counter - 1]);
+      }
+
+    counter = ((counter + 1) % 900) + 1;
+  }
+
+Plymouth.SetRefreshFunction(refresh_callback);
+
+#----------------------------------------- Dialogue --------------------------------
+
+fun dialog_setup()
+  {
+    local.box;
+    local.lock;
+    local.entry;
+
+    box.image = Image("box.png");
+    lock.image = Image("lock.png");
+    entry.image = Image("entry.png");
+
+    box.sprite = Sprite(box.image);
+    box.x = Window.GetX() + Window.GetWidth()/2 - box.image.GetWidth()/2;
+    box.y = Window.GetY() + settings.margin;
+    box.z = settings.z.dialog;
+    box.sprite.SetPosition(box.x, box.y, box.z);
+
+    lock.sprite = Sprite(lock.image);
+    lock.x = box.x + box.image.GetWidth()/2 - (lock.image.GetWidth() + entry.image.GetWidth()) / 2;
+    lock.y = box.y + box.image.GetHeight()/2 - lock.image.GetHeight()/2;
+    lock.z = box.z + 1;
+    lock.sprite.SetPosition(lock.x, lock.y, lock.z);
+
+    entry.sprite = Sprite(entry.image);
+    entry.x = lock.x + lock.image.GetWidth();
+    entry.y = box.y + box.image.GetHeight()/2 - entry.image.GetHeight()/2;
+    entry.z = lock.z + 1;
+    entry.sprite.SetPosition(entry.x, entry.y, entry.z);
+
+    global.dialog.box = box;
+    global.dialog.entry = entry;
+    global.dialog.lock = lock;
+    dialog_opacity(1);
+  }
+
+fun dialog_opacity(opacity)
+  {
+    dialog.box.sprite.SetOpacity(opacity);
+    dialog.entry.sprite.SetOpacity(opacity);
+    dialog.lock.sprite.SetOpacity(opacity);
+  }
+
+fun display_normal_callback()
+  {
+    if (global.dialog)
+      dialog_opacity(0);
+  }
+
+fun display_password_callback(prompt, bullets)
+  {
+    if (!global.dialog)
+      dialog_setup();
+    else
+      dialog_opacity(1);
+  }
+
+Plymouth.SetDisplayNormalFunction(display_normal_callback);
+Plymouth.SetDisplayPasswordFunction(display_password_callback);
+
+#----------------------------------------- Quit --------------------------------
+
+fun quit_callback()
+  {
+    if (global.background)
+      background.sprite.SetOpacity(0);
+  }
+
+Plymouth.SetQuitFunction(quit_callback);
+
+#----------------------------------------- Message --------------------------------
+
+fun message_setup()
+  {
+    local.messages;
+
+    for (i = 0; i < settings.message.history; i++)
+      {
+        messages[i].sprite = Sprite();
+        messages[i].x = 0;
+        messages[i].z = settings.z.message;
+      }
+
+    global.messages = messages;
+  }
+
+fun display_message_callback(text)
+  {
+    if (!global.messages)
+      message_setup();
+
+    for (i = settings.message.history - 1; i > 0; i--)
+      {
+        if (messages[i - 1].image)
+          {
+            messages[i].image = messages[i - 1].image;
+            messages[i].sprite.SetImage(messages[i].image);
+            messages[i].sprite.SetOpacity(0);
+          }
+      }
+
+    messages[0].image = Image.Text(text, 1, 1, 1);
+    messages[0].sprite.SetImage(messages[0].image);
+    messages[0].x = Window.GetX() + Window.GetWidth() - messages[0].image.GetWidth() - settings.margin;
+    messages[0].y = Window.GetY() + Window.GetHeight() - messages[0].image.GetHeight() - settings.margin;
+    messages[0].sprite.SetOpacity(1);
+    messages[0].sprite.SetPosition(messages[0].x, messages[0].y, messages[0].z);
+
+    for (i = 1; i < settings.message.history; i++)
+      {
+        messages[i].x = Window.GetX() + Window.GetWidth() - messages[i].image.GetWidth() - settings.margin;
+        messages[i].y = messages[i - 1].y - messages[i].image.GetHeight() - settings.margin;
+
+        if (messages[i].image)
+          {
+            messages[i].sprite.SetOpacity(1);
+            messages[i].sprite.SetPosition(messages[i].x, messages[i].y, messages[0].z);
+          }
+      }
+  }
+
+fun hide_message_callback(text)
+  {
+    if (global.messages)
+      {
+        for (i = 0; i < settings.message.history; i++)
+          messages[i].sprite.SetOpacity(0);
+      }
+  }
+
+Plymouth.SetDisplayMessageFunction(display_message_callback);
+Plymouth.SetHideMessageFunction(hide_message_callback);
