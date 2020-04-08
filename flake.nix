@@ -43,7 +43,6 @@
             rofi = pkgs.rofi.override { inherit rofi-unwrapped; };
 
             gtk-theme-collections = callPackage ./pkgs/gtk-theme-collections {};
-            plymouth-geshin-impact-start = callPackage ./pkgs/plymouth-geshin-impact-start {};
           }
       );
     };
