@@ -49,6 +49,12 @@ for f in "$current_dir/latest/"*.json; do
     fi
 
     rm "$f.bak"
+
+    dummy_sha="$(echo dummy_sha | sha256sum | awk '{print $1}')"
+    mv "$f" "$f.bak"
+    jq --arg HASH "$dummy_sha" '.sha256 = $HASH' "$f.bak" > "$f"
+    rm "$f.bak"
+
     nix build "$root#packages.x86_64-linux.$attr" --no-link 2> "$tmpdir/$channel.fetchlog" > /dev/null
 
     new_hash="$(sed '1,/hash mismatch in fixed-output derivation/d' "$tmpdir/$channel.fetchlog" | grep --perl-regexp --only-matching 'got: +.+[:-]\K.+')"
