@@ -2,14 +2,9 @@
   edition = 201909;
   description = "Nix flake for my custom settings and stable packages";
 
-  inputs.cachix.uri = github:eadwu/cachix;
-  inputs.cachix.flake = false;
-
-  inputs.boxpub.uri = github:eadwu/boxpub;
-  inputs.boxpub.flake = false;
-
-  inputs.stable.uri = github:NixOS/nixpkgs/0abc66e252ea7f11c18845a79cbfc59335356543;
-  inputs.stable.flake = false;
+  inputs.cachix = { type = "github"; owner = "eadwu"; repo = "cachix"; flake = false; };
+  inputs.boxpub = { type = "github"; owner = "eadwu"; repo = "boxpub"; flake = false; };
+  inputs.stable = { type = "github"; owner = "NixOS"; repo = "nixpkgs"; flake = false; ref = "0abc66e252ea7f11c18845a79cbfc59335356543"; };
 
   outputs = { self, nixpkgs, ... }@inputs:
     let
