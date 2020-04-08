@@ -24,7 +24,7 @@
 
 rofi-unwrapped.overrideAttrs (
   _: rec {
-    version = "2020-04-07";
+    version = "1586258416";
 
     src = fetchFromGitHub {
       owner = "davatorium";
