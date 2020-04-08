@@ -17,7 +17,7 @@ tmpdir="$(mktemp -d)"
 dest="$tmpdir/result"
 git clone --quiet "$repo" "$dest"
 
-new_version="$(cd "$dest" && git log -1 --format=%cs "origin/$branch")"
+new_version="$(cd "$dest" && git log -1 --date=unix --format=%cd "origin/$branch")"
 new_revision="$(cd "$dest" && git rev-parse "origin/$branch")"
 new_hash="$(nix-prefetch-git "$repo" --rev "$new_revision" --fetch-submodules --quiet | jq -r '.sha256')"
 
