@@ -12,7 +12,10 @@
       lib = nixpkgs.lib;
       systems = [ "x86_64-linux" ];
       forAllSystems = f: lib.genAttrs systems (system: f system);
-    in {
+    in rec {
+      overlays = system: self: super: lib.genAttrs (builtins.attrNames (packages.${system}))
+        (package: packages.${system}.${package});
+
       packages = forAllSystems (
         system:
           let
