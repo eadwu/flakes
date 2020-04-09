@@ -10,7 +10,7 @@ let
     mkdir -p $out
     echo "MANPATH_MAP	${config.system.path}/bin	${config.system.path}/share/man" >> .manpath
     echo "MANDB_MAP	${config.system.path}/share/man	$out" >> .manpath
-    mandb --create --user-db --config-file="$(pwd)/.manpath"
+    mandb --create --config-file="$(pwd)/.manpath"
   '';
 in
 {
