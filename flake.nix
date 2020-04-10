@@ -33,6 +33,8 @@
 
               clight-modules = callPackage ./pkgs/clight-modules {};
 
+              picom = callPackage ./pkgs/picom {};
+
               plymouth-themes = import inputs.plymouth-themes { inherit pkgs; };
               dual-plymouth-theme = callPackage ./pkgs/dual-plymouth-theme {
                 inherit (plymouth-themes) mkTheme;
