@@ -1,4 +1,7 @@
-{ lib, stdenv, fetchFromGitHub }:
+{ lib
+, stdenv
+, fetchFromGitHub
+}:
 
 stdenv.mkDerivation {
   pname = "powerline-extra-symbols";

@@ -1,5 +1,8 @@
 { lib
-, mkTheme, boot ? null, shutdown ? null }:
+, mkTheme
+, boot ? null
+, shutdown ? null
+}:
 
 assert boot != null && shutdown != null;
 

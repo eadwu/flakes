@@ -1,4 +1,7 @@
-{ lib, stdenv, nerdfonts }:
+{ lib
+, stdenv
+, nerdfonts
+}:
 
 stdenv.mkDerivation {
   pname = "nerdfonts-symbol";

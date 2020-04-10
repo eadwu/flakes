@@ -1,4 +1,8 @@
-{ config, pkgs, lib, ... }:
+{ config
+, pkgs
+, lib
+, ...
+}:
 
 with lib;
 let
@@ -8,8 +12,8 @@ let
     nativeBuildInputs = with pkgs; [ man-db xz gzip bzip2 ];
   } ''
     mkdir -p $out
-    echo "MANPATH_MAP	${config.system.path}/bin	${config.system.path}/share/man" >> .manpath
-    echo "MANDB_MAP	${config.system.path}/share/man	$out" >> .manpath
+    echo "MANPATH_MAP ${config.system.path}/bin ${config.system.path}/share/man" >> .manpath
+    echo "MANDB_MAP ${config.system.path}/share/man $out" >> .manpath
     mandb --create --config-file="$(pwd)/.manpath"
   '';
 in

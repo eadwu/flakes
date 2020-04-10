@@ -1,5 +1,12 @@
-{ runCommand, gcc, clight, libmodule }:
-{ name, src }:
+{ runCommand
+, gcc
+, clight
+, libmodule
+}:
+
+{ name
+, src
+}:
 
 runCommand "clight-module-${name}" {
   inherit src;

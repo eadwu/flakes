@@ -1,6 +1,11 @@
-{ lib, runCommand
-, jq, otfcc, ttfautohint, nerdfonts-symbols
-, drvs ? null }:
+{ lib
+, runCommand
+, jq
+, otfcc
+, ttfautohint
+, nerdfonts-symbols
+, drvs ? null
+}:
 
 assert drvs != null;
 
@@ -16,7 +21,8 @@ runCommand "nerdfonts-otfcc" {
     mkdir -p build/dist
 
     ${otfccdump} -o build/src/nerd-glyphs.otd "${glyphs}"
-    ${lib.concatMapStringsSep "\n" (drv: ''
+    ${lib.concatMapStringsSep "\n" (
+    drv: ''
       for f in `find ${drv.out}/share/fonts -name '*.otf' -or -name '*.ttf'`; do
         filename=$(basename "$f")
         file=''${filename%.*}
@@ -35,7 +41,8 @@ runCommand "nerdfonts-otfcc" {
 
         ${otfccbuild} build/src/$file-patched.otd -o build/dist/$file.$ext
       done
-    '') drvs}
+    ''
+  ) drvs}
 
     mkdir -p $out/share/fonts/opentype
     mkdir -p $out/share/fonts/truetype
