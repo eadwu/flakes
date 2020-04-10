@@ -28,6 +28,8 @@
             callPackage = pkgs.newScope { inherit pkgs; callPackage = _callPackage; };
           in (
             rec {
+              liberation-mono = pkgs.nerdfonts.override { fonts = [ "LiberationMono" ]; };
+
               boxpub = import inputs.boxpub { inherit system; nixpkgs = inputs.stable; };
               cachix = import inputs.cachix { inherit system; };
 
