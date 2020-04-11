@@ -24,8 +24,7 @@
               config.allowUnfree = true;
             };
 
-            _callPackage = pkgs.newScope pkgs;
-            callPackage = pkgs.newScope { inherit pkgs; callPackage = _callPackage; };
+            inherit (pkgs) callPackage;
           in (
             rec {
               customKernelPatches = callPackage ./pkgs/kernel/patches.nix {};
