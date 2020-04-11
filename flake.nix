@@ -20,8 +20,7 @@
             };
 
             pkgs = import nixpkgs args;
-            _callPackage = pkgs.newScope pkgs;
-            callPackage = pkgs.newScope { inherit pkgs; callPackage = _callPackage; };
+            inherit (pkgs) callPackage;
           in rec {
             nixpkgs-mozilla = (
               import nixpkgs (args // { overlays = [ (import (import ./overlays/rust)) ]; })
