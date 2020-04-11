@@ -49,6 +49,7 @@
 
       nixosModules = {
         apropos = import ./modules/apropos.nix;
+        sourcehut = import ./modules/sourcehut;
       };
     };
 }
