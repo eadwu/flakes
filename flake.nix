@@ -29,7 +29,7 @@
             inherit (pkgs) callPackage;
           in (
             rec {
-              customKernelPatches = callPackage ./pkgs/kernel/patches.nix {};
+              kernelPatches = pkgs.kernelPatches // (callPackage ./pkgs/kernel/patches.nix {});
 
               liberation-mono = pkgs.nerdfonts.override { fonts = [ "LiberationMono" ]; };
 
@@ -54,9 +54,9 @@
                   inherit (kernel) version;
                 };
                 kernelPatches = kernel.kernelPatches ++ [
-                  customKernelPatches.rt
+                  kernelPatches.rt
                 ];
-                modDirVersionArg = kernel.modDirVersion + "-${customKernelPatches.rt.name}";
+                modDirVersionArg = kernel.modDirVersion + "-${kernelPatches.rt.name}";
               });
 
               linuxPackages_latest_hardened_rt = hardenedRTLinuxPackagesFor pkgs.linux_latest_hardened;
