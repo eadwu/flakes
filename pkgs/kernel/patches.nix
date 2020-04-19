@@ -17,7 +17,7 @@ with lib.kernel;
     };
 
   rt =
-    { name = "rt";
+    { name = "rt1";
       patch = ./rt.patch.xz;
       extraStructuredConfig.PREEMPT = yes;
       extraConfig = ''
