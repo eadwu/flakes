@@ -17,9 +17,14 @@ with lib.kernel;
     };
 
   rt =
-    { name = "rt1";
+    { name = "rt3";
       patch = ./rt.patch.xz;
-      extraStructuredConfig.PREEMPT = yes;
+      extraStructuredConfig = {
+        EXPERT = yes;
+        PREEMPT = yes;
+        PREEMPT_RT = yes;
+        HAVE_PREEMPT_LAZY = yes;
+      };
       extraConfig = ''
         PREEMPT_VOLUNTARY n
       '';
