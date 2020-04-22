@@ -26,8 +26,10 @@ with lib.kernel;
         PREEMPT = yes;
         PREEMPT_RT = yes;
         HAVE_PREEMPT_LAZY = yes;
-        PREEMPT_VOLUNTARY = no;
       };
+      extraConfig = ''
+        PREEMPT_VOLUNTARY n
+      '';
     };
 
   extra_config =
@@ -41,6 +43,34 @@ with lib.kernel;
         SECURITY_LOCKDOWN_LSM = yes;
         SECURITY_LOCKDOWN_LSM_EARLY = yes;
         LOCK_DOWN_KERNEL_FORCE_NONE = yes;
+
+        ## Hardened
+        # Wipe slab and page allocations (since v5.3)
+        # Instead of "slub_debug=P" and "page_poison=1", a single place can control memory allocation wiping now.
+        # The init_on_free is only needed if there is concern about minimizing stale data lifetime.
+        INIT_ON_ALLOC_DEFAULT_ON = yes;
+        INIT_ON_FREE_DEFAULT_ON = yes;
+
+        # Dangerous; enabling this allows replacement of running kernel.
+        KEXEC = no;
+
+        # Dangerous; enabling this allows replacement of running kernel.
+        HIBERNATION = no;
+
+        # But if CONFIG_MODULE=y is needed, at least they must be signed with a per-build key.
+        MODULE_SIG = yes;
+        # MODULE_SIG_FORCE = yes;
+        MODULE_SIG_ALL = yes;
+        MODULE_SIG_SHA512 = yes;
+        MODULE_SIG_HASH = freeform "sha512";
+        MODULE_SIG_KEY = freeform "certs/signing_key.pem";
+
+        # Remove additional attack surface, unless you really need them.
+        # IA32_EMULATION = no;
       };
+      extraConfig = ''
+        # Easily confused by misconfigured userspace, keep off.
+        BINFMT_MISC n
+      '';
     };
 }
