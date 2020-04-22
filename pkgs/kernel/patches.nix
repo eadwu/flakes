@@ -6,11 +6,13 @@ with lib.kernel;
   bcachefs =
     { name = "bcachefs";
       patch = ./bcachefs.patch.xz;
-      extraStructuredConfig.BCACHEFS_FS = module;
-      extraConfig = ''
-        AIO y
-        DEVMEM y
+      extraStructuredConfig = {
+        BCACHEFS_FS = module;
 
+        AIO = yes;
+        DEVMEM = yes;
+      };
+      extraConfig = ''
         # https://bugzilla.redhat.com/show_bug.cgi?id=1615258
         DEBUG_SG n
       '';
@@ -24,23 +26,21 @@ with lib.kernel;
         PREEMPT = yes;
         PREEMPT_RT = yes;
         HAVE_PREEMPT_LAZY = yes;
+        PREEMPT_VOLUNTARY = no;
       };
-      extraConfig = ''
-        PREEMPT_VOLUNTARY n
-      '';
     };
 
   extra_config =
     { name = "extra-config";
       patch = null;
-      extraConfig = ''
+      extraStructuredConfig = {
         # Disable amateur radio support
-        HAMRADIO n
+        HAMRADIO = no;
 
-        # Lockdown
-        SECURITY_LOCKDOWN_LSM y
-        SECURITY_LOCKDOWN_LSM_EARLY y
-        LOCK_DOWN_KERNEL_FORCE_NONE y
-      '';
+        ## Lockdown
+        SECURITY_LOCKDOWN_LSM = yes;
+        SECURITY_LOCKDOWN_LSM_EARLY = yes;
+        LOCK_DOWN_KERNEL_FORCE_NONE = yes;
+      };
     };
 }
