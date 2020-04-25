@@ -19,6 +19,8 @@ let
 in
 {
   config = mkIf config.documentation.man.enable {
+    environment.systemPackages = with pkgs; [ man-pages clang-manpages posix_man_pages ];
+
     systemd.tmpfiles.rules = [ "L+ /var/cache/man/nixos - - - - ${db}" ];
   };
 }
