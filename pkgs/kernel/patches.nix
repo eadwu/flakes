@@ -19,12 +19,11 @@ with lib.kernel;
     };
 
   rt =
-    { name = "rt3";
-      patch = ./rt.patch.xz;
+    { name = "realtime";
+      patch = null;
       extraStructuredConfig = {
         EXPERT = yes;
         PREEMPT = yes;
-        PREEMPT_RT = yes;
         HAVE_PREEMPT_LAZY = yes;
       };
       extraConfig = ''

@@ -55,7 +55,7 @@
                 kernelPatches = kernel.kernelPatches ++ [
                   kernelPatches.rt
                 ];
-                modDirVersionArg = kernel.modDirVersion + "-${kernelPatches.rt.name}";
+                modDirVersionArg = kernel.modDirVersion;
               });
 
               linuxPackages_latest_hardened_rt = hardenedRTLinuxPackagesFor pkgs.linux_latest_hardened;
