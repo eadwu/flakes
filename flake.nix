@@ -54,6 +54,7 @@
                 };
                 kernelPatches = kernel.kernelPatches ++ [
                   kernelPatches.rt
+                  kernelPatches.bmq
                 ];
                 modDirVersionArg = kernel.modDirVersion;
               });

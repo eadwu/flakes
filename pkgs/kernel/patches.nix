@@ -31,6 +31,11 @@ with lib.kernel;
       '';
     };
 
+  bmq =
+    { name = "bmq";
+      patch = ./bmq.patch.xz;
+    };
+
   extra_config =
     { name = "extra-config";
       patch = null;
