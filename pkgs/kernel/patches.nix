@@ -71,6 +71,11 @@ with lib.kernel;
 
         # Remove additional attack surface, unless you really need them.
         # IA32_EMULATION = no;
+
+        # Timer
+        HZ_250 = yes;
+        HZ_1000 = no;
+        HZ = freeform "250";
       };
       extraConfig = ''
         # Easily confused by misconfigured userspace, keep off.
