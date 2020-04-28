@@ -72,6 +72,12 @@ with lib.kernel;
         # Remove additional attack surface, unless you really need them.
         # IA32_EMULATION = no;
 
+        # RCU
+        RCU_EXPERT = yes;
+        RCU_BOOST = yes;
+        RCU_BOOST_DELAY = freeform "331";
+        RCU_NOCB_CPU = yes;
+
         # Timer
         HZ_250 = yes;
         HZ_1000 = no;
