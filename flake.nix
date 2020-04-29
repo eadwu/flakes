@@ -53,6 +53,7 @@
                   inherit (kernel) version;
                 };
                 kernelPatches = kernel.kernelPatches ++ [
+                  kernelPatches.o3
                   kernelPatches.rt
                   kernelPatches.bmq
                 ];
