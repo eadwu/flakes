@@ -55,7 +55,8 @@
                 kernelPatches = kernel.kernelPatches ++ [
                   kernelPatches.o3
                   kernelPatches.rt
-                  kernelPatches.bmq
+                  kernelPatches.muqss
+                  kernelPatches.zen
                 ];
                 modDirVersionArg = kernel.modDirVersion;
               });
