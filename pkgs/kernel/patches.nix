@@ -42,6 +42,9 @@ with lib.kernel;
   bmq =
     { name = "bmq";
       patch = ./bmq.patch.xz;
+      extraStructuredConfig = {
+        SCHED_BMQ = yes;
+      };
     };
 
   muqss =
