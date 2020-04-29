@@ -44,6 +44,22 @@ with lib.kernel;
       patch = ./bmq.patch.xz;
     };
 
+  muqss =
+    { name = "muqss";
+      patch = ./muqss.patch.xz;
+      extraStructuredConfig = {
+        SCHED_MUQSS = yes;
+      };
+    };
+
+  zen =
+    { name = "zen";
+      patch = ./zen.patch.xz;
+      extraStructuredConfig = {
+        ZEN_INTERACTIVE = yes;
+      };
+    };
+
   extra_config =
     { name = "extra-config";
       patch = null;
