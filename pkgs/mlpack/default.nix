@@ -1,6 +1,12 @@
-{ stdenv, lib, fetchFromGitHub
-, cmake, armadillo, boost, ensmallen
-, enableOpenMP ? true }:
+{ stdenv
+, lib
+, fetchFromGitHub
+, cmake
+, armadillo
+, boost
+, ensmallen
+, enableOpenMP ? true
+}:
 
 stdenv.mkDerivation rec {
   pname = "mlpack";
@@ -16,7 +22,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ cmake ];
   buildInputs = [ armadillo boost ensmallen ];
 
-  cmakeFlags = [ "-DUSE_OPENMP=${if enableOpenMP then "ON" else "OFF"}" ];
+  cmakeFlags = [ "-DUSE_OPENMP=${ if enableOpenMP then "ON" else "OFF"}" ];
 
   enableParallelBuilding = true;
 
@@ -25,6 +31,6 @@ stdenv.mkDerivation rec {
     homepage = "https://www.mlpack.org/";
     license = licenses.bsd3;
     platforms = platforms.unix;
-    maintainers = with maintainers; [];
+    maintainers = with maintainers; [ ];
   };
 }

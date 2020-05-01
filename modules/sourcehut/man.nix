@@ -1,15 +1,14 @@
 { config, lib, pkgs, ... }:
 
 with lib;
-
 let
   cfg = config.services.sourcehut;
   cfgIni = cfg.settings;
   scfg = cfg.man;
   iniKey = "man.sr.ht";
-
   drv = pkgs.sourcehut.mansrht;
-in {
+in
+{
   options.services.sourcehut.man = {
     user = mkOption {
       type = types.str;
@@ -46,15 +45,19 @@ in {
   config = with scfg; lib.mkIf (cfg.enable && elem "man" cfg.services) {
     assertions =
       [
-        { assertion = hasAttrByPath [ "git.sr.ht" "oauth-client-id" ] cfgIni;
-          message = "man.sr.ht needs access to git.sr.ht."; }
+        {
+          assertion = hasAttrByPath [ "git.sr.ht" "oauth-client-id" ] cfgIni;
+          message = "man.sr.ht needs access to git.sr.ht.";
+        }
       ];
 
     users = {
       users = [
-        { name = user;
+        {
+          name = user;
           group = user;
-          description = "man.sr.ht user"; }
+          description = "man.sr.ht user";
+        }
       ];
 
       groups = [
@@ -68,8 +71,10 @@ in {
       '';
       ensureDatabases = [ database ];
       ensureUsers = [
-        { name = user;
-          ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; }; }
+        {
+          name = user;
+          ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; };
+        }
       ];
     };
 

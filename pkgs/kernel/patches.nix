@@ -4,7 +4,8 @@ with lib.kernel;
 
 {
   bcachefs =
-    { name = "bcachefs";
+    {
+      name = "bcachefs";
       patch = ./bcachefs.patch.xz;
       extraStructuredConfig = {
         BCACHEFS_FS = module;
@@ -19,7 +20,8 @@ with lib.kernel;
     };
 
   rt =
-    { name = "realtime";
+    {
+      name = "realtime";
       patch = null;
       extraStructuredConfig = {
         EXPERT = yes;
@@ -32,7 +34,8 @@ with lib.kernel;
     };
 
   o3 =
-    { name = "optimize-o3";
+    {
+      name = "optimize-o3";
       patch = ./optimize-o3.patch.xz;
       extraStructuredConfig = {
         CC_OPTIMIZE_FOR_PERFORMANCE_O3 = yes;
@@ -40,7 +43,8 @@ with lib.kernel;
     };
 
   xanmod =
-    { name = "xanmod";
+    {
+      name = "xanmod";
       patch = ./xanmod.patch.xz;
       extraStructuredConfig = {
         # RCU
@@ -57,7 +61,8 @@ with lib.kernel;
     };
 
   bmq =
-    { name = "bmq";
+    {
+      name = "bmq";
       patch = ./bmq.patch.xz;
       extraStructuredConfig = {
         SCHED_BMQ = yes;
@@ -65,7 +70,8 @@ with lib.kernel;
     };
 
   muqss =
-    { name = "muqss";
+    {
+      name = "muqss";
       patch = ./muqss.patch.xz;
       extraStructuredConfig = {
         SCHED_MUQSS = yes;
@@ -73,12 +79,14 @@ with lib.kernel;
     };
 
   muqss-hrtimeout =
-    { name = "muqss-hrtimeout";
+    {
+      name = "muqss-hrtimeout";
       patch = ./muqss-hrtimeout.patch.xz;
     };
 
   zen =
-    { name = "zen";
+    {
+      name = "zen";
       patch = ./zen.patch.xz;
       extraStructuredConfig = {
         ZEN_INTERACTIVE = yes;
@@ -86,7 +94,8 @@ with lib.kernel;
     };
 
   extra_config =
-    { name = "extra-config";
+    {
+      name = "extra-config";
       patch = null;
       extraStructuredConfig = {
         # Disable amateur radio support

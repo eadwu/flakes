@@ -1,16 +1,15 @@
 { config, lib, pkgs, ... }:
 
 with lib;
-
 let
   cfg = config.services.sourcehut;
   cfgIni = cfg.settings;
   scfg = cfg.todo;
   iniKey = "todo.sr.ht";
-
   rcfg = config.services.redis;
   drv = pkgs.sourcehut.todosrht;
-in {
+in
+{
   options.services.sourcehut.todo = {
     user = mkOption {
       type = types.str;
@@ -47,9 +46,11 @@ in {
   config = with scfg; lib.mkIf (cfg.enable && elem "todo" cfg.services) {
     users = {
       users = [
-        { name = user;
+        {
+          name = user;
           group = user;
-          description = "todo.sr.ht user"; }
+          description = "todo.sr.ht user";
+        }
       ];
 
       groups = [
@@ -63,8 +64,10 @@ in {
       '';
       ensureDatabases = [ database ];
       ensureUsers = [
-        { name = user;
-          ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; }; }
+        {
+          name = user;
+          ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; };
+        }
       ];
     };
 

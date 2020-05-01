@@ -1,15 +1,14 @@
 { config, lib, pkgs, ... }:
 
 with lib;
-
 let
   cfg = config.services.sourcehut;
   cfgIni = cfg.settings;
   scfg = cfg.meta;
   iniKey = "meta.sr.ht";
-
   drv = pkgs.sourcehut.metasrht;
-in {
+in
+{
   options.services.sourcehut.meta = {
     user = mkOption {
       type = types.str;
@@ -46,15 +45,19 @@ in {
   config = with scfg; lib.mkIf (cfg.enable && elem "meta" cfg.services) {
     assertions =
       [
-        { assertion = with cfgIni."meta.sr.ht::billing"; enabled == "yes" -> (stripe-public-key != null && stripe-secret-key != null);
-          message = "If meta.sr.ht::billing is enabled, the keys should be defined."; }
+        {
+          assertion = with cfgIni."meta.sr.ht::billing"; enabled == "yes" -> (stripe-public-key != null && stripe-secret-key != null);
+          message = "If meta.sr.ht::billing is enabled, the keys should be defined.";
+        }
       ];
 
     users = {
       users = [
-        { name = user;
+        {
+          name = user;
           group = user;
-          description = "meta.sr.ht user"; }
+          description = "meta.sr.ht user";
+        }
       ];
 
       groups = [
@@ -69,8 +72,10 @@ in {
       '';
       ensureDatabases = [ database ];
       ensureUsers = [
-        { name = user;
-          ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; }; }
+        {
+          name = user;
+          ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; };
+        }
       ];
     };
 
@@ -91,17 +96,18 @@ in {
             # Configure client(s) as "preauthorized"
             ${concatMapStringsSep "\n\n"
               (attr: ''
-                if ! test -e "${statePath}/${attr}.oauth" || [ "$(cat ${statePath}/${attr}.oauth)" != "${cfgIni."${attr}".oauth-client-id}" ]; then
-                  # Configure ${attr}'s OAuth client as "preauthorized"
-                  psql ${database} \
-                    -c "UPDATE oauthclient SET preauthorized = true WHERE client_id = '${cfgIni."${attr}".oauth-client-id}'"
+                  if ! test -e "${statePath}/${attr}.oauth" || [ "$(cat ${statePath}/${attr}.oauth)" != "${cfgIni."${attr}".oauth-client-id}" ]; then
+                    # Configure ${attr}'s OAuth client as "preauthorized"
+                    psql ${database} \
+                      -c "UPDATE oauthclient SET preauthorized = true WHERE client_id = '${cfgIni."${attr}".oauth-client-id}'"
 
-                  printf "%s" "${cfgIni."${attr}".oauth-client-id}" > "${statePath}/${attr}.oauth"
-                fi
-              '')
-              (builtins.attrNames (filterAttrs
-                (k: v: !(hasInfix "::" k) && builtins.hasAttr "oauth-client-id" v && v.oauth-client-id != null)
-                cfg.settings))}
+                    printf "%s" "${cfgIni."${attr}".oauth-client-id}" > "${statePath}/${attr}.oauth"
+                  fi
+                '')
+              (builtins.attrNames
+                  (filterAttrs
+                      (k: v: !(hasInfix "::" k) && builtins.hasAttr "oauth-client-id" v && v.oauth-client-id != null)
+                      cfg.settings))}
           '';
 
           serviceConfig.ExecStart = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
@@ -150,7 +156,7 @@ in {
       # You can add aliases for the client IDs of commonly used OAuth clients here.
       #
       # Example:
-      "meta.sr.ht::aliases" = mkDefault {};
+      "meta.sr.ht::aliases" = mkDefault { };
       # "meta.sr.ht::aliases"."git.sr.ht" = 12345;
 
       # "yes" to enable the billing system

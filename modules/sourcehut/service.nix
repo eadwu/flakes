@@ -1,19 +1,18 @@
 { config, pkgs, lib }:
 serviceCfg: serviceDrv: iniKey: attrs:
-
 let
   cfg = config.services.sourcehut;
   cfgIni = cfg.settings."${iniKey}";
   pgSuperUser = config.services.postgresql.superUser;
-
   setupDB = pkgs.writeScript "${serviceDrv.pname}-gen-db" ''
     #! ${cfg.python}/bin/python
     from ${serviceDrv.pname}.app import db
     db.create()
   '';
-in with serviceCfg; with lib; recursiveUpdate {
+in
+with serviceCfg; with lib; recursiveUpdate {
   environment.HOME = statePath;
-  path = [ config.services.postgresql.package ] ++ (attrs.path or []);
+  path = [ config.services.postgresql.package ] ++ (attrs.path or [ ]);
   restartTriggers = [ config.environment.etc."sr.ht/config.ini".source ];
   serviceConfig = {
     Type = "simple";

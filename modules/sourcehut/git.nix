@@ -1,15 +1,14 @@
 { config, lib, pkgs, ... }:
 
 with lib;
-
 let
   cfg = config.services.sourcehut;
   scfg = cfg.git;
   iniKey = "git.sr.ht";
-
   rcfg = config.services.redis;
   drv = pkgs.sourcehut.gitsrht;
-in {
+in
+{
   options.services.sourcehut.git = {
     user = mkOption {
       type = types.str;
@@ -61,12 +60,14 @@ in {
 
     users = {
       users = [
-        { name = user;
+        {
+          name = user;
           group = user;
           # https://stackoverflow.com/questions/22314298/git-push-results-in-fatal-protocol-error-bad-line-length-character-this
           # Probably could use gitsrht-shell if output is restricted to just parameters...
           shell = "${pkgs.bash}/bin/bash";
-          description = "git.sr.ht user"; }
+          description = "git.sr.ht user";
+        }
       ];
 
       groups = [
@@ -90,8 +91,10 @@ in {
         '';
         ensureDatabases = [ database ];
         ensureUsers = [
-          { name = user;
-            ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; }; }
+          {
+            name = user;
+            ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; };
+          }
         ];
       };
     };

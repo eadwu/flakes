@@ -1,15 +1,14 @@
 { config, lib, pkgs, ... }:
 
 with lib;
-
 let
   cfg = config.services.sourcehut;
   cfgIni = cfg.settings;
   scfg = cfg.paste;
   iniKey = "paste.sr.ht";
-
   drv = pkgs.sourcehut.pastesrht;
-in {
+in
+{
   options.services.sourcehut.paste = {
     user = mkOption {
       type = types.str;
@@ -46,9 +45,11 @@ in {
   config = with scfg; lib.mkIf (cfg.enable && elem "paste" cfg.services) {
     users = {
       users = [
-        { name = user;
+        {
+          name = user;
           group = user;
-          description = "paste.sr.ht user"; }
+          description = "paste.sr.ht user";
+        }
       ];
 
       groups = [
@@ -62,8 +63,10 @@ in {
       '';
       ensureDatabases = [ database ];
       ensureUsers = [
-        { name = user;
-          ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; }; }
+        {
+          name = user;
+          ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; };
+        }
       ];
     };
 

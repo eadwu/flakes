@@ -1,15 +1,14 @@
 { config, lib, pkgs, ... }:
 
 with lib;
-
 let
   cfg = config.services.sourcehut;
   scfg = cfg.hg;
   iniKey = "hg.sr.ht";
-
   rcfg = config.services.redis;
   drv = pkgs.sourcehut.hgsrht;
-in {
+in
+{
   options.services.sourcehut.hg = {
     user = mkOption {
       type = types.str;
@@ -67,11 +66,13 @@ in {
 
     users = {
       users = [
-        { name = user;
+        {
+          name = user;
           group = user;
           # Assuming hg.sr.ht needs this too
           shell = "${pkgs.bash}/bin/bash";
-          description = "hg.sr.ht user"; }
+          description = "hg.sr.ht user";
+        }
       ];
 
       groups = [
@@ -95,8 +96,10 @@ in {
         '';
         ensureDatabases = [ database ];
         ensureUsers = [
-          { name = user;
-            ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; }; }
+          {
+            name = user;
+            ensurePermissions = { "DATABASE \"${database}\"" = "ALL PRIVILEGES"; };
+          }
         ];
       };
     };

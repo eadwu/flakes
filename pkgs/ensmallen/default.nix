@@ -1,6 +1,11 @@
-{ stdenv, lib, fetchFromGitHub
-, cmake, armadillo, openmp
-, enableOpenMP ? true }:
+{ stdenv
+, lib
+, fetchFromGitHub
+, cmake
+, armadillo
+, openmp
+, enableOpenMP ? true
+}:
 
 stdenv.mkDerivation rec {
   pname = "ensmallen";
@@ -17,7 +22,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ armadillo ] ++ (lib.optional enableOpenMP openmp);
 
-  cmakeFlags = [ "-DUSE_OPENMP=${if enableOpenMP then "ON" else "OFF"}" ];
+  cmakeFlags = [ "-DUSE_OPENMP=${ if enableOpenMP then "ON" else "OFF"}" ];
 
   enableParallelBuilding = true;
 
@@ -26,6 +31,6 @@ stdenv.mkDerivation rec {
     homepage = "https://ensmallen.org/";
     license = licenses.bsd3;
     platforms = platforms.unix;
-    maintainers = with maintainers; [];
+    maintainers = with maintainers; [ ];
   };
 }

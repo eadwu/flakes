@@ -1,19 +1,27 @@
 { config, pkgs, lib, ... }:
 
 with lib;
-
 let
   cfg = config.services.sourcehut;
   cfgIni = cfg.settings;
 
   # Specialized python containing all the modules
-  python = pkgs.sourcehut.python.withPackages (ps: with ps; [
-    gunicorn
-    # Sourcehut services
-    buildsrht dispatchsrht gitsrht hgsrht listssrht mansrht
-    metasrht pastesrht todosrht
-  ]);
-in {
+  python = pkgs.sourcehut.python.withPackages
+    (ps: with ps; [
+      gunicorn
+      # Sourcehut services
+      buildsrht
+      dispatchsrht
+      gitsrht
+      hgsrht
+      listssrht
+      mansrht
+      metasrht
+      pastesrht
+      todosrht
+    ]);
+in
+{
   imports =
     [
       ./git.nix
@@ -69,7 +77,7 @@ in {
 
     settings = mkOption {
       type = with types; attrsOf (attrsOf (nullOr (either bool (either int (either float (either str path))))));
-      default = {};
+      default = { };
       description = ''
         The configuration for the sourcehut network.
       '';
@@ -79,31 +87,40 @@ in {
   config = mkIf cfg.enable {
     assertions =
       [
-        { assertion = with cfgIni."sr.ht"; secret-key != null && stringLength secret-key == 32;
-          message = "sr.ht's secret key must be defined and of a 32 byte length."; }
+        {
+          assertion = with cfgIni."sr.ht"; secret-key != null && stringLength secret-key == 32;
+          message = "sr.ht's secret key must be defined and of a 32 byte length.";
+        }
 
         # Is it always 44 characters...? At least from the times I've generated one...
-        { assertion = with cfgIni.webhooks; private-key != null && stringLength private-key == 44;
-          message = "The webhook's private key must be defined."; }
+        {
+          assertion = with cfgIni.webhooks; private-key != null && stringLength private-key == 44;
+          message = "The webhook's private key must be defined.";
+        }
 
-        { assertion = hasAttrByPath [ "meta.sr.ht" "origin" ] cfgIni && cfgIni."meta.sr.ht".origin != null;
-          message = "meta.sr.ht's origin must be defined."; }
+        {
+          assertion = hasAttrByPath [ "meta.sr.ht" "origin" ] cfgIni && cfgIni."meta.sr.ht".origin != null;
+          message = "meta.sr.ht's origin must be defined.";
+        }
       ];
 
-    environment.etc."sr.ht/config.ini".text = let
-      mkKeyValue = key: v: let
-        isPath = v: builtins.typeOf v == "path";
-
-        value =
-          if null == v        then ""
-          else if true == v   then "yes"
-          else if false == v  then "no"
-          else if isInt v     then toString v
-          else if isString v  then toString v
-          else if isPath v    then toString v
-          else abort "sourcehut.mkKeyValue: unexpected type (v = ${v})";
-      in "${toString key}=${value}";
-    in generators.toINI { inherit mkKeyValue; } cfg.settings;
+    environment.etc."sr.ht/config.ini".text =
+      let
+        mkKeyValue = key: v:
+          let
+            isPath = v: builtins.typeOf v == "path";
+            value =
+              if null == v then ""
+              else if true == v then "yes"
+              else if false == v then "no"
+              else if isInt v then toString v
+              else if isString v then toString v
+              else if isPath v then toString v
+              else abort "sourcehut.mkKeyValue: unexpected type (v = ${v})";
+          in
+          "${toString key}=${value}";
+      in
+      generators.toINI { inherit mkKeyValue; } cfg.settings;
 
     environment.systemPackages = [ python ];
 

@@ -19,6 +19,6 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/ryanoasis/nerd-fonts";
     license = licenses.mit;
-    maintainers = with maintainers; [];
+    maintainers = with maintainers; [ ];
   };
 }

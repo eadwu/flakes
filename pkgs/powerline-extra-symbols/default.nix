@@ -26,6 +26,6 @@ stdenv.mkDerivation {
     '';
     homepage = "https://github.com/ryanoasis/powerline-extra-symbols";
     license = licenses.mit;
-    maintainers = with maintainers; [];
+    maintainers = with maintainers; [ ];
   };
 }
