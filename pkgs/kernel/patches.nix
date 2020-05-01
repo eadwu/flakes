@@ -72,6 +72,11 @@ with lib.kernel;
       };
     };
 
+  muqss-hrtimeout =
+    { name = "muqss-hrtimeout";
+      patch = ./muqss-hrtimeout.patch.xz;
+    };
+
   zen =
     { name = "zen";
       patch = ./zen.patch.xz;
