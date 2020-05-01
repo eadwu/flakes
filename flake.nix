@@ -55,6 +55,7 @@
                 kernelPatches = kernel.kernelPatches ++ [
                   kernelPatches.o3
                   kernelPatches.rt
+                  kernelPatches.xanmod
                   kernelPatches.muqss
                   kernelPatches.zen
                 ];

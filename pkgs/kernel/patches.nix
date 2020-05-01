@@ -39,6 +39,23 @@ with lib.kernel;
       };
     };
 
+  xanmod =
+    { name = "xanmod";
+      patch = ./xanmod.patch.xz;
+      extraStructuredConfig = {
+        # RCU
+        RCU_EXPERT = yes;
+        RCU_BOOST = yes;
+        RCU_BOOST_DELAY = freeform "0";
+        RCU_NOCB_CPU = yes;
+
+        # Timer
+        HZ_500 = yes;
+        HZ_1000 = no;
+        HZ = freeform "500";
+      };
+    };
+
   bmq =
     { name = "bmq";
       patch = ./bmq.patch.xz;
@@ -98,17 +115,6 @@ with lib.kernel;
 
         # Remove additional attack surface, unless you really need them.
         # IA32_EMULATION = no;
-
-        # RCU
-        RCU_EXPERT = yes;
-        RCU_BOOST = yes;
-        RCU_BOOST_DELAY = freeform "331";
-        RCU_NOCB_CPU = yes;
-
-        # Timer
-        HZ_250 = yes;
-        HZ_1000 = no;
-        HZ = freeform "250";
       };
       extraConfig = ''
         # Easily confused by misconfigured userspace, keep off.
