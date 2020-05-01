@@ -9,7 +9,10 @@ in
   with nixpkgs-mozilla;
   genAttrs channels
     (
-      channel: (rustChannelOf (spec.${channel} // { inherit channel; })) // {
+      channel: let
+        base = (rustChannelOf (spec.${channel} // { inherit channel; }));
+      in base // {
         inherit (nixpkgs-mozilla.rustPlatform) buildRustPackage;
+        rustcSrc = base.rust-src;
       }
     )
