@@ -23,11 +23,7 @@ with lib.kernel;
     {
       name = "realtime";
       patch = null;
-      extraStructuredConfig = {
-        EXPERT = yes;
-        PREEMPT = yes;
-        HAVE_PREEMPT_LAZY = yes;
-      };
+      extraStructuredConfig.PREEMPT = yes;
       extraConfig = ''
         PREEMPT_VOLUNTARY n
       '';
