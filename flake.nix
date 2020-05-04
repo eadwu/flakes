@@ -1,5 +1,4 @@
 {
-  edition = 201909;
   description = "Nix flake for my custom settings and stable packages";
 
   inputs.cachix = { type = "github"; owner = "eadwu"; repo = "cachix"; flake = false; };
