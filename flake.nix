@@ -1,5 +1,4 @@
 {
-  edition = 201909;
   description = "A collection of Nix flakes";
 
   inputs.custom = { type = "github"; owner = "eadwu"; repo = "flakes"; ref = "custom"; };
