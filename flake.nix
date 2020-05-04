@@ -49,7 +49,7 @@
                 shutdown = plymouth-themes."1987238292";
               };
 
-              hardenedRTLinuxPackagesFor = kernel: pkgs.linuxPackagesFor
+              rtLinuxPackagesFor = kernel: pkgs.linuxPackagesFor
                 (kernel.override {
                   structuredExtraConfig = import (pkgs.path + "/pkgs/os-specific/linux/kernel/hardened-config.nix") {
                     inherit (pkgs) stdenv;
@@ -66,7 +66,7 @@
                   modDirVersionArg = kernel.modDirVersion;
                 });
 
-              linuxPackages_latest_hardened_rt = hardenedRTLinuxPackagesFor pkgs.linux_latest_hardened;
+              linuxPackages_latest_hardened_rt = rtLinuxPackagesFor pkgs.linux_latest_hardened;
               linux_latest_hardened_rt = linuxPackages_latest_hardened_rt.kernel;
             }
           )
