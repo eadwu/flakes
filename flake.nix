@@ -57,6 +57,7 @@
                   kernelPatches = kernel.kernelPatches ++ [
                     kernelPatches.o3
                     kernelPatches.rt
+                    kernelPatches.zfs
                     kernelPatches.xanmod
                     kernelPatches.muqss
                     kernelPatches.muqss-hrtimeout
