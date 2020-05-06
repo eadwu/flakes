@@ -16,11 +16,11 @@
   (
     oldAttrs: rec {
       pname = "vivaldi-snapshot";
-      version = "3.0.1874.27";
+      version = "3.1.1906.3";
 
       src = fetchurl {
         url = "https://downloads.vivaldi.com/snapshot/vivaldi-snapshot_${version}-1_amd64.deb";
-        sha256 = "1q646fz76pc7y2zl5ndl5hvp30la2qifc9n5lj4v3vsrw9n2m052";
+        sha256 = "0k406b621m40am4ff4crfz7fcw6ck670gwrr9w5la7rmng877s7n";
       };
 
       newLibPath = lib.makeLibraryPath buildInputs
