@@ -13,6 +13,7 @@ genAttrs channels
       base = (rustChannelOf (spec.${channel} // { inherit channel; }));
     in
     base // {
+      inherit (spec.${channel}) date;
       inherit (nixpkgs-mozilla.rustPlatform) buildRustPackage;
       rustcSrc = base.rust-src;
     }
