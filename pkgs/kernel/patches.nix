@@ -72,9 +72,9 @@ with lib.kernel;
         RCU_NOCB_CPU = yes;
 
         # Timer
-        HZ_500 = yes;
+        HZ_100 = yes;
         HZ_1000 = no;
-        HZ = freeform "500";
+        HZ = freeform "100";
       };
     };
 
