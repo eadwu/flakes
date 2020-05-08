@@ -59,8 +59,7 @@
                     kernelPatches.rt
                     kernelPatches.zfs
                     kernelPatches.xanmod
-                    kernelPatches.muqss
-                    kernelPatches.zen
+                    kernelPatches.bmq
                   ];
                   modDirVersionArg = kernel.modDirVersion;
                 });
