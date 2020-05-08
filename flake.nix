@@ -60,7 +60,6 @@
                     kernelPatches.zfs
                     kernelPatches.xanmod
                     kernelPatches.muqss
-                    kernelPatches.muqss-hrtimeout
                     kernelPatches.zen
                   ];
                   modDirVersionArg = kernel.modDirVersion;
