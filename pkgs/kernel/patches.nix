@@ -87,29 +87,6 @@ with lib.kernel;
       };
     };
 
-  muqss =
-    {
-      name = "muqss";
-      patch = ./muqss.patch.xz;
-      extraStructuredConfig = {
-        SCHED_MUQSS = yes;
-
-        # Timer
-        HZ_100 = yes;
-        HZ_1000 = no;
-        HZ = freeform "100";
-      };
-    };
-
-  zen =
-    {
-      name = "zen";
-      patch = ./zen.patch.xz;
-      extraStructuredConfig = {
-        ZEN_INTERACTIVE = yes;
-      };
-    };
-
   extra_config =
     {
       name = "extra-config";
