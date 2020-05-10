@@ -1,5 +1,5 @@
 #! /usr/bin/env nix-shell
-#! nix-shell -i bash -p jq curl nix-prefetch-scripts
+#! nix-shell -i bash -p nixFlakes jq curl nix-prefetch-scripts
 
 current_dir="$(pwd)/$(dirname ${BASH_SOURCE[0]})"
 root="$(readlink -f "$current_dir/../..")"
