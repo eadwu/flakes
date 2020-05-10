@@ -1,8 +1,9 @@
 {
   description = "Nix flake for my custom settings and stable packages";
 
-  inputs.cachix = { type = "github"; owner = "eadwu"; repo = "cachix"; flake = false; };
   inputs.boxpub = { type = "github"; owner = "eadwu"; repo = "boxpub"; flake = false; };
+  inputs.cachix = { type = "github"; owner = "eadwu"; repo = "cachix"; flake = false; };
+  inputs.nixops = { type = "github"; owner = "NixOS"; repo = "nixops"; flake = false; };
   inputs.nix-linter = { type = "github"; owner = "eadwu"; repo = "nix-linter"; flake = false; };
   inputs.plymouth-themes = { type = "github"; owner = "eadwu"; repo = "plymouth-themes"; flake = false; };
 
@@ -35,6 +36,7 @@
 
               boxpub = import inputs.boxpub { inherit system; };
               cachix = import inputs.cachix { inherit system; };
+              nixopsUnstable = (import inputs.nixops { inherit pkgs; inherit (inputs) nixpkgs; }).overrideAttrs(_: { postInstall = ""; } );
               nix-linter = (import inputs.nix-linter { inherit args; }).nix-linter;
 
               clight-modules = callPackage ./pkgs/clight-modules { };
