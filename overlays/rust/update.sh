@@ -55,13 +55,15 @@ for f in "$current_dir/latest/"*.json; do
     jq --arg HASH "$dummy_sha" '.sha256 = $HASH' "$f.bak" > "$f"
     rm "$f.bak"
 
-    nix build "$root#packages.x86_64-linux.$attr" --no-link 2> "$tmpdir/$channel.fetchlog" > /dev/null
+    nix build "$root#packages.x86_64-linux.$attr" --no-link &> "$tmpdir/$channel.fetchlog"
 
     new_hash="$(sed '1,/hash mismatch in fixed-output derivation/d' "$tmpdir/$channel.fetchlog" | grep --perl-regexp --only-matching 'got: +.+[:-]\K.+')"
-    new_hash_fixed="$(nix to-base32 "sha256-$new_hash")"
+    if [ "${new_hash: -1}" == "=" ]; then
+      new_hash="$(nix to-base32 "sha256-$new_hash")"
+    fi
 
     mv "$f" "$f.bak"
-    jq --arg HASH "$new_hash_fixed" '.sha256 = $HASH' "$f.bak" > "$f"
+    jq --arg HASH "$new_hash" '.sha256 = $HASH' "$f.bak" > "$f"
 
     if [ $? -ne 0 ]; then
       rm "$f"
