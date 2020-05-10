@@ -1,0 +1,40 @@
+name: custom
+
+on:
+  push:
+    branches:
+      - custom
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - liberation-mono
+          - boxpub
+          - cachix
+          - nixopsUnstable
+          - nix-linter
+          - picom
+          - linux_latest_hardened_rt
+
+    steps:
+      - name: Obtain maximum storage
+        run: |
+          sudo swapoff -a
+          sudo rm -f /swapfile
+          sudo apt clean
+          docker rmi $(docker image ls -aq)
+          df -h
+      - uses: actions/checkout@v2
+        with:
+          ref: custom
+          fetch-depth: 0
+      - uses: cachix/install-nix-action@v8
+      - name: Building ${{ matrix.package }}
+        run: |
+          nix-shell -I "nixpkgs=https://github.com/NixOS/nixpkgs/archive/master.tar.gz" -p nixFlakes \
+            --run 'nix --experimental-features "flakes nix-command" build \
+              --print-build-logs --recreate-lock-file "$(pwd)#packages.x86_64-linux.${{ matrix.package }}"'
