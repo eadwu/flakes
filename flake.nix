@@ -52,7 +52,7 @@
 
               rtLinuxPackagesFor = kernel: pkgs.linuxPackagesFor
                 (kernel.override {
-                  structuredExtraConfig = import (pkgs.path + "/pkgs/os-specific/linux/kernel/hardened-config.nix") {
+                  structuredExtraConfig = import (pkgs.path + "/pkgs/os-specific/linux/kernel/hardened/config.nix") {
                     inherit (pkgs) stdenv;
                     inherit (kernel) version;
                   };
