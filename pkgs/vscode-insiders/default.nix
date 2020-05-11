@@ -8,11 +8,11 @@
   (
     _: rec {
       pname = "vscode-insiders";
-      version = "1588934742";
+      version = "1588870215";
 
       src = fetchurl {
-        url = "https://az764295.vo.msecnd.net/insider/161d93bb787df7c95f5a24f6ef83e28c93967bfa/code-insider-1588934742.tar.gz";
-        sha256 = "0w2h1fs7srm6hxaa8jhbcpm383qfckc39k0k1rcbq7s09xzyk3lb";
+        url = "https://az764295.vo.msecnd.net/insider/d487078dc7fc1c276657cadb61b4f63833a8df55/code-insider-1588870215.tar.gz";
+        sha256 = "0cqqhgbypsxk78dd5wr3c2kkcvgmy3vwflgn761cljdzn20n1k19";
       };
     }
   )
