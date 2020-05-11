@@ -87,6 +87,12 @@ with lib.kernel;
       };
     };
 
+  enable-fsgsbase-instructions =
+    {
+      name = "enable-fsgsbase-instructions";
+      patch = ./enable-fsgsbase-instructions.patch.xz;
+    };
+
   extra_config =
     {
       name = "extra-config";

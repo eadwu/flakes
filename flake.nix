@@ -62,6 +62,7 @@
                     kernelPatches.zfs
                     kernelPatches.xanmod
                     kernelPatches.bmq
+                    kernelPatches.enable-fsgsbase-instructions
                   ];
                   modDirVersionArg = kernel.modDirVersion;
                 });
