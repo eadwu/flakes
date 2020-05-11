@@ -1,0 +1,69 @@
+name: flakes
+
+on:
+  push:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: rolling
+          fetch-depth: 0
+      - uses: Gerschtli/install-nix-action@ddf1cd2bc500fec5a443c8858214d79545cc5e2d
+        with:
+          NIX_PATH: "nixpkgs=https://github.com/NixOS/nixpkgs/archive/master.tar.gz"
+      - name: Setup config
+        run: |
+          mkdir -p ~/.config/nix
+          git config user.name actions
+          git config user.email "actions@eadwu.flakes"
+          echo "experimental-features = flakes nix-command" >> ~/.config/nix/nix.conf
+      - name: Run update script
+        run: |
+            ./update.sh
+            git push origin rolling
+
+  build:
+    needs: update
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - rustPlatform.rust
+          - dwm
+          - st
+          - discord-canary
+          - vivaldi-snapshot
+          - vscode-insiders
+          - rofi
+          - gtk-theme-collections
+
+    steps:
+      - name: Obtain maximum storage
+        run: |
+          sudo swapoff -a
+          sudo rm -f /swapfile
+          sudo apt clean
+          docker rmi $(docker image ls -aq)
+          df -h
+      - uses: actions/checkout@v2
+        with:
+          ref: rolling
+          fetch-depth: 0
+      - uses: Gerschtli/install-nix-action@ddf1cd2bc500fec5a443c8858214d79545cc5e2d
+        with:
+          NIX_PATH: "nixpkgs=https://github.com/NixOS/nixpkgs/archive/master.tar.gz"
+      - uses: cachix/cachix-action@v6
+        with:
+          name: rolling
+          signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
+      - name: Building ${{ matrix.package }}
+        run: |
+          nix-shell -p nixFlakes --run 'nix --experimental-features "flakes nix-command" build \
+            --print-build-logs --recreate-lock-file "$(pwd)#packages.x86_64-linux.${{ matrix.package }}"'
