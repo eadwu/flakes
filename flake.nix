@@ -63,8 +63,23 @@
                   modDirVersionArg = kernel.modDirVersion;
                 });
 
-              linuxPackages_latest_hardened_rt = rtLinuxPackagesFor pkgs.linux_latest_hardened;
-              linux_latest_hardened_rt = linuxPackages_latest_hardened_rt.kernel;
+              customLinuxPackagesFor = kernel: pkgs.linuxPackagesFor
+                (kernel.override {
+                  structuredExtraConfig = {};
+                  kernelPatches = kernel.kernelPatches
+                    ++ [
+                      kernelPatches.o3
+                      kernelPatches.zfs
+                      kernelPatches.xanmod
+                      kernelPatches.bmq
+                      kernelPatches.enable-fsgsbase-instructions
+                      kernelPatches.extra_config
+                    ];
+                  modDirVersionArg = kernel.modDirVersion;
+                });
+
+              linuxPackages_custom = customLinuxPackagesFor (rtLinuxPackagesFor (pkgs.linux_latest_hardened)).kernel;
+              linux_custom = linuxPackages_custom.kernel;
             }
           )
         );
