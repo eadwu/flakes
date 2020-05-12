@@ -25,13 +25,13 @@
 rofi-unwrapped.overrideAttrs
   (
     _: rec {
-      version = "1589118440";
+      version = "1589272850";
 
       src = fetchFromGitHub {
         owner = "davatorium";
         repo = "rofi";
-        rev = "865821f829e4307b84da55c4576020de50d071e1";
-        sha256 = "1rphprhc4pzlp3y00g8yb2c9sa4k04xmx54a12g4534zvidqd9zp";
+        rev = "2ccc65ff5284c3f7344443e3ee0b7f38f207b235";
+        sha256 = "1m02sll4nh0hxj0kmba5s5453s4m5dbvyg6h3b8dsgw9l9nrfqk2";
         fetchSubmodules = true;
       };
 
