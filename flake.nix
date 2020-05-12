@@ -52,18 +52,14 @@
 
               rtLinuxPackagesFor = kernel: pkgs.linuxPackagesFor
                 (kernel.override {
-                  structuredExtraConfig = import (pkgs.path + "/pkgs/os-specific/linux/kernel/hardened/config.nix") {
-                    inherit (pkgs) stdenv;
-                    inherit (kernel) version;
+                  structuredExtraConfig = with lib.kernel; {
+                    PREEMPT = yes;
+                    PREEMPT_VOLUNTARY = option no;
                   };
-                  kernelPatches = kernel.kernelPatches ++ [
-                    kernelPatches.o3
-                    kernelPatches.rt
-                    kernelPatches.zfs
-                    kernelPatches.xanmod
-                    kernelPatches.bmq
-                    kernelPatches.enable-fsgsbase-instructions
-                  ];
+                  kernelPatches = kernel.kernelPatches
+                    ++ [
+                      kernelPatches.rt
+                    ];
                   modDirVersionArg = kernel.modDirVersion;
                 });
 

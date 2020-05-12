@@ -18,7 +18,6 @@ jobs:
           - nixopsUnstable
           - nix-linter
           - picom
-          - linux_latest_hardened_rt
 
     steps:
       - name: Obtain maximum storage
