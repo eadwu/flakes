@@ -1,6 +1,8 @@
 {
   description = "Nix flake for my custom settings and stable packages";
 
+  inputs.nixpkgs = { type = "github"; owner = "eadwu"; repo = "nixpkgs"; ref = "develop"; };
+
   inputs.boxpub = { type = "github"; owner = "eadwu"; repo = "boxpub"; ref = "boxpub/2.x"; flake = false; };
   inputs.cachix = { type = "github"; owner = "eadwu"; repo = "cachix"; flake = false; };
   inputs.nixops = { type = "github"; owner = "NixOS"; repo = "nixops"; flake = false; };
