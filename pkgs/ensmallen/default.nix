@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [ armadillo ] ++ (lib.optional enableOpenMP openmp);
 
-  cmakeFlags = [ "-DUSE_OPENMP=${ if enableOpenMP then "ON" else "OFF"}" ];
+  cmakeFlags = [ "-DUSE_OPENMP=${if enableOpenMP then "ON" else "OFF"}" ];
 
   enableParallelBuilding = true;
 

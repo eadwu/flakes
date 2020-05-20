@@ -9,7 +9,8 @@
 
 assert drvs != null;
 
-runCommand "nerdfonts-otfcc" {
+runCommand "nerdfonts-otfcc"
+{
   nativeBuildInputs = [ jq otfcc ttfautohint ];
 }
   (
@@ -25,7 +26,7 @@ runCommand "nerdfonts-otfcc" {
       ${otfccdump} -o build/src/nerd-glyphs.otd "${glyphs}"
       ${lib.concatMapStringsSep "\n"
         (
-            drv: ''
+        drv: ''
             for f in `find ${drv.out}/share/fonts -name '*.otf' -or -name '*.ttf'`; do
               filename=$(basename "$f")
               file=''${filename%.*}
@@ -45,7 +46,7 @@ runCommand "nerdfonts-otfcc" {
               ${otfccbuild} build/src/$file-patched.otd -o build/dist/$file.$ext
             done
           ''
-          ) drvs}
+        ) drvs}
 
       mkdir -p $out/share/fonts/opentype
       mkdir -p $out/share/fonts/truetype

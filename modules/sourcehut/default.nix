@@ -6,8 +6,8 @@ let
   cfgIni = cfg.settings;
 
   # Specialized python containing all the modules
-  python = pkgs.sourcehut.python.withPackages
-    (ps: with ps; [
+  python =
+    pkgs.sourcehut.python.withPackages (ps: with ps; [
       gunicorn
       # Sourcehut services
       buildsrht

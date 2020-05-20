@@ -109,17 +109,22 @@ in
       ];
 
       services = {
-        gitsrht = import ./service.nix { inherit config pkgs lib; } scfg drv iniKey {
-          after = [ "redis.service" "postgresql.service" "network.target" ];
-          requires = [ "redis.service" "postgresql.service" ];
-          wantedBy = [ "multi-user.target" ];
+        gitsrht =
+          import ./service.nix
+            { inherit config pkgs lib; }
+            scfg
+            drv
+            iniKey {
+            after = [ "redis.service" "postgresql.service" "network.target" ];
+            requires = [ "redis.service" "postgresql.service" ];
+            wantedBy = [ "multi-user.target" ];
 
-          # Needs internally to create repos at the very least
-          path = [ pkgs.git ];
-          description = "git.sr.ht website service";
+            # Needs internally to create repos at the very least
+            path = [ pkgs.git ];
+            description = "git.sr.ht website service";
 
-          serviceConfig.ExecStart = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
-        };
+            serviceConfig.ExecStart = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
+          };
 
         gitsrht-webhooks = {
           after = [ "postgresql.service" "network.target" ];

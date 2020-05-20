@@ -8,7 +8,8 @@
 , src
 }:
 
-runCommand "clight-module-${name}" {
+runCommand "clight-module-${name}"
+{
   inherit src;
   nativeBuildInputs = [ gcc clight libmodule ];
 } ''

@@ -83,15 +83,20 @@ in
         "d ${statePath} 0750 ${user} ${user} -"
       ];
 
-      services.mansrht = import ./service.nix { inherit config pkgs lib; } scfg drv iniKey {
-        after = [ "postgresql.service" "network.target" ];
-        requires = [ "postgresql.service" ];
-        wantedBy = [ "multi-user.target" ];
+      services.mansrht =
+        import ./service.nix
+          { inherit config pkgs lib; }
+          scfg
+          drv
+          iniKey {
+          after = [ "postgresql.service" "network.target" ];
+          requires = [ "postgresql.service" ];
+          wantedBy = [ "multi-user.target" ];
 
-        description = "man.sr.ht website service";
+          description = "man.sr.ht website service";
 
-        serviceConfig.ExecStart = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
-      };
+          serviceConfig.ExecStart = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
+        };
     };
 
     services.sourcehut.settings = {

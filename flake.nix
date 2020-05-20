@@ -16,75 +16,73 @@
       forAllSystems = f: lib.genAttrs systems (system: f system);
     in
     rec {
-      overlays = system: self: super: lib.genAttrs (builtins.attrNames (packages.${system}))
+      overlays = system: self: super: lib.genAttrs
+        (builtins.attrNames (packages.${system}))
         (package: packages.${system}.${package});
 
-      packages = forAllSystems
+      packages = forAllSystems (
+        system:
+        let
+          args = {
+            inherit system;
+            config.allowUnfree = true;
+          };
+          pkgs = import nixpkgs args;
+          inherit (pkgs) callPackage;
+        in
         (
-          system:
-          let
-            args = {
-              inherit system;
-              config.allowUnfree = true;
+          rec {
+            kernelPatches = pkgs.kernelPatches // (callPackage ./pkgs/kernel/patches.nix { });
+
+            liberation-mono = pkgs.nerdfonts.override { fonts = [ "LiberationMono" ]; };
+
+            boxpub = import inputs.boxpub { inherit system; };
+            cachix = import inputs.cachix { inherit system; };
+            nixopsUnstable = (import inputs.nixops { inherit pkgs;inherit (inputs) nixpkgs; }).overrideAttrs (_: { postInstall = ""; });
+            nix-linter = (import inputs.nix-linter { inherit args; }).nix-linter;
+
+            clight-modules = callPackage ./pkgs/clight-modules { };
+
+            picom = callPackage ./pkgs/picom { };
+
+            plymouth-themes = import inputs.plymouth-themes { inherit pkgs; };
+            dual-plymouth-theme = callPackage ./pkgs/dual-plymouth-theme {
+              inherit (plymouth-themes) mkTheme;
+              boot = plymouth-themes."1891042977";
+              shutdown = plymouth-themes."1987238292";
             };
-            pkgs = import nixpkgs args;
-            inherit (pkgs) callPackage;
-          in
-          (
-            rec {
-              kernelPatches = pkgs.kernelPatches // (callPackage ./pkgs/kernel/patches.nix { });
 
-              liberation-mono = pkgs.nerdfonts.override { fonts = [ "LiberationMono" ]; };
-
-              boxpub = import inputs.boxpub { inherit system; };
-              cachix = import inputs.cachix { inherit system; };
-              nixopsUnstable = (import inputs.nixops { inherit pkgs; inherit (inputs) nixpkgs; }).overrideAttrs(_: { postInstall = ""; } );
-              nix-linter = (import inputs.nix-linter { inherit args; }).nix-linter;
-
-              clight-modules = callPackage ./pkgs/clight-modules { };
-
-              picom = callPackage ./pkgs/picom { };
-
-              plymouth-themes = import inputs.plymouth-themes { inherit pkgs; };
-              dual-plymouth-theme = callPackage ./pkgs/dual-plymouth-theme {
-                inherit (plymouth-themes) mkTheme;
-                boot = plymouth-themes."1891042977";
-                shutdown = plymouth-themes."1987238292";
+            rtLinuxPackagesFor = kernel: pkgs.linuxPackagesFor (kernel.override {
+              structuredExtraConfig = with lib.kernel; {
+                PREEMPT = yes;
+                PREEMPT_VOLUNTARY = option no;
               };
+              kernelPatches = kernel.kernelPatches
+                ++ [
+                kernelPatches.rt
+              ];
+              modDirVersionArg = kernel.modDirVersion;
+            });
 
-              rtLinuxPackagesFor = kernel: pkgs.linuxPackagesFor
-                (kernel.override {
-                  structuredExtraConfig = with lib.kernel; {
-                    PREEMPT = yes;
-                    PREEMPT_VOLUNTARY = option no;
-                  };
-                  kernelPatches = kernel.kernelPatches
-                    ++ [
-                      kernelPatches.rt
-                    ];
-                  modDirVersionArg = kernel.modDirVersion;
-                });
+            customLinuxPackagesFor = kernel: pkgs.linuxPackagesFor (kernel.override {
+              structuredExtraConfig = { };
+              kernelPatches = kernel.kernelPatches
+                ++ [
+                kernelPatches.o3
+                kernelPatches.zfs
+                kernelPatches.xanmod
+                kernelPatches.bmq
+                kernelPatches.enable-fsgsbase-instructions
+                kernelPatches.extra_config
+              ];
+              modDirVersionArg = kernel.modDirVersion;
+            });
 
-              customLinuxPackagesFor = kernel: pkgs.linuxPackagesFor
-                (kernel.override {
-                  structuredExtraConfig = {};
-                  kernelPatches = kernel.kernelPatches
-                    ++ [
-                      kernelPatches.o3
-                      kernelPatches.zfs
-                      kernelPatches.xanmod
-                      kernelPatches.bmq
-                      kernelPatches.enable-fsgsbase-instructions
-                      kernelPatches.extra_config
-                    ];
-                  modDirVersionArg = kernel.modDirVersion;
-                });
-
-              linuxPackages_custom = customLinuxPackagesFor (rtLinuxPackagesFor (pkgs.linux_latest_hardened)).kernel;
-              linux_custom = linuxPackages_custom.kernel;
-            }
-          )
-        );
+            linuxPackages_custom = customLinuxPackagesFor (rtLinuxPackagesFor (pkgs.linux_latest_hardened)).kernel;
+            linux_custom = linuxPackages_custom.kernel;
+          }
+        )
+      );
 
       nixosModules = {
         apropos = import ./modules/apropos.nix;

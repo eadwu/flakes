@@ -85,33 +85,38 @@ in
       ];
 
       services = {
-        metasrht = import ./service.nix { inherit config pkgs lib; } scfg drv iniKey {
-          after = [ "postgresql.service" "network.target" ];
-          requires = [ "postgresql.service" ];
-          wantedBy = [ "multi-user.target" ];
+        metasrht =
+          import ./service.nix
+            { inherit config pkgs lib; }
+            scfg
+            drv
+            iniKey {
+            after = [ "postgresql.service" "network.target" ];
+            requires = [ "postgresql.service" ];
+            wantedBy = [ "multi-user.target" ];
 
-          description = "meta.sr.ht website service";
+            description = "meta.sr.ht website service";
 
-          preStart = ''
-            # Configure client(s) as "preauthorized"
-            ${concatMapStringsSep "\n\n"
-              (attr: ''
-                  if ! test -e "${statePath}/${attr}.oauth" || [ "$(cat ${statePath}/${attr}.oauth)" != "${cfgIni."${attr}".oauth-client-id}" ]; then
-                    # Configure ${attr}'s OAuth client as "preauthorized"
-                    psql ${database} \
-                      -c "UPDATE oauthclient SET preauthorized = true WHERE client_id = '${cfgIni."${attr}".oauth-client-id}'"
+            preStart = ''
+              # Configure client(s) as "preauthorized"
+              ${concatMapStringsSep "\n\n"
+                (attr: ''
+                    if ! test -e "${statePath}/${attr}.oauth" || [ "$(cat ${statePath}/${attr}.oauth)" != "${cfgIni."${attr}".oauth-client-id}" ]; then
+                      # Configure ${attr}'s OAuth client as "preauthorized"
+                      psql ${database} \
+                        -c "UPDATE oauthclient SET preauthorized = true WHERE client_id = '${cfgIni."${attr}".oauth-client-id}'"
 
-                    printf "%s" "${cfgIni."${attr}".oauth-client-id}" > "${statePath}/${attr}.oauth"
-                  fi
-                '')
-              (builtins.attrNames
-                  (filterAttrs
-                      (k: v: !(hasInfix "::" k) && builtins.hasAttr "oauth-client-id" v && v.oauth-client-id != null)
-                      cfg.settings))}
-          '';
+                      printf "%s" "${cfgIni."${attr}".oauth-client-id}" > "${statePath}/${attr}.oauth"
+                    fi
+                  '')
+                (builtins.attrNames (filterAttrs
+                    (k: v: !(hasInfix "::" k) && builtins.hasAttr "oauth-client-id" v && v.oauth-client-id != null)
+                    cfg.settings
+                    ))}
+            '';
 
-          serviceConfig.ExecStart = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
-        };
+            serviceConfig.ExecStart = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
+          };
 
         metasrht-webhooks = {
           after = [ "postgresql.service" "network.target" ];

@@ -113,16 +113,21 @@ in
         "d ${cfg.settings."${iniKey}".repos} 2755 ${user} ${user} -"
       ];
 
-      services.hgsrht = import ./service.nix { inherit config pkgs lib; } scfg drv iniKey {
-        after = [ "redis.service" "postgresql.service" "network.target" ];
-        requires = [ "redis.service" "postgresql.service" ];
-        wantedBy = [ "multi-user.target" ];
+      services.hgsrht =
+        import ./service.nix
+          { inherit config pkgs lib; }
+          scfg
+          drv
+          iniKey {
+          after = [ "redis.service" "postgresql.service" "network.target" ];
+          requires = [ "redis.service" "postgresql.service" ];
+          wantedBy = [ "multi-user.target" ];
 
-        path = [ pkgs.mercurial ];
-        description = "hg.sr.ht website service";
+          path = [ pkgs.mercurial ];
+          description = "hg.sr.ht website service";
 
-        serviceConfig.ExecStart = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
-      };
+          serviceConfig.ExecStart = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
+        };
     };
 
     services.sourcehut.settings = {

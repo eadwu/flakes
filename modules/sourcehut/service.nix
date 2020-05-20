@@ -10,7 +10,8 @@ let
     db.create()
   '';
 in
-with serviceCfg; with lib; recursiveUpdate {
+with serviceCfg; with lib; recursiveUpdate
+{
   environment.HOME = statePath;
   path = [ config.services.postgresql.package ] ++ (attrs.path or [ ]);
   restartTriggers = [ config.environment.etc."sr.ht/config.ini".source ];
@@ -57,4 +58,5 @@ with serviceCfg; with lib; recursiveUpdate {
 
     ${attrs.preStart or ""}
   '';
-} (builtins.removeAttrs attrs [ "path" "preStart" ])
+}
+  (builtins.removeAttrs attrs [ "path" "preStart" ])

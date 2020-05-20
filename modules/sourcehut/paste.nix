@@ -76,15 +76,20 @@ in
       ];
 
       services = {
-        pastesrht = import ./service.nix { inherit config pkgs lib; } scfg drv iniKey {
-          after = [ "postgresql.service" "network.target" ];
-          requires = [ "postgresql.service" ];
-          wantedBy = [ "multi-user.target" ];
+        pastesrht =
+          import ./service.nix
+            { inherit config pkgs lib; }
+            scfg
+            drv
+            iniKey {
+            after = [ "postgresql.service" "network.target" ];
+            requires = [ "postgresql.service" ];
+            wantedBy = [ "multi-user.target" ];
 
-          description = "paste.sr.ht website service";
+            description = "paste.sr.ht website service";
 
-          serviceConfig.ExecStart = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
-        };
+            serviceConfig.ExecStart = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
+          };
 
         pastesrht-webhooks = {
           after = [ "postgresql.service" "network.target" ];

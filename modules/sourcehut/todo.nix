@@ -77,15 +77,20 @@ in
       ];
 
       services = {
-        todosrht = import ./service.nix { inherit config pkgs lib; } scfg drv iniKey {
-          after = [ "postgresql.service" "network.target" ];
-          requires = [ "postgresql.service" ];
-          wantedBy = [ "multi-user.target" ];
+        todosrht =
+          import ./service.nix
+            { inherit config pkgs lib; }
+            scfg
+            drv
+            iniKey {
+            after = [ "postgresql.service" "network.target" ];
+            requires = [ "postgresql.service" ];
+            wantedBy = [ "multi-user.target" ];
 
-          description = "todo.sr.ht website service";
+            description = "todo.sr.ht website service";
 
-          script = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
-        };
+            script = "${cfg.python}/bin/gunicorn ${drv.pname}.app:app -b ${cfg.address}:${toString port}";
+          };
 
         todosrht-webhooks = {
           after = [ "postgresql.service" "network.target" ];
