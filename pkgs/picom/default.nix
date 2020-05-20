@@ -1,17 +1,18 @@
 { picom, fetchFromGitHub }:
 
 picom.overrideAttrs (
-  _: rec {
-    version = "2020-04-01";
+  oldAttrs: {
+    version = "2020-04-24";
 
     src = fetchFromGitHub {
       owner = "yshui";
       repo = "picom";
-      rev = "85086bc9843f408b761580357d4f88b5ea626ada";
-      sha256 = "sha256-uI5DSQ/ea4usRkYD/0mIzFrgb5o8RUfoQfhXflFH05w=";
+      rev = "0b377537ec9c3f6faaa13878701d8d0b2ee62d0c";
+      sha256 = "0z4iw2ypi3r4hrqxci9yi46acfpc7q35b0srlbrba4wznpfziagm";
       fetchSubmodules = true;
     };
 
-    patches = [ ./dual_kawase.patch ];
+    patches = (oldAttrs.patches or [ ])
+      ++ [ ./dual_kawase.patch.xz ];
   }
 )
