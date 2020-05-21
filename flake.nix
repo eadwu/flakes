@@ -69,9 +69,9 @@
               kernelPatches = kernel.kernelPatches
                 ++ [
                 kernelPatches.o3
-                kernelPatches.zfs
-                kernelPatches.xanmod
                 kernelPatches.bmq
+                kernelPatches.xanmod
+                kernelPatches.zen-zswap
                 kernelPatches.enable-fsgsbase-instructions
                 kernelPatches.extra_config
               ];

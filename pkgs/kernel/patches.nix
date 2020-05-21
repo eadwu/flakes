@@ -16,25 +16,6 @@ with lib.kernel;
       '';
     };
 
-  zfs =
-    {
-      name = "zfs";
-      patch = ./zen-zswap.patch.xz;
-      extraStructuredConfig = with lib.kernel; {
-        # Make sure Zen adjustments are applied
-        ZEN_INTERACTIVE = yes;
-
-        # Don't compile as modules since zswap starts before modules are loaded
-        CRYPTO_LZ4 = yes;
-        LZ4_COMPRESS = yes;
-        Z3FOLD = yes;
-      };
-      extraConfig = ''
-        # https://bugzilla.redhat.com/show_bug.cgi?id=1615258
-        DEBUG_SG n
-      '';
-    };
-
   rt =
     {
       name = "realtime";
@@ -78,6 +59,21 @@ with lib.kernel;
       patch = ./bmq.patch.xz;
       extraStructuredConfig = {
         SCHED_BMQ = yes;
+      };
+    };
+
+  zen-zswap =
+    {
+      name = "zen-zswap";
+      patch = ./zen-zswap.patch.xz;
+      extraStructuredConfig = with lib.kernel; {
+        # Make sure Zen adjustments are applied
+        ZEN_INTERACTIVE = yes;
+
+        # Don't compile as modules since zswap starts before modules are loaded
+        CRYPTO_LZ4 = yes;
+        LZ4_COMPRESS = yes;
+        Z3FOLD = yes;
       };
     };
 
