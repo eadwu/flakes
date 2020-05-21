@@ -43,6 +43,8 @@
 
             clight-modules = callPackage ./pkgs/clight-modules { };
 
+            i3lock-color = callPackage ./pkgs/i3lock-color { };
+
             picom = callPackage ./pkgs/picom { };
 
             plymouth-themes = import inputs.plymouth-themes { inherit pkgs; };
