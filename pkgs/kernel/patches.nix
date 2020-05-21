@@ -101,6 +101,9 @@ with lib.kernel;
         # Disable amateur radio support
         HAMRADIO = no;
 
+        # Disable old sysfs interface for UEFI Runtime Variables Support
+        EFI_VARS = no;
+
         ## Lockdown
         SECURITY_LOCKDOWN_LSM = yes;
         SECURITY_LOCKDOWN_LSM_EARLY = yes;
