@@ -96,7 +96,7 @@ with lib.kernel;
   extra_config =
     {
       name = "extra-config";
-      patch = null;
+      patch = ./fix-enable-pcie-aspm.patch.xz;
       extraStructuredConfig = {
         # Disable amateur radio support
         HAMRADIO = no;
