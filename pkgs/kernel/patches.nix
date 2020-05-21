@@ -9,9 +9,6 @@ with lib.kernel;
       patch = ./bcachefs.patch.xz;
       extraStructuredConfig = {
         BCACHEFS_FS = module;
-
-        AIO = yes;
-        DEVMEM = yes;
       };
       extraConfig = ''
         # https://bugzilla.redhat.com/show_bug.cgi?id=1615258
@@ -24,9 +21,6 @@ with lib.kernel;
       name = "zfs";
       patch = ./zen-zswap.patch.xz;
       extraStructuredConfig = with lib.kernel; {
-        AIO = yes;
-        DEVMEM = yes;
-
         # Make sure Zen adjustments are applied
         ZEN_INTERACTIVE = yes;
 
@@ -98,6 +92,10 @@ with lib.kernel;
       name = "extra-config";
       patch = ./fix-enable-pcie-aspm.patch.xz;
       extraStructuredConfig = {
+        # Make sure these are enabled, needed by a variety of things such as cryptsetup
+        AIO = yes;
+        DEVMEM = yes;
+
         # Disable amateur radio support
         HAMRADIO = no;
 
