@@ -47,6 +47,15 @@
 
             picom = callPackage ./pkgs/picom { };
 
+            radian = let
+              packageOverrides = self: super: {
+                lineedit = self.callPackage ./pkgs/lineedit { };
+                rchitect = self.callPackage ./pkgs/rchitect { };
+                radian = self.callPackage ./pkgs/radian { };
+              };
+              python = pkgs.python3.override { inherit packageOverrides; };
+            in python.pkgs.radian;
+
             plymouth-themes = import inputs.plymouth-themes { inherit pkgs; };
             dual-plymouth-theme = callPackage ./pkgs/dual-plymouth-theme {
               inherit (plymouth-themes) mkTheme;
