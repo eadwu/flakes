@@ -1,7 +1,16 @@
-{ lib, fetchFromGitHub, buildPythonApplication
+{ lib
+, fetchFromGitHub
+, buildPythonApplication
 , pytestrunner
-, rchitect, lineedit, six, pygments
-, coverage, pytest, pyte, pexpect, ptyprocess
+, rchitect
+, lineedit
+, six
+, pygments
+, coverage
+, pytest
+, pyte
+, pexpect
+, ptyprocess
 }:
 
 buildPythonApplication rec {

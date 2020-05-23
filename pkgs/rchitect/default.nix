@@ -1,7 +1,11 @@
-{ lib, fetchPypi, buildPythonPackage
+{ lib
+, fetchPypi
+, buildPythonPackage
 , pytestrunner
-, cffi, six
-, pytest, pytest-mock
+, cffi
+, six
+, pytest
+, pytest-mock
 }:
 
 buildPythonPackage rec {

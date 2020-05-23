@@ -1,6 +1,13 @@
-{ lib, fetchPypi, buildPythonPackage
-, pygments, six, wcwidth
-, pytest, pyte, pexpect, ptyprocess
+{ lib
+, fetchPypi
+, buildPythonPackage
+, pygments
+, six
+, wcwidth
+, pytest
+, pyte
+, pexpect
+, ptyprocess
 }:
 
 buildPythonPackage rec {

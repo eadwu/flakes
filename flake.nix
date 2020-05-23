@@ -23,10 +23,9 @@
 
         boxpub = import inputs.boxpub { inherit (stdenv.hostPlatform) system; };
         cachix = import inputs.cachix { inherit (stdenv.hostPlatform) system; };
-        nixopsUnstable = (import inputs.nixops { inherit (final) pkgs; inherit (inputs) nixpkgs; })
-          .overrideAttrs (_: { postInstall = ""; });
-        nix-linter = (import inputs.nix-linter { args = { inherit (stdenv.hostPlatform) system; }; })
-          .nix-linter;
+        nixopsUnstable =
+          (import inputs.nixops { inherit (final) pkgs;inherit (inputs) nixpkgs; }).overrideAttrs (_: { postInstall = ""; });
+        nix-linter = (import inputs.nix-linter { args = { inherit (stdenv.hostPlatform) system; }; }).nix-linter;
 
         clight-modules = callPackage ./pkgs/clight-modules { };
 
