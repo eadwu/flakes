@@ -12,6 +12,6 @@
   in
   _foldl' (f: f.outputs)
   // {
-    overlays = system: self: super: _foldl' (f: f.overlays system self super);
+    overlay = final: prev: _foldl' (f: f.overlay final prev);
   };
 }
