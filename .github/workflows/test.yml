@@ -18,6 +18,7 @@ jobs:
           - nixopsUnstable
           - nix-linter
           - picom
+          - radian
           - linux_custom
 
     steps:
