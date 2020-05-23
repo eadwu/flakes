@@ -16,7 +16,7 @@
       forAllSystems = f: lib.genAttrs systems (system: f system);
     in
     rec {
-      overlays = system: self: super: lib.genAttrs
+      overlays = system: final: prev: lib.genAttrs
         (builtins.attrNames (packages.${system}))
         (package: packages.${system}.${package});
 
@@ -48,7 +48,7 @@
             picom = callPackage ./pkgs/picom { };
 
             radian = let
-              packageOverrides = self: super: {
+              packageOverrides = final: prev: {
                 lineedit = self.callPackage ./pkgs/lineedit { };
                 rchitect = self.callPackage ./pkgs/rchitect { };
                 radian = self.callPackage ./pkgs/radian { };
