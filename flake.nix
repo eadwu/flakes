@@ -66,7 +66,7 @@
           in
           python.pkgs.radian;
 
-        plymouth-themes = import inputs.plymouth-themes { inherit (self) pkgs; };
+        plymouth-themes = import inputs.plymouth-themes { inherit (final) pkgs; };
         dual-plymouth-theme = callPackage ./pkgs/dual-plymouth-theme {
           inherit (plymouth-themes) mkTheme;
           boot = plymouth-themes."1891042977";
@@ -103,15 +103,27 @@
         linux_custom = linuxPackages_custom.kernel;
       };
 
-      packages = forAllSystems (system: {
-        inherit (nixpkgsFor.${system})
-          liberation-mono
-          boxpub cachix nixopsUnstable nix-linter
-          clight-modules i3lock-color picom radian
-          plymouth-themes dual-plymouth-theme
-          linuxPackages_custom linux_custom
-          ;
-      });
+      packages = forAllSystems (system:
+        let
+          pkgSet = nixpkgsFor.${system};
+        in
+        {
+          inherit (pkgSet)
+            liberation-mono
+            boxpub cachix nixopsUnstable nix-linter
+            i3lock-color picom radian
+            dual-plymouth-theme
+            linux_custom
+            ;
+
+          inherit (pkgSet.clight-modules)
+            inhibit_bl
+            ;
+
+          inherit (pkgSet.plymouth-themes)
+            geshin-impact-start
+            ;
+        });
 
       checks = forAllSystems (system: self.packages.${system});
 
