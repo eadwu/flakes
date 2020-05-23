@@ -36,15 +36,19 @@
         gtk-theme-collections = callPackage ./pkgs/gtk-theme-collections { };
       };
 
-      packages = forAllSystems (system: {
-        inherit (nixpkgsFor.${system})
-          rustChannels rustPlatform
+      packages = forAllSystems (system: let
+        pkgSet = nixpkgsFor.${system};
+        rustPkgSet = channel: { inherit (channel) rust rustcSrc; };
+      in {
+        inherit (pkgSet)
           dwm st
           discord-canary vivaldi-snapshot
           vscode-insiders vscode-insiders-with-extensions
           rofi-unwrapped rofi
           gtk-theme-collections
           ;
+
+        inherit (rustPkgSet pkgSet.rustChannels.latest.nightly) rust rustcSrc;
       });
 
       checks = forAllSystems (system: self.packages.${system});
