@@ -94,6 +94,8 @@
             kernelPatches.xanmod
             kernelPatches.zen-zswap
             kernelPatches.enable-fsgsbase-instructions
+            kernelPatches.fix-enable-pcie-aspm
+            kernelPatches.dptf-improvements
             kernelPatches.extra_config
           ];
           modDirVersionArg = kernel.modDirVersion;

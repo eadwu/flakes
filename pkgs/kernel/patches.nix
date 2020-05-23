@@ -83,10 +83,22 @@ with lib.kernel;
       patch = ./enable-fsgsbase-instructions.patch.xz;
     };
 
+  fix-enable-pcie-aspm =
+    {
+      name = "fix-enable-pcie-aspm";
+      patch = ./fix-enable-pcie-aspm.patch.xz;
+    };
+
+  dptf-improvements =
+    {
+      name = "dptf-improvements";
+      patch = ./dptf-improvements.patch.xz;
+    };
+
   extra_config =
     {
       name = "extra-config";
-      patch = ./fix-enable-pcie-aspm.patch.xz;
+      patch = null;
       extraStructuredConfig = {
         # Make sure these are enabled, needed by a variety of things such as cryptsetup
         AIO = yes;
