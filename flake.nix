@@ -9,9 +9,11 @@
     in
     {
       overlay = final: prev: with final.pkgs; {
-        rustChannels = let
-          nixpkgs-mozilla = import nixpkgs { inherit (stdenv.hostPlatform) system; overlays = [ (import (import ./overlays/rust)) ]; };
-        in import ./overlays/rust/channels.nix { inherit nixpkgs-mozilla; };
+        rustChannels =
+          let
+            nixpkgs-mozilla = import nixpkgs { inherit (stdenv.hostPlatform) system; overlays = [ (import (import ./overlays/rust)) ]; };
+          in
+          import ./overlays/rust/channels.nix { inherit nixpkgs-mozilla; };
         rustPlatform = rustChannels.latest.nightly;
 
         dwm = callPackage ./pkgs/dwm { inherit (prev) dwm; };

@@ -6,7 +6,8 @@ let
   spec = genAttrs channels (channel: parse (./latest + "/${channel}.json"));
 in
 with nixpkgs-mozilla;
-genAttrs channels
+genAttrs
+  channels
   (
     channel:
     let
