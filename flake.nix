@@ -3,50 +3,48 @@
 
   outputs = { self, nixpkgs }:
     let
-      lib = nixpkgs.lib;
-      systems = [ "x86_64-linux" ];
-      forAllSystems = f: lib.genAttrs systems (system: f system);
+      supportedSystems = [ "x86_64-linux" ];
+      forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
+      nixpkgsFor = forAllSystems (system: import nixpkgs { inherit system; overlays = [ self.overlay ]; config.allowUnfree = true; });
     in
-    rec {
-      overlays = system: self: super: lib.genAttrs (builtins.attrNames (packages.${system}))
-        (package: packages.${system}.${package});
+    {
+      overlay = final: prev: with final.pkgs; {
+        rustChannels = let
+          nixpkgs-mozilla = import nixpkgs { inherit (stdenv.hostPlatform) system; overlays = [ (import (import ./overlays/rust)) ]; };
+        in import ./overlays/rust/channels.nix { inherit nixpkgs-mozilla; };
+        rustPlatform = rustChannels.latest.nightly;
 
-      packages = forAllSystems
-        (
-          system:
-          let
-            args = {
-              inherit system;
-              config.allowUnfree = true;
-            };
-            pkgs = import nixpkgs args;
-            inherit (pkgs) callPackage;
-          in
-          rec {
-            nixpkgs-mozilla = (
-              import nixpkgs (args // { overlays = [ (import (import ./overlays/rust)) ]; })
-            );
-            rustChannels = import ./overlays/rust/channels.nix { inherit nixpkgs-mozilla; };
-            rustPlatform = rustChannels.latest.nightly;
+        dwm = callPackage ./pkgs/dwm { inherit (prev) dwm; };
+        st = callPackage ./pkgs/st { inherit (prev) st; };
 
-            dwm = callPackage ./pkgs/dwm { };
-            st = callPackage ./pkgs/st { };
+        discord-canary = callPackage ./pkgs/discord-canary { inherit (prev) discord-canary; };
+        vivaldi-snapshot = callPackage ./pkgs/vivaldi-snapshot { inherit (prev) vivaldi; };
 
-            discord-canary = callPackage ./pkgs/discord-canary { };
-            vivaldi-snapshot = callPackage ./pkgs/vivaldi-snapshot { };
+        vscode-insiders = callPackage ./pkgs/vscode-insiders { inherit (prev) vscode; };
+        vscode-insiders-with-extensions = prev.vscode-with-extensions.override {
+          vscode = vscode-insiders;
+        };
 
-            vscode-insiders = callPackage ./pkgs/vscode-insiders { };
-            vscode-insiders-with-extensions = pkgs.vscode-with-extensions.override {
-              vscode = vscode-insiders;
-            };
+        rofi-unwrapped = callPackage ./pkgs/rofi-unwrapped {
+          inherit (xorg) libxcb xcbutil xcbutilwm;
+          inherit (prev) rofi-unwrapped;
+        };
+        rofi = prev.rofi.override { inherit rofi-unwrapped; };
 
-            rofi-unwrapped = callPackage ./pkgs/rofi-unwrapped {
-              inherit (pkgs.xorg) libxcb xcbutil xcbutilwm;
-            };
-            rofi = pkgs.rofi.override { inherit rofi-unwrapped; };
+        gtk-theme-collections = callPackage ./pkgs/gtk-theme-collections { };
+      };
 
-            gtk-theme-collections = callPackage ./pkgs/gtk-theme-collections { };
-          }
-        );
+      packages = forAllSystems (system: {
+        inherit (nixpkgsFor.${system})
+          rustChannels rustPlatform
+          dwm st
+          discord-canary vivaldi-snapshot
+          vscode-insiders vscode-insiders-with-extensions
+          rofi-unwrapped rofi
+          gtk-theme-collections
+          ;
+      });
+
+      checks = forAllSystems (system: self.packages.${system});
     };
 }
