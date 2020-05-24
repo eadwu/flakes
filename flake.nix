@@ -96,7 +96,7 @@
             kernelPatches.enable-fsgsbase-instructions
             kernelPatches.fix-enable-pcie-aspm
             kernelPatches.dptf-improvements
-            kernelPatches.extra_config
+            kernelPatches.extra-config
           ];
           modDirVersionArg = kernel.modDirVersion;
         });

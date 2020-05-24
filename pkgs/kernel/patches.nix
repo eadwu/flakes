@@ -95,7 +95,7 @@ with lib.kernel;
       patch = ./dptf-improvements.patch.xz;
     };
 
-  extra_config =
+  extra-config =
     {
       name = "extra-config";
       patch = null;
