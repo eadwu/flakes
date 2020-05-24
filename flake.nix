@@ -41,14 +41,13 @@
         rustPkgSet = channel: { inherit (channel) rust rustcSrc; };
       in {
         inherit (pkgSet)
+          rustChannels rustPlatform
           dwm st
           discord-canary vivaldi-snapshot
           vscode-insiders vscode-insiders-with-extensions
           rofi-unwrapped rofi
           gtk-theme-collections
           ;
-
-        inherit (rustPkgSet pkgSet.rustChannels.latest.nightly) rust rustcSrc;
       });
 
       checks = forAllSystems (system: self.packages.${system});
