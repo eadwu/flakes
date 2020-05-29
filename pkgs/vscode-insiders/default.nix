@@ -7,11 +7,11 @@
 ).overrideAttrs (
   _: rec {
     pname = "vscode-insiders";
-    version = "1590695235";
+    version = "1590731591";
 
     src = fetchurl {
-      url = "https://az764295.vo.msecnd.net/insider/9e439b13d5784538333bee044ca1d1a992bc1c90/code-insider-1590695235.tar.gz";
-      sha256 = "02bsacykx967r49fwz98g8yd0f8bc0kwiml1d2p3pna1xpb1hsdy";
+      url = "https://az764295.vo.msecnd.net/insider/cd41dd1f6065db76c77c6e2f659bb50e6f558dec/code-insider-1590731591.tar.gz";
+      sha256 = "1a93i3nm34cv9ysbffmdrlrp30ylxkz8l6wppkmq91db66r9ninf";
     };
   }
 )
