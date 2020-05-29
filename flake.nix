@@ -90,7 +90,6 @@
           kernelPatches = kernel.kernelPatches
             ++ [
             kernelPatches.o3
-            kernelPatches.bmq
             kernelPatches.xanmod
             kernelPatches.zen-zswap
             kernelPatches.enable-fsgsbase-instructions
