@@ -53,21 +53,6 @@ with lib.kernel;
       };
     };
 
-  zen-zswap =
-    {
-      name = "zen-zswap";
-      patch = ./zen-zswap.patch.xz;
-      extraStructuredConfig = with lib.kernel; {
-        # Make sure Zen adjustments are applied
-        ZEN_INTERACTIVE = yes;
-
-        # Don't compile as modules since zswap starts before modules are loaded
-        CRYPTO_LZ4 = yes;
-        LZ4_COMPRESS = yes;
-        Z3FOLD = yes;
-      };
-    };
-
   enable-fsgsbase-instructions =
     {
       name = "enable-fsgsbase-instructions";
@@ -100,6 +85,20 @@ with lib.kernel;
 
         # Disable old sysfs interface for UEFI Runtime Variables Support
         EFI_VARS = no;
+
+        ## Zswap
+        ZSWAP_COMPRESSOR_DEFAULT_LZ4 = yes;
+        ZSWAP_COMPRESSOR_DEFAULT = freeform "lz4";
+
+        ZSWAP_DEFAULT_ON = yes;
+
+        ZSWAP_ZPOOL_DEFAULT_Z3FOLD = yes;
+        ZSWAP_ZPOOL_DEFAULT = freeform "z3fold";
+
+        # Don't compile as modules since zswap starts before modules are loaded
+        CRYPTO_LZ4 = yes;
+        LZ4_COMPRESS = yes;
+        Z3FOLD = yes;
 
         ## Lockdown
         SECURITY_LOCKDOWN_LSM = yes;

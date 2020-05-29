@@ -91,7 +91,6 @@
             ++ [
             kernelPatches.o3
             kernelPatches.xanmod
-            kernelPatches.zen-zswap
             kernelPatches.enable-fsgsbase-instructions
             kernelPatches.fix-enable-pcie-aspm
             kernelPatches.dptf-improvements
