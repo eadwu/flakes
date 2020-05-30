@@ -53,6 +53,13 @@ with lib.kernel;
       };
     };
 
+  zen-tweaks =
+    {
+      name = "zen-tweaks";
+      patch = ./zen-tweaks.patch.xz;
+      extraStructuredConfig.ZEN_INTERACTIVE = yes;
+    };
+
   enable-fsgsbase-instructions =
     {
       name = "enable-fsgsbase-instructions";
