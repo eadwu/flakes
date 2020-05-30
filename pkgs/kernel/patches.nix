@@ -89,8 +89,8 @@ with lib.kernel;
         # Enable TEO cpuidle governor
         CPU_IDLE_GOV_TEO = yes;
 
-        # Disable old sysfs interface for UEFI Runtime Variables Support
-        EFI_VARS = no;
+        # Enable thermal "pressure" support for the scheduler
+        SCHED_THERMAL_PRESSURE = yes;
 
         ## Zswap
         ZSWAP_COMPRESSOR_DEFAULT_LZ4 = yes;
