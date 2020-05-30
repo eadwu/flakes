@@ -86,6 +86,12 @@ with lib.kernel;
         # Disable old sysfs interface for UEFI Runtime Variables Support
         EFI_VARS = no;
 
+        # Enable TEO cpuidle governor
+        CPU_IDLE_GOV_TEO = yes;
+
+        # Disable old sysfs interface for UEFI Runtime Variables Support
+        EFI_VARS = no;
+
         ## Zswap
         ZSWAP_COMPRESSOR_DEFAULT_LZ4 = yes;
         ZSWAP_COMPRESSOR_DEFAULT = freeform "lz4";
