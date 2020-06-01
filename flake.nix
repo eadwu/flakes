@@ -78,8 +78,7 @@
             PREEMPT = yes;
             PREEMPT_VOLUNTARY = option no;
           };
-          kernelPatches = kernel.kernelPatches
-            ++ [
+          kernelPatches = kernel.kernelPatches ++ [
             kernelPatches.rt
           ];
           modDirVersionArg = kernel.modDirVersion;
@@ -87,8 +86,7 @@
 
         customLinuxPackagesFor = kernel: linuxPackagesFor (kernel.override {
           structuredExtraConfig = { };
-          kernelPatches = kernel.kernelPatches
-            ++ [
+          kernelPatches = kernel.kernelPatches ++ [
             kernelPatches.o3
             kernelPatches.xanmod
             kernelPatches.zen-tweaks
