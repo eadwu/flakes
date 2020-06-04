@@ -20,7 +20,10 @@ with lib.kernel;
     {
       name = "realtime";
       patch = null;
-      extraStructuredConfig.PREEMPT = yes;
+      extraStructuredConfig = {
+        PREEMPT = yes;
+        IRQ_FORCED_THREADING = yes;
+      };
       extraConfig = ''
         PREEMPT_VOLUNTARY n
       '';
