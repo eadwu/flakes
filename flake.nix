@@ -128,6 +128,7 @@
 
       nixosModules = {
         apropos = import ./modules/apropos.nix;
+        pipewire = import ./modules/pipewire.nix;
         sourcehut = import ./modules/sourcehut;
         pam-keyring = import ./modules/pam-keyring.nix;
       };
