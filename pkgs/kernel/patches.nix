@@ -50,7 +50,7 @@ in {
 
         # Timer
         HZ_100 = yes;
-        HZ_1000 = no;
+        HZ_1000 = mkForce no;
         HZ = freeform "100";
       };
     };
@@ -90,10 +90,10 @@ in {
         DEVMEM = yes;
 
         # Disable amateur radio support
-        HAMRADIO = no;
+        HAMRADIO = mkForce no;
 
         # Disable old sysfs interface for UEFI Runtime Variables Support
-        EFI_VARS = no;
+        EFI_VARS = mkForce no;
 
         # Enable TEO cpuidle governor
         CPU_IDLE_GOV_TEO = yes;
@@ -128,10 +128,10 @@ in {
         INIT_ON_FREE_DEFAULT_ON = yes;
 
         # Dangerous; enabling this allows replacement of running kernel.
-        KEXEC = no;
+        KEXEC = mkForce no;
 
         # Dangerous; enabling this allows replacement of running kernel.
-        HIBERNATION = no;
+        HIBERNATION = mkForce no;
 
         # But if CONFIG_MODULE=y is needed, at least they must be signed with a per-build key.
         MODULE_SIG = yes;
@@ -142,7 +142,7 @@ in {
         MODULE_SIG_KEY = freeform "certs/signing_key.pem";
 
         # Remove additional attack surface, unless you really need them.
-        # IA32_EMULATION = no;
+        # IA32_EMULATION = mkForce no;
 
         # Easily confused by misconfigured userspace, keep off.
         BINFMT_MISC = mkForce no;
