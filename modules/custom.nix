@@ -23,5 +23,7 @@ with lib;
         item = "memlock";
         value = "unlimited"; }
     ];
+
+    services.irqbalance.enable = lib.mkForce false;
   };
 }
