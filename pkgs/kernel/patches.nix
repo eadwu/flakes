@@ -2,18 +2,19 @@
 
 with lib.kernel;
 
-{
+let
+  # lower than mkForce(50) to enforce changes
+  mkForce = lib.mkOverride 36;
+in {
   bcachefs =
     {
       name = "bcachefs";
       patch = ./bcachefs.patch.xz;
       extraStructuredConfig = {
         BCACHEFS_FS = module;
-      };
-      extraConfig = ''
         # https://bugzilla.redhat.com/show_bug.cgi?id=1615258
-        DEBUG_SG n
-      '';
+        DEBUG_SG = mkForce no;
+      };
     };
 
   rt =
@@ -22,11 +23,9 @@ with lib.kernel;
       patch = null;
       extraStructuredConfig = {
         PREEMPT = yes;
+        PREEMPT_VOLUNTARY = mkForce no;
         IRQ_FORCED_THREADING = yes;
       };
-      extraConfig = ''
-        PREEMPT_VOLUNTARY n
-      '';
     };
 
   o3 =
@@ -144,10 +143,9 @@ with lib.kernel;
 
         # Remove additional attack surface, unless you really need them.
         # IA32_EMULATION = no;
-      };
-      extraConfig = ''
+
         # Easily confused by misconfigured userspace, keep off.
-        BINFMT_MISC n
-      '';
+        BINFMT_MISC = mkForce no;
+      };
     };
 }
