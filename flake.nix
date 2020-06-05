@@ -74,17 +74,20 @@
         };
 
         rtLinuxPackagesFor = kernel: linuxPackagesFor (kernel.override {
-          structuredExtraConfig = with nixpkgs.lib; with kernel; {
-            PREEMPT = yes;
-            PREEMPT_VOLUNTARY = mkOverride 36 no;
-            IRQ_FORCED_THREADING = yes;
-          };
+          structuredExtraConfig = with nixpkgs.lib;
+            (mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings)
+            // (with nixpkgs.lib.kernel; {
+              PREEMPT = yes;
+              PREEMPT_VOLUNTARY = mkOverride 36 no;
+              IRQ_FORCED_THREADING = yes;
+            });
           kernelPatches = kernel.kernelPatches;
           modDirVersionArg = kernel.modDirVersion;
         });
 
         customLinuxPackagesFor = kernel: linuxPackagesFor (kernel.override {
-          structuredExtraConfig = { };
+          structuredExtraConfig = with nixpkgs.lib;
+            mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings;
           kernelPatches = kernel.kernelPatches ++ [
             kernelPatches.o3
             kernelPatches.xanmod
