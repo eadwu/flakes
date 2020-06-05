@@ -40,18 +40,14 @@
 
         picom = prev.picom.overrideAttrs (
           oldAttrs: {
-            version = "2020-04-24";
+            version = "2020-04-25";
 
             src = fetchFromGitHub {
-              owner = "yshui";
+              owner = "tryone144";
               repo = "picom";
-              rev = "0b377537ec9c3f6faaa13878701d8d0b2ee62d0c";
-              sha256 = "0z4iw2ypi3r4hrqxci9yi46acfpc7q35b0srlbrba4wznpfziagm";
-              fetchSubmodules = true;
+              rev = "9b4a6f062758f1f9a66d4e77d16c86c9aa259b42";
+              sha256 = "0jf1lih85d07q1kw1v3sa4azjyf33b61kkxjakb2l6zi8fcxf4s9";
             };
-
-            patches = (oldAttrs.patches or [ ])
-              ++ [ ./pkgs/picom/dual_kawase.patch.xz ];
           }
         );
 
