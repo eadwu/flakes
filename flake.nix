@@ -129,6 +129,7 @@
       checks = forAllSystems (system: self.packages.${system});
 
       nixosModules = {
+        r-36 = import ./modules/r-36.nix;
         custom = import ./modules/custom.nix;
         apropos = import ./modules/apropos.nix;
         pipewire = import ./modules/pipewire.nix;

@@ -3,6 +3,11 @@
 with lib;
 
 {
+  imports =
+    [
+      ./r-36.nix
+    ];
+
   config = {
     boot.kernelPackages = pkgs.linuxPackages_custom;
 
