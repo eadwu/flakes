@@ -17,17 +17,6 @@ in {
       };
     };
 
-  rt =
-    {
-      name = "realtime";
-      patch = null;
-      extraStructuredConfig = {
-        PREEMPT = yes;
-        PREEMPT_VOLUNTARY = mkForce no;
-        IRQ_FORCED_THREADING = yes;
-      };
-    };
-
   o3 =
     {
       name = "optimize-o3";

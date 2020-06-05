@@ -74,13 +74,12 @@
         };
 
         rtLinuxPackagesFor = kernel: linuxPackagesFor (kernel.override {
-          structuredExtraConfig = with nixpkgs.lib.kernel; {
+          structuredExtraConfig = with nixpkgs.lib; with kernel; {
             PREEMPT = yes;
-            PREEMPT_VOLUNTARY = option no;
+            PREEMPT_VOLUNTARY = mkOverride 36 no;
+            IRQ_FORCED_THREADING = yes;
           };
-          kernelPatches = kernel.kernelPatches ++ [
-            kernelPatches.rt
-          ];
+          kernelPatches = kernel.kernelPatches;
           modDirVersionArg = kernel.modDirVersion;
         });
 
