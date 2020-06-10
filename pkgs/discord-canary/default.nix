@@ -1,5 +1,7 @@
-{ fetchurl, discord-canary
-, autoPatchelfHook, atomEnv
+{ fetchurl
+, discord-canary
+, autoPatchelfHook
+, atomEnv
 }:
 
 discord-canary.overrideAttrs (
