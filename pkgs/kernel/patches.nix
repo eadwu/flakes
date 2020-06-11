@@ -77,6 +77,9 @@ in {
         # Make sure these are enabled, needed by a variety of things such as cryptsetup
         AIO = yes;
         DEVMEM = yes;
+        # Harden /dev/mem since DEVMEM is needed
+        STRICT_DEVMEM = yes;
+        IO_STRICT_DEVMEM = yes;
 
         # Disable amateur radio support
         HAMRADIO = mkForce no;
