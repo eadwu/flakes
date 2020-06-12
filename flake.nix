@@ -5,11 +5,11 @@
 
   inputs.boxpub = { type = "github"; owner = "eadwu"; repo = "boxpub"; ref = "boxpub/2.x"; flake = false; };
   inputs.cachix = { type = "github"; owner = "eadwu"; repo = "cachix"; flake = false; };
-  inputs.nixops = { type = "github"; owner = "NixOS"; repo = "nixops"; flake = false; };
+  inputs.nixops = { type = "github"; owner = "NixOS"; repo = "nixops"; };
   inputs.nix-linter = { type = "github"; owner = "eadwu"; repo = "nix-linter"; flake = false; };
   inputs.plymouth-themes = { type = "github"; owner = "eadwu"; repo = "plymouth-themes"; flake = false; };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, nixops, ... }@inputs:
     let
       supportedSystems = [ "x86_64-linux" ];
       forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
@@ -23,8 +23,7 @@
 
         boxpub = import inputs.boxpub { inherit (stdenv.hostPlatform) system; };
         cachix = import inputs.cachix { inherit (stdenv.hostPlatform) system; };
-        nixopsUnstable =
-          (import inputs.nixops { inherit (final) pkgs;inherit (inputs) nixpkgs; }).overrideAttrs (_: { postInstall = ""; });
+        nixopsUnstable = nixops.defaultPackage.${system};
         nix-linter = (import inputs.nix-linter { args = { inherit (stdenv.hostPlatform) system; }; }).nix-linter;
 
         clight-modules = callPackage ./pkgs/clight-modules { };
