@@ -88,7 +88,6 @@
             kernelPatches.xanmod
             kernelPatches.zen-tweaks
             kernelPatches.enable-fsgsbase-instructions
-            kernelPatches.fix-enable-pcie-aspm
             kernelPatches.dptf-improvements
             kernelPatches.extra-config
           ];

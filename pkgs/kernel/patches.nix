@@ -57,12 +57,6 @@ in {
       patch = ./enable-fsgsbase-instructions.patch.xz;
     };
 
-  fix-enable-pcie-aspm =
-    {
-      name = "fix-enable-pcie-aspm";
-      patch = ./fix-enable-pcie-aspm.patch.xz;
-    };
-
   dptf-improvements =
     {
       name = "dptf-improvements";
