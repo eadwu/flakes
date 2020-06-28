@@ -132,6 +132,9 @@ in {
 
         # Easily confused by misconfigured userspace, keep off.
         BINFMT_MISC = mkForce no;
+
+        ## LKRG
+        KALLSYMS_ALL = yes;
       };
     };
 }
