@@ -87,6 +87,11 @@ in {
         # Enable thermal "pressure" support for the scheduler
         SCHED_THERMAL_PRESSURE = yes;
 
+        ## CPUFreq
+        CPU_FREQ_GOV_PERFORMANCE = yes;
+        CPU_FREQ_GOV_POWERSAVE = yes;
+        CPU_FREQ_GOV_SCHEDUTIL = mkForce yes;
+
         ## Zswap
         ZSWAP_COMPRESSOR_DEFAULT_LZ4 = yes;
         ZSWAP_COMPRESSOR_DEFAULT = freeform "lz4";
