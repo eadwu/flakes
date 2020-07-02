@@ -92,6 +92,10 @@ in {
         CPU_FREQ_GOV_POWERSAVE = yes;
         CPU_FREQ_GOV_SCHEDUTIL = mkForce yes;
 
+        ## Zram
+        CRYPTO_ZSTD = yes;
+        ZSTD_COMPRESS = yes;
+
         ## Zswap
         ZSWAP_COMPRESSOR_DEFAULT_LZ4 = yes;
         ZSWAP_COMPRESSOR_DEFAULT = freeform "lz4";
