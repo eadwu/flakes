@@ -32,9 +32,10 @@ jobs:
         with:
           ref: custom
           fetch-depth: 0
-      - uses: cachix/install-nix-action@v9
+      - uses: cachix/install-nix-action@v10
+        with:
+          nix_path: nixpkgs=https://github.com/NixOS/nixpkgs/archive/master.tar.gz
       - name: Building ${{ matrix.package }}
         run: |
-          nix-shell -I "nixpkgs=https://github.com/NixOS/nixpkgs/archive/master.tar.gz" -p nixFlakes \
-            --run 'nix --experimental-features "flakes nix-command" build \
-              --print-build-logs --recreate-lock-file "$(pwd)#packages.x86_64-linux.${{ matrix.package }}"'
+          nix-shell -p nixFlakes --run 'nix --experimental-features "flakes nix-command" build \
+            --print-build-logs --recreate-lock-file "$(pwd)#packages.x86_64-linux.${{ matrix.package }}"'
