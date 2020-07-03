@@ -14,9 +14,9 @@ jobs:
         with:
           ref: rolling
           fetch-depth: 0
-      - uses: Gerschtli/install-nix-action@ddf1cd2bc500fec5a443c8858214d79545cc5e2d
+      - uses: cachix/install-nix-action@v10
         with:
-          NIX_PATH: "nixpkgs=https://github.com/NixOS/nixpkgs/archive/master.tar.gz"
+          nix_path: nixpkgs=https://github.com/NixOS/nixpkgs/archive/master.tar.gz
       - name: Setup config
         run: |
           mkdir -p ~/.config/nix
@@ -56,9 +56,9 @@ jobs:
         with:
           ref: rolling
           fetch-depth: 0
-      - uses: Gerschtli/install-nix-action@ddf1cd2bc500fec5a443c8858214d79545cc5e2d
+      - uses: cachix/install-nix-action@v10
         with:
-          NIX_PATH: "nixpkgs=https://github.com/NixOS/nixpkgs/archive/master.tar.gz"
+          nix_path: nixpkgs=https://github.com/NixOS/nixpkgs/archive/master.tar.gz
       - uses: cachix/cachix-action@v6
         with:
           name: rolling
