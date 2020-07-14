@@ -1,0 +1,29 @@
+name: rolling flakes
+
+on:
+  push:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: rolling
+          fetch-depth: 0
+      - uses: cachix/install-nix-action@v10
+        with:
+          nix_path: nixpkgs=https://github.com/NixOS/nixpkgs/archive/master.tar.gz
+      - name: Setup config
+        run: |
+          mkdir -p ~/.config/nix
+          git config user.name actions
+          git config user.email "actions@eadwu.flakes"
+          echo "experimental-features = flakes nix-command" >> ~/.config/nix/nix.conf
+      - name: Run update script
+        run: |
+            ./update.sh
+            git push origin rolling
