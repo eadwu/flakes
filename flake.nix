@@ -125,7 +125,6 @@
       nixosModules = {
         r-36 = import ./modules/r-36.nix;
         custom = import ./modules/custom.nix;
-        apropos = import ./modules/apropos.nix;
         pipewire = import ./modules/pipewire.nix;
         sourcehut = import ./modules/sourcehut;
         pam-keyring = import ./modules/pam-keyring.nix;
