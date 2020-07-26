@@ -31,6 +31,11 @@ in {
       name = "xanmod";
       patch = ./xanmod.patch.xz;
       extraStructuredConfig = {
+        # Kernel compression algorithm
+        KERNEL_XZ = mkForce no;
+        KERNEL_LZ4 = mkForce no;
+        KERNEL_ZSTD = mkForce yes;
+
         # RCU
         RCU_EXPERT = yes;
         RCU_BOOST = yes;
