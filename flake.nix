@@ -87,6 +87,7 @@
             kernelPatches.o3
             kernelPatches.xanmod
             kernelPatches.zen-tweaks
+            kernelPatches.intel-pstate-energy-efficiency
             kernelPatches.enable-fsgsbase-instructions
             kernelPatches.dptf-improvements
             kernelPatches.extra-config
