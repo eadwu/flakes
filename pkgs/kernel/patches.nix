@@ -68,12 +68,6 @@ in {
       patch = ./enable-fsgsbase-instructions.patch.xz;
     };
 
-  dptf-improvements =
-    {
-      name = "dptf-improvements";
-      patch = ./dptf-improvements.patch.xz;
-    };
-
   extra-config =
     {
       name = "extra-config";
