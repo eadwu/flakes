@@ -62,12 +62,6 @@ in {
       patch = ./intel-pstate-energy-efficiency.patch.xz;
     };
 
-  enable-fsgsbase-instructions =
-    {
-      name = "enable-fsgsbase-instructions";
-      patch = ./enable-fsgsbase-instructions.patch.xz;
-    };
-
   extra-config =
     {
       name = "extra-config";

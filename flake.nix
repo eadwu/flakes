@@ -88,7 +88,6 @@
             kernelPatches.xanmod
             kernelPatches.zen-tweaks
             kernelPatches.intel-pstate-energy-efficiency
-            kernelPatches.enable-fsgsbase-instructions
             kernelPatches.extra-config
           ];
           modDirVersionArg = kernel.modDirVersion;
