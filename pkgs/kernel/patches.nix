@@ -26,6 +26,15 @@ in {
       };
     };
 
+  bmq =
+    {
+      name = "bmq";
+      patch = ./bmq.patch.xz;
+      extraStructuredConfig = {
+        SCHED_BMQ = yes;
+      };
+    };
+
   xanmod =
     {
       name = "xanmod";
