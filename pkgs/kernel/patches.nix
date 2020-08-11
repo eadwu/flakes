@@ -26,10 +26,10 @@ in {
       };
     };
 
-  bmq =
+  prjc =
     {
-      name = "bmq";
-      patch = ./bmq.patch.xz;
+      name = "prjc";
+      patch = ./prjc.patch.xz;
       extraStructuredConfig = {
         SCHED_BMQ = yes;
       };

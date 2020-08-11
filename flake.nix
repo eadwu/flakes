@@ -85,7 +85,7 @@
             mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings;
           kernelPatches = kernel.kernelPatches ++ [
             kernelPatches.o3
-            kernelPatches.bmq
+            kernelPatches.prjc
             kernelPatches.xanmod
             kernelPatches.zen-tweaks
             kernelPatches.intel-pstate-energy-efficiency
