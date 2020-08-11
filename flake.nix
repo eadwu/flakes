@@ -27,12 +27,6 @@
           vscode = vscode-insiders;
         };
 
-        rofi-unwrapped = callPackage ./pkgs/rofi-unwrapped {
-          inherit (xorg) libxcb xcbutil xcbutilwm;
-          inherit (prev) rofi-unwrapped;
-        };
-        rofi = prev.rofi.override { inherit rofi-unwrapped; };
-
         gtk-theme-collections = callPackage ./pkgs/gtk-theme-collections { };
       };
 
@@ -47,7 +41,6 @@
             dwm st
             discord-canary vivaldi-snapshot
             vscode-insiders vscode-insiders-with-extensions
-            rofi-unwrapped rofi
             gtk-theme-collections
             ;
         });
