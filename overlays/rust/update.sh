@@ -6,22 +6,6 @@ root="$(readlink -f "$current_dir/../..")"
 
 tmpdir="$(mktemp -d)"
 
-src_url="$(jq -r '.url' "$current_dir/source.json")"
-old_rev="$(jq -r '.rev' "$current_dir/source.json")"
-old_date="$(jq -r '.date' "$current_dir/source.json")"
-
-nix-prefetch-git --quiet "$src_url" --rev refs/heads/master > "$tmpdir/source.json"
-new_rev="$(jq -r '.rev' "$tmpdir/source.json")"
-new_date="$(jq -r '.date' "$tmpdir/source.json")"
-
-if [ "$old_rev" != "$new_rev" ]; then
-  rm "$current_dir/source.json"
-  mv "$tmpdir/source.json" "$current_dir/source.json"
-
-  git add "$current_dir/source.json"
-  git commit -m "rust/nixpkgs-mozilla: $old_date -> $new_date"
-fi
-
 get_date() {
   local channel="$1"
   curl --silent "https://static.rust-lang.org/dist/channel-rust-$channel.toml" | \
