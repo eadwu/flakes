@@ -142,7 +142,7 @@ in {
 
         # But if CONFIG_MODULE=y is needed, at least they must be signed with a per-build key.
         MODULE_SIG = yes;
-        MODULE_SIG_FORCE = yes;
+        # MODULE_SIG_FORCE = yes;
         MODULE_SIG_ALL = yes;
         MODULE_SIG_SHA512 = yes;
         MODULE_SIG_HASH = freeform "sha512";
