@@ -3,7 +3,7 @@
 with lib.kernel;
 
 let
-  # lower than mkForce(50) to enforce changes
+  # lower than lib.mkForce (50) to enforce changes
   mkForce = lib.mkOverride 36;
 in {
   bcachefs =
