@@ -93,7 +93,7 @@
           modDirVersionArg = kernel.modDirVersion;
         });
 
-        linuxPackages_custom = customLinuxPackagesFor (rtLinuxPackagesFor linux_latest_hardened).kernel;
+        linuxPackages_custom = customLinuxPackagesFor (rtLinuxPackagesFor linux_latest).kernel;
         linux_custom = linuxPackages_custom.kernel;
       };
 
