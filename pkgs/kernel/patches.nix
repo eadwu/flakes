@@ -69,12 +69,6 @@ in {
       extraStructuredConfig.ZEN_INTERACTIVE = yes;
     };
 
-  intel-pstate-energy-efficiency =
-    {
-      name = "intel-pstate-energy-efficiency";
-      patch = ./intel-pstate-energy-efficiency.patch.xz;
-    };
-
   extra-config =
     {
       name = "extra-config";

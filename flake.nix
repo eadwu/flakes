@@ -88,7 +88,6 @@
             kernelPatches.prjc
             kernelPatches.xanmod
             kernelPatches.zen-tweaks
-            kernelPatches.intel-pstate-energy-efficiency
             kernelPatches.extra-config
           ];
           modDirVersionArg = kernel.modDirVersion;
