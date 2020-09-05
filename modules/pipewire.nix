@@ -39,50 +39,12 @@ in {
       (final: prev:
         with final;
         {
-
           pipewire = prev.pipewire.overrideAttrs (oldAttrs: {
-            postPatch = (oldAttrs.postPatch or "") + ''
-              sed -i 's@PIPEWIRE_CONFIG_DIR.*@\"/etc/pipewire/pipewire.conf\"@' src/daemon/daemon-config.c
-            '';
-
-            buildInputs = (oldAttrs.buildInputs or []) ++ [
-              xmltoman
-            ];
-
             mesonFlags = (oldAttrs.mesonFlags or []) ++ [
-              "-Ddocs=true"
-
               "-Dlibjack-path=${placeholder "lib"}/lib"
               "-Dlibpulse-path=${placeholder "lib"}/lib"
-
-              "-Daudiotestsrc=true"
-              "-Dffmpeg=true"
-              "-Dtest=true"
-              "-Dvideotestsrc=true"
-              "-Dvolume=true"
             ];
           });
-
-          xmltoman = stdenv.mkDerivation rec {
-            pname = "xmltoman";
-            version = "0.4";
-
-            src = fetchurl {
-              url = "https://downloads.sourceforge.net/project/${pname}/${pname}/${pname}-${version}.tar.gz/${pname}-${version}.tar.gz";
-              sha256 = "1c0lvzr7kdy63wbn1jv6s126ds7add3pxqb0vlxd3v5a2sir91wl";
-            };
-
-            postPatch = ''
-              patchShebangs xmltoman
-            '';
-
-            buildInputs = [ perlPackages.perl perlPackages.XMLParser ];
-
-            makeFlags = [
-              "PREFIX=${placeholder "out"}"
-            ];
-          };
-
         })
     ];
   };
