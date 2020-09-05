@@ -5,13 +5,6 @@ with lib;
 let
   cfg = config.services.pipewire;
 in {
-  options.services.pipewire = {
-    configFile = mkOption {
-      type = types.path;
-      default = pkgs.pipewire + "/etc/pipewire/pipewire.conf";
-    };
-  };
-
   config = mkIf cfg.enable {
     boot.kernelModules = [ "snd_seq" "snd_seq_midi" ];
     environment.systemPackages = [ pkgs.pipewire.lib ];
@@ -40,8 +33,6 @@ in {
 
         ${config.sound.extraConfig}
       '';
-
-      "pipewire/pipewire.conf".source = config.services.pipewire.configFile;
     };
 
     nixpkgs.overlays = [
