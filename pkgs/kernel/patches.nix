@@ -26,20 +26,6 @@ in {
       };
     };
 
-  prjc =
-    {
-      name = "prjc";
-      patch = ./prjc.patch.xz;
-      extraStructuredConfig = {
-        SCHED_ALT = yes;
-        SCHED_BMQ = yes;
-        # nixpkgs compatibility, pkgs/os-specific/linux/kernel/common-config.nix
-        CFS_BANDWIDTH = mkForce (option yes);
-        RT_GROUP_SCHED = mkForce (option no);
-        SCHED_AUTOGROUP = mkForce (option yes);
-      };
-    };
-
   xanmod =
     {
       name = "xanmod";
