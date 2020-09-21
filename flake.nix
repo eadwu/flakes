@@ -110,7 +110,7 @@
             ;
 
           inherit (pkgSet.clight-modules)
-            inhibit_bl
+            inhibit_bl trendlog
             ;
 
           inherit (pkgSet.plymouth-themes)
