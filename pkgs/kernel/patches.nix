@@ -78,7 +78,7 @@ in {
         CPU_IDLE_GOV_TEO = yes;
 
         # Enable thermal "pressure" support for the scheduler
-        SCHED_THERMAL_PRESSURE = yes;
+        SCHED_THERMAL_PRESSURE = option yes;
 
         ## CPUFreq
         CPU_FREQ_GOV_PERFORMANCE = yes;
