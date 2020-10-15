@@ -155,6 +155,14 @@ in {
         # Easily confused by misconfigured userspace, keep off.
         BINFMT_MISC = mkForce no;
 
+        ### Arch Linux
+        SECURITY_SMACK = yes;
+        SECURITY_SMACK_BRINGUP = yes;
+        SECURITY_SMACK_NETFILTER = yes;
+        SECURITY_SMACK_APPEND_SIGNALS = yes;
+
+        SECURITY_TOMOYO = yes;
+
         ## LKRG
         KALLSYMS_ALL = yes;
       };
