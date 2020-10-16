@@ -44,8 +44,9 @@ in {
 
         # Timer
         HZ_100 = yes;
+        HZ_250 = mkForce no;
         HZ_1000 = mkForce no;
-        HZ = freeform "100";
+        HZ = mkForce (freeform "100");
       };
     };
 
