@@ -83,11 +83,11 @@ in {
       patch = null;
       extraStructuredConfig = {
         # Make sure these are enabled, needed by a variety of things such as cryptsetup
-        AIO = yes;
-        DEVMEM = yes;
+        AIO = mkForce yes;
+        DEVMEM = mkForce yes;
         # Harden /dev/mem since DEVMEM is needed
-        STRICT_DEVMEM = yes;
-        IO_STRICT_DEVMEM = yes;
+        STRICT_DEVMEM = option yes;
+        IO_STRICT_DEVMEM = option yes;
 
         # Disable amateur radio support
         HAMRADIO = mkForce no;
