@@ -59,24 +59,6 @@ in {
       extraStructuredConfig.ZEN_INTERACTIVE = yes;
     };
 
-  prjc =
-    {
-      name = "project-c";
-      patch = ./prjc.patch.xz;
-      extraStructuredConfig = {
-        SCHED_ALT = yes;
-        SCHED_BMQ = mkForce no;
-        SCHED_PDS = yes;
-
-        HZ_250 = yes;
-        HZ = freeform "250";
-
-        CFS_BANDWIDTH = mkForce (option yes);
-        RT_GROUP_SCHED = mkForce (option no);
-        SCHED_AUTOGROUP = mkForce (option yes);
-      };
-    };
-
   extra-config =
     {
       name = "extra-config";

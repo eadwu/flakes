@@ -87,7 +87,6 @@
             kernelPatches.o3
             kernelPatches.clearlinux.default
             kernelPatches.zen-tweaks
-            kernelPatches.prjc
             kernelPatches.extra-config
           ];
           modDirVersionArg = kernel.modDirVersion;
