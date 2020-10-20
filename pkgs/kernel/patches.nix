@@ -31,11 +31,6 @@ in {
       name = "xanmod";
       patch = ./xanmod.patch.xz;
       extraStructuredConfig = {
-        # Kernel compression algorithm
-        KERNEL_XZ = mkForce no;
-        KERNEL_LZ4 = mkForce no;
-        KERNEL_ZSTD = mkForce yes;
-
         # RCU
         RCU_EXPERT = yes;
         RCU_BOOST = yes;
@@ -83,6 +78,11 @@ in {
         # Enable thermal "pressure" support for the scheduler
         SCHED_THERMAL_PRESSURE = option yes;
 
+        # Kernel compression algorithm
+        KERNEL_XZ = mkForce no;
+        KERNEL_LZ4 = mkForce no;
+        KERNEL_ZSTD = mkForce yes;
+
         ## CPUFreq
         CPU_FREQ_GOV_PERFORMANCE = yes;
         CPU_FREQ_GOV_POWERSAVE = yes;
@@ -90,7 +90,7 @@ in {
 
         ## Zram
         CRYPTO_ZSTD = yes;
-        ZSTD_COMPRESS = yes;
+        ZSTD_COMPRESS = yes; # needed as a workaround that it is available as there is no guarantee during initrd with modules
 
         ## Zswap
         ZSWAP_COMPRESSOR_DEFAULT_LZ4 = yes;
