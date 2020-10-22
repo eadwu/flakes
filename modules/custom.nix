@@ -19,6 +19,7 @@ with lib;
     ];
 
     networking.hostFiles = [
+      inputs.urlhaus
       inputs.energized-unified
       inputs.energized-regional
     ];
