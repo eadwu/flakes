@@ -9,6 +9,8 @@
   inputs.nix-linter = { type = "github"; owner = "eadwu"; repo = "nix-linter"; flake = false; };
   inputs.plymouth-themes = { type = "github"; owner = "eadwu"; repo = "plymouth-themes"; flake = false; };
 
+  inputs.privacy-haters = { type = "git"; url = "git://r-36.net/privacy-haters"; flake = false; };
+
   outputs = { self, nixpkgs, nixops, ... }@inputs:
     let
       supportedSystems = [ "x86_64-linux" ];
@@ -121,7 +123,7 @@
       checks = forAllSystems (system: self.packages.${system});
 
       nixosModules = {
-        r-36 = import ./modules/r-36.nix;
+        r-36 = import ./modules/r-36.nix inputs;
         custom = import ./modules/custom.nix;
         pipewire = import ./modules/pipewire.nix;
         sourcehut = import ./modules/sourcehut;
