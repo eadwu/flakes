@@ -1,3 +1,5 @@
+inputs:
+
 { config, pkgs, lib, ... }:
 
 with lib;
@@ -5,7 +7,7 @@ with lib;
 {
   imports =
     [
-      ./r-36.nix
+      inputs.self.nixosModules.r-36
     ];
 
   config = {
@@ -14,6 +16,11 @@ with lib;
     boot.kernelParams = [
       # General responsivity enhancements
       "io_delay=none"
+    ];
+
+    networking.hostFiles = [
+      inputs.energized-unified
+      inputs.energized-regional
     ];
 
     security.pam.loginLimits = [

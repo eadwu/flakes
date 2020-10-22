@@ -10,6 +10,8 @@
   inputs.plymouth-themes = { type = "github"; owner = "eadwu"; repo = "plymouth-themes"; flake = false; };
 
   inputs.privacy-haters = { type = "git"; url = "git://r-36.net/privacy-haters"; flake = false; };
+  inputs.energized-unified = { type = "file"; url = "https://block.energized.pro/unified/formats/hosts"; flake = false; };
+  inputs.energized-regional = { type = "file"; url = "https://block.energized.pro/extensions/regional/formats/hosts"; flake = false; };
 
   outputs = { self, nixpkgs, nixops, ... }@inputs:
     let
@@ -124,7 +126,7 @@
 
       nixosModules = {
         r-36 = import ./modules/r-36.nix inputs;
-        custom = import ./modules/custom.nix;
+        custom = import ./modules/custom.nix inputs;
         pipewire = import ./modules/pipewire.nix;
         sourcehut = import ./modules/sourcehut;
         pam-keyring = import ./modules/pam-keyring.nix;
