@@ -10,7 +10,8 @@
   inputs.plymouth-themes = { type = "github"; owner = "eadwu"; repo = "plymouth-themes"; flake = false; };
 
   inputs.privacy-haters = { type = "git"; url = "git://r-36.net/privacy-haters"; flake = false; };
-  inputs.urlhaus = { type = "file"; url = "https://urlhaus.abuse.ch/downloads/hostfile/"; flake = false; };
+  inputs.sb-hosts = { type = "github"; owner = "StevenBlack"; repo = "hosts"; flake = false; };
+  inputs.dd-hosts = { type = "github"; owner = "lightswitch05"; repo = "hosts"; flake = false; };
   inputs.energized-unified = { type = "file"; url = "https://block.energized.pro/unified/formats/hosts"; flake = false; };
   inputs.energized-regional = { type = "file"; url = "https://block.energized.pro/extensions/regional/formats/hosts"; flake = false; };
 

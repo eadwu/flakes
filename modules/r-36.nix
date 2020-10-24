@@ -7,7 +7,7 @@ with lib;
 {
   config = {
     # http://r-36.net/scm/privacy-haters/file/hosts-gen/05-hosts.block.html
-    networking.hostFiles = [
+    networking.blacklistFiles = [
       (inputs.privacy-haters + "/hosts-gen/05-hosts.block")
     ];
   };

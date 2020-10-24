@@ -11,6 +11,11 @@ with lib;
     ];
 
   options = {
+    networking.blacklistFiles = mkOption {
+      type = types.listOf types.path;
+      default = [];
+    };
+
     networking.whitelist = mkOption {
       type = types.listOf types.str;
       default = [];
@@ -25,26 +30,39 @@ with lib;
       "io_delay=none"
     ];
 
-    environment.etc.hosts.source = let
-        whitelistFile = pkgs.writeText "hosts-whitelist"
-          (concatStringsSep "\n" config.networking.whitelist);
-      in
-      lib.mkForce (pkgs.runCommandNoCC "hosts" {} ''
-        cat ${escapeShellArgs config.networking.hostFiles} > $out
-        ${optionalString (config.networking.hostFiles != []) ''
-        cp $out hosts-original.txt
-        grep --invert-match --file=${whitelistFile} hosts-original.txt > $out
-        ''}
-      '');
-
-    networking.hostFiles = [
-      inputs.urlhaus
+    networking.blacklistFiles = [
+      (inputs.sb-hosts + "/alternates/fakenews-gambling-porn-social/hosts")
+      (inputs.dd-hosts + "/docs/lists/ads-and-tracking-extended.txt")
+      (inputs.dd-hosts + "/docs/lists/amp-hosts-extended.txt")
+      (inputs.dd-hosts + "/docs/lists/hate-and-junk-extended.txt")
+      (inputs.dd-hosts + "/docs/lists/tracking-aggressive-extended.txt")
       inputs.energized-unified
       inputs.energized-regional
     ];
 
+    networking.hostFiles =
+      let
+        whitelistFile = pkgs.writeText "hosts-whitelist"
+          (concatStringsSep "\n" config.networking.whitelist);
+
+        # What this does:
+        # Combines the blacklists and then filters out comments and removes duplicate domains
+        #   Since we can never truly trust external blocklists, remove the ip address they say to redirect to
+        # Apply the whitelisted domains using
+        blacklistFile = pkgs.runCommandNoCC "blacklist-hosts" {} ''
+          cat ${escapeShellArgs config.networking.blacklistFiles} | \
+            grep . | grep -v '^#' | awk '{print $2}' | \
+            sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//' | \
+            sort | uniq > hosts.txt
+          ${optionalString (config.networking.whitelist != []) ''
+          grep --invert-match --file=${whitelistFile} hosts.txt > $out
+          ''}
+          sed -i 's/^/0.0.0.0 /' $out
+        '';
+      in [ blacklistFile ];
+
     networking.whitelist = [
-      "stats.stackexchange.com"
+      "^stats.stackexchange.com$"
     ];
 
     security.pam.loginLimits = [
