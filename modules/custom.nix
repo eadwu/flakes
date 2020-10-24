@@ -31,7 +31,7 @@ with lib;
     ];
 
     networking.blacklistFiles = [
-      (inputs.sb-hosts + "/alternates/fakenews-gambling-porn-social/hosts")
+      (inputs.sb-hosts + "/alternates/fakenews-gambling-porn/hosts")
       (inputs.dd-hosts + "/docs/lists/ads-and-tracking-extended.txt")
       (inputs.dd-hosts + "/docs/lists/amp-hosts-extended.txt")
       (inputs.dd-hosts + "/docs/lists/hate-and-junk-extended.txt")
