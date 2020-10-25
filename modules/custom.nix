@@ -36,6 +36,9 @@ with lib;
       (inputs.dd-hosts + "/docs/lists/amp-hosts-extended.txt")
       (inputs.dd-hosts + "/docs/lists/hate-and-junk-extended.txt")
       (inputs.dd-hosts + "/docs/lists/tracking-aggressive-extended.txt")
+      (inputs.uhb-hosts + "/hosts/hosts0")
+      (inputs.uhb-hosts + "/hosts/hosts1")
+      inputs.someone-who-cares
       inputs.energized-unified
       inputs.energized-regional
     ];
