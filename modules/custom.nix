@@ -48,10 +48,12 @@ with lib;
         # What this does:
         # Combines the blacklists and then filters out comments and removes duplicate domains
         #   Since we can never truly trust external blocklists, remove the ip address they say to redirect to
-        # Apply the whitelisted domains using
+        #   Awk pattern accounts for multiple domains on a single line
+        #     See https://stackoverflow.com/questions/4198138/printing-everything-except-the-first-field-with-awk/22908787
+        # Apply the whitelisted domains using the filter list
         blacklistFile = pkgs.runCommandNoCC "blacklist-hosts" {} ''
           cat ${escapeShellArgs config.networking.blacklistFiles} | \
-            grep . | grep -v '^#' | awk '{print $2}' | \
+            grep . | grep -v '^#' | awk 'sub($1 FS,"")' | \
             sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//' | \
             sort | uniq > hosts.txt
           ${optionalString (config.networking.whitelist != []) ''
