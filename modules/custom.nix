@@ -55,9 +55,13 @@ with lib;
             sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//' | \
             sort | uniq > hosts.txt
           ${optionalString (config.networking.whitelist != []) ''
-          grep --invert-match --file=${whitelistFile} hosts.txt > $out
+          cp hosts.txt hosts.txt.orig
+          grep --invert-match --file=${whitelistFile} hosts.txt.orig > hosts.txt
           ''}
-          sed -i 's/^/0.0.0.0 /' $out
+          sed -i 's/^/0.0.0.0 /' hosts.txt > $out
+          ${optionalString (config.networking.enableIPv6) ''
+          sed -i 's/^/:: /' hosts.txt >> $out
+          ''}
         '';
       in [ blacklistFile ];
 
