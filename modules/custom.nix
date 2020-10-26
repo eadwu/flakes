@@ -63,9 +63,9 @@ with lib;
           cp hosts.txt hosts.txt.orig
           grep --invert-match --file=${whitelistFile} hosts.txt.orig > hosts.txt
           ''}
-          sed -i 's/^/0.0.0.0 /' hosts.txt > $out
+          sed 's/^/0.0.0.0 /' hosts.txt > $out
           ${optionalString (config.networking.enableIPv6) ''
-          sed -i 's/^/:: /' hosts.txt >> $out
+          sed 's/^/:: /' hosts.txt >> $out
           ''}
         '';
       in [ blacklistFile ];
