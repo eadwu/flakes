@@ -54,14 +54,16 @@ with lib;
         #   Awk pattern accounts for multiple domains on a single line
         #     See https://stackoverflow.com/questions/4198138/printing-everything-except-the-first-field-with-awk/22908787
         # Apply the whitelisted domains using the filter list
-        blacklistFile = pkgs.runCommandNoCC "blacklist-hosts" {} ''
+        blacklistFile = pkgs.runCommandNoCC "blacklist-hosts" {
+          nativeBuildInputs = with pkgs; [ ripgrep ];
+        } ''
           cat ${escapeShellArgs config.networking.blacklistFiles} | \
-            grep . | grep -v '^#' | awk 'sub($1 FS,"")' | \
+            rg . | rg -v '^#' | awk 'sub($1 FS,"")' | \
             sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//' | \
             sort | uniq > hosts.txt
           ${optionalString (config.networking.whitelist != []) ''
           cp hosts.txt hosts.txt.orig
-          grep --invert-match --file=${whitelistFile} hosts.txt.orig > hosts.txt
+          rg --invert-match --file=${whitelistFile} hosts.txt.orig > hosts.txt
           ''}
           sed 's/^/0.0.0.0 /' hosts.txt > $out
           ${optionalString (config.networking.enableIPv6) ''
