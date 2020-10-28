@@ -10,5 +10,8 @@ with lib;
     networking.blacklistFiles = [
       (inputs.privacy-haters + "/hosts-gen/05-hosts.block")
     ];
+
+    # http://r-36.net/scm/privacy-haters/file/thunderbird/user.js.html
+    # nixpkgs.overlays = []
   };
 }
