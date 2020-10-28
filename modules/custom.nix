@@ -71,6 +71,7 @@ with lib;
       in [ blacklistFile ];
 
     networking.whitelist = [
+      "^://.*/.*$"
       "^stats.stackexchange.com$"
     ];
 
