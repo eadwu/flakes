@@ -26,25 +26,6 @@ in {
       };
     };
 
-  xanmod =
-    {
-      name = "xanmod";
-      patch = ./xanmod.patch.xz;
-      extraStructuredConfig = {
-        # RCU
-        RCU_EXPERT = yes;
-        RCU_BOOST = yes;
-        RCU_BOOST_DELAY = freeform "0";
-        RCU_NOCB_CPU = yes;
-
-        # Timer
-        HZ_100 = yes;
-        HZ_250 = mkForce no;
-        HZ_1000 = mkForce no;
-        HZ = mkForce (freeform "100");
-      };
-    };
-
   clearlinux = import ./clearlinux;
 
   zen-tweaks =
