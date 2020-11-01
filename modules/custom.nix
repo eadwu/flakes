@@ -73,8 +73,9 @@ with lib;
       in [ blacklistFile ];
 
     networking.whitelist = [
-      "^://.*/.*$"
-      "^stats.stackexchange.com$"
+      "^://.*/.*$" # invalid domain
+      "^stats.stackexchange.com$" # stackexchange...
+      "^tags.tiqcdn.com$" # weather.com
     ];
 
     security.pam.loginLimits = [
