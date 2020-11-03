@@ -1,7 +1,10 @@
 { fetchurl, vscode }:
 
+let
+  vscode-unwrapped = vscode.unwrapped or vscode;
+in
 (
-  vscode.override {
+  vscode-unwrapped.override {
     isInsiders = true;
   }
 ).overrideAttrs (
