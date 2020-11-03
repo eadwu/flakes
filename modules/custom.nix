@@ -73,6 +73,7 @@ with lib;
       in [ blacklistFile ];
 
     networking.whitelist = [
+      "^in$" # what kind of website is this
       "^://.*/.*$" # invalid domain
       "^stats.stackexchange.com$" # stackexchange...
       "^tags.tiqcdn.com$" # weather.com
