@@ -75,6 +75,7 @@ with lib;
     networking.whitelist = [
       "^in$" # what kind of website is this
       "^://.*/.*$" # invalid domain
+      "^www.rarlab.com$" # RAR archiver source...
       "^stats.stackexchange.com$" # stackexchange...
       "^tags.tiqcdn.com$" # weather.com
     ];
