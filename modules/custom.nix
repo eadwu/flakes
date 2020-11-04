@@ -73,7 +73,7 @@ with lib;
       in [ blacklistFile ];
 
     networking.whitelist = [
-      "^in$" # what kind of website is this
+      "^[^.]*$" # if there isn't any dots, it probably isn't a domain
       "^://.*/.*$" # invalid domain
       "^www.rarlab.com$" # RAR archiver source...
       "^stats.stackexchange.com$" # stackexchange...
