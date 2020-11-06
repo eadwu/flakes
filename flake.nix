@@ -47,13 +47,13 @@
 
         picom = prev.picom.overrideAttrs (
           oldAttrs: {
-            version = "2020-04-25";
+            version = "2020-11-03";
 
             src = fetchFromGitHub {
-              owner = "tryone144";
+              owner = "yshui";
               repo = "picom";
-              rev = "9b4a6f062758f1f9a66d4e77d16c86c9aa259b42";
-              sha256 = "0jf1lih85d07q1kw1v3sa4azjyf33b61kkxjakb2l6zi8fcxf4s9";
+              rev = "248bffede73e520a4929dd7751667d29d4169d59";
+              sha256 = "0agg1jk40dwxph1dixdlb48n8iy5vffcpkkirkyrkfwnvaxsw6zj";
             };
           }
         );
