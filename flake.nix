@@ -25,6 +25,8 @@
         dwm = callPackage ./pkgs/dwm { inherit (prev) dwm; };
         st = callPackage ./pkgs/st { inherit (prev) st; };
 
+        pipewire = callPackage ./pkgs/pipewire { inherit (prev) pipewire; };
+
         discord-canary = callPackage ./pkgs/discord-canary { inherit (prev) discord-canary; };
         vivaldi-snapshot = callPackage ./pkgs/vivaldi-snapshot { inherit (prev) vivaldi; };
 
@@ -45,6 +47,7 @@
           inherit (pkgSet)
             rustChannels rustPlatform
             dwm st
+            pipewire
             discord-canary vivaldi-snapshot
             vscode-insiders vscode-insiders-with-extensions
             gtk-theme-collections
