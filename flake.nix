@@ -27,6 +27,7 @@
       overlay = final: prev: with final.pkgs; {
         kernelPatches = prev.kernelPatches // (callPackage ./pkgs/kernel/patches.nix { });
 
+        ladspa-bs2b = callPackage ./pkgs/ladspa-bs2b { };
         liberation-mono = prev.nerdfonts.override { fonts = [ "LiberationMono" ]; };
 
         boxpub = import inputs.boxpub { inherit (stdenv.hostPlatform) system; };
@@ -123,7 +124,7 @@
         in
         {
           inherit (pkgSet)
-            liberation-mono
+            ladspa-bs2b liberation-mono
             boxpub cachix nixopsUnstable nix-linter
             i3lock-color picom radian
             dual-plymouth-theme

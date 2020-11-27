@@ -19,6 +19,7 @@ jobs:
           - picom
           - radian
           - linux_custom
+          - ladspa-bs2b
 
     steps:
       - name: Obtain maximum storage
