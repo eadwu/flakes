@@ -25,11 +25,6 @@ with lib;
   config = {
     boot.kernelPackages = pkgs.linuxPackages_custom;
 
-    boot.kernelParams = [
-      # General responsivity enhancements
-      "io_delay=none"
-    ];
-
     networking.blacklistFiles = [
       (inputs.sb-hosts + "/alternates/fakenews-gambling-porn/hosts")
       (inputs.dd-hosts + "/docs/lists/ads-and-tracking-extended.txt")

@@ -50,6 +50,9 @@ in {
         STRICT_DEVMEM = option yes;
         IO_STRICT_DEVMEM = option yes;
 
+        # General Improvements
+        IO_DELAY_NONE = yes;
+
         # Disable amateur radio support
         HAMRADIO = mkForce no;
 
