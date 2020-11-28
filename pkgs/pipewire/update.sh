@@ -15,13 +15,12 @@ repo_src="$(nix show-derivation "$old_src_drv" | jq -r '.[].env.urls' | grep -Po
 
 tmpdir="$(mktemp -d)"
 dest="$tmpdir/result"
-git clone --quiet "https://gitlab.com/$repo_src.git" "$dest"
+git clone --quiet "https://gitlab.freedesktop.org/$repo_src.git" "$dest"
 
 (cd "$dest" && git fetch --all)
 new_version="$(cd "$dest" && git log -1 --format=%cs "origin/$branch")"
 new_revision="$(cd "$dest" && git rev-parse "origin/$branch")"
-new_hash="$(nix-prefetch-git "https://gitlab.com/$repo_src.git" --rev "$new_revision" --quiet | jq -r '.sha256')"
-
+new_hash="$(nix-prefetch-git "https://gitlab.freedesktop.org/$repo_src.git" --rev "$new_revision" --quiet | jq -r '.sha256')"
 rm -rf "$tmpdir"
 
 # https://github.com/NixOS/nixpkgs/blob/0e6ceb87584feec4836975d8216f9ca4c2199e0e/pkgs/common-updater/scripts/update-source-version#L108
