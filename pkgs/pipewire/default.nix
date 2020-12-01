@@ -1,6 +1,6 @@
 { fetchFromGitLab, pipewire }:
 
-pipewire.overrideAttrs (_:
+(pipewire.override { hsphfpdSupport = true; }).overrideAttrs (_:
   {
     version = "2020-12-01";
 
