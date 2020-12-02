@@ -18,7 +18,7 @@ dest="$tmpdir/result"
 git clone --quiet "https://gitlab.freedesktop.org/$repo_src.git" "$dest"
 
 (cd "$dest" && git fetch --all)
-new_version="$(cd "$dest" && git log -1 --format=%cs "origin/$branch")"
+new_version="$(cd "$dest" && git log -1 --format=%ct "origin/$branch")"
 new_revision="$(cd "$dest" && git rev-parse "origin/$branch")"
 new_hash="$(nix-prefetch-git "https://gitlab.freedesktop.org/$repo_src.git" --rev "$new_revision" --quiet | jq -r '.sha256')"
 rm -rf "$tmpdir"
