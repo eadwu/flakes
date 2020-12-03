@@ -2,13 +2,13 @@
 
 pipewire.overrideAttrs (_:
   {
-    version = "1607015466";
+    version = "1607018618";
 
     src = fetchFromGitLab {
       domain = "gitlab.freedesktop.org";
       owner = "pipewire";
       repo = "pipewire";
-      rev = "73b13e8ad59a735493b4556c75af4188f369445c";
-      sha256 = "0swpbm1zv20l75ka6m8g3am5ckaic1yavfjl0nyz5n6mwim3qxm9";
+      rev = "9818582abe91a758a0a57ddab7f71edffd8e45a6";
+      sha256 = "0ffrvl3lpqydymq51bq2s9ziqc8z3zpihr33lb69y7kar77dzqw6";
     };
   })
