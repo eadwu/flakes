@@ -2,13 +2,13 @@
 
 (pipewire.override { hsphfpdSupport = true; }).overrideAttrs (_:
   {
-    version = "1606990153";
+    version = "1607015466";
 
     src = fetchFromGitLab {
       domain = "gitlab.freedesktop.org";
       owner = "pipewire";
       repo = "pipewire";
-      rev = "908e3f3d1f8b258adf7e2dc053a4b33e7a1371fe";
-      sha256 = "0fhvxsc2savpjyvzs3qid6dxpmjdr67pzgh4s8kv2hpashk9n131";
+      rev = "73b13e8ad59a735493b4556c75af4188f369445c";
+      sha256 = "0swpbm1zv20l75ka6m8g3am5ckaic1yavfjl0nyz5n6mwim3qxm9";
     };
   })
