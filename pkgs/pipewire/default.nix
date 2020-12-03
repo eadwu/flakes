@@ -1,6 +1,6 @@
 { fetchFromGitLab, pipewire }:
 
-(pipewire.override { hsphfpdSupport = true; }).overrideAttrs (_:
+pipewire.overrideAttrs (_:
   {
     version = "1607015466";
 
