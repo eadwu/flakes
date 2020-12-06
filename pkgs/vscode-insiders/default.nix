@@ -1,5 +1,4 @@
 { fetchurl, vscode }:
-
 let
   vscode-unwrapped = vscode.unwrapped or vscode;
 in

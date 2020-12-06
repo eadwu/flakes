@@ -3,12 +3,23 @@
 
   # Upstream source tree(s).
   inputs.nixpkgs-mozilla = { type = "github"; owner = "mozilla"; repo = "nixpkgs-mozilla"; flake = false; };
+  inputs.dwm = { type = "gitlab"; owner = "eadwu"; repo = "dwm"; flake = false; };
+  inputs.gtk-theme-collections = { type = "github"; owner = "addy-dclxvi"; repo = "gtk-theme-collections"; flake = false; };
+  inputs.pipewire = { type = "gitlab"; host = "gitlab.freedesktop.org"; owner = "pipewire"; repo = "pipewire"; flake = false; };
+  inputs.st = { type = "gitlab"; owner = "eadwu"; repo = "st"; flake = false; };
 
   outputs = { self, nixpkgs, ... }@inputs:
     let
       supportedSystems = [ "x86_64-linux" ];
       forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
       nixpkgsFor = forAllSystems (system: import nixpkgs { inherit system; overlays = [ self.overlay ]; config.allowUnfree = true; });
+
+      packageAttrs = nixpkgs.lib.mapAttrs
+        (_: input: {
+          src = input;
+          version = builtins.substring 0 8 input.lastModifiedDate;
+        })
+        inputs;
     in
     {
       overlay = final: prev: with final.pkgs; {
@@ -22,10 +33,10 @@
           import ./overlays/rust/channels.nix { inherit nixpkgs-mozilla; };
         rustPlatform = rustChannels.latest.nightly;
 
-        dwm = callPackage ./pkgs/dwm { inherit (prev) dwm; };
-        st = callPackage ./pkgs/st { inherit (prev) st; };
+        dwm = callPackage ./pkgs/dwm { inherit (prev) dwm; } packageAttrs.dwm;
+        st = callPackage ./pkgs/st { inherit (prev) st; } packageAttrs.st;
 
-        pipewire = callPackage ./pkgs/pipewire { inherit (prev) pipewire; };
+        pipewire = callPackage ./pkgs/pipewire { inherit (prev) pipewire; } packageAttrs.pipewire;
 
         discord-canary = callPackage ./pkgs/discord-canary { inherit (prev) discord-canary; };
         vivaldi-snapshot = callPackage ./pkgs/vivaldi-snapshot { inherit (prev) vivaldi; };
@@ -35,7 +46,7 @@
           vscode = vscode-insiders;
         };
 
-        gtk-theme-collections = callPackage ./pkgs/gtk-theme-collections { };
+        gtk-theme-collections = callPackage ./pkgs/gtk-theme-collections { } packageAttrs.gtk-theme-collections;
       };
 
       packages = forAllSystems (system:
