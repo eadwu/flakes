@@ -3,10 +3,10 @@
 
   # Upstream source tree(s).
   inputs.nixpkgs-mozilla = { type = "github"; owner = "mozilla"; repo = "nixpkgs-mozilla"; flake = false; };
-  inputs.dwm = { type = "gitlab"; owner = "eadwu"; repo = "dwm"; flake = false; };
+  inputs.dwm = { type = "gitlab"; owner = "eadwu"; repo = "dwm"; ref = "develop"; flake = false; };
   inputs.gtk-theme-collections = { type = "github"; owner = "addy-dclxvi"; repo = "gtk-theme-collections"; flake = false; };
   inputs.pipewire = { type = "gitlab"; host = "gitlab.freedesktop.org"; owner = "pipewire"; repo = "pipewire"; flake = false; };
-  inputs.st = { type = "gitlab"; owner = "eadwu"; repo = "st"; flake = false; };
+  inputs.st = { type = "gitlab"; owner = "eadwu"; repo = "st"; ref = "develop"; flake = false; };
 
   outputs = { self, nixpkgs, ... }@inputs:
     let
