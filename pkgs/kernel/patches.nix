@@ -246,7 +246,7 @@ in {
         BPF_JIT_ALWAYS_ON = mkForce (option no);
 
         #### Resolve workarounds
-        NET_DROP_MONITOR = mkForce no;
+        NET_DROP_MONITOR = mkForce (option no);
         SECURITY_SELINUX_DISABLE = mkForce no;
         DLM = mkForce no; # depends on IP_SCTP
         NOUVEAU_LEGACY_CTX_SUPPORT = mkForce no;
