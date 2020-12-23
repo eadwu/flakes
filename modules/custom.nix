@@ -33,6 +33,7 @@ with lib;
       (inputs.dd-hosts + "/docs/lists/tracking-aggressive-extended.txt")
       (inputs.uhb-hosts + "/hosts/hosts0")
       (inputs.uhb-hosts + "/hosts/hosts1")
+      (inputs.quantum-ad-list + "/For hosts file/The_Quantum_Ad-List.txt")
       inputs.someone-who-cares
       inputs.energized-unified
       inputs.energized-regional
@@ -65,7 +66,8 @@ with lib;
           sed 's/^/:: /' hosts.txt >> $out
           ''}
         '';
-      in [ blacklistFile ];
+      in
+      [ blacklistFile ];
 
     networking.whitelist = [
       "^[^.]*$" # if there isn't any dots, it probably isn't a domain

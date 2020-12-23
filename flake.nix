@@ -13,6 +13,7 @@
   inputs.sb-hosts = { type = "github"; owner = "StevenBlack"; repo = "hosts"; flake = false; };
   inputs.dd-hosts = { type = "github"; owner = "lightswitch05"; repo = "hosts"; flake = false; };
   inputs.uhb-hosts = { type = "github"; owner = "Ultimate-Hosts-Blacklist"; repo = "Ultimate.Hosts.Blacklist"; flake = false; };
+  inputs.quantum-ad-list = { type = "gitlab"; owner = "The_Quantum_Alpha"; repo = "the-quantum-ad-list"; flake = false; };
   inputs.someone-who-cares = { type = "file"; url = "https://someonewhocares.org/hosts/hosts"; flake = false; };
   inputs.energized-unified = { type = "file"; url = "https://block.energized.pro/unified/formats/hosts"; flake = false; };
   inputs.energized-regional = { type = "file"; url = "https://block.energized.pro/extensions/regional/formats/hosts"; flake = false; };
