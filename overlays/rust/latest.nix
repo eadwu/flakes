@@ -19,6 +19,7 @@ genAttrs
       self = base //
         rec {
           inherit (spec.${channel}) date;
+          rust = base.rust.override { extensions = [ "rust-src" "rust-std" ]; };
           rustcSrc = base.rust-src;
           rustLibSrc = base.rust-src + "/lib/rustlib/src/rust/library";
 
