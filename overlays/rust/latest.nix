@@ -12,10 +12,33 @@ genAttrs
     channel:
     let
       base = (rustChannelOf (spec.${channel} // { inherit channel; }));
+      # https://github.com/mozilla/nixpkgs-mozilla/blob/57c8084c7ef41366993909c20491e359bbb90f54/rust-overlay.nix#L240
+      # The packages available usually are:
+      #   cargo, rust-analysis, rust-docs, rust-src, rust-std, rustc, and
+      #   rust, which aggregates them in one package.
+      self = base //
+        rec {
+          inherit (spec.${channel}) date;
+          rustcSrc = base.rust-src;
+          rustLibSrc = base.rust-src + "/lib/rustlib/src/rust/library";
+
+          fetchCargoTarball = nixpkgs-mozilla.rustPlatform.fetchCargoTarball.override {
+            inherit (base) cargo;
+          };
+
+          buildRustPackage =
+            { nativeBuildInputs ? [ ], ... }@args:
+            nixpkgs-mozilla.rustPlatform.buildRustPackage.override
+              {
+                inherit fetchCargoTarball;
+                inherit (base) cargo rustc;
+                # `rust` derivation needed for toRustTarget toRustTargetSpec
+                # Doesn't use any special things so don't override
+                # rust = { inherit (nixpkgs-mozilla.rust) toRustTarget toRustTargetSpec; };
+                rustPlatform = self;
+              }
+              (args // { nativeBuildInputs = nativeBuildInputs ++ [ base.rust ]; });
+        };
     in
-    base // {
-      inherit (spec.${channel}) date;
-      inherit (nixpkgs-mozilla.rustPlatform) buildRustPackage;
-      rustcSrc = base.rust-src;
-    }
+    self
   )
