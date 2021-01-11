@@ -94,9 +94,9 @@ in {
         Z3FOLD = yes;
 
         ## Lockdown
-        SECURITY_LOCKDOWN_LSM = yes;
-        SECURITY_LOCKDOWN_LSM_EARLY = yes;
-        LOCK_DOWN_KERNEL_FORCE_NONE = yes;
+        SECURITY_LOCKDOWN_LSM = mkForce no;
+        SECURITY_LOCKDOWN_LSM_EARLY = option yes;
+        LOCK_DOWN_KERNEL_FORCE_NONE = option yes;
 
         ## Hardened
         # Wipe slab and page allocations (since v5.3)
@@ -112,12 +112,12 @@ in {
         HIBERNATION = mkForce no;
 
         # But if CONFIG_MODULE=y is needed, at least they must be signed with a per-build key.
-        MODULE_SIG = yes;
-        # MODULE_SIG_FORCE = yes;
-        MODULE_SIG_ALL = yes;
-        MODULE_SIG_SHA512 = yes;
-        MODULE_SIG_HASH = freeform "sha512";
-        MODULE_SIG_KEY = freeform "certs/signing_key.pem";
+        MODULE_SIG = mkForce no;
+        # MODULE_SIG_FORCE = option yes;
+        MODULE_SIG_ALL = option yes;
+        MODULE_SIG_SHA512 = option yes;
+        MODULE_SIG_HASH = option (freeform "sha512");
+        MODULE_SIG_KEY = option (freeform "certs/signing_key.pem");
 
         # Remove additional attack surface, unless you really need them.
         # IA32_EMULATION = mkForce no;
