@@ -83,9 +83,11 @@
             (mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings)
             // (with nixpkgs.lib.kernel; {
               # Preempt
+              EXPERT = yes;
               PREEMPT = yes;
               PREEMPT_VOLUNTARY = mkOverride 36 no;
               IRQ_FORCED_THREADING = yes;
+              RT_GROUP_SCHED = mkOverride 36 (option no);
 
               # RCU
               RCU_EXPERT = yes;
