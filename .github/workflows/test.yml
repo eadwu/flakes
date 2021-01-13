@@ -16,8 +16,6 @@ jobs:
           - cachix
           - nixopsUnstable
           - nix-linter
-          - picom
-          - radian
           - linux_custom
           - ladspa-bs2b
 
