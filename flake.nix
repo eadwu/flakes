@@ -105,7 +105,7 @@
           inherit (pkgSet)
             ladspa-bs2b liberation-mono
             boxpub cachix nixopsUnstable nix-linter
-            i3lock-color picom radian
+            i3lock-color
             dual-plymouth-theme
             linux_custom
             ;
