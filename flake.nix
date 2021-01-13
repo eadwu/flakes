@@ -47,30 +47,6 @@
           }
         );
 
-        picom = prev.picom.overrideAttrs (
-          oldAttrs: {
-            version = "2020-11-03";
-
-            src = fetchFromGitHub {
-              owner = "yshui";
-              repo = "picom";
-              rev = "248bffede73e520a4929dd7751667d29d4169d59";
-              sha256 = "0agg1jk40dwxph1dixdlb48n8iy5vffcpkkirkyrkfwnvaxsw6zj";
-            };
-          }
-        );
-
-        radian =
-          let
-            packageOverrides = final: prev: with final; {
-              lineedit = callPackage ./pkgs/lineedit { };
-              rchitect = callPackage ./pkgs/rchitect { };
-              radian = callPackage ./pkgs/radian { };
-            };
-            python = python3.override { inherit packageOverrides; };
-          in
-          python.pkgs.radian;
-
         plymouth-themes = import inputs.plymouth-themes { inherit (final) pkgs; };
         dual-plymouth-theme = callPackage ./pkgs/dual-plymouth-theme {
           inherit (plymouth-themes) mkTheme;
