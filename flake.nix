@@ -5,10 +5,23 @@
   inputs.rolling = { type = "github"; owner = "eadwu"; repo = "flakes"; ref = "rolling"; inputs.nixpkgs.follows = "/nixpkgs"; };
 
   outputs = { self, nixpkgs, ... }@inputs: with nixpkgs.lib; let
-    _foldl' = f: foldl recursiveUpdate { } (map f (attrValues (removeAttrs inputs [ "self" "nixpkgs" ])));
+    targetInputs = removeAttrs inputs [ "self" "nixpkgs" ];
   in
-  _foldl' (f: f.outputs)
+  (foldl' recursiveUpdate { } (builtins.attrValues (builtins.mapAttrs (_: v: v.outputs) targetInputs)))
   // {
-    overlay = final: prev: _foldl' (f: f.overlay final prev);
+    overlay = foldl' (final': prev': composeExtensions final' prev') (final: prev: { }) (builtins.attrValues self.overlays);
+    overlays =
+      foldl' recursiveUpdate { } (
+        builtins.attrValues (
+          mapAttrs
+            (
+              n: v:
+                mapAttrs'
+                  (n': v': nameValuePair "${n}-${n'}" v')
+                  v.overlays
+            )
+            targetInputs
+        )
+      );
   };
 }
