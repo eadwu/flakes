@@ -24,14 +24,16 @@
       );
 
       packageAttrs = nixpkgs.lib.mapAttrs
-        (_: input: {
-          src = input;
-          version = builtins.substring 0 8 input.lastModifiedDate;
-        })
+        (
+          _: input: {
+            src = input;
+            version = builtins.substring 0 8 input.lastModifiedDate;
+          }
+        )
         inputs;
     in
     {
-      overlay = with nixpkgs.lib; foldl' (final': prev': composeExtensions final' prev') (final: prev: {}) overlays;
+      overlay = with nixpkgs.lib; foldl' (final': prev': composeExtensions final' prev') (final: prev: { }) overlays;
       overlays.default = final: prev: with final.pkgs; {
         rustChannels =
           let
@@ -59,7 +61,8 @@
         gtk-theme-collections = callPackage ./pkgs/gtk-theme-collections { } packageAttrs.gtk-theme-collections;
       };
 
-      packages = forAllSystems (system:
+      packages = forAllSystems (
+        system:
         let
           pkgSet = nixpkgsFor.${system};
           rustPkgSet = channel: { inherit (channel) rust rustcSrc; };
@@ -73,7 +76,8 @@
             vscode-insiders vscode-insiders-with-extensions
             gtk-theme-collections
             ;
-        });
+        }
+      );
 
       checks = forAllSystems (system: self.packages.${system});
     };
