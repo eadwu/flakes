@@ -12,12 +12,12 @@ jobs:
       fail-fast: false
       matrix:
         package:
+          - ladspa-bs2b
           - liberation-mono
-          - cachix
+          - boxpub
           - nixopsUnstable
           - nix-linter
           - linux_custom
-          - ladspa-bs2b
 
     steps:
       - name: Obtain maximum storage
