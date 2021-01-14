@@ -24,16 +24,17 @@
 
       forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
 
+      overlays = builtins.attrValues self.overlays;
+
       nixpkgsFor = forAllSystems (
         system: import nixpkgs {
-          inherit system;
-          overlays = builtins.attrValues self.overlays;
+          inherit system overlays;
           config.allowUnfree = true;
         }
       );
     in
       {
-        overlay = self.overlays.default;
+        overlay = with nixpkgs.lib; foldl' (final': prev': composeExtensions final' prev') (final: prev: {}) overlays;
 
         overlays.emacs-overlay = final: prev: import inputs.emacs-overlay final prev;
         overlays.default = final: prev: with final.pkgs; {
