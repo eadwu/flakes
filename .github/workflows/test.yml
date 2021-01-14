@@ -15,7 +15,6 @@ jobs:
           - ladspa-bs2b
           - liberation-mono
           - nixopsUnstable
-          - nix-linter
           - linux_custom
 
     steps:

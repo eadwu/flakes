@@ -6,7 +6,6 @@
   inputs.boxpub = { type = "github"; owner = "eadwu"; repo = "boxpub"; ref = "boxpub/2.x"; flake = false; };
   inputs.emacs-overlay = { type = "github"; owner = "eadwu"; repo = "emacs-overlay"; };
   inputs.nixops = { type = "github"; owner = "NixOS"; repo = "nixops"; };
-  inputs.nix-linter = { type = "github"; owner = "eadwu"; repo = "nix-linter"; flake = false; };
   inputs.plymouth-themes = { type = "github"; owner = "eadwu"; repo = "plymouth-themes"; flake = false; };
 
   inputs.privacy-haters = { type = "git"; url = "git://r-36.net/privacy-haters"; flake = false; };
@@ -45,7 +44,6 @@
 
         boxpub = import inputs.boxpub { inherit (stdenv.hostPlatform) system; };
         nixopsUnstable = nixops.defaultPackage.${system};
-        nix-linter = (import inputs.nix-linter { args = { inherit (stdenv.hostPlatform) system; }; }).nix-linter;
 
         clight-modules = callPackage ./pkgs/clight-modules { };
 
@@ -113,7 +111,7 @@
         {
           inherit (pkgSet)
             ladspa-bs2b liberation-mono
-            boxpub nixopsUnstable nix-linter
+            boxpub nixopsUnstable
             dual-plymouth-theme
             linux_custom
             ;
