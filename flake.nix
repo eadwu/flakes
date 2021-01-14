@@ -4,7 +4,7 @@
   inputs.nixpkgs = { type = "github"; owner = "eadwu"; repo = "nixpkgs"; ref = "develop"; };
 
   inputs.boxpub = { type = "github"; owner = "eadwu"; repo = "boxpub"; ref = "boxpub/2.x"; flake = false; };
-  inputs.emacs-overlay = { type = "github"; owner = "nix-community"; repo = "emacs-overlay"; flake = false; };
+  inputs.emacs-overlay = { type = "github"; owner = "eadwu"; repo = "emacs-overlay"; };
   inputs.nixops = { type = "github"; owner = "NixOS"; repo = "nixops"; };
   inputs.nix-linter = { type = "github"; owner = "eadwu"; repo = "nix-linter"; flake = false; };
   inputs.plymouth-themes = { type = "github"; owner = "eadwu"; repo = "plymouth-themes"; flake = false; };
@@ -36,7 +36,7 @@
     {
       overlay = with nixpkgs.lib; foldl' (final': prev': composeExtensions final' prev') (final: prev: { }) overlays;
 
-      overlays.emacs-overlay = final: prev: import inputs.emacs-overlay final prev;
+      overlays.emacs-overlay = inputs.emacs-overlay.overlay;
       overlays.default = final: prev: with final.pkgs; {
         kernelPatches = prev.kernelPatches // (callPackage ./pkgs/kernel/patches.nix { });
 
