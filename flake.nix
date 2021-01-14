@@ -42,15 +42,6 @@
 
           clight-modules = callPackage ./pkgs/clight-modules {};
 
-          i3lock-color = prev.i3lock-color.overrideAttrs (
-            oldAttrs: {
-              # Don't include ASAN runtime in release
-              postPatch = (oldAttrs.postPatch or "") + ''
-                sed -i 's/is_release=.*/is_release=yes/g' configure.ac
-              '';
-            }
-          );
-
           plymouth-themes = import inputs.plymouth-themes { inherit (final) pkgs; };
           dual-plymouth-theme = callPackage ./pkgs/dual-plymouth-theme {
             inherit (plymouth-themes) mkTheme;
