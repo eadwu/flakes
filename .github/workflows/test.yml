@@ -14,7 +14,6 @@ jobs:
         package:
           - ladspa-bs2b
           - liberation-mono
-          - boxpub
           - nixopsUnstable
           - nix-linter
           - linux_custom
