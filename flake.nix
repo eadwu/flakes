@@ -4,7 +4,6 @@
   inputs.nixpkgs = { type = "github"; owner = "eadwu"; repo = "nixpkgs"; ref = "develop"; };
 
   inputs.boxpub = { type = "github"; owner = "eadwu"; repo = "boxpub"; ref = "boxpub/2.x"; flake = false; };
-  inputs.cachix = { type = "github"; owner = "eadwu"; repo = "cachix"; flake = false; };
   inputs.emacs-overlay = { type = "github"; owner = "nix-community"; repo = "emacs-overlay"; flake = false; };
   inputs.nixops = { type = "github"; owner = "NixOS"; repo = "nixops"; };
   inputs.nix-linter = { type = "github"; owner = "eadwu"; repo = "nix-linter"; flake = false; };
@@ -44,7 +43,6 @@
           liberation-mono = prev.nerdfonts.override { fonts = [ "LiberationMono" ]; };
 
           boxpub = import inputs.boxpub { inherit (stdenv.hostPlatform) system; };
-          cachix = import inputs.cachix { inherit (stdenv.hostPlatform) system; };
           nixopsUnstable = nixops.defaultPackage.${system};
           nix-linter = (import inputs.nix-linter { args = { inherit (stdenv.hostPlatform) system; }; }).nix-linter;
 
@@ -114,7 +112,7 @@
               {
                 inherit (pkgSet)
                   ladspa-bs2b liberation-mono
-                  boxpub cachix nixopsUnstable nix-linter
+                  boxpub nixopsUnstable nix-linter
                   dual-plymouth-theme
                   linux_custom
                   ;
