@@ -22,8 +22,16 @@
   outputs = { self, nixpkgs, nixops, ... }@inputs:
     let
       supportedSystems = [ "x86_64-linux" ];
+
       forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
-      nixpkgsFor = forAllSystems (system: import nixpkgs { inherit system; inherit (self) overlays; config.allowUnfree = true; });
+
+      nixpkgsFor = forAllSystems (
+        system: import nixpkgs {
+          inherit system;
+          overlays = builtins.attrValues self.overlays;
+          config.allowUnfree = true;
+        }
+      );
     in
       {
         overlay = self.overlays.default;
@@ -107,7 +115,6 @@
                 inherit (pkgSet)
                   ladspa-bs2b liberation-mono
                   boxpub cachix nixopsUnstable nix-linter
-                  i3lock-color
                   dual-plymouth-theme
                   linux_custom
                   ;
