@@ -5,7 +5,8 @@ with lib.kernel;
 let
   # lower than lib.mkForce (50) to enforce changes
   mkForce = lib.mkOverride 36;
-in {
+in
+{
   bcachefs =
     {
       name = "bcachefs";
@@ -138,16 +139,16 @@ in {
 
         ### kconfig-hardened-check
         BUG_ON_DATA_CORRUPTION = yes;
-        SCHED_STACK_END_CHECK  = yes;
+        SCHED_STACK_END_CHECK = yes;
         SLAB_FREELIST_HARDENED = yes;
-        SLAB_FREELIST_RANDOM   = yes;
+        SLAB_FREELIST_RANDOM = yes;
         SHUFFLE_PAGE_ALLOCATOR = yes;
-        FORTIFY_SOURCE         = yes;
-        DEBUG_WX               = yes;
-        DEBUG_LIST             = yes;
-        DEBUG_SG               = yes;
-        DEBUG_CREDENTIALS      = yes;
-        DEBUG_NOTIFIERS        = yes;
+        FORTIFY_SOURCE = yes;
+        DEBUG_WX = yes;
+        DEBUG_LIST = yes;
+        DEBUG_SG = yes;
+        DEBUG_CREDENTIALS = yes;
+        DEBUG_NOTIFIERS = yes;
 
         GCC_PLUGIN_LATENT_ENTROPY = yes;
         GCC_PLUGIN_RANDSTRUCT = yes;
@@ -230,6 +231,8 @@ in {
         INET_RAW_DIAG = mkForce (option module);
         INET_TCP_DIAG = mkForce (option module);
         INET_UDP_DIAG = mkForce (option module);
+
+        INET_MPTCP_DIAG = mkForce (option module);
 
         FTRACE_SYSCALLS = mkForce (option yes);
         FUNCTION_PROFILER = mkForce (option yes);
