@@ -40,5 +40,5 @@ jobs:
             experimental-features = nix-command flakes
       - name: building ${{ matrix.package }}
         run: |
-          nix-shell -p nixFlakes --run 'nix --print-build-logs --recreate-lock-file \
+          nix-shell -p nixUnstable --run 'nix --print-build-logs --recreate-lock-file \
             "$(pwd)#packages.x86_64-linux.${{ matrix.package }}"'
