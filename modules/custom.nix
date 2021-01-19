@@ -3,7 +3,34 @@ inputs:
 { config, pkgs, lib, ... }:
 
 with lib;
+let
+  whitelistFile = pkgs.writeText "whitelist-hosts"
+    (concatStringsSep "\n" config.networking.whitelist);
 
+  # What this does:
+  # Combines the blacklists and then filters out comments and removes duplicate domains
+  #   Since we can never truly trust external blocklists, remove the ip address they say to redirect to
+  #   Awk pattern accounts for multiple domains on a single line
+  #     See https://stackoverflow.com/questions/4198138/printing-everything-except-the-first-field-with-awk/22908787
+  # Apply the whitelisted domains using the filter list
+  blacklistFile = pkgs.runCommandNoCC "blacklist-hosts"
+    {
+      nativeBuildInputs = with pkgs; [ ripgrep ];
+    } ''
+    cat ${escapeShellArgs config.networking.blacklistFiles} | \
+      rg . | rg -v '^#' | awk 'sub($1 FS,"")' | \
+      sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//' | \
+      sort | uniq > hosts.txt
+    ${optionalString (config.networking.whitelist != [ ]) ''
+    cp hosts.txt hosts.txt.orig
+    rg --invert-match --file=${whitelistFile} hosts.txt.orig > hosts.txt
+    ''}
+    sed 's/^/0.0.0.0 /' hosts.txt > $out
+    ${optionalString (config.networking.enableIPv6) ''
+    sed 's/^/:: /' hosts.txt >> $out
+    ''}
+  '';
+in
 {
   imports =
     [
@@ -13,12 +40,19 @@ with lib;
   options = {
     networking.blacklistFiles = mkOption {
       type = types.listOf types.path;
-      default = [];
+      default = [ ];
     };
 
     networking.whitelist = mkOption {
       type = types.listOf types.str;
-      default = [];
+      default = [ ];
+    };
+
+    _internal.eadwu.flakes.custom.hosts = mkOption {
+      type = types.package;
+      default = blacklistFile;
+      internal = true;
+      readOnly = true;
     };
   };
 
@@ -39,35 +73,7 @@ with lib;
       inputs.energized-regional
     ];
 
-    networking.hostFiles =
-      let
-        whitelistFile = pkgs.writeText "hosts-whitelist"
-          (concatStringsSep "\n" config.networking.whitelist);
-
-        # What this does:
-        # Combines the blacklists and then filters out comments and removes duplicate domains
-        #   Since we can never truly trust external blocklists, remove the ip address they say to redirect to
-        #   Awk pattern accounts for multiple domains on a single line
-        #     See https://stackoverflow.com/questions/4198138/printing-everything-except-the-first-field-with-awk/22908787
-        # Apply the whitelisted domains using the filter list
-        blacklistFile = pkgs.runCommandNoCC "blacklist-hosts" {
-          nativeBuildInputs = with pkgs; [ ripgrep ];
-        } ''
-          cat ${escapeShellArgs config.networking.blacklistFiles} | \
-            rg . | rg -v '^#' | awk 'sub($1 FS,"")' | \
-            sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//' | \
-            sort | uniq > hosts.txt
-          ${optionalString (config.networking.whitelist != []) ''
-          cp hosts.txt hosts.txt.orig
-          rg --invert-match --file=${whitelistFile} hosts.txt.orig > hosts.txt
-          ''}
-          sed 's/^/0.0.0.0 /' hosts.txt > $out
-          ${optionalString (config.networking.enableIPv6) ''
-          sed 's/^/:: /' hosts.txt >> $out
-          ''}
-        '';
-      in
-      [ blacklistFile ];
+    networking.hostFiles = [ config._internal.eadwu.flakes.custom.hosts ];
 
     networking.whitelist = [
       "^[^.]*$" # if there isn't any dots, it probably isn't a domain
@@ -80,15 +86,19 @@ with lib;
 
     security.pam.loginLimits = [
       # maximum realtime priority
-      { domain = "@audio";
+      {
+        domain = "@audio";
         type = "-";
         item = "rtprio";
-        value = "90"; }
+        value = "90";
+      }
       # maximum locked-in-memory address space (KB)
-      { domain = "@audio";
+      {
+        domain = "@audio";
         type = "-";
         item = "memlock";
-        value = "unlimited"; }
+        value = "unlimited";
+      }
     ];
   };
 }
