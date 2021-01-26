@@ -82,6 +82,7 @@ in
       "^stats.stackexchange.com$" # stackexchange...
       "^tags.tiqcdn.com$" # weather.com
       "^lists.gnu.org$" # GNU...
+      "^[^.]*.googlevideo.com$" # Youtube providers
     ];
 
     security.pam.loginLimits = [
