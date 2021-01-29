@@ -4,7 +4,7 @@
   inputs.nixpkgs = { type = "github"; owner = "eadwu"; repo = "nixpkgs"; ref = "develop"; };
 
   inputs.boxpub = { type = "github"; owner = "eadwu"; repo = "boxpub"; ref = "boxpub/2.x"; flake = false; };
-  inputs.emacs-overlay = { type = "github"; owner = "eadwu"; repo = "emacs-overlay"; };
+  inputs.emacs-overlay = { type = "github"; owner = "nix-community"; repo = "emacs-overlay"; };
   inputs.nixops = { type = "github"; owner = "NixOS"; repo = "nixops"; };
   inputs.plymouth-themes = { type = "github"; owner = "eadwu"; repo = "plymouth-themes"; flake = false; };
 
