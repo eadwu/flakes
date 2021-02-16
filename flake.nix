@@ -132,7 +132,6 @@
         r-36 = import ./modules/r-36.nix inputs;
         custom = import ./modules/custom.nix inputs;
         pipewire = import ./modules/pipewire.nix;
-        sourcehut = import ./modules/sourcehut;
         pam-keyring = import ./modules/pam-keyring.nix;
       };
     };
