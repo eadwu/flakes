@@ -3,6 +3,7 @@
 , lib
 , libdrm
 , libxkbcommon
+, libxshmfence
 , mesa
 , enableWidevine ? true
 , proprietaryCodecs ? true
@@ -27,7 +28,7 @@
       + (":" + lib.makeSearchPathOutput "lib" "lib64" buildInputs)
       + ":$out/opt/vivaldi-snapshot/lib";
 
-    buildInputs = oldAttrs.buildInputs ++ [ mesa libdrm libxkbcommon ];
+    buildInputs = oldAttrs.buildInputs ++ [ mesa libdrm libxkbcommon libxshmfence ];
 
     buildPhase = oldAttrs.buildPhase + ''
       patchelf \
