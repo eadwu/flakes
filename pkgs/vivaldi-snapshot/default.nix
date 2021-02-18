@@ -28,7 +28,13 @@
       + (":" + lib.makeSearchPathOutput "lib" "lib64" buildInputs)
       + ":$out/opt/vivaldi-snapshot/lib";
 
-    buildInputs = oldAttrs.buildInputs ++ [ mesa libdrm libxkbcommon libxshmfence ];
+    buildInputs = oldAttrs.buildInputs ++
+      [
+        mesa
+        libdrm
+        libxkbcommon
+        libxshmfence
+      ];
 
     buildPhase = oldAttrs.buildPhase + ''
       patchelf \
