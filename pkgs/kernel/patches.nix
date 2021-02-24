@@ -27,8 +27,6 @@ in
       };
     };
 
-  clearlinux = import ./clearlinux;
-
   zen-tweaks =
     {
       name = "zen-tweaks";
