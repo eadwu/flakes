@@ -43,7 +43,7 @@
             };
           in
           import ./overlays/rust/channels.nix { inherit nixpkgs-mozilla; };
-        rustPlatform = rustChannels.latest.nightly;
+        latestRustPlatform = rustChannels.latest.nightly;
 
         dwm = callPackage ./pkgs/dwm { inherit (prev) dwm; } packageAttrs.dwm;
         st = callPackage ./pkgs/st { inherit (prev) st; } packageAttrs.st;
