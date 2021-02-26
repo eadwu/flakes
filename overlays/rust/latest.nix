@@ -27,12 +27,18 @@ genAttrs
             inherit (base) cargo;
           };
 
+          # Hooks
+          inherit (callPackage (nixpkgs-mozilla.path + "/pkgs/build-support/rust/hooks/default.nix") {
+            inherit (base) cargo;
+          }) cargoBuildHook cargoCheckHook cargoInstallHook cargoSetupHook maturinBuildHook;
+
           buildRustPackage =
             { nativeBuildInputs ? [ ], ... }@args:
             nixpkgs-mozilla.rustPlatform.buildRustPackage.override
               {
                 inherit fetchCargoTarball;
                 inherit (base) cargo rustc;
+                inherit cargoBuildHook cargoCheckHook cargoInstallHook cargoSetupHook;
                 # `rust` derivation needed for toRustTarget toRustTargetSpec
                 # Doesn't use any special things so don't override
                 # rust = { inherit (nixpkgs-mozilla.rust) toRustTarget toRustTargetSpec; };
