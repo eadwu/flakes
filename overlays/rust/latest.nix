@@ -1,6 +1,6 @@
 { nixpkgs-mozilla }:
 let
-  inherit (nixpkgs-mozilla.lib) genAttrs;
+  inherit (nixpkgs-mozilla.lib) genAttrs recurseIntoAttrs;
   channels = [ "nightly" "beta" "stable" ];
   parse = file: builtins.fromJSON (builtins.readFile file);
   spec = genAttrs channels (channel: parse (./latest + "/${channel}.json"));
@@ -19,7 +19,10 @@ genAttrs
       self = base //
         rec {
           inherit (spec.${channel}) date;
-          rust = base.rust.override { extensions = [ "rust-src" "rust-std" ]; };
+          rust = recurseIntoAttrs {
+            inherit (base) cargo;
+            rustc = base.rust.override { extensions = [ "rust-src" "rust-std" ]; };
+          };
           rustcSrc = base.rust-src;
           rustLibSrc = base.rust-src + "/lib/rustlib/src/rust/library";
 
