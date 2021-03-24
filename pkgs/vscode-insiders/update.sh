@@ -6,7 +6,7 @@ root="$(readlink -f "$current_dir/../..")"
 attr="vscode-insiders"
 
 get_latest_url () {
-  wget --spider "https://vscode-update.azurewebsites.net/latest/linux-x64/insider" 2>&1 | \
+  wget --spider "https://update.code.visualstudio.com/latest/linux-x64/insider" 2>&1 | \
     grep '\-\-' | \
     tail -1 | \
     sed 's/--.*--\s*//'
