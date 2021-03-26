@@ -3,6 +3,7 @@
 
   inputs.custom = { type = "github"; owner = "eadwu"; repo = "flakes"; ref = "custom"; inputs.nixpkgs.follows = "/nixpkgs"; };
   inputs.rolling = { type = "github"; owner = "eadwu"; repo = "flakes"; ref = "rolling"; inputs.nixpkgs.follows = "/nixpkgs"; };
+  inputs.srcs = { type = "github"; owner = "eadwu"; repo = "flakes"; ref = "src"; inputs.nixpkgs.follows = "/nixpkgs"; };
 
   outputs = { self, nixpkgs, ... }@inputs: with nixpkgs.lib; let
     targetInputs = removeAttrs inputs [ "self" "nixpkgs" ];
