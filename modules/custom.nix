@@ -68,6 +68,9 @@ in
       (inputs.uhb-hosts + "/hosts/hosts0")
       (inputs.uhb-hosts + "/hosts/hosts1")
       (inputs.quantum-ad-list + "/For hosts file/The_Quantum_Ad-List.txt")
+      (inputs.flakes-srcs + "/srcs/someone-who-cares")
+      (inputs.flakes-srcs + "/srcs/energized-unified")
+      (inputs.flakes-srcs + "/srcs/energized-regional")
     ];
 
     networking.hostFiles = [ config._internal.eadwu.flakes.custom.hosts ];

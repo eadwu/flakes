@@ -2,6 +2,7 @@
   description = "Nix flake for my custom settings and stable packages";
 
   inputs.nixpkgs = { type = "github"; owner = "eadwu"; repo = "nixpkgs"; ref = "develop"; };
+  inputs.flakes-srcs = { type = "github"; owner = "eadwu"; repo = "flakes"; ref = "src"; };
 
   inputs.boxpub = { type = "github"; owner = "eadwu"; repo = "boxpub"; ref = "boxpub/2.x"; flake = false; };
   inputs.emacs-overlay = { type = "github"; owner = "nix-community"; repo = "emacs-overlay"; };
