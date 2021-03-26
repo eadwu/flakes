@@ -21,4 +21,10 @@ fi
 for src in "${!SRCS[@]}";
 do
   wget -O "$ROOT/srcs/$src" "${SRCS[$src]}"
+
+  if [ "$?" == "0" ];
+  then
+    git add "$ROOT/srcs/$src"
+    git commit -m "$src: $(date "+%s")"
+  fi
 done
