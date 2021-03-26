@@ -19,29 +19,8 @@
     {
       overlay = with nixpkgs.lib; foldl' (final': prev': composeExtensions final' prev') (final: prev: { }) overlays;
 
-      overlays.default-srcs = final: prev: with final.pkgs; {
-        _srcs = {
-          someone-who-cares = ./srcs/someone-who-cares;
-          energized-unified = ./srcs/energized-unified;
-          energized-regional = ./srcs/energized-regional;
-
-          default-gitignore = ./srcs/default-gitignore;
-        };
+      overlays.default-srcs = final: prev: {
+        _srcs = self;
       };
-
-      packages = forAllSystems (
-        system:
-        let
-          pkgSet = nixpkgsFor.${system};
-        in
-        {
-          inherit (pkgSet._srcs)
-            someone-who-cares energized-unified energized-regional
-            default-gitignore
-            ;
-        }
-      );
-
-      checks = forAllSystems (system: self.packages.${system});
     };
 }
