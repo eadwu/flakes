@@ -25,6 +25,6 @@ do
   if [ "$?" == "0" ];
   then
     git add "$ROOT/srcs/$src"
-    git commit -m "$src: $(date "+%s")"
+    git commit -m "$src: $(date "+%s")" || true
   fi
 done
