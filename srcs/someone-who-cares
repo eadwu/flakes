@@ -8,7 +8,7 @@
 # Please forward any additions, corrections or comments by email to
 # hosts@someonewhocares.org
 
-# Last updated: Wed, 07 Apr 2021 at 04:07:14 GMT
+# Last updated: Wed, 07 Apr 2021 at 04:26:22 GMT
 
 # Use this file to prevent your computer from connecting to selected
 # internet hosts. This is an easy and effective way to protect you from 
@@ -2844,6 +2844,8 @@ ff02::3		ip6-allhosts
 127.0.0.1 ryanrhodes.net
 127.0.0.1 s-41.algovid.com
 127.0.0.1 s.pubmine.com
+127.0.0.1 s3-ap-southeast-1-amazonaws.com
+127.0.0.1 s3-ap-southeast-2-amazonaws.com
 127.0.0.1 s4d.in
 127.0.0.1 safedownloadcenter.com
 127.0.0.1 safedownloadsrus166.com
@@ -11277,8 +11279,6 @@ ff02::3		ip6-allhosts
 127.0.0.1 s1.cz.adocean.pl
 127.0.0.1 s1.gratkapl.adocean.pl
 127.0.0.1 s2.buysellads.com
-127.0.0.1 s3-ap-southeast-1-amazonaws.com
-127.0.0.1 s3-ap-southeast-2-amazonaws.com
 127.0.0.1 s3.adbers.com
 127.0.0.1 s3.buysellads.com
 127.0.0.1 s3.pfp.sina.net
