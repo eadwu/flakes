@@ -2,7 +2,6 @@
   description = "Nix flake for a simulated rolling release";
 
   # Upstream source tree(s).
-  inputs.nixpkgs-mozilla = { type = "github"; owner = "mozilla"; repo = "nixpkgs-mozilla"; flake = false; };
   inputs.dwm = { type = "gitlab"; owner = "eadwu"; repo = "dwm"; ref = "develop"; flake = false; };
   inputs.gtk-theme-collections = { type = "github"; owner = "addy-dclxvi"; repo = "gtk-theme-collections"; flake = false; };
   inputs.pipewire = { type = "gitlab"; host = "gitlab.freedesktop.org"; owner = "pipewire"; repo = "pipewire"; flake = false; };
@@ -35,16 +34,6 @@
     {
       overlay = with nixpkgs.lib; foldl' (final': prev': composeExtensions final' prev') (final: prev: { }) overlays;
       overlays.default = final: prev: with final.pkgs; {
-        rustChannels =
-          let
-            nixpkgs-mozilla = import nixpkgs {
-              inherit (stdenv.hostPlatform) system;
-              overlays = [ (import inputs.nixpkgs-mozilla) ];
-            };
-          in
-          import ./overlays/rust/channels.nix { inherit nixpkgs-mozilla; };
-        latestRustPlatform = rustChannels.latest.nightly;
-
         dwm = callPackage ./pkgs/dwm { inherit (prev) dwm; } packageAttrs.dwm;
         st = callPackage ./pkgs/st { inherit (prev) st; } packageAttrs.st;
 
@@ -65,11 +54,9 @@
         system:
         let
           pkgSet = nixpkgsFor.${system};
-          rustPkgSet = channel: { inherit (channel) rust rustcSrc; };
         in
         {
           inherit (pkgSet)
-            rustChannels rustPlatform
             dwm st
             pipewire
             discord-canary vivaldi-snapshot
