@@ -89,6 +89,7 @@
               mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings;
             kernelPatches = kernel.kernelPatches ++ [
               kernelPatches.o3
+              kernelPatches.mlru
               kernelPatches.zen-tweaks
               kernelPatches.extra-config
             ];

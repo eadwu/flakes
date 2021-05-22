@@ -27,6 +27,16 @@ in
       };
     };
 
+  mlru =
+    {
+      name = "multigenerational-lru";
+      patch = ./mlru.patch.xz;
+      extraStructuredConfig = {
+        LRU_GEN = yes;
+        LRU_GEN_ENABLED = yes;
+      };
+    };
+
   zen-tweaks =
     {
       name = "zen-tweaks";
