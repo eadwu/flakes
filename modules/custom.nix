@@ -18,7 +18,7 @@ let
       nativeBuildInputs = with pkgs; [ ripgrep ];
     } ''
     cat ${escapeShellArgs config.networking.blacklistFiles} | \
-      rg . | rg -v '^#' | awk 'sub($1 FS,"")' | \
+      rg . | rg -v '^#' | awk 'sub($1 FS,"")' | awk '{print $1}' | \
       sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//' | \
       sort | uniq > hosts.txt
     ${optionalString (config.networking.whitelist != [ ]) ''
