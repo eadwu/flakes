@@ -2,6 +2,7 @@
 , discord-canary
 , autoPatchelfHook
 , atomEnv
+, libxshmfence
 }:
 
 discord-canary.overrideAttrs (
@@ -18,6 +19,8 @@ discord-canary.overrideAttrs (
       autoPatchelfHook
     ];
 
-    buildInputs = (oldAttrs.buildInputs or [ ]) ++ atomEnv.packages;
+    buildInputs = (oldAttrs.buildInputs or [ ])
+      ++ atomEnv.packages
+      ++ [ libxshmfence ];
   }
 )
