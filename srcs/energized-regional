@@ -24,12 +24,12 @@
 # Title: Energized Regional Extension
 # Description: An Extension to Block Regional Annoyances.
 # Format: hosts
-# Version: 21.06.164
-# Release: 164
-# Entries: 31,984
+# Version: 21.06.165
+# Release: 165
+# Entries: 31,988
 # Pack Code: EXR3G1094L-P
 # License: MIT, https://energized.pro/license
-# Updated: Sun, 13 Jun 21 18:00:35
+# Updated: Mon, 14 Jun 21 00:00:36
 # RAW: https://block.energized.pro/extensions/regional/formats/hosts
 # --------------------------------------------
 #
@@ -3058,11 +3058,14 @@ ff02::3 ip6-allhosts
 0.0.0.0 adtima-common.zadn.vn
 0.0.0.0 adtima-media-td.zadn.vn
 0.0.0.0 adtima-media.zadn.vn
+0.0.0.0 adtima-media.zascdn.me
 0.0.0.0 adtima.net.vn
 0.0.0.0 adtima.org
 0.0.0.0 adtimaserver.vn
 0.0.0.0 adtima-static-td.zadn.vn
 0.0.0.0 adtima-static.zadn.vn
+0.0.0.0 adtima-static.zascdn.me
+0.0.0.0 adtima-video.zascdn.me
 0.0.0.0 adtima.vn
 0.0.0.0 adtimes.admicro.vn
 0.0.0.0 adtimeselaras.com
@@ -6167,6 +6170,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 blueseed.tv
 0.0.0.0 blueserving.com
 0.0.0.0 bluestreak.com
+0.0.0.0 blueswordksh.com
 0.0.0.0 bluetoad.com
 0.0.0.0 bluewaffle.biz
 0.0.0.0 bluewaffle.com
