@@ -3,9 +3,13 @@
 
   # Upstream source tree(s).
   inputs.dwm = { type = "gitlab"; owner = "eadwu"; repo = "dwm"; ref = "develop"; flake = false; };
+  inputs.eww = { type = "github"; owner = "elkowar"; repo = "eww"; flake = false; };
   inputs.gtk-theme-collections = { type = "github"; owner = "addy-dclxvi"; repo = "gtk-theme-collections"; flake = false; };
   inputs.pipewire = { type = "gitlab"; host = "gitlab.freedesktop.org"; owner = "pipewire"; repo = "pipewire"; flake = false; };
   inputs.st = { type = "gitlab"; owner = "eadwu"; repo = "st"; ref = "develop"; flake = false; };
+
+  # Dependencies
+  inputs.fenix = { type = "github"; owner = "nix-community"; repo = "fenix"; inputs.nixpkgs.follows = "/nixpkgs"; };
 
   outputs = { self, nixpkgs, ... }@inputs:
     let
@@ -17,7 +21,8 @@
 
       nixpkgsFor = forAllSystems (
         system: import nixpkgs {
-          inherit system overlays;
+          inherit system;
+          overlays = overlays;
           config.allowUnfree = true;
         }
       );
@@ -36,6 +41,13 @@
       overlays.default = final: prev: with final.pkgs; {
         dwm = callPackage ./pkgs/dwm { inherit (prev) dwm; } packageAttrs.dwm;
         st = callPackage ./pkgs/st { inherit (prev) st; } packageAttrs.st;
+
+        eww = callPackage ./pkgs/eww {
+          rustPlatform = makeRustPlatform {
+            inherit (inputs.fenix.packages.${system}.latest)
+              cargo rustc;
+          };
+        } packageAttrs.eww;
 
         pipewire = callPackage ./pkgs/pipewire { inherit (prev) pipewire; } packageAttrs.pipewire;
 
@@ -58,6 +70,7 @@
         {
           inherit (pkgSet)
             dwm st
+            eww
             pipewire
             discord-canary vivaldi-snapshot
             vscode-insiders vscode-insiders-with-extensions
