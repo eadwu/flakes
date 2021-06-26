@@ -38,9 +38,16 @@
 
     buildPhase = oldAttrs.buildPhase + ''
       patchelf \
-        --set-interpreter "$(cat $NIX_CC/nix-support/dynamic-linker)" \
         --set-rpath "${newLibPath}" \
         opt/vivaldi-snapshot/vivaldi-bin
+
+      for exe in $(find opt/vivaldi-snapshot -type f -executable); do
+        echo "Patching Vivaldi binary $exe"
+        # Can fail if not an ELF executable
+        patchelf \
+          --set-interpreter "$(cat $NIX_CC/nix-support/dynamic-linker)" \
+          "$exe" || true
+      done
     '';
   }
 )
