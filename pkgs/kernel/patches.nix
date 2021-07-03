@@ -86,7 +86,9 @@ in
 
         ## Zram
         CRYPTO_ZSTD = yes;
-        ZSTD_COMPRESS = yes; # needed as a workaround that it is available as there is no guarantee during initrd with modules
+        # Needed as a workaround to make sure that it is present during initrd
+        # since it is required before the module is loaded
+        ZSTD_COMPRESS = yes;
 
         ## Zswap
         ZSWAP_COMPRESSOR_DEFAULT_LZ4 = yes;
@@ -114,6 +116,9 @@ in
         INIT_ON_ALLOC_DEFAULT_ON = yes;
         INIT_ON_FREE_DEFAULT_ON = yes;
 
+        # Randomize kernel stack offset to deter attacks relying on stack address determinism
+        RANDOMIZE_KSTACK_OFFSET_DEFAULT = yes;
+
         # Dangerous; enabling this allows replacement of running kernel.
         KEXEC = mkForce no;
 
@@ -129,7 +134,7 @@ in
         MODULE_SIG_KEY = option (freeform "certs/signing_key.pem");
 
         # Remove additional attack surface, unless you really need them.
-        # IA32_EMULATION = mkForce no;
+        # IA32_EMULATION = mkForce no; # needed for Wine
 
         # Easily confused by misconfigured userspace, keep off.
         BINFMT_MISC = mkForce no;
