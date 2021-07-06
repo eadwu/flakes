@@ -131,6 +131,7 @@
         custom = import ./modules/custom.nix inputs;
         pipewire = import ./modules/pipewire.nix;
         pam-keyring = import ./modules/pam-keyring.nix;
+        sysfs = import ./modules/sysfs.nix;
       };
     };
 }
