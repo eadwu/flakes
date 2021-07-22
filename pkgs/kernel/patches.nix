@@ -12,7 +12,10 @@ in
       name = "bcachefs";
       patch = ./bcachefs.patch.xz;
       extraStructuredConfig = {
-        BCACHEFS_FS = module;
+        BCACHEFS_FS = yes;
+        BCACHEFS_QUOTA = yes;
+        BCACHEFS_POSIX_ACL = yes;
+
         # https://bugzilla.redhat.com/show_bug.cgi?id=1615258
         DEBUG_SG = mkForce no;
       };
