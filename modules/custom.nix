@@ -13,7 +13,7 @@ let
   #   Awk pattern accounts for multiple domains on a single line
   #     See https://stackoverflow.com/questions/4198138/printing-everything-except-the-first-field-with-awk/22908787
   # Apply the whitelisted domains using the filter list
-  blacklistFile = pkgs.runCommandNoCC "blacklist-hosts"
+  blacklistFile = pkgs.runCommand "blacklist-hosts"
     {
       nativeBuildInputs = with pkgs; [ ripgrep ];
     } ''
