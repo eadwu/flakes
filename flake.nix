@@ -97,7 +97,6 @@
             kernelPatches = kernel.kernelPatches ++ [
               kernelPatches.o3
               kernelPatches.mlru
-              kernelPatches.bcachefs
               kernelPatches.zen-tweaks
               kernelPatches.extra-config
             ];
