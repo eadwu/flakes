@@ -40,6 +40,12 @@ in
       };
     };
 
+  hrtimer =
+    {
+      name = "ck-hrtimer";
+      patch = ./hrtimer.patch.xz;
+    };
+
   zen-tweaks =
     {
       name = "zen-tweaks";
