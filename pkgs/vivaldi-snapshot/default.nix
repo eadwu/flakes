@@ -5,7 +5,7 @@
 , libxkbcommon
 , libxshmfence
 , mesa
-, enableWidevine ? true
+, enableWidevine ? false
 , proprietaryCodecs ? true
 }:
 
