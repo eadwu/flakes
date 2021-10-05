@@ -87,6 +87,8 @@ in
         KERNEL_XZ = mkForce no;
         KERNEL_LZ4 = mkForce no;
         KERNEL_ZSTD = mkForce yes;
+        MODULE_COMPRESS_XZ = mkForce no;
+        MODULE_COMPRESS_ZSTD = mkForce yes;
 
         ## CPUFreq
         CPU_FREQ_GOV_PERFORMANCE = yes;
