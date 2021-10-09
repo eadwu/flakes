@@ -44,7 +44,7 @@ static void init(void) {
         sprintf(logpath,"%s/.cache/clight-trendlog/", getpwuid(getuid())->pw_dir);
     }
     mkdir(logpath, 0755);
-    INFO("Logging AmbientBr and BlPct into %s\n", logpath);
+    // INFO("Logging AmbientBr and BlPct into %s\n", logpath);
 }
 
 static void receive(const msg_t *msg, const void *userdata) {
@@ -60,7 +60,7 @@ static void receive(const msg_t *msg, const void *userdata) {
                         sprintf(cmd, "busctl call org.clightd.clightd /org/clightd/clightd/Backlight org.clightd.clightd.Backlight Get s '' | awk '{print \"%.3lf \"$NF}' >> %s%sdata", up->new, logpath, mode ? "AC-" : "BAT-");
                     }
                     system(cmd);
-                    DEBUG("Ran %s\n", cmd);
+                    // DEBUG("Ran %s\n", cmd);
             }
             skip = false;
             break;
@@ -76,21 +76,22 @@ static void receive(const msg_t *msg, const void *userdata) {
             // this just skips the next capture regardless of if it was queued or not
             if(up->old == DISPLAY_DIMMED || up->old == DISPLAY_OFF){
                     skip = true;
-                    DEBUG("Skipping next log\n");
+                    // DEBUG("Skipping next log\n");
             }
             break;
         }
         case INHIBIT_UPD: {
             inhibit_upd *up = (inhibit_upd *)MSG_DATA();
             skip = up->old;
-            if(skip) DEBUG("Skipping next log\n");
+            if(skip)
+                    // DEBUG("Skipping next log\n");
             break;
         }
         case LID_UPD: {
             lid_upd *up = (lid_upd *)MSG_DATA();
             if (up->new == CLOSED){
                     skip = true;
-                    DEBUG("Skipping next log\n");
+                    // DEBUG("Skipping next log\n");
             }
             break;
         }

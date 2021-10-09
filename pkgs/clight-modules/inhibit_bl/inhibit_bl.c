@@ -39,9 +39,9 @@ static void receive(const msg_t *msg, const void *userdata) {
         if (up->new) {
             M_PUB(&calib_req);      // stop backlight autocalibration
             M_PUB(&kbd_bl_req);     // set 0% kbd backlight
-            INFO("Inhibited clight.\n");
+            // INFO("Inhibited clight.\n");
         } else {
-            INFO("Uninhibited.\n");
+            // INFO("Uninhibited.\n");
             M_PUB(&calib_req);      // resume backlight autocalibration
             M_PUB(&capture_req);    // ask for a quick calibration
         }
