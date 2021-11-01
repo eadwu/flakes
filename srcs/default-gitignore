@@ -753,4 +753,7 @@ Cargo.lock
 .history
 .ionide
 
+# Support for Project snippet scope
+!.vscode/*.code-snippets
+
 # End of https://www.toptal.com/developers/gitignore/api/c,r,git,c++,java,rust,cmake,elisp,emacs,latex,linux,macos,scala,haskell,database,intellij,visualstudiocode
