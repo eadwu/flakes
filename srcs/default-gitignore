@@ -264,6 +264,9 @@ atlassian-ide-plugin.xml
 # Cursive Clojure plugin
 .idea/replstate.xml
 
+# SonarLint plugin
+.idea/sonarlint/
+
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties
@@ -330,6 +333,7 @@ fabric.properties
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+replay_pid*
 
 ### LaTeX ###
 ## Core latex/pdflatex auxiliary files:
@@ -442,9 +446,15 @@ acs-*.bib
 *.glsdefs
 *.lzo
 *.lzs
+*.slg
+*.sls
 
 # uncomment this for glossaries-extra (will ignore makeindex's style files!)
 # *.ist
+
+# gnuplot
+*.gnuplot
+*.table
 
 # gnuplottex
 *-gnuplottex-*
@@ -520,6 +530,9 @@ _minted*
 # scrwfile
 *.wrt
 
+# svg
+svg-inkscape/
+
 # sympy
 *.sout
 *.sympy
@@ -543,6 +556,9 @@ pythontex-files-*/
 *.dpth
 *.md5
 *.auxlock
+
+# titletoc
+*.ptc
 
 # todonotes
 *.tdo
@@ -674,6 +690,7 @@ Temporary Items
 
 # Session Data files
 .RData
+.RDataTmp
 
 # User-specific files
 .Ruserdata
@@ -714,6 +731,9 @@ docs/
 # translation temp files
 po/*~
 
+# RStudio Connect folder
+rsconnect/
+
 ### R.Bookdown Stack ###
 # R package: bookdown caching files
 /*_files/
@@ -743,10 +763,13 @@ Cargo.lock
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-*.code-workspace
+!.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
+
+# Built Visual Studio Code Extensions
+*.vsix
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
@@ -754,6 +777,5 @@ Cargo.lock
 .ionide
 
 # Support for Project snippet scope
-!.vscode/*.code-snippets
 
 # End of https://www.toptal.com/developers/gitignore/api/c,r,git,c++,java,rust,cmake,elisp,emacs,latex,linux,macos,scala,haskell,database,intellij,visualstudiocode
