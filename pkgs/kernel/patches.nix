@@ -177,7 +177,7 @@ in
         GCC_PLUGIN_LATENT_ENTROPY = yes;
         GCC_PLUGIN_RANDSTRUCT = yes;
         HARDENED_USERCOPY = yes;
-        HARDENED_USERCOPY_FALLBACK = mkForce no;
+        # HARDENED_USERCOPY_FALLBACK = mkForce no;
 
         INIT_STACK_ALL = option yes;
 
