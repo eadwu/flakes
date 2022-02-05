@@ -26,10 +26,10 @@
 # Format: hosts
 # Version: 22.02.037
 # Release: 037
-# Entries: 33,635
+# Entries: 33,637
 # Pack Code: EXR3G1094L-P
 # License: MIT, https://energized.pro/license
-# Updated: Sun, 06 Feb 22 00:14:30 +06
+# Updated: Sun, 06 Feb 22 04:15:00 +06
 # RAW: https://block.energized.pro/extensions/regional/formats/hosts
 # --------------------------------------------
 #
@@ -21910,6 +21910,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 partners.xm.com
 0.0.0.0 partner.toutiao.com
 0.0.0.0 partner-ts.groupon.fr
+0.0.0.0 partner-widget.vse-sdal.com
+0.0.0.0 partner-widget.vsesdal.com
 0.0.0.0 partnerx.bethub.io
 0.0.0.0 partnerz.biz
 0.0.0.0 partnerzyapi.ceneo.pl
