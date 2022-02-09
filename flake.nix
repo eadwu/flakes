@@ -14,7 +14,6 @@
   inputs.sb-hosts = { type = "github"; owner = "StevenBlack"; repo = "hosts"; flake = false; };
   inputs.dd-hosts = { type = "github"; owner = "lightswitch05"; repo = "hosts"; flake = false; };
   inputs.uhb-hosts = { type = "github"; owner = "Ultimate-Hosts-Blacklist"; repo = "Ultimate.Hosts.Blacklist"; flake = false; };
-  inputs.quantum-ad-list = { type = "gitlab"; owner = "The_Quantum_Alpha"; repo = "the-quantum-ad-list"; flake = false; };
 
   outputs = { self, nixpkgs, nixops, ... }@inputs:
     let
