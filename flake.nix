@@ -47,7 +47,7 @@
         liberation-mono = prev.nerdfonts.override { fonts = [ "LiberationMono" ]; };
 
         boxpub = import inputs.boxpub { inherit (stdenv.hostPlatform) system; };
-        nixopsUnstable = nixops.defaultPackage.${system};
+        nixopsUnstable = nixops.defaultPackage.${stdenv.hostPlatform.system};
 
         clight-modules = callPackage ./pkgs/clight-modules { };
 
