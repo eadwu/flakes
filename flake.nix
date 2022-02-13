@@ -6,6 +6,7 @@
   inputs.eww = { type = "github"; owner = "elkowar"; repo = "eww"; flake = false; };
   inputs.gtk-theme-collections = { type = "github"; owner = "addy-dclxvi"; repo = "gtk-theme-collections"; flake = false; };
   inputs.pipewire = { type = "gitlab"; host = "gitlab.freedesktop.org"; owner = "pipewire"; repo = "pipewire"; flake = false; };
+  inputs.wireplumber = { type = "gitlab"; host = "gitlab.freedesktop.org"; owner = "pipewire"; repo = "wireplumber"; flake = false; };
   inputs.st = { type = "gitlab"; owner = "eadwu"; repo = "st"; ref = "develop"; flake = false; };
 
   # Dependencies
@@ -50,6 +51,7 @@
         } packageAttrs.eww;
 
         pipewire = callPackage ./pkgs/pipewire { inherit (prev) pipewire; } packageAttrs.pipewire;
+        wireplumber = callPackage ./pkgs/wireplumber { inherit (prev) wireplumber; } packageAttrs.wireplumber;
 
         discord-canary = callPackage ./pkgs/discord-canary { inherit (prev) discord-canary; };
         vivaldi-snapshot = callPackage ./pkgs/vivaldi-snapshot { inherit (prev) vivaldi; };
