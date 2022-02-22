@@ -26,10 +26,10 @@
 # Format: hosts
 # Version: 22.02.053
 # Release: 053
-# Entries: 34,405
+# Entries: 34,442
 # Pack Code: EXR3G1094L-P
 # License: MIT, https://energized.pro/license
-# Updated: Tue, 22 Feb 22 12:17:54 +06
+# Updated: Tue, 22 Feb 22 16:18:19 +06
 # RAW: https://block.energized.pro/extensions/regional/formats/hosts
 # --------------------------------------------
 #
@@ -7531,24 +7531,36 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.advertserve.com
 0.0.0.0 cdn.advnet.xyz
 0.0.0.0 cdn.advsmedia.net
+0.0.0.0 cdn.agcm.xyz
 0.0.0.0 cdn.alistcloud.com
 0.0.0.0 cdn.allsportsflix.best
+0.0.0.0 cdn.alota.xyz
 0.0.0.0 cdn.ambientplatform.vn
 0.0.0.0 cdn.amzuu.com
 0.0.0.0 cdnapi.net
+0.0.0.0 cdn.aprick.xyz
 0.0.0.0 cdnaqw.com
+0.0.0.0 cdn.asdb.xyz
+0.0.0.0 cdn.asdfix.com
+0.0.0.0 cdn.asdnow.xyz
+0.0.0.0 cdn.asecv.xyz
 0.0.0.0 cdnasiaclub.com
 0.0.0.0 cdn.asriran.com
+0.0.0.0 cdn.asrop.xyz
 0.0.0.0 cdnativ.com
 0.0.0.0 cdnativepush.com
 0.0.0.0 cdn.autoads.asia
 0.0.0.0 cdn.avantisvideo.com
 0.0.0.0 cdnaz.win
+0.0.0.0 cdn.barlo.xyz
+0.0.0.0 cdn.bbes.xyz
 0.0.0.0 cdn.bidgear.com
 0.0.0.0 cdn-bk.ligastavok.ru
 0.0.0.0 cdn.bongdadem.net
 0.0.0.0 cdn-bongdadem-net.cdn.ampproject.org
 0.0.0.0 cdnbqw.com
+0.0.0.0 cdn.brtv.xyz
+0.0.0.0 cdn.buram.xyz
 0.0.0.0 cdncache1-a.akamaihd.net
 0.0.0.0 cdn.cityads.com
 0.0.0.0 cdn.cohesionapps.com
@@ -7559,22 +7571,30 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.cpex.cz
 0.0.0.0 cdncqw.com
 0.0.0.0 cdn.dcsaas.net
+0.0.0.0 cdn.ddow.xyz
 0.0.0.0 cdn.debitcrebit669.com
 0.0.0.0 cdn.digitalpush.org
 0.0.0.0 cdn.doke.app
 0.0.0.0 cdndqw.com
+0.0.0.0 cdn.drawx.xyz
 0.0.0.0 cdn.eecd.xyz
+0.0.0.0 cdn.eeco.xyz
+0.0.0.0 cdn.fagold.xyz
+0.0.0.0 cdn.fdsgv.xyz
 0.0.0.0 cdn.fedsy.xyz
 0.0.0.0 cdnfind.net
 0.0.0.0 cdnfjz.com
 0.0.0.0 cdn.flashtalking.com
 0.0.0.0 cdn.fuseplatform.net
 0.0.0.0 cdngain.com
+0.0.0.0 cdn.gecl.xyz
+0.0.0.0 cdn.gtrd.xyz
 0.0.0.0 cdn.hbplatform.com
 0.0.0.0 cdn.hostdl.com
 0.0.0.0 cdn-img.ru
 0.0.0.0 cdn.imvkan.com
 0.0.0.0 cdnion.com
+0.0.0.0 cdn.iople.com
 0.0.0.0 cdn.iranweb.click
 0.0.0.0 cdnjke.com
 0.0.0.0 cdnjs.mopair-erm.net
@@ -7583,6 +7603,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdnjs.z-face.cn
 0.0.0.0 cdn.klasseo.com
 0.0.0.0 cdn.leadbit.com
+0.0.0.0 cdn.lemonet.xyz
 0.0.0.0 cdn-library.su
 0.0.0.0 cdn.lodeo.io
 0.0.0.0 cdn.malokacha.club
@@ -7592,12 +7613,16 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn-media-m.ambient-platform.com
 0.0.0.0 cdn-media.m.ambient-platform.com
 0.0.0.0 cdn.midas-network.com
+0.0.0.0 cdn.morps.xyz
 0.0.0.0 cdnmr.net
 0.0.0.0 cdn-my4.ru
 0.0.0.0 cdn-my5.ru
 0.0.0.0 cdn.myad.vn
+0.0.0.0 cdn.namol.xyz
 0.0.0.0 cdn.nanda.vn
 0.0.0.0 cdn.neppa-ad.com
+0.0.0.0 cdn.nlop.xyz
+0.0.0.0 cdn.nuqwe.com
 0.0.0.0 cdn.omarketer.viettelpost.vn
 0.0.0.0 cdnondemand.org
 0.0.0.0 cdn.oneaday.co.kr
@@ -7607,7 +7632,12 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.playwire.com
 0.0.0.0 cdn.pljs.ru
 0.0.0.0 cdn.popcash.net
+0.0.0.0 cdn.popclow.xyz
+0.0.0.0 cdn.popjs.xyz
 0.0.0.0 cdn.popmyads.com
+0.0.0.0 cdn.poptri.com
+0.0.0.0 cdn.popwad.xyz
+0.0.0.0 cdn.popwow.xyz
 0.0.0.0 cdn.proadscdn.com
 0.0.0.0 cdnproviders.net
 0.0.0.0 cdn.pushdy.com
@@ -7622,15 +7652,18 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.sa168vip.com
 0.0.0.0 cdn.sagame66.com
 0.0.0.0 cdn.sanjagh.com
+0.0.0.0 cdn.sawron.xyz
 0.0.0.0 cdn-server.cc
 0.0.0.0 cdn-server.top
 0.0.0.0 cdn.serving.ad.org.vn
 0.0.0.0 cdn.sexygame66.com
 0.0.0.0 cdn.smartclick.io
 0.0.0.0 cdnspace.io
+0.0.0.0 cdn.spnut.com
 0.0.0.0 cdn.sportlabs.online
 0.0.0.0 cdn.sports-streams-online.club
 0.0.0.0 cdn.sports-streams-online.xyz
+0.0.0.0 cdn.srxy.xyz
 0.0.0.0 cdn.starseed.fr
 0.0.0.0 cdnstatic.daleriki.com
 0.0.0.0 cdn.steambets.net
@@ -7641,6 +7674,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.topperformance.xyz
 0.0.0.0 cdn.tpmedia.online
 0.0.0.0 cdntraffic.com
+0.0.0.0 cdn.trejar.com
 0.0.0.0 cdntrf.com
 0.0.0.0 cdn.tubecorp.com
 0.0.0.0 cdn.urekamedia.com
@@ -7655,6 +7689,9 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.welcome.pussysaga.com
 0.0.0.0 cdn.wenzhangba.cn
 0.0.0.0 cdn.wuyou.ca
+0.0.0.0 cdn.wwfx.xyz
+0.0.0.0 cdn.xapa.xyz
+0.0.0.0 cdn.xaxo.xyz
 0.0.0.0 cdn.yanews24.com
 0.0.0.0 cdn.zomap.de
 0.0.0.0 cdn.zxclan.com
