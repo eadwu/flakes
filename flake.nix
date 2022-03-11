@@ -95,6 +95,7 @@
               mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings;
             kernelPatches = kernel.kernelPatches ++ [
               kernelPatches.o3
+              kernelPatches.mglru
               kernelPatches.hrtimer
               kernelPatches.extra-config
             ];

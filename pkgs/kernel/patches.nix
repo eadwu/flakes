@@ -30,10 +30,10 @@ in
       };
     };
 
-  mlru =
+  mglru =
     {
       name = "multigenerational-lru";
-      patch = ./mlru.patch.xz;
+      patch = ./mglru.patch.xz;
       extraStructuredConfig = {
         LRU_GEN = yes;
         LRU_GEN_ENABLED = yes;
