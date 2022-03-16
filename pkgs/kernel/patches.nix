@@ -46,13 +46,6 @@ in
       patch = ./hrtimer.patch.xz;
     };
 
-  zen-tweaks =
-    {
-      name = "zen-tweaks";
-      patch = ./zen-tweaks.patch.xz;
-      extraStructuredConfig.ZEN_INTERACTIVE = yes;
-    };
-
   extra-config =
     {
       name = "extra-config";
