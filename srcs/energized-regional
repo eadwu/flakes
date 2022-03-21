@@ -26,10 +26,10 @@
 # Format: hosts
 # Version: 22.03.080
 # Release: 080
-# Entries: 36,578
+# Entries: 36,611
 # Pack Code: EXR3G1094L-P
 # License: MIT, https://energized.pro/license
-# Updated: Mon, 21 Mar 22 16:18:02 +06
+# Updated: Mon, 21 Mar 22 20:16:48 +06
 # RAW: https://block.energized.pro/extensions/regional/formats/hosts
 # --------------------------------------------
 #
@@ -642,6 +642,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3225747.notify6.com
 0.0.0.0 3231172.notify6.com
 0.0.0.0 3273540.notifysrv.com
+0.0.0.0 3285792.notifysrv.com
 0.0.0.0 32a79e2833309ebe.com
 0.0.0.0 32c5637f3c.com
 0.0.0.0 32fd7f438cb.com
@@ -649,6 +650,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 32.huanqiu.com
 0.0.0.0 32jiang.com
 0.0.0.0 32redpoker.com
+0.0.0.0 3310026.notify6.com
 0.0.0.0 3323174.notifysrv.com
 0.0.0.0 3323378.notify6.com
 0.0.0.0 3324.cn
@@ -695,6 +697,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 3348424.notify6.com
 0.0.0.0 3349680.notify6.com
 0.0.0.0 3360202.notify6.com
+0.0.0.0 3362420.notifysrv.com
+0.0.0.0 3362426.notifysrv.com
 0.0.0.0 3363688.notify6.com
 0.0.0.0 3381e74f70adfb59.com
 0.0.0.0 3382771.notifysrv.com
@@ -706,6 +710,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 33ceaea337.cfd
 0.0.0.0 33e429d29e.com
 0.0.0.0 33img.com
+0.0.0.0 3408773.notify6.com
 0.0.0.0 341073be6e9db7d2.com
 0.0.0.0 342151ed6e.com
 0.0.0.0 3432573.notify6.com
@@ -717,6 +722,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 34c2f22e9503ace.com
 0.0.0.0 34pavouhj7.com
 0.0.0.0 3505135.notifysrv.com
+0.0.0.0 3508819.notify6.com
 0.0.0.0 350media.com
 0.0.0.0 3518183.notifysrv.com
 0.0.0.0 3523289.notifysrv.com
@@ -726,7 +732,9 @@ ff02::3 ip6-allhosts
 0.0.0.0 3.5646.cn
 0.0.0.0 3572293.notifysrv.com
 0.0.0.0 3572303.notifysrv.com
+0.0.0.0 3584069.notifysrv.com
 0.0.0.0 3588591.notifysrv.com
+0.0.0.0 3588593.notifysrv.com
 0.0.0.0 3595711.notifysrv.com
 0.0.0.0 3597775.notifysrv.com
 0.0.0.0 3599727.notify6.com
@@ -752,6 +760,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 365cf.vip
 0.0.0.0 365sbaffiliates.com
 0.0.0.0 365wp.org
+0.0.0.0 3662595.notifysrv.com
+0.0.0.0 3662601.notifysrv.com
 0.0.0.0 3668787.notifysrv.com
 0.0.0.0 3670119.notifysrv.com
 0.0.0.0 36a5b7eb2808.com
@@ -840,22 +850,28 @@ ff02::3 ip6-allhosts
 0.0.0.0 3xtraffic.com
 0.0.0.0 3z6hirxo24.com
 0.0.0.0 4004928.notify6.com
+0.0.0.0 4018398.notify6.com
 0.0.0.0 4031266.notify6.com
 0.0.0.0 4037374.notify6.com
+0.0.0.0 4052808.notify6.com
+0.0.0.0 4052828.notify6.com
 0.0.0.0 4068856.notify6.com
 0.0.0.0 407433bfc441.com
 0.0.0.0 4096386.notify6.com
 0.0.0.0 40ceexln7929.com
 0.0.0.0 4149128.notify6.com
 0.0.0.0 414a048c3b.com
+0.0.0.0 4162254.notify6.com
 0.0.0.0 4182036.notify6.com
 0.0.0.0 4188246.notify6.com
 0.0.0.0 41cm.shop
 0.0.0.0 41df76c67812005c.com
 0.0.0.0 421npyd4nd.com
 0.0.0.0 42297df5c090.com
+0.0.0.0 4231374.notify6.com
 0.0.0.0 4251.tech
 0.0.0.0 4259086.notify6.com
+0.0.0.0 4266030.notify6.com
 0.0.0.0 426824a46c.com
 0.0.0.0 4270606.notify6.com
 0.0.0.0 4270618.notify6.com
@@ -1677,6 +1693,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 abedwest.com
 0.0.0.0 abeehing.net
 0.0.0.0 abeets.ru
+0.0.0.0 abee.yeeowl.xyz
 0.0.0.0 abellalist.com
 0.0.0.0 abergently.club
 0.0.0.0 a.bestcontentitem.top
@@ -2255,7 +2272,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 adgoto.com
 0.0.0.0 ad.graciamediaweb.com
 0.0.0.0 adgrid.io
-0.0.0.0 ad.grizox.xyz
 0.0.0.0 ad.groupon.fr
 0.0.0.0 adgroups.com
 0.0.0.0 adgrx.com
@@ -4973,11 +4989,13 @@ ff02::3 ip6-allhosts
 0.0.0.0 asgclickpp.com
 0.0.0.0 asg.collegesexvideo.net
 0.0.0.0 asgdfasad.mm-cgnews.com
+0.0.0.0 asg.dormtapes.com
 0.0.0.0 asg.faperoni.com
 0.0.0.0 asg.i884.info
 0.0.0.0 asg.japanxxxvideo.net
 0.0.0.0 asg.lustesthd.com
 0.0.0.0 asgorebysschan.com
+0.0.0.0 asg.page-x.com
 0.0.0.0 asg.phukienthoitranggiare.com
 0.0.0.0 asg.pornimagine.com
 0.0.0.0 asg.pornomoglie.com
@@ -4988,6 +5006,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 asg.sdtraff.com
 0.0.0.0 asg.shudhdesiporn.com
 0.0.0.0 asg.somecdn.bid
+0.0.0.0 asg.soundrussian.com
 0.0.0.0 asg.srvtax.com
 0.0.0.0 asgt.findnewline.com
 0.0.0.0 asg.zzipps.com
@@ -5039,6 +5058,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 aspaskaim.club
 0.0.0.0 aspbateayes.com
 0.0.0.0 asperencium.com
+0.0.0.0 asp.hotfullvideos.com
 0.0.0.0 aspignitean.com
 0.0.0.0 aspirantsleepover.com
 0.0.0.0 aspirinsuicide.com
@@ -5346,6 +5366,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 awaitssnerp.com
 0.0.0.0 awakeexterior.com
 0.0.0.0 a.wanzhuang.com
+0.0.0.0 a.warddogs.com
 0.0.0.0 awardpodstab.com
 0.0.0.0 awarentew.xyz
 0.0.0.0 a.watchomovies.com
@@ -5680,6 +5701,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 baletingo.com
 0.0.0.0 balkishbiretta.com
 0.0.0.0 balkonak.com
+0.0.0.0 balldevelopedhangnail.com
 0.0.0.0 balledalloy.com
 0.0.0.0 ballotwriggle.com
 0.0.0.0 balmoralmkt.com
@@ -7203,6 +7225,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 bsmnyslcjdfndiu.xyz
 0.0.0.0 bs.mybb.ru
 0.0.0.0 bs.nakanohito.jp
+0.0.0.0 b.sonorousporn.com
 0.0.0.0 bs.orsk.ru
 0.0.0.0 bspdyp.com
 0.0.0.0 bspmvlrullhr.xyz
@@ -7481,6 +7504,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 c52llumx.com
 0.0.0.0 c5b39ff13b3259df.com
 0.0.0.0 c5.gostats.vn
+0.0.0.0 c5m.codegurutech.com
 0.0.0.0 c7486c5c0a.com
 0.0.0.0 c785e43db1.com
 0.0.0.0 c7e4d34b2afc3.com
@@ -7970,6 +7994,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.proadscdn.com
 0.0.0.0 cdnproviders.net
 0.0.0.0 cdn.pushdy.com
+0.0.0.0 cdn.pushfan.com
 0.0.0.0 cdn-qc.coccoc.com
 0.0.0.0 cdn.qc.coccoc.com
 0.0.0.0 cdnquality.com
@@ -7987,6 +8012,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn-server.top
 0.0.0.0 cdn.serving.ad.org.vn
 0.0.0.0 cdn.sexygame66.com
+0.0.0.0 cdn.silverclick.xyz
 0.0.0.0 cdn.smartclick.io
 0.0.0.0 cdn.soxg.xyz
 0.0.0.0 cdnspace.io
@@ -9192,6 +9218,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 cookliverelk.com
 0.0.0.0 cookoval.com
 0.0.0.0 cookreactor.com
+0.0.0.0 cool.ah-me.com
 0.0.0.0 coolbook.cc
 0.0.0.0 coolboy112233.github.io
 0.0.0.0 coolbytesgrill.com
@@ -16459,6 +16486,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 imgsynd.com
 0.0.0.0 img.teman.stream
 0.0.0.0 img.vietnamnetad.vn
+0.0.0.0 imgwdyey.com
 0.0.0.0 imgwebfeed.com
 0.0.0.0 img.yangshengtang123.com
 0.0.0.0 img.zuowenwang.net
@@ -17687,6 +17715,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 jsite.top
 0.0.0.0 jsiwjgnq.com
 0.0.0.0 jslog.zapps.vn
+0.0.0.0 js.mangapro.top
 0.0.0.0 js.mediaz.asia
 0.0.0.0 jsmentry.com
 0.0.0.0 jsmjmp.com
@@ -19239,6 +19268,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 lllfe.cn
 0.0.0.0 lllypmcqagpgj.top
 0.0.0.0 llnjzvwefma.com
+0.0.0.0 llnsmu.com
 0.0.0.0 lloenerginqu.info
 0.0.0.0 llofmcdyyp.com
 0.0.0.0 llog.pl
@@ -21444,7 +21474,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 mydatingcash.com
 0.0.0.0 mydiethub.com
 0.0.0.0 mydisuho.pro
-0.0.0.0 mydomainbest.com
 0.0.0.0 mydownba.com
 0.0.0.0 my.electricbalance.com
 0.0.0.0 myextstat.ru
@@ -22823,6 +22852,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 oidoummoocejc.xyz
 0.0.0.0 oi.fapnado.com
 0.0.0.0 oi.fapnado.xxx
+0.0.0.0 oi.fapnow.xxx
 0.0.0.0 oijkse.com
 0.0.0.0 oilefy.com
 0.0.0.0 oilwrypit.com
@@ -28360,6 +28390,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 sexualpitfall.com
 0.0.0.0 sexufly.com
 0.0.0.0 sexuhot.com
+0.0.0.0 s.exv6.com
 0.0.0.0 sexvertise.com
 0.0.0.0 sexyfreecamz.com
 0.0.0.0 sexy-more.com
@@ -30385,12 +30416,14 @@ ff02::3 ip6-allhosts
 0.0.0.0 syndication.jsadapi.com
 0.0.0.0 syndication.link2nx.com
 0.0.0.0 syndication.link5a.com
+0.0.0.0 syndication.link5c.com
 0.0.0.0 syndication.link5v.com
 0.0.0.0 syndication.linkfryn.com
 0.0.0.0 syndication.linkgett.com
 0.0.0.0 syndication.linkwitt.com
 0.0.0.0 syndication.optimizesrv.com
 0.0.0.0 syndication.realsrv.com
+0.0.0.0 syndication.whibd.com
 0.0.0.0 syndication.whibp.com
 0.0.0.0 syndicpop.com
 0.0.0.0 syndocassyth.com
