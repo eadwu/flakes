@@ -40,12 +40,6 @@ in
       };
     };
 
-  hrtimer =
-    {
-      name = "ck-hrtimer";
-      patch = ./hrtimer.patch.xz;
-    };
-
   extra-config =
     {
       name = "extra-config";
