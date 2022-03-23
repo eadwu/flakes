@@ -96,6 +96,7 @@
             kernelPatches = kernel.kernelPatches ++ [
               kernelPatches.o3
               kernelPatches.mglru
+              kernelPatches.disable-enhanced-sco
               kernelPatches.extra-config
             ];
             modDirVersionArg = kernel.modDirVersion;
