@@ -26,10 +26,10 @@
 # Format: hosts
 # Version: 22.04.108
 # Release: 108
-# Entries: 39,049
+# Entries: 39,048
 # Pack Code: EXR3G1094L-P
 # License: MIT, https://energized.pro/license
-# Updated: Mon, 18 Apr 22 16:15:53 +06
+# Updated: Mon, 18 Apr 22 20:18:17 +06
 # RAW: https://block.energized.pro/extensions/regional/formats/hosts
 # --------------------------------------------
 #
@@ -660,8 +660,10 @@ ff02::3 ip6-allhosts
 0.0.0.0 3243082.notify6.com
 0.0.0.0 3249648.notify6.com
 0.0.0.0 3273540.notifysrv.com
+0.0.0.0 3283088.notifysrv.com
 0.0.0.0 3285792.notifysrv.com
 0.0.0.0 3286068.notify6.com
+0.0.0.0 3290250.notifysrv.com
 0.0.0.0 32a79e2833309ebe.com
 0.0.0.0 32c5637f3c.com
 0.0.0.0 32fd7f438cb.com
@@ -669,6 +671,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 32.huanqiu.com
 0.0.0.0 32jiang.com
 0.0.0.0 32redpoker.com
+0.0.0.0 3300890.notifysrv.com
 0.0.0.0 3300974.notify6.com
 0.0.0.0 3302404.notify6.com
 0.0.0.0 3304354.notify6.com
@@ -741,10 +744,12 @@ ff02::3 ip6-allhosts
 0.0.0.0 3409957.notifysrv.com
 0.0.0.0 341073be6e9db7d2.com
 0.0.0.0 3414351.notifysrv.com
+0.0.0.0 3419733.notifysrv.com
 0.0.0.0 3420755.notifysrv.com
 0.0.0.0 3420765.notifysrv.com
 0.0.0.0 3420767.notifysrv.com
 0.0.0.0 342151ed6e.com
+0.0.0.0 3423953.notifysrv.com
 0.0.0.0 3432573.notify6.com
 0.0.0.0 3440411.notify6.com
 0.0.0.0 3457083.notifysrv.com
@@ -761,6 +766,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3508819.notify6.com
 0.0.0.0 350media.com
 0.0.0.0 3518183.notifysrv.com
+0.0.0.0 3520653.notifysrv.com
 0.0.0.0 3521363.notifysrv.com
 0.0.0.0 3523289.notifysrv.com
 0.0.0.0 3527699.notify6.com
@@ -772,7 +778,9 @@ ff02::3 ip6-allhosts
 0.0.0.0 3566697.notifysrv.com
 0.0.0.0 3570727.notifysrv.com
 0.0.0.0 3572273.notify6.com
+0.0.0.0 3572273.notifysrv.com
 0.0.0.0 3572293.notifysrv.com
+0.0.0.0 3572299.notifysrv.com
 0.0.0.0 3572303.notifysrv.com
 0.0.0.0 3576531.notifysrv.com
 0.0.0.0 3584069.notifysrv.com
@@ -782,6 +790,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3588593.notifysrv.com
 0.0.0.0 3588597.notifysrv.com
 0.0.0.0 3588599.notifysrv.com
+0.0.0.0 3593835.notify6.com
 0.0.0.0 3595711.notifysrv.com
 0.0.0.0 3597775.notifysrv.com
 0.0.0.0 3599727.notify6.com
@@ -809,8 +818,10 @@ ff02::3 ip6-allhosts
 0.0.0.0 365sbaffiliates.com
 0.0.0.0 365wp.org
 0.0.0.0 3662555.notifysrv.com
+0.0.0.0 3662591.notifysrv.com
 0.0.0.0 3662595.notifysrv.com
 0.0.0.0 3662601.notifysrv.com
+0.0.0.0 3662897.notifysrv.com
 0.0.0.0 3668787.notifysrv.com
 0.0.0.0 3670119.notifysrv.com
 0.0.0.0 3672243.notifysrv.com
@@ -920,11 +931,13 @@ ff02::3 ip6-allhosts
 0.0.0.0 4018398.notify6.com
 0.0.0.0 4031266.notify6.com
 0.0.0.0 4037374.notify6.com
+0.0.0.0 4037426.notify6.com
 0.0.0.0 4052808.notify6.com
 0.0.0.0 4052828.notify6.com
 0.0.0.0 4061378.notify6.com
 0.0.0.0 4062424.notify6.com
 0.0.0.0 4068856.notify6.com
+0.0.0.0 4068860.notify6.com
 0.0.0.0 407433bfc441.com
 0.0.0.0 4096386.notify6.com
 0.0.0.0 40ceexln7929.com
@@ -966,6 +979,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 4329300.notify6.com
 0.0.0.0 4399.space
 0.0.0.0 43yagowe3y.com
+0.0.0.0 4421184.notify6.com
 0.0.0.0 442438f989.com
 0.0.0.0 4454624.notify6.com
 0.0.0.0 4480dy.net
@@ -2949,6 +2963,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 ads.baohaiduong.vn
 0.0.0.0 ads.baotainguyenmoitruong.vn
 0.0.0.0 ads.bid
+0.0.0.0 adsbid-sh-click.sing.adghndou0sdh.ru
 0.0.0.0 adsbingo.com
 0.0.0.0 adsblockkpush.com
 0.0.0.0 adsblok.com
@@ -4298,6 +4313,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 alespeonor.com
 0.0.0.0 a.letsjerk.org
 0.0.0.0 a.letsjerk.to
+0.0.0.0 a.letsjerk.tv
 0.0.0.0 alexanberton.com
 0.0.0.0 alexandraeden.com
 0.0.0.0 alexey.blog21.ru
@@ -5020,6 +5036,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 aptashark.club
 0.0.0.0 aptimorph.com
 0.0.0.0 apublishingc.biz
+0.0.0.0 a.pub.network
 0.0.0.0 apucdt.com
 0.0.0.0 a.pumpity.net
 0.0.0.0 apunoghftf.xyz
@@ -5503,6 +5520,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 aulteeby.net
 0.0.0.0 aumaupoy.net
 0.0.0.0 aumpoabi.com
+0.0.0.0 a.umpornozinho.com
 0.0.0.0 aumsookr.com
 0.0.0.0 auntieimpetus.com
 0.0.0.0 auntietraumatizemobile.com
@@ -6636,6 +6654,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 best-protection4.me
 0.0.0.0 bestregarsv.fun
 0.0.0.0 bestrevenuenetwork.com
+0.0.0.0 best.s5live.com
 0.0.0.0 best-sexy-partner1.com
 0.0.0.0 bestssn.com
 0.0.0.0 best-stream.net
@@ -7398,6 +7417,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 bp5hq5jivj.ru
 0.0.0.0 b.penzainform.ru
 0.0.0.0 bpiexpressoimobiliario.pt
+0.0.0.0 b.pinetq.com
 0.0.0.0 bpioqb.com
 0.0.0.0 bpkbqp.com
 0.0.0.0 bplnskyetroo.xyz
@@ -8285,7 +8305,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.adflex.vn
 0.0.0.0 cdn.adk2.com
 0.0.0.0 cdn.adnuntius.com
-0.0.0.0 cdn.adoglu.com
 0.0.0.0 cdnads.com
 0.0.0.0 cdn.adsplay.xyz
 0.0.0.0 cdn-ads.thesaigontimes.vn
@@ -8294,7 +8313,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.advertserve.com
 0.0.0.0 cdn.advnet.xyz
 0.0.0.0 cdn.advsmedia.net
-0.0.0.0 cdn.agcm.xyz
 0.0.0.0 cdn.alistcloud.com
 0.0.0.0 cdn.allsportsflix.best
 0.0.0.0 cdn.alota.xyz
@@ -8302,16 +8320,12 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.amzuu.com
 0.0.0.0 cdnapi.net
 0.0.0.0 cdn.applixir.com
-0.0.0.0 cdn.aprick.xyz
 0.0.0.0 cdnaqw.com
 0.0.0.0 cdn.asce.xyz
 0.0.0.0 cdn.asdb.xyz
-0.0.0.0 cdn.asdccc.xyz
 0.0.0.0 cdn.asdfix.com
-0.0.0.0 cdn.asdfix.xyz
 0.0.0.0 cdn.asdnow.xyz
 0.0.0.0 cdn.asecv.xyz
-0.0.0.0 cdn.asecw.xyz
 0.0.0.0 cdnasiaclub.com
 0.0.0.0 cdn.asriran.com
 0.0.0.0 cdn.asrop.xyz
@@ -8321,13 +8335,11 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.avantisvideo.com
 0.0.0.0 cdnaz.win
 0.0.0.0 cdn.barlo.xyz
-0.0.0.0 cdn.bbes.xyz
 0.0.0.0 cdn.bidgear.com
 0.0.0.0 cdn-bk.ligastavok.ru
 0.0.0.0 cdn.bongdadem.net
 0.0.0.0 cdn-bongdadem-net.cdn.ampproject.org
 0.0.0.0 cdnbqw.com
-0.0.0.0 cdn.brtv.xyz
 0.0.0.0 cdn.buram.xyz
 0.0.0.0 cdncache1-a.akamaihd.net
 0.0.0.0 cdn.cityads.com
@@ -8339,26 +8351,20 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.cpex.cz
 0.0.0.0 cdncqw.com
 0.0.0.0 cdn.dcsaas.net
-0.0.0.0 cdn.ddow.xyz
 0.0.0.0 cdn.debitcrebit669.com
+0.0.0.0 cdn.decpo.xyz
 0.0.0.0 cdn.digitalpush.org
 0.0.0.0 cdn.doke.app
 0.0.0.0 cdndqw.com
 0.0.0.0 cdn.drawx.xyz
-0.0.0.0 cdn.dupx.xyz
 0.0.0.0 cdn.eecd.xyz
 0.0.0.0 cdn.eeco.xyz
-0.0.0.0 cdn.fagold.xyz
-0.0.0.0 cdn.fdsgv.xyz
 0.0.0.0 cdn.fedsy.xyz
 0.0.0.0 cdnfjz.com
 0.0.0.0 cdn.flashtalking.com
-0.0.0.0 cdn.fluxy.xyz
 0.0.0.0 cdn.fuseplatform.net
 0.0.0.0 cdngain.com
 0.0.0.0 cdn.gecl.xyz
-0.0.0.0 cdn.goldclick.xyz
-0.0.0.0 cdn.gtrd.xyz
 0.0.0.0 cdn.haocaa.com
 0.0.0.0 cdn.hbplatform.com
 0.0.0.0 cdn.hostdl.com
@@ -8375,9 +8381,9 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdnjs.z-face.cn
 0.0.0.0 cdn.klasseo.com
 0.0.0.0 cdn.leadbit.com
-0.0.0.0 cdn.lemonet.xyz
 0.0.0.0 cdn-library.su
 0.0.0.0 cdn.lodeo.io
+0.0.0.0 cdn.luxope.com
 0.0.0.0 cdn.malokacha.club
 0.0.0.0 cdn.m.ambientplatform.vn
 0.0.0.0 cdn.mclick.mobi
@@ -8385,7 +8391,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn-media-m.ambient-platform.com
 0.0.0.0 cdn-media.m.ambient-platform.com
 0.0.0.0 cdn.midas-network.com
-0.0.0.0 cdn.morps.xyz
 0.0.0.0 cdnmr.net
 0.0.0.0 cdn-my4.ru
 0.0.0.0 cdn-my5.ru
@@ -8405,44 +8410,34 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.playwire.com
 0.0.0.0 cdn.pljs.ru
 0.0.0.0 cdn.popcash.net
-0.0.0.0 cdn.popclow.xyz
-0.0.0.0 cdn.popjs.xyz
 0.0.0.0 cdn.popmyads.com
-0.0.0.0 cdn.poptri.com
-0.0.0.0 cdn.popwad.xyz
-0.0.0.0 cdn.popwow.xyz
 0.0.0.0 cdn.proadscdn.com
 0.0.0.0 cdnproviders.net
 0.0.0.0 cdn.pushdy.com
-0.0.0.0 cdn.pushfan.com
 0.0.0.0 cdn-qc.coccoc.com
 0.0.0.0 cdn.qc.coccoc.com
 0.0.0.0 cdnquality.com
+0.0.0.0 cdn.rapolok.com
 0.0.0.0 cdnreference.com
 0.0.0.0 cdn.relaido.jp
 0.0.0.0 cdn.rgrd.xyz
 0.0.0.0 cdnrl.com
 0.0.0.0 cdn.rongzhouxing.com
-0.0.0.0 cdn.ropx.xyz
 0.0.0.0 cdn-rtb.sape.ru
 0.0.0.0 cdn.sa168vip.com
 0.0.0.0 cdn.sagame66.com
 0.0.0.0 cdn.sanjagh.com
-0.0.0.0 cdn.sawron.xyz
 0.0.0.0 cdn-server.cc
 0.0.0.0 cdn-server.top
 0.0.0.0 cdn.serving.ad.org.vn
 0.0.0.0 cdn.sexygame66.com
-0.0.0.0 cdn.silverclick.xyz
 0.0.0.0 cdn.smartclick.io
-0.0.0.0 cdn.soxg.xyz
 0.0.0.0 cdnspace.io
 0.0.0.0 cdn.spnut.com
 0.0.0.0 cdn.sportlabs.online
 0.0.0.0 cdn.sports-streams-online.club
 0.0.0.0 cdn.sports-streams-online.xyz
 0.0.0.0 cdn.srxy.xyz
-0.0.0.0 cdn.ssers.xyz
 0.0.0.0 cdn.starseed.fr
 0.0.0.0 cdnstatic.daleriki.com
 0.0.0.0 cdn.steambets.net
@@ -8471,9 +8466,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.wpshop.ru
 0.0.0.0 cdn.wuyou.ca
 0.0.0.0 cdn.wwfx.xyz
-0.0.0.0 cdn.xapa.xyz
-0.0.0.0 cdn.xaxo.xyz
-0.0.0.0 cdn.xtow.xyz
 0.0.0.0 cdn.yanews24.com
 0.0.0.0 cdn.zomap.de
 0.0.0.0 cdn.zxclan.com
@@ -15942,6 +15934,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 gurswdsyuah.xyz
 0.0.0.0 guruads.de
 0.0.0.0 gururevenue.com
+0.0.0.0 gurynyce.com
 0.0.0.0 gusfinishedsue.com
 0.0.0.0 gus.host
 0.0.0.0 gussame.com
@@ -19904,6 +19897,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 lailivob.net
 0.0.0.0 lailoljiqsi.com
 0.0.0.0 laim.tv
+0.0.0.0 lainaumi.com
 0.0.0.0 laiphouz.net
 0.0.0.0 laiyangalibaba.cn
 0.0.0.0 lajeshuru.pro
@@ -21604,6 +21598,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 mctqu.com
 0.0.0.0 mc.tvzhe.com
 0.0.0.0 mcuhinni.xyz
+0.0.0.0 mcvvhacopov.com
 0.0.0.0 mc.weather.com.cn
 0.0.0.0 mdb.nu
 0.0.0.0 mdcytqwnbr.com
@@ -21667,6 +21662,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 mediaboom.site
 0.0.0.0 mediab.uy
 0.0.0.0 mediacategory.com
+0.0.0.0 mediacdn.x1hub.com
 0.0.0.0 media-clic.com
 0.0.0.0 media-click.ru
 0.0.0.0 mediacpm.com
@@ -24671,6 +24667,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 oohingjap.com
 0.0.0.0 oojexulr.net
 0.0.0.0 ookris.oferty-kredytowe.pl
+0.0.0.0 oolraimt.net
 0.0.0.0 oomll.cn
 0.0.0.0 oomsoapt.net
 0.0.0.0 oomtexoa.com
@@ -37682,6 +37679,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 xlovecam.com
 0.0.0.0 x-love.com
 0.0.0.0 xl-trk.com
+0.0.0.0 xlugjbgvlxjpxbl.com
 0.0.0.0 xlwjgtscqzmd.com
 0.0.0.0 xmadsapi.codon.vn
 0.0.0.0 xmaswrite.com
@@ -37869,6 +37867,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 xviperonec.com
 0.0.0.0 xvisred.ru
 0.0.0.0 xvnpbghbctppgp.xyz
+0.0.0.0 xvqiwmxomsvekp.com
 0.0.0.0 xvstvids.co
 0.0.0.0 xvstvids.com
 0.0.0.0 xvtbgiwshnc.xyz
