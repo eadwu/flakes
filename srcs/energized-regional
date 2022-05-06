@@ -24,12 +24,12 @@
 # Title: Energized Regional Extension
 # Description: An Extension to Block Regional Annoyances.
 # Format: hosts
-# Version: 22.05.126
-# Release: 126
-# Entries: 39,420
+# Version: 22.05.127
+# Release: 127
+# Entries: 39,442
 # Pack Code: EXR3G1094L-P
 # License: MIT, https://energized.pro/license
-# Updated: Fri, 06 May 22 20:15:33 +06
+# Updated: Sat, 07 May 22 00:17:00 +06
 # RAW: https://block.energized.pro/extensions/regional/formats/hosts
 # --------------------------------------------
 #
@@ -609,7 +609,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 2performant.com
 0.0.0.0 2pogg4c.cn
 0.0.0.0 2polj.top
-0.0.0.0 2.proanime.xyz
 0.0.0.0 2ptxxjjzpy.com
 0.0.0.0 2qgsjjy89k.com
 0.0.0.0 2qj7mq3w4uxe.com
@@ -649,6 +648,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3169187.notify6.com
 0.0.0.0 3171864.notifysrv.com
 0.0.0.0 3177866.notify6.com
+0.0.0.0 3177866.notifysrv.com
 0.0.0.0 3178848.notifysrv.com
 0.0.0.0 3179416.notify6.com
 0.0.0.0 317b486ab223.com
@@ -675,6 +675,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3243082.notify6.com
 0.0.0.0 3249648.notify6.com
 0.0.0.0 3273540.notifysrv.com
+0.0.0.0 3278638.notify6.com
 0.0.0.0 3283088.notifysrv.com
 0.0.0.0 3285792.notifysrv.com
 0.0.0.0 3286068.notify6.com
@@ -691,6 +692,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3302404.notify6.com
 0.0.0.0 3304354.notify6.com
 0.0.0.0 3310026.notify6.com
+0.0.0.0 3310586.notify6.com
 0.0.0.0 3323174.notifysrv.com
 0.0.0.0 3323378.notify6.com
 0.0.0.0 3324.cn
@@ -804,6 +806,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3584069.notifysrv.com
 0.0.0.0 3587731.notify6.com
 0.0.0.0 3588587.notify6.com
+0.0.0.0 3588587.notifysrv.com
 0.0.0.0 3588591.notifysrv.com
 0.0.0.0 3588593.notifysrv.com
 0.0.0.0 3588597.notifysrv.com
@@ -851,13 +854,17 @@ ff02::3 ip6-allhosts
 0.0.0.0 3710069.notifysrv.com
 0.0.0.0 3717105.notifysrv.com
 0.0.0.0 3719901.notify6.com
+0.0.0.0 3733673.notifysrv.com
 0.0.0.0 3739013.notify6.com
+0.0.0.0 3740615.notifysrv.com
 0.0.0.0 3749331.notify6.com
 0.0.0.0 375553.com
 0.0.0.0 3761fcd24ef9281f5.com
 0.0.0.0 3768747.notify6.com
+0.0.0.0 3768747.notifysrv.com
 0.0.0.0 3775247.notifysrv.com
 0.0.0.0 377d936c10e6811f484c-6402e46c712497f58e3f77a59f47bbd5.r17.cf2.rackcdn.com
+0.0.0.0 3789861.notifysrv.com
 0.0.0.0 3798.com
 0.0.0.0 37cs.com
 0.0.0.0 3805703.notifysrv.com
@@ -948,6 +955,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 4003752.notify6.com
 0.0.0.0 4004928.notify6.com
 0.0.0.0 4018398.notify6.com
+0.0.0.0 4022684.notify6.com
 0.0.0.0 4031266.notify6.com
 0.0.0.0 4037374.notify6.com
 0.0.0.0 4037426.notify6.com
@@ -993,6 +1001,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 42yenxh.cn
 0.0.0.0 43100i.cyou
 0.0.0.0 43137c93a82b0e81da.com
+0.0.0.0 4327052.notify6.com
 0.0.0.0 4329288.notify6.com
 0.0.0.0 4329294.notify6.com
 0.0.0.0 4329296.notify6.com
@@ -1019,6 +1028,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 45f2373b26b8e2.com
 0.0.0.0 4615884.notify6.com
 0.0.0.0 4623392.notify6.com
+0.0.0.0 4623404.notify6.com
 0.0.0.0 468.vologdainfo.ru
 0.0.0.0 4690y10pvpq8.com
 0.0.0.0 46d845a455.com
@@ -9409,6 +9419,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 coconutsumptuousreseptivereseptive.com
 0.0.0.0 cocoon.globo.com
 0.0.0.0 cocoon.qa.globoi.com
+0.0.0.0 coco.rockdilla.com
 0.0.0.0 codeadnetwork.com
 0.0.0.0 code.ainsyndication.com
 0.0.0.0 code.bergsteigen.com
@@ -10900,6 +10911,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 ddnkxmduab.xyz
 0.0.0.0 ddnmbydtnfebyd.com
 0.0.0.0 ddomb.com
+0.0.0.0 ddownload.simplaza.org
 0.0.0.0 ddpwhd77eg.ru
 0.0.0.0 ddpwkqbtiff.com
 0.0.0.0 d.drive.ru
@@ -12266,6 +12278,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 dzxsqoh01i.com
 0.0.0.0 dzxwnews.com
 0.0.0.0 e0794b0bdf.com
+0.0.0.0 e07.xyz
 0.0.0.0 e09f3e4ceda.com
 0.0.0.0 e0a42e1a21669b.com
 0.0.0.0 e0hkzk2.cn
@@ -21154,6 +21167,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 lqsw2.top
 0.0.0.0 lqsw3.top
 0.0.0.0 lqw.me
+0.0.0.0 l.rated.sex
 0.0.0.0 lrclpb.com
 0.0.0.0 lrcs.info
 0.0.0.0 lrjgilpkfqf.xyz
@@ -23866,6 +23880,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 nkscdn.com
 0.0.0.0 nkwana-medstore.com
 0.0.0.0 nkwintenc.biz
+0.0.0.0 nkxrb.xyz
 0.0.0.0 nkyouvery.fun
 0.0.0.0 nlark.com
 0.0.0.0 nlaushsev.com
@@ -25164,6 +25179,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 ouphoarg.com
 0.0.0.0 ouphouch.com
 0.0.0.0 oupushee.com
+0.0.0.0 ourcommonnews.com
 0.0.0.0 ourcommonstories.com
 0.0.0.0 ourcoolposts.com
 0.0.0.0 ourcoolstories.com
@@ -25869,6 +25885,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 peppersleepconsultant.com
 0.0.0.0 pepperstretching.com
 0.0.0.0 peppy2lon1g1stalk.com
+0.0.0.0 pep.s2online.xyz
 0.0.0.0 pepsgolfsintake.com
 0.0.0.0 pepsia.com
 0.0.0.0 pepsia.combadfilter
@@ -26870,6 +26887,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 prdredir.com
 0.0.0.0 pre.03porno.com
 0.0.0.0 pre.102porno.club
+0.0.0.0 pre.102porno.net
 0.0.0.0 pre4sentre8dhf.com
 0.0.0.0 preaf-ad.jp
 0.0.0.0 preaf.jp
@@ -30288,6 +30306,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 selfservicefabricdisdain.com
 0.0.0.0 selfswayjay.com
 0.0.0.0 s.elink2c.com
+0.0.0.0 s.elitecdn.pl
 0.0.0.0 sellaction.net
 0.0.0.0 sellerbackstagejolly.com
 0.0.0.0 sellers.urekamedia.com
@@ -37605,6 +37624,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.healmsuoguurd.eu
 0.0.0.0 www.hexapinow.xyz
 0.0.0.0 www.hq3x.com
+0.0.0.0 www.icn.brandnewapp.pro
 0.0.0.0 www.ketquaxosotoancau.org
 0.0.0.0 www.klick.vn
 0.0.0.0 www.landingpagelagi.vn
@@ -37655,6 +37675,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.sporttv.today
 0.0.0.0 www.subiz-cdn.com
 0.0.0.0 www.tpmedia.online
+0.0.0.0 www.u808i.com
 0.0.0.0 www.ucdn.website
 0.0.0.0 www.upcdn.site
 0.0.0.0 www.urekamedia.com
@@ -38764,6 +38785,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 yqmhehotfy.xyz
 0.0.0.0 yqmxfz.com
 0.0.0.0 yqqlupkasbhmdj.xyz
+0.0.0.0 yqttykxcmap.com
 0.0.0.0 yqw88.com
 0.0.0.0 yqzaz.cn
 0.0.0.0 yr9n47004g.com
