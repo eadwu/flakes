@@ -26,10 +26,10 @@
 # Format: hosts
 # Version: 22.05.129
 # Release: 129
-# Entries: 39,550
+# Entries: 39,576
 # Pack Code: EXR3G1094L-P
 # License: MIT, https://energized.pro/license
-# Updated: Mon, 09 May 22 16:18:53 +06
+# Updated: Mon, 09 May 22 20:17:48 +06
 # RAW: https://block.energized.pro/extensions/regional/formats/hosts
 # --------------------------------------------
 #
@@ -450,6 +450,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 2020mustang.com
 0.0.0.0 2021.dxsbb.com
 0.0.0.0 2022aaa.xyz
+0.0.0.0 2022.hizetnet.xyz
 0.0.0.0 2022welcome.com
 0.0.0.0 206ads.com
 0.0.0.0 20a840a14a0ef7d6.com
@@ -645,6 +646,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3163c69273.com
 0.0.0.0 3164315.notifysrv.com
 0.0.0.0 3164603.notifysrv.com
+0.0.0.0 3165703.notify6.com
 0.0.0.0 3169187.notify6.com
 0.0.0.0 3171864.notifysrv.com
 0.0.0.0 3177866.notify6.com
@@ -662,6 +664,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3201556.site
 0.0.0.0 3207479.notifysrv.com
 0.0.0.0 3207695.notify6.com
+0.0.0.0 3209271.notifysrv.com
 0.0.0.0 3215685.notify6.com
 0.0.0.0 321gongsi.com
 0.0.0.0 321.jintang114.org
@@ -770,9 +773,12 @@ ff02::3 ip6-allhosts
 0.0.0.0 3423953.notifysrv.com
 0.0.0.0 34283078.com
 0.0.0.0 3432573.notify6.com
+0.0.0.0 3440155.notifysrv.com
+0.0.0.0 3440403.notify6.com
 0.0.0.0 3440411.notify6.com
 0.0.0.0 3457083.notifysrv.com
 0.0.0.0 3457959.notify6.com
+0.0.0.0 3459455.notify6.com
 0.0.0.0 3461289.notify6.com
 0.0.0.0 3466857.notifysrv.com
 0.0.0.0 3483067.notifysrv.com
@@ -840,20 +846,26 @@ ff02::3 ip6-allhosts
 0.0.0.0 365sbaffiliates.com
 0.0.0.0 365wp.org
 0.0.0.0 3662555.notifysrv.com
+0.0.0.0 3662557.notifysrv.com
 0.0.0.0 3662591.notifysrv.com
 0.0.0.0 3662595.notifysrv.com
 0.0.0.0 3662601.notifysrv.com
 0.0.0.0 3662897.notifysrv.com
 0.0.0.0 3662967.notifysrv.com
+0.0.0.0 3667313.notifysrv.com
 0.0.0.0 3668787.notifysrv.com
+0.0.0.0 3668791.notifysrv.com
 0.0.0.0 3670119.notifysrv.com
 0.0.0.0 3672243.notifysrv.com
+0.0.0.0 3682345.notifysrv.com
 0.0.0.0 36a5b7eb2808.com
 0.0.0.0 36af79eadd.com
 0.0.0.0 36pn.com
 0.0.0.0 36yoo.net
 0.0.0.0 3710069.notifysrv.com
+0.0.0.0 3715633.notifysrv.com
 0.0.0.0 3717105.notifysrv.com
+0.0.0.0 3717259.notifysrv.com
 0.0.0.0 3719901.notify6.com
 0.0.0.0 3733673.notifysrv.com
 0.0.0.0 3739013.notify6.com
@@ -885,6 +897,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3898280.notify6.com
 0.0.0.0 38ra.com
 0.0.0.0 3901da0f4a.com
+0.0.0.0 3917542.notify6.com
 0.0.0.0 391e04933a.com
 0.0.0.0 3921002.notify6.com
 0.0.0.0 3932161.xyz
@@ -959,6 +972,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 4018398.notify6.com
 0.0.0.0 4022684.notify6.com
 0.0.0.0 4031266.notify6.com
+0.0.0.0 4035148.notify6.com
+0.0.0.0 4035244.notify6.com
 0.0.0.0 4037374.notify6.com
 0.0.0.0 4037426.notify6.com
 0.0.0.0 4050544.notify6.com
@@ -976,9 +991,11 @@ ff02::3 ip6-allhosts
 0.0.0.0 4144426.notify6.com
 0.0.0.0 4149128.notify6.com
 0.0.0.0 414a048c3b.com
+0.0.0.0 4160112.notify6.com
 0.0.0.0 4162254.notify6.com
 0.0.0.0 4182036.notify6.com
 0.0.0.0 4188246.notify6.com
+0.0.0.0 4191292.notify6.com
 0.0.0.0 4197730.notify6.com
 0.0.0.0 41cm.shop
 0.0.0.0 41df76c67812005c.com
@@ -1005,6 +1022,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 43137c93a82b0e81da.com
 0.0.0.0 4327052.notify6.com
 0.0.0.0 4329288.notify6.com
+0.0.0.0 4329292.notify6.com
 0.0.0.0 4329294.notify6.com
 0.0.0.0 4329296.notify6.com
 0.0.0.0 4329300.notify6.com
@@ -5155,7 +5173,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 arbitrarydefectrightfully.com
 0.0.0.0 arbourrenewal.com
 0.0.0.0 arbourspankappetite.com
-0.0.0.0 arbs.arabshentai.com
 0.0.0.0 arbtds.pro
 0.0.0.0 arbxtrack.compopup
 0.0.0.0 arcadebannerexchange.org
@@ -15646,9 +15663,11 @@ ff02::3 ip6-allhosts
 0.0.0.0 goldfishnightclubpatronize.com
 0.0.0.0 goldline.pro
 0.0.0.0 gold-splits.speedrun.com
+0.0.0.0 goldsurf24h.pl
 0.0.0.0 gold.szonline.net
 0.0.0.0 goldtoto.com
 0.0.0.0 goldvertise.com
+0.0.0.0 go.lize.bid
 0.0.0.0 go.loadingnow.me
 0.0.0.0 golub-cgd.pl
 0.0.0.0 gomain2.pro
@@ -18485,6 +18504,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 iwxgdcnpshrdw.com
 0.0.0.0 iwxlfesffeestle.xyz
 0.0.0.0 iwxmchcatfb.com
+0.0.0.0 iwyuaqs.cn
 0.0.0.0 ixbolodojo.xyz
 0.0.0.0 ixcbqp.com
 0.0.0.0 ixiang.club
@@ -26470,6 +26490,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 plusfind.info
 0.0.0.0 plusservicepartners.com
 0.0.0.0 plus.tourispo.com
+0.0.0.0 plutoclean.com
 0.0.0.0 pluto.mobilen.no
 0.0.0.0 plutothejewel.com
 0.0.0.0 plutusads.com
@@ -33024,6 +33045,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 taunhhcx.com
 0.0.0.0 tauptoat.com
 0.0.0.0 tauruallop.download
+0.0.0.0 tauvoojo.net
 0.0.0.0 taverkegaard.com
 0.0.0.0 taxmartbrevity.com
 0.0.0.0 taxodiu2m2dis7tichum.com
@@ -36752,6 +36774,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 weaveradrenaline.com
 0.0.0.0 weaveworldtv.ru
 0.0.0.0 web1.bilnorge.no
+0.0.0.0 web1s.com
 0.0.0.0 web20-traffic-system.de
 0.0.0.0 web8.net
 0.0.0.0 web.900.la
@@ -37693,6 +37716,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.atdnetwork.com
 0.0.0.0 www.avoadsservices.com
 0.0.0.0 www.banhtv.org
+0.0.0.0 www.befuglago.live
 0.0.0.0 www.bidgear.com
 0.0.0.0 www.bidgear-syndication.com
 0.0.0.0 www.bigboy.monster
@@ -37714,6 +37738,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.gammassp.com
 0.0.0.0 www.gangstabros.com
 0.0.0.0 www.goha.ru
+0.0.0.0 www.gombmobil.store
 0.0.0.0 www.gostats.vn
 0.0.0.0 www.haraads.com
 0.0.0.0 www.harafunnel.com
@@ -38468,6 +38493,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 yanliang.vip
 0.0.0.0 yantrasbarges.com
 0.0.0.0 yan.zhouguanchen.com
+0.0.0.0 yaodaipeishi.cn
 0.0.0.0 yaofaweb.xyz
 0.0.0.0 yaosahrmncc.top
 0.0.0.0 yaoxi.shop
