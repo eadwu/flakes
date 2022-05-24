@@ -17,11 +17,11 @@
 ).overrideAttrs (
   oldAttrs: rec {
     pname = "vivaldi-snapshot";
-    version = "5.3.2679.3";
+    version = "5.3.2679.13";
 
     src = fetchurl {
       url = "https://downloads.vivaldi.com/snapshot/vivaldi-snapshot_${version}-1_amd64.deb";
-      sha256 = "1dhwabskc43bh24nvvpchanc54gns7flg51f9k714lrbc447rhcv";
+      sha256 = "0xqk441xywql9j224hr9y8h8ha1h9pzmnd8dxsa21c68jazk8vxb";
     };
 
     newLibPath = lib.makeLibraryPath buildInputs
