@@ -15,7 +15,5 @@ in
       url = "https://az764295.vo.msecnd.net/insider/2260d7cca34384a2838c728850afdd38113ddb47/code-insider-x64-1654303991.tar.gz";
       sha256 = "1klgbwqld6j6mydbr9cjx921ij2k8327q77yxfkab62l5w1jlpvv";
     };
-
-    postPatch = "https://az764295.vo.msecnd.net/insider/2260d7cca34384a2838c728850afdd38113ddb47/code-insider-x64-1654303991.tar.gz";
   }
 )
