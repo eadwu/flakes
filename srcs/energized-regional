@@ -24,12 +24,12 @@
 # Title: Energized Regional Extension
 # Description: An Extension to Block Regional Annoyances.
 # Format: hosts
-# Version: 22.06.156
-# Release: 156
-# Entries: 40,549
+# Version: 22.06.157
+# Release: 157
+# Entries: 40,550
 # Pack Code: EXR3G1094L-P
 # License: MIT, https://energized.pro/license
-# Updated: Sun, 05 Jun 22 20:15:16 +06
+# Updated: Mon, 06 Jun 22 00:17:02 +06
 # RAW: https://block.energized.pro/extensions/regional/formats/hosts
 # --------------------------------------------
 #
@@ -2588,6 +2588,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 adinplay.com
 0.0.0.0 adintend.com
 0.0.0.0 adinterax.com
+0.0.0.0 ad.inter-edu.com
 0.0.0.0 adintop.com
 0.0.0.0 adinvigorate.com
 0.0.0.0 ad.iplayer.org
