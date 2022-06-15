@@ -40,13 +40,6 @@ in
       };
     };
 
-  disable-enhanced-sco =
-    {
-      name = "disable-enhanced-sco";
-      patch = ./disable-enhanced-sco.patch.xz;
-      extraStructuredConfig = {};
-    };
-
   extra-config =
     {
       name = "extra-config";
