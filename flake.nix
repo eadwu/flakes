@@ -96,7 +96,6 @@
             kernelPatches = kernel.kernelPatches ++ [
               kernelPatches.o3
               kernelPatches.mglru
-              kernelPatches.bcachefs
               kernelPatches.extra-config
             ];
             modDirVersionArg = kernel.modDirVersion;
