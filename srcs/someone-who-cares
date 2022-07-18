@@ -8,7 +8,7 @@
 # Please forward any additions, corrections or comments by email to
 # hosts@someonewhocares.org
 
-# Last updated: Sun, 17 Jul 2022 at 20:32:32 GMT
+# Last updated: Mon, 18 Jul 2022 at 01:54:20 GMT
 
 # Use this file to prevent your computer from connecting to selected
 # internet hosts. This is an easy and effective way to protect you from 
@@ -385,6 +385,7 @@ ff02::3		ip6-allhosts
 127.0.0.1 an.mlb.com
 127.0.0.1 analytics-ingress-global.bitmovin.com
 127.0.0.1 analytics-static.ugc.bazaarvoice.com
+127.0.0.1 analytics.foresee.com
 127.0.0.1 analytics.global.sky.com
 127.0.0.1 analytics.msnbc.msn.com
 127.0.0.1 analytics.ooyala.com
