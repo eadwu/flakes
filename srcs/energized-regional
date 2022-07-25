@@ -26,10 +26,10 @@
 # Format: hosts
 # Version: 22.07.206
 # Release: 206
-# Entries: 43,523
+# Entries: 43,559
 # Pack Code: EXR3G1094L-P
 # License: MIT, https://energized.pro/license
-# Updated: Mon, 25 Jul 22 17:03:23 +06
+# Updated: Mon, 25 Jul 22 21:01:28 +06
 # RAW: https://block.energized.pro/extensions/regional/formats/hosts
 # --------------------------------------------
 #
@@ -650,6 +650,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3194555.notifysrv.com
 0.0.0.0 3196267.notifysrv.com
 0.0.0.0 3199023.notify6.com
+0.0.0.0 3199023.notifysrv.com
 0.0.0.0 3199593.notifysrv.com
 0.0.0.0 31ldsd.ru
 0.0.0.0 3201556.site
@@ -758,6 +759,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3344944.notifysrv.com
 0.0.0.0 3345712.notifysrv.com
 0.0.0.0 3346174.notify6.com
+0.0.0.0 3346174.notifysrv.com
 0.0.0.0 3347188.notify6.com
 0.0.0.0 3347188.notifysrv.com
 0.0.0.0 3348424.notify6.com
@@ -770,6 +772,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3356534.work
 0.0.0.0 3359790.notifysrv.com
 0.0.0.0 3360202.notify6.com
+0.0.0.0 3362420.notify6.com
 0.0.0.0 3362420.notifysrv.com
 0.0.0.0 3362426.notifysrv.com
 0.0.0.0 3363688.notify6.com
@@ -799,6 +802,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3409957.notifysrv.com
 0.0.0.0 341073be6e9db7d2.com
 0.0.0.0 3414351.notifysrv.com
+0.0.0.0 3416169.notifysrv.com
 0.0.0.0 3419733.notifysrv.com
 0.0.0.0 3420003.notifysrv.com
 0.0.0.0 3420755.notifysrv.com
@@ -817,12 +821,15 @@ ff02::3 ip6-allhosts
 0.0.0.0 3457083.notifysrv.com
 0.0.0.0 3457959.notify6.com
 0.0.0.0 3459455.notify6.com
+0.0.0.0 3459455.notifysrv.com
+0.0.0.0 3461281.notifysrv.com
 0.0.0.0 3461289.notify6.com
 0.0.0.0 3461289.notifysrv.com
 0.0.0.0 3461347.notifysrv.com
 0.0.0.0 3466497.notifysrv.com
 0.0.0.0 3466845.notifysrv.com
 0.0.0.0 3466857.notifysrv.com
+0.0.0.0 3466861.notify6.com
 0.0.0.0 3466863.notify6.com
 0.0.0.0 3474937.notify6.com
 0.0.0.0 3476453.notifysrv.com
@@ -860,6 +867,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3540837.notifysrv.com
 0.0.0.0 3541095.notifysrv.com
 0.0.0.0 3549573.notifysrv.com
+0.0.0.0 3551873.notifysrv.com
 0.0.0.0 3556327.notifysrv.com
 0.0.0.0 3556651.notifysrv.com
 0.0.0.0 3557821.notifysrv.com
@@ -908,6 +916,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3595711.notifysrv.com
 0.0.0.0 3597775.notifysrv.com
 0.0.0.0 3598457.notifysrv.com
+0.0.0.0 3598461.notify6.com
 0.0.0.0 3599607.notifysrv.com
 0.0.0.0 3599727.notify6.com
 0.0.0.0 3603119.notifysrv.com
@@ -953,6 +962,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3667313.notifysrv.com
 0.0.0.0 3668785.notifysrv.com
 0.0.0.0 3668787.notifysrv.com
+0.0.0.0 3668791.notify6.com
 0.0.0.0 3668791.notifysrv.com
 0.0.0.0 3670119.notifysrv.com
 0.0.0.0 3672243.notifysrv.com
@@ -968,11 +978,13 @@ ff02::3 ip6-allhosts
 0.0.0.0 3717105.notifysrv.com
 0.0.0.0 3717259.notifysrv.com
 0.0.0.0 3719901.notify6.com
+0.0.0.0 3727723.notifysrv.com
 0.0.0.0 3733673.notifysrv.com
 0.0.0.0 3739013.notify6.com
 0.0.0.0 3740615.notifysrv.com
 0.0.0.0 3745191.notifysrv.com
 0.0.0.0 3749331.notify6.com
+0.0.0.0 3752469.notifysrv.com
 0.0.0.0 3761fcd24ef9281f5.com
 0.0.0.0 3762001.notifysrv.com
 0.0.0.0 3768747.notify6.com
@@ -980,6 +992,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3775247.notifysrv.com
 0.0.0.0 377d936c10e6811f484c-6402e46c712497f58e3f77a59f47bbd5.r17.cf2.rackcdn.com
 0.0.0.0 3783123.notifysrv.com
+0.0.0.0 3783125.notifysrv.com
 0.0.0.0 3789861.notifysrv.com
 0.0.0.0 3791967.notify6.com
 0.0.0.0 3798.com
@@ -988,6 +1001,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 380.hotpix.fr
 0.0.0.0 380tl.com
 0.0.0.0 3814695.notifysrv.com
+0.0.0.0 3815579.notify6.com
 0.0.0.0 3822893.notifysrv.com
 0.0.0.0 3837365.notifysrv.com
 0.0.0.0 3843075.notifysrv.com
@@ -1016,6 +1030,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3935618.notify6.com
 0.0.0.0 3938193.notify6.com
 0.0.0.0 3939960.notify6.com
+0.0.0.0 3943940.notify6.com
 0.0.0.0 3944044.notify6.com
 0.0.0.0 3944974.notify6.com
 0.0.0.0 3944978.notify6.com
@@ -1033,6 +1048,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3973252.notify6.com
 0.0.0.0 3975710.notify6.com
 0.0.0.0 3984926.notify6.com
+0.0.0.0 3995186.notify6.com
 0.0.0.0 39d1d397c97730.com
 0.0.0.0 39irqwnzlv.com
 0.0.0.0 3a92600f42.com
@@ -1091,6 +1107,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 4004928.notify6.com
 0.0.0.0 4018398.notify6.com
 0.0.0.0 4022684.notify6.com
+0.0.0.0 4028412.notify6.com
 0.0.0.0 4031266.notify6.com
 0.0.0.0 4035148.notify6.com
 0.0.0.0 4035244.notify6.com
@@ -1107,14 +1124,17 @@ ff02::3 ip6-allhosts
 0.0.0.0 4069896.notify6.com
 0.0.0.0 407433bfc441.com
 0.0.0.0 4096386.notify6.com
+0.0.0.0 4097564.notify6.com
 0.0.0.0 40ceexln7929.com
 0.0.0.0 4133026.notify6.com
 0.0.0.0 4143324.notify6.com
 0.0.0.0 4144426.notify6.com
 0.0.0.0 4149128.notify6.com
 0.0.0.0 414a048c3b.com
+0.0.0.0 4152328.notify6.com
 0.0.0.0 4160112.notify6.com
 0.0.0.0 4162254.notify6.com
+0.0.0.0 4162256.notify6.com
 0.0.0.0 4169920.notify6.com
 0.0.0.0 4173044.notify6.com
 0.0.0.0 4173050.notify6.com
@@ -1895,6 +1915,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 a2put.chinaz.com
 0.0.0.0 a2r-media.com
 0.0.0.0 a2tw6yoodsag.com
+0.0.0.0 a.2umovies.com
 0.0.0.0 a2zapk.com
 0.0.0.0 a2.zdg.de
 0.0.0.0 a31daecf420.com
@@ -1906,6 +1927,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 a3b6c75cbfe2c.com
 0.0.0.0 a3f75e78e5.com
 0.0.0.0 a3h.de
+0.0.0.0 a3.hotpornfile.org
 0.0.0.0 a3.jandan.net
 0.0.0.0 a3m.io
 0.0.0.0 a3p4.com
@@ -1914,6 +1936,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 a.44oo.icu
 0.0.0.0 a4.adsplay.xyz
 0.0.0.0 a.4aqq.com
+0.0.0.0 a.4csh.net
 0.0.0.0 a4g.com
 0.0.0.0 a4l.co
 0.0.0.0 a4mt150303tl.com
@@ -1966,6 +1989,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 aabkuuwfoicso.com
 0.0.0.0 aab-proxy-tests.top
 0.0.0.0 aabproxytests.top
+0.0.0.0 a.addisplaynetwork.com
 0.0.0.0 a-ads.com
 0.0.0.0 a.adsplay.xyz
 0.0.0.0 aaettsewpbyc.com
@@ -2042,6 +2066,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 abc.hkepc.com
 0.0.0.0 abc.hkepc.net
 0.0.0.0 abclefabletor.com
+0.0.0.0 abc.manga9.co
 0.0.0.0 ab.cnbanbao.com
 0.0.0.0 abcpark.ru
 0.0.0.0 abcpetulant.com
@@ -2930,6 +2955,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 admimsy.com
 0.0.0.0 admin6.com
 0.0.0.0 admin.adnation.com
+0.0.0.0 admin.etology.com
 0.0.0.0 adminflex.dk
 0.0.0.0 adminlady.info
 0.0.0.0 admin.voh.com.vn
@@ -3260,6 +3286,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 ads.baohaiduong.vn
 0.0.0.0 ads.baotainguyenmoitruong.vn
 0.0.0.0 ads.bid
+0.0.0.0 adsbid-sh-click.adghndou0sdh.ru
 0.0.0.0 adsbid-sh-click.sing.adghndou0sdh.ru
 0.0.0.0 adsbingo.com
 0.0.0.0 adsblockkpush.com
@@ -4391,6 +4418,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 agndmn.com
 0.0.0.0 agnezanna.com
 0.0.0.0 agni3.xyz
+0.0.0.0 a.gofilms4u.pro
 0.0.0.0 agogdebitape.com
 0.0.0.0 agooxouy.net
 0.0.0.0 ag.palmtube.net
@@ -9075,6 +9103,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn0.at.ua
 0.0.0.0 cdn0.moy.su
 0.0.0.0 cdn1.at.ua
+0.0.0.0 cdn1.delii2.art
 0.0.0.0 cdn1.lp.saboom.com
 0.0.0.0 cdn1.pebx.pl
 0.0.0.0 cdn1.pop72i.art
@@ -9266,7 +9295,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 cdn.uponelectabuzzor.club
 0.0.0.0 cdn.urekamedia.com
 0.0.0.0 cdn-vgtrk.ru
-0.0.0.0 cdnvid.com
 0.0.0.0 cdn.videonow.ru
 0.0.0.0 cdn.viqeo.tv
 0.0.0.0 cdn.vlyby.com
@@ -12115,6 +12143,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 de-ner-mi-nis4.info
 0.0.0.0 denetsuk.com
 0.0.0.0 denety.com
+0.0.0.0 dengbalt.fun
 0.0.0.0 dengelmeg.com
 0.0.0.0 dengzhou.us
 0.0.0.0 de-nis-ner-mi-5.info
@@ -22786,6 +22815,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 linknotification.com
 0.0.0.0 linkoffers.net
 0.0.0.0 linkonclick.com
+0.0.0.0 linkpopu.mom
 0.0.0.0 linkredirect.biz
 0.0.0.0 linkreferral.com
 0.0.0.0 link.ru
@@ -28535,6 +28565,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 pepburst.com
 0.0.0.0 pepi.haillo.xyz
 0.0.0.0 pepipo.com
+0.0.0.0 pepipost.autos
 0.0.0.0 pepnerdmime.cam
 0.0.0.0 peppercarduus.com
 0.0.0.0 pepperjamnetwork.com
@@ -35288,6 +35319,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 stazumik.net
 0.0.0.0 stb.eat.int.ru
 0.0.0.0 stbvip.co
+0.0.0.0 stbvip.mom
 0.0.0.0 stbzekvyt.com
 0.0.0.0 stc.adtima.vn
 0.0.0.0 stc.gammaplatform.com
@@ -36195,6 +36227,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 taopiaopiao.shop
 0.0.0.0 taoput.com
 0.0.0.0 taoquan365.net
+0.0.0.0 taoviep.mom
 0.0.0.0 taoyao.tech
 0.0.0.0 taoyinbiacid.com
 0.0.0.0 tapad.com
@@ -38127,6 +38160,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 twwfxwgvlnc.com
 0.0.0.0 twwkrcec.com
 0.0.0.0 twzui6.com
+0.0.0.0 tx01.socialchicks.net
 0.0.0.0 tx2.ru
 0.0.0.0 txcmjo.com
 0.0.0.0 txcsudkymdq.com
@@ -39626,6 +39660,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 vitaquotidiana.com
 0.0.0.0 vitcory.com
 0.0.0.0 vitr.alawar.ru
+0.0.0.0 vitrina-ad-click.adghndou0sdh.ru
 0.0.0.0 vitrine.lugarcerto.com.br
 0.0.0.0 vitrinler3.com
 0.0.0.0 vittatehug.com
@@ -40939,6 +40974,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 wmlleyjtj.com
 0.0.0.0 wmmediacorp.com
 0.0.0.0 wm.mipcdn.com
+0.0.0.0 wmmty.top
 0.0.0.0 wmober.com
 0.0.0.0 wmonthsaft.biz
 0.0.0.0 wm-panel.com
@@ -41373,7 +41409,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.bidgear.com
 0.0.0.0 www.bidgear-syndication.com
 0.0.0.0 www.bigboy.monster
-0.0.0.0 www.camilo4free.cfd
 0.0.0.0 www.cdp.asia
 0.0.0.0 www.cheap-ads.net
 0.0.0.0 www.chiasephim.xyz
@@ -41430,6 +41465,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.onmarketer.net
 0.0.0.0 www-orbit-promo.ru
 0.0.0.0 wwwowww.xyz
+0.0.0.0 www.patodonalgomball.store
 0.0.0.0 www.p.de
 0.0.0.0 www.phukienthoitranggiare.com
 0.0.0.0 www.pinetech.vn
