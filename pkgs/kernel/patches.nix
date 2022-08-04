@@ -162,7 +162,6 @@ in
         DEBUG_NOTIFIERS = yes;
 
         GCC_PLUGIN_LATENT_ENTROPY = yes;
-        GCC_PLUGIN_RANDSTRUCT = yes;
         HARDENED_USERCOPY = yes;
         # HARDENED_USERCOPY_FALLBACK = mkForce no;
 
@@ -176,7 +175,6 @@ in
         EFI_DISABLE_PCI_DMA = yes;
         SLAB_MERGE_DEFAULT = mkForce no;
 
-        GCC_PLUGIN_RANDSTRUCT_PERFORMANCE = mkForce no;
         STACKLEAK_METRICS = mkForce no;
         STACKLEAK_RUNTIME_DISABLE = mkForce no;
         INTEL_IOMMU_SVM = yes;
