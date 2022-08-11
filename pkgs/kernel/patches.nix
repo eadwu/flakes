@@ -21,15 +21,6 @@ in
       };
     };
 
-  o3 =
-    {
-      name = "optimize-o3";
-      patch = ./optimize-o3.patch.xz;
-      extraStructuredConfig = {
-        CC_OPTIMIZE_FOR_PERFORMANCE_O3 = yes;
-      };
-    };
-
   mglru =
     {
       name = "multigenerational-lru";
