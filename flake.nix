@@ -9,6 +9,7 @@
   inputs.nixops = { type = "github"; owner = "NixOS"; repo = "nixops"; };
   inputs.plymouth-themes = { type = "github"; owner = "eadwu"; repo = "plymouth-themes"; flake = false; };
   inputs.imperial = { type = "github"; owner = "eadwu"; repo = "imperial"; };
+  inputs.deploy-rs = { type = "github"; owner = "serokell"; repo = "deploy-rs"; };
 
   inputs.privacy-haters = { type = "git"; url = "git://r-36.net/privacy-haters"; flake = false; };
   inputs.sb-hosts = { type = "github"; owner = "StevenBlack"; repo = "hosts"; flake = false; };
@@ -39,6 +40,7 @@
           overlays;
 
       overlays.imperial = inputs.imperial.overlay;
+      overlays.deploy-rs = inputs.deploy-rs.overlay;
       overlays.emacs-overlay = inputs.emacs-overlay.overlay;
       overlays.default = final: prev: with final.pkgs; {
         kernelPatches = prev.kernelPatches // (callPackage ./pkgs/kernel/patches.nix { });
