@@ -82,6 +82,7 @@ in
       "^tags.tiqcdn.com$" # weather.com
       "^lists.gnu.org$" # GNU...
       "^[^.]*.googlevideo.com$" # Youtube providers
+      "(^boards.|^)4chan.org$" # need anything be said...
     ];
 
     security.pam.loginLimits = [
