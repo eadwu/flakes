@@ -26,10 +26,10 @@
 # Format: hosts
 # Version: 22.08.234
 # Release: 234
-# Entries: 45,239
+# Entries: 45,251
 # Pack Code: EXR3G1094L-P
 # License: MIT, https://energized.pro/license
-# Updated: Mon, 22 Aug 22 17:04:57 +06
+# Updated: Mon, 22 Aug 22 21:01:48 +06
 # RAW: https://block.energized.pro/extensions/regional/formats/hosts
 # --------------------------------------------
 #
@@ -125,7 +125,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 05f568544e.com
 0.0.0.0 06156312c77.com
 0.0.0.0 0653216.com
-0.0.0.0 06a2b66f11.com
 0.0.0.0 06e17e67683b95.com
 0.0.0.0 06f09b1008ae993a5a.com
 0.0.0.0 06f5751cb2.com
@@ -824,6 +823,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3324.cn
 0.0.0.0 3325604.notifysrv.com
 0.0.0.0 3328388.notifysrv.com
+0.0.0.0 3328394.notifysrv.com
 0.0.0.0 3328396.notifysrv.com
 0.0.0.0 3329496.notify6.com
 0.0.0.0 3329496.notifysrv.com
@@ -1031,6 +1031,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3580393.notifysrv.com
 0.0.0.0 3584069.notifysrv.com
 0.0.0.0 3584913.notifysrv.com
+0.0.0.0 3585203.notifysrv.com
 0.0.0.0 3587723.notifysrv.com
 0.0.0.0 3587729.notifysrv.com
 0.0.0.0 3587731.notify6.com
@@ -1043,6 +1044,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3588593.notifysrv.com
 0.0.0.0 3588597.notifysrv.com
 0.0.0.0 3588599.notifysrv.com
+0.0.0.0 3590449.notify6.com
 0.0.0.0 3591075.notify6.com
 0.0.0.0 3591075.notifysrv.com
 0.0.0.0 3593835.notify6.com
@@ -1078,6 +1080,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3629687.notifysrv.com
 0.0.0.0 3629895.notifysrv.com
 0.0.0.0 362b643a66026e.com
+0.0.0.0 3631057.notify6.com
 0.0.0.0 3632607.notifysrv.com
 0.0.0.0 363lm.com
 0.0.0.0 3647.tech
@@ -1112,6 +1115,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3701939.notify6.com
 0.0.0.0 3701939.notifysrv.com
 0.0.0.0 3710069.notifysrv.com
+0.0.0.0 3710075.notify6.com
 0.0.0.0 3714181.notifysrv.com
 0.0.0.0 3715633.notifysrv.com
 0.0.0.0 3717105.notifysrv.com
@@ -1125,6 +1129,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3745191.notifysrv.com
 0.0.0.0 3749331.notify6.com
 0.0.0.0 3752469.notifysrv.com
+0.0.0.0 3756889.notifysrv.com
 0.0.0.0 3761fcd24ef9281f5.com
 0.0.0.0 3762001.notifysrv.com
 0.0.0.0 3768747.notify6.com
@@ -1134,6 +1139,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3783121.notifysrv.com
 0.0.0.0 3783123.notifysrv.com
 0.0.0.0 3783125.notifysrv.com
+0.0.0.0 3789593.notify6.com
 0.0.0.0 3789861.notifysrv.com
 0.0.0.0 3791967.notify6.com
 0.0.0.0 3798.com
@@ -1149,6 +1155,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 3832097.notifysrv.com
 0.0.0.0 3837365.notifysrv.com
 0.0.0.0 3837607.notifysrv.com
+0.0.0.0 3843075.notify6.com
 0.0.0.0 3843075.notifysrv.com
 0.0.0.0 3843131.notify6.com
 0.0.0.0 3845271.notify6.com
@@ -1286,6 +1293,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 4021032.notify6.com
 0.0.0.0 4022684.notify6.com
 0.0.0.0 4028412.notify6.com
+0.0.0.0 4031264.notify6.com
 0.0.0.0 4031266.notify6.com
 0.0.0.0 4035148.notify6.com
 0.0.0.0 4035244.notify6.com
@@ -1997,7 +2005,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 8341.store
 0.0.0.0 841k8qv38d.ru
 0.0.0.0 8456.xyz
-0.0.0.0 84a196ebc5.com
 0.0.0.0 8500.pro
 0.0.0.0 8547459af5da02.com
 0.0.0.0 855656c3a0.com
@@ -2641,6 +2648,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 ackuotagowr.com
 0.0.0.0 aclcdxkukaa.com
 0.0.0.0 aclickads.com
+0.0.0.0 aclicktds.org
 0.0.0.0 aclientiret.club
 0.0.0.0 acloudimages.com
 0.0.0.0 acloudvideos.com
@@ -6121,6 +6129,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 artsmalle.pro
 0.0.0.0 aruhdx.com
 0.0.0.0 arvb.3grg8dqjil.ru
+0.0.0.0 arvb.6v7q4txztl.ru
 0.0.0.0 arvb.ewtcbedtmx.ru
 0.0.0.0 arvb.gamz48qlok.ru
 0.0.0.0 ar.voicefive.com
@@ -6200,7 +6209,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 asg.somecdn.bid
 0.0.0.0 asg.soundrussian.com
 0.0.0.0 asg.srvtax.com
-0.0.0.0 asgt.findnewline.com
 0.0.0.0 asg.zzipps.com
 0.0.0.0 ashaidbit.club
 0.0.0.0 ashamedbirchpoorly.com
@@ -9277,6 +9285,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 camghosts.com
 0.0.0.0 camiocw.com
 0.0.0.0 camisagrieko.com
+0.0.0.0 cam.javboys.cam
 0.0.0.0 cam-lolita.net
 0.0.0.0 camonster.com
 0.0.0.0 camouque.net
@@ -14169,7 +14178,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 e9d1f13c08d.com
 0.0.0.0 e9geolgzk6.com
 0.0.0.0 e9kv7bhnzt.com
-0.0.0.0 ea0e9526cf.com
 0.0.0.0 ea6353e47e0ab3f78.com
 0.0.0.0 eabatcwbsdeick.com
 0.0.0.0 eableandwo.com
@@ -14560,6 +14568,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 eighing.space
 0.0.0.0 eighteenmedal.com
 0.0.0.0 eighthssidemen.com
+0.0.0.0 eightlon.mom
 0.0.0.0 eignal.com
 0.0.0.0 eiipskos.com
 0.0.0.0 eikegolehem.com
@@ -15680,7 +15689,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 fastdld.com
 0.0.0.0 fastdln.com
 0.0.0.0 fastdlr.com
-0.0.0.0 fastdmr.com
 0.0.0.0 fastenpaganhelm.com
 0.0.0.0 fasterdownlox1.com
 0.0.0.0 fastertabs.site
@@ -20311,7 +20319,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 ilowcost.ru
 0.0.0.0 ilrycgey.xyz
 0.0.0.0 ilstcnaeuhso.com
-0.0.0.0 iltgkgiepf.com
 0.0.0.0 ilusors.com
 0.0.0.0 ilxhsgd.com
 0.0.0.0 ilyf4amifh.com
@@ -22590,6 +22597,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 khandragthresh.com
 0.0.0.0 khayatarai.com
 0.0.0.0 khdry.top
+0.0.0.0 khetlet.mom
 0.0.0.0 khetopa.info
 0.0.0.0 khewwakrywmgxr.com
 0.0.0.0 khg97644rvbg.com
@@ -24271,6 +24279,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 logzh.vietnamplus.vn
 0.0.0.0 log.zingmp3.vn
 0.0.0.0 log.zingnews.vn
+0.0.0.0 loienlao.mom
 0.0.0.0 loind.mobio.vn
 0.0.0.0 lojapanelmo.com
 0.0.0.0 lojapremio.com.br
@@ -24786,6 +24795,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 maghma.com
 0.0.0.0 maghoutwell.com
 0.0.0.0 magic1.biz
+0.0.0.0 magic1.me
+0.0.0.0 magic4.biz
 0.0.0.0 magicads.nl
 0.0.0.0 magicalbending.com
 0.0.0.0 magicanfy.com
@@ -30809,7 +30820,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 ppcnt.org
 0.0.0.0 ppcnt.pro
 0.0.0.0 ppcnt.us
-0.0.0.0 ppcpnvwskrdnev.com
 0.0.0.0 ppctrck.com
 0.0.0.0 ppcwebspy.com
 0.0.0.0 ppcwzry.cn
@@ -36787,6 +36797,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 sticksurroundingsconstitutional.com
 0.0.0.0 stickyadstv.com
 0.0.0.0 stickyharry.com
+0.0.0.0 sticky.vtube.to
 0.0.0.0 sticoats.net
 0.0.0.0 stifletunnelsang.com
 0.0.0.0 stigads.com
@@ -38848,6 +38859,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 tpizy1uy3x.ru
 0.0.0.0 tpjsqt.com
 0.0.0.0 tpklqeje.com
+0.0.0.0 tpl.fuckxness.com
 0.0.0.0 tplpages.com
 0.0.0.0 tpmedia.online
 0.0.0.0 tpmedia-reactads.com
@@ -40161,7 +40173,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 unkingdiabeth.club
 0.0.0.0 unknitting.com
 0.0.0.0 unknowncarp.com
-0.0.0.0 unkoygvvxunt.xyz
 0.0.0.0 unlessorolii.xyz
 0.0.0.0 unlikelybeside.com
 0.0.0.0 unlimitate.club
@@ -42976,6 +42987,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 wwtjtfcuwpfiul.com
 0.0.0.0 wwtrxjctjhhu.com
 0.0.0.0 wwvwnxrisos.com
+0.0.0.0 www.0-000.store
 0.0.0.0 www0.xyz
 0.0.0.0 www.12signup.com
 0.0.0.0 www1.wxnmh.com
