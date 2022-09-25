@@ -1,5 +1,5 @@
 #! /usr/bin/env nix-shell
-#! nix-shell -i bash -p nixFlakes jq yq curl
+#! nix-shell -i bash -p nixVersions.stable jq yq curl
 
 current_dir="$(pwd)/$(dirname ${BASH_SOURCE[0]})"
 root="$(readlink -f "$current_dir/../..")"
