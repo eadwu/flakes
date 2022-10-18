@@ -8,11 +8,11 @@
 discord-canary.overrideAttrs (
   oldAttrs: rec {
     pname = "discord";
-    version = "0.0.139";
+    version = "0.0.140";
 
     src = fetchurl {
       url = "https://dl-canary.discordapp.net/apps/linux/${version}/discord-canary-${version}.tar.gz";
-      sha256 = "1llafigs2zd49m212d49zi4klx39kn4r2msxz75cmi4i6p8wxxzw";
+      sha256 = "1k88f7nychz5bz1c02mca29bm7a6z4ymc6sq8ly9wf0y0f8f6ih0";
     };
 
     nativeBuildInputs = (oldAttrs.nativeBuildInputs or [ ]) ++ [
