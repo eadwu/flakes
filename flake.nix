@@ -96,7 +96,6 @@
             structuredExtraConfig = with nixpkgs.lib;
               mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings;
             kernelPatches = kernel.kernelPatches ++ [
-              kernelPatches.mglru
               kernelPatches.extra-config
             ];
             modDirVersionArg = kernel.modDirVersion;

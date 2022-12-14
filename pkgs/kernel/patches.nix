@@ -21,16 +21,6 @@ in
       };
     };
 
-  mglru =
-    {
-      name = "multigenerational-lru";
-      patch = ./mglru.patch.xz;
-      extraStructuredConfig = {
-        LRU_GEN = yes;
-        LRU_GEN_ENABLED = yes;
-      };
-    };
-
   extra-config =
     {
       name = "extra-config";
