@@ -76,6 +76,7 @@ in
 
     networking.whitelist = [
       "^[^.]*$" # if there isn't any dots, it probably isn't a domain
+      "^.*%.*$" # invalid character
       "^://.*/.*$" # invalid domain
       "^www.rarlab.com$" # RAR archiver source...
       "^stats.stackexchange.com$" # stackexchange...
