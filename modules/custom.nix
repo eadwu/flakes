@@ -38,6 +38,11 @@ in
     ];
 
   options = {
+    networking.blacklistHosts = mkOption {
+      type = types.listOf types.str;
+      default = [ ];
+    };
+
     networking.blacklistFiles = mkOption {
       type = types.listOf types.path;
       default = [ ];
@@ -59,6 +64,11 @@ in
   config = {
     boot.kernelPackages = pkgs.linuxPackages_custom;
 
+    networking.blacklistHosts = [
+      # https://pytorch.org/blog/compromised-nightly-dependency/
+      "h4ck.cfd" "wheezy.io"
+    ];
+
     networking.blacklistFiles = [
       (inputs.sb-hosts + "/alternates/fakenews-gambling-porn/hosts")
       (inputs.dd-hosts + "/docs/lists/ads-and-tracking-extended.txt")
@@ -71,6 +81,9 @@ in
       (inputs.flakes-srcs + "/srcs/energized-unified")
       (inputs.flakes-srcs + "/srcs/energized-regional")
     ];
+
+    networking.hosts."0.0.0.0" = config.networking.blacklistHosts;
+    networking.hosts."::0" = config.networking.blacklistHosts;
 
     networking.hostFiles = [ config._internal.eadwu.flakes.custom.hosts ];
 
