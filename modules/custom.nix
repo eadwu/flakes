@@ -17,7 +17,7 @@ let
     {
       nativeBuildInputs = with pkgs; [ ripgrep ];
     } ''
-    cat ${escapeShellArgs config.networking.blacklistFiles} | \
+    cat ${lib.concatStringsSep " " config.networking.blacklistFiles} | \
       rg . | rg -v '^#' | awk 'sub($1 FS,"")' | awk '{print $1}' | \
       sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//' | \
       sort | uniq > hosts.txt
@@ -80,6 +80,8 @@ in
       (inputs.flakes-srcs + "/srcs/someone-who-cares")
       (inputs.flakes-srcs + "/srcs/energized-unified")
       (inputs.flakes-srcs + "/srcs/energized-regional")
+      (inputs.mullvad-blocklists + "/lists/*/*/*")
+      (inputs.mullvad-blocklists + "/output/*/*.txt")
     ];
 
     networking.hosts."0.0.0.0" = config.networking.blacklistHosts;
