@@ -62,8 +62,6 @@ in
   };
 
   config = {
-    boot.kernelPackages = pkgs.linuxPackages_custom;
-
     networking.blacklistHosts = [
       # https://pytorch.org/blog/compromised-nightly-dependency/
       "h4ck.cfd" "wheezy.io"
