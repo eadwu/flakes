@@ -3,12 +3,8 @@
 
   # Upstream source tree(s).
   inputs.dwm = { type = "gitlab"; owner = "eadwu"; repo = "dwm"; ref = "develop"; flake = false; };
-  inputs.eww = { type = "github"; owner = "elkowar"; repo = "eww"; flake = false; };
   inputs.gtk-theme-collections = { type = "github"; owner = "addy-dclxvi"; repo = "gtk-theme-collections"; flake = false; };
   inputs.st = { type = "gitlab"; owner = "eadwu"; repo = "st"; ref = "develop"; flake = false; };
-
-  # Dependencies
-  inputs.fenix = { type = "github"; owner = "nix-community"; repo = "fenix"; inputs.nixpkgs.follows = "/nixpkgs"; };
 
   outputs = { self, nixpkgs, ... }@inputs:
     let
@@ -41,13 +37,6 @@
         dwm = callPackage ./pkgs/dwm { inherit (prev) dwm; } packageAttrs.dwm;
         st = callPackage ./pkgs/st { inherit (prev) st; } packageAttrs.st;
 
-        eww = callPackage ./pkgs/eww {
-          rustPlatform = makeRustPlatform {
-            inherit (inputs.fenix.packages.${system}.latest)
-              cargo rustc;
-          };
-        } packageAttrs.eww;
-
         discord-canary = callPackage ./pkgs/discord-canary { inherit (prev) discord-canary; };
         vivaldi-snapshot = callPackage ./pkgs/vivaldi-snapshot { inherit (prev) vivaldi; };
 
@@ -67,7 +56,6 @@
         {
           inherit (pkgSet)
             dwm st
-            eww
             discord-canary vivaldi-snapshot
             vscode-insiders vscode-insiders-with-extensions
             gtk-theme-collections
