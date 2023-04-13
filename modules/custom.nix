@@ -98,22 +98,5 @@ in
       "^[^.]*.googlevideo.com$" # Youtube providers
       "(^boards.|^)4chan.org$" # need anything be said...
     ];
-
-    security.pam.loginLimits = [
-      # maximum realtime priority
-      {
-        domain = "@audio";
-        type = "-";
-        item = "rtprio";
-        value = "90";
-      }
-      # maximum locked-in-memory address space (KB)
-      {
-        domain = "@audio";
-        type = "-";
-        item = "memlock";
-        value = "unlimited";
-      }
-    ];
   };
 }
