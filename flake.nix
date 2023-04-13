@@ -133,8 +133,8 @@
       checks = forAllSystems (system: self.packages.${system});
 
       nixosModules = {
-        r-36 = import ./modules/r-36.nix inputs;
-        custom = import ./modules/custom.nix inputs;
+        r-36 = import ./modules/adblock/r-36.nix inputs;
+        adblock = import ./modules/adblock inputs;
         pam-keyring = import ./modules/pam-keyring.nix;
         sysfs = import ./modules/sysfs.nix;
       };
