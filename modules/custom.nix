@@ -86,17 +86,5 @@ in
     networking.hosts."::0" = config.networking.blacklistHosts;
 
     networking.hostFiles = [ config._internal.eadwu.flakes.custom.hosts ];
-
-    networking.whitelist = [
-      "^[^.]*$" # if there isn't any dots, it probably isn't a domain
-      "^.*%.*$" # invalid character
-      "^://.*/.*$" # invalid domain
-      "^www.rarlab.com$" # RAR archiver source...
-      "^stats.stackexchange.com$" # stackexchange...
-      "^tags.tiqcdn.com$" # weather.com
-      "^lists.gnu.org$" # GNU...
-      "^[^.]*.googlevideo.com$" # Youtube providers
-      "(^boards.|^)4chan.org$" # need anything be said...
-    ];
   };
 }
