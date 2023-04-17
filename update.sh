@@ -6,8 +6,6 @@ ROOT="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 declare -A SRCS=(
   # General
   ["someone-who-cares"]="https://someonewhocares.org/hosts/hosts"
-  ["energized-unified"]="https://block.energized.pro/unified/formats/hosts"
-  ["energized-regional"]="https://block.energized.pro/extensions/regional/formats/hosts"
 
   # Specific
   ["default-gitignore"]="https://www.toptal.com/developers/gitignore/api/c,r,git,c++,java,rust,cmake,elisp,emacs,latex,linux,macos,scala,haskell,database,intellij,visualstudiocode"
