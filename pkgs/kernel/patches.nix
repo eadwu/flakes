@@ -21,6 +21,13 @@ in
       };
     };
 
+  cachy =
+    {
+      name = "cachy";
+      patch = ./cachy.patch.xz;
+      extraStructuredConfig.SCHED_BORE = yes;
+    };
+
   extra-config =
     {
       name = "extra-config";
