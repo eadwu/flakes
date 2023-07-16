@@ -50,7 +50,7 @@ in
         HAMRADIO = mkForce no;
 
         # Disable old sysfs interface for UEFI Runtime Variables Support
-        EFI_VARS = mkForce no;
+        EFI_VARS = mkForce (option no);
 
         # Enable TEO cpuidle governor
         CPU_IDLE_GOV_TEO = yes;
@@ -206,7 +206,7 @@ in
         # X86_VSYSCALL_EMULATION = mkForce no; # required by many programs before 2013
 
         X86_CPUID = mkForce no;
-        IO_URING = mkForce no;
+        # IO_URING = mkForce no;
         # X86_IOPL_IOPERM = mkForce no; # ioperm() and iopl() syscalls, which is necessary for legacy applications
         LDISC_AUTOLOAD = mkForce no; # assumption about userspace trust, but only sets default so why not
 
@@ -247,9 +247,9 @@ in
 
         #### Resolve workarounds
         NET_DROP_MONITOR = mkForce (option no);
-        SECURITY_SELINUX_DISABLE = mkForce no;
+        SECURITY_SELINUX_DISABLE = mkForce (option no);
         DLM = mkForce no; # depends on IP_SCTP
-        NOUVEAU_LEGACY_CTX_SUPPORT = mkForce no;
+        NOUVEAU_LEGACY_CTX_SUPPORT = mkForce (option no);
       };
     };
 }
