@@ -10,11 +10,11 @@ in
   bcachefs =
     {
       name = "bcachefs";
-      patch = ./bcachefs.patch.xz;
+      patch = null;
       extraStructuredConfig = {
-        BCACHEFS_FS = yes;
-        BCACHEFS_QUOTA = yes;
-        BCACHEFS_POSIX_ACL = yes;
+        BCACHEFS_FS = mkForce (option yes);
+        BCACHEFS_QUOTA = mkForce (option yes);
+        BCACHEFS_POSIX_ACL = mkForce (option yes);
 
         # https://bugzilla.redhat.com/show_bug.cgi?id=1615258
         DEBUG_SG = mkForce no;
