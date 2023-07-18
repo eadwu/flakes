@@ -61,51 +61,53 @@
           shutdown = plymouth-themes."1987238292";
         };
 
-        rtLinuxPackagesFor = kernel: linuxPackagesFor (
-          kernel.override {
-            structuredExtraConfig = with nixpkgs.lib;
-              (mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings)
-              // (
-                with nixpkgs.lib.kernel; {
-                  # Preempt
-                  EXPERT = yes;
-                  PREEMPT = mkOverride 36 yes;
-                  PREEMPT_VOLUNTARY = mkOverride 36 no;
-                  IRQ_FORCED_THREADING = yes;
-                  RT_GROUP_SCHED = mkOverride 36 (option no);
+        customLinuxPackagesFor = let
+          rt = kernel: linuxPackagesFor (
+            kernel.override {
+              structuredExtraConfig = with nixpkgs.lib;
+                (mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings)
+                // (
+                  with nixpkgs.lib.kernel; {
+                    # Preempt
+                    EXPERT = yes;
+                    PREEMPT = mkOverride 36 yes;
+                    PREEMPT_VOLUNTARY = mkOverride 36 no;
+                    IRQ_FORCED_THREADING = yes;
+                    RT_GROUP_SCHED = mkOverride 36 (option no);
 
-                  # RCU
-                  RCU_EXPERT = yes;
-                  RCU_BOOST = yes;
-                  RCU_BOOST_DELAY = freeform "0";
-                  RCU_NOCB_CPU = yes;
+                    # RCU
+                    RCU_EXPERT = yes;
+                    RCU_BOOST = yes;
+                    RCU_BOOST_DELAY = freeform "0";
+                    RCU_NOCB_CPU = yes;
 
-                  # Timer
-                  HZ_100 = yes;
-                  HZ_250 = mkOverride 36 no;
-                  HZ_1000 = mkOverride 36 no;
-                  HZ = mkOverride 36 (freeform "100");
-                }
-              );
-            kernelPatches = kernel.kernelPatches;
-            modDirVersionArg = kernel.modDirVersion;
-          }
-        );
+                    # Timer
+                    HZ_100 = yes;
+                    HZ_250 = mkOverride 36 no;
+                    HZ_1000 = mkOverride 36 no;
+                    HZ = mkOverride 36 (freeform "100");
+                  }
+                );
+              kernelPatches = [];
+              modDirVersionArg = kernel.modDirVersion;
+            }
+          );
 
-        customLinuxPackagesFor = kernel: linuxPackagesFor (
-          kernel.override {
-            structuredExtraConfig = with nixpkgs.lib;
-              mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings;
-            kernelPatches = kernel.kernelPatches ++ [
-              kernelPatches.bcachefs
-              kernelPatches.eevdf
-              kernelPatches.extra-config
-            ];
-            modDirVersionArg = kernel.modDirVersion;
-          }
-        );
+          patchset = kernel: linuxPackagesFor (
+            kernel.override {
+              structuredExtraConfig = with nixpkgs.lib;
+                mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings;
+              kernelPatches = [
+                kernelPatches.bcachefs
+                kernelPatches.eevdf
+                kernelPatches.extra-config
+              ];
+              modDirVersionArg = kernel.modDirVersion;
+            }
+          );
+        in kernel: patchset (rt kernel).kernel;
 
-        linuxPackages_custom = customLinuxPackagesFor (rtLinuxPackagesFor linux_latest).kernel;
+        linuxPackages_custom = customLinuxPackagesFor linux_testing_bcachefs;
         linux_custom = linuxPackages_custom.kernel;
       };
 
