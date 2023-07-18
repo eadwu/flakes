@@ -21,11 +21,11 @@ in
       };
     };
 
-  cachy =
+  eevdf =
     {
-      name = "cachy";
-      patch = ./cachy.patch.xz;
-      extraStructuredConfig.SCHED_BORE = yes;
+      name = "eevdf";
+      patch = ./eevdf.patch.xz;
+      extraStructuredConfig = {};
     };
 
   extra-config =
