@@ -28,6 +28,13 @@ in
       extraStructuredConfig = {};
     };
 
+  eevdf-bore =
+    {
+      name = "eevdf-bore";
+      patch = ./eevdf-bore.patch.xz;
+      extraStructuredConfig.SCHED_BORE = yes;
+    };
+
   extra-config =
     {
       name = "extra-config";

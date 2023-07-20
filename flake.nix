@@ -100,6 +100,7 @@
               kernelPatches = [
                 kernelPatches.bcachefs
                 kernelPatches.eevdf
+                kernelPatches.eevdf-bore
                 kernelPatches.extra-config
               ];
               modDirVersionArg = kernel.modDirVersion;
