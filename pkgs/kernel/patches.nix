@@ -7,6 +7,32 @@ let
   mkForce = lib.mkOverride 36;
 in
 {
+  preempt =
+    {
+      name = "preempt";
+      patch = null;
+      extraStructuredConfig = {
+        # Preempt
+        EXPERT = yes;
+        PREEMPT = mkForce yes;
+        PREEMPT_VOLUNTARY = mkForce no;
+        IRQ_FORCED_THREADING = yes;
+        RT_GROUP_SCHED = mkForce (option no);
+
+        # RCU
+        RCU_EXPERT = yes;
+        RCU_BOOST = yes;
+        RCU_BOOST_DELAY = freeform "0";
+        RCU_NOCB_CPU = yes;
+
+        # Timer
+        HZ_100 = yes;
+        HZ_250 = mkForce no;
+        HZ_1000 = mkForce no;
+        HZ = mkForce (freeform "100");
+      };
+    };
+
   bcachefs =
     {
       name = "bcachefs";
