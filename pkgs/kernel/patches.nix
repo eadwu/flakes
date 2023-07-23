@@ -42,6 +42,15 @@ in
         BCACHEFS_QUOTA = mkForce (option yes);
         BCACHEFS_POSIX_ACL = mkForce (option yes);
 
+        # Debug kernel bugs
+        PREEMPT = mkForce (option yes);
+        BCACHEFS_DEBUG = option yes;
+        KALLSYMS = option yes;
+        KALLSYMS_ALL = lib.mkOverride 35 (option yes);
+        DEBUG_FS = option yes;
+        FTRACE = option yes;
+        DYNAMIC_FTRACE = option yes;
+
         # https://bugzilla.redhat.com/show_bug.cgi?id=1615258
         DEBUG_SG = mkForce no;
       };
