@@ -17,11 +17,11 @@
 ).overrideAttrs (
   oldAttrs: rec {
     pname = "vivaldi-snapshot";
-    version = "6.2.3105.23";
+    version = "6.2.3105.25";
 
     src = fetchurl {
       url = "https://downloads.vivaldi.com/snapshot/vivaldi-snapshot_${version}-1_amd64.deb";
-      sha256 = "1lgf8vyz77s85sq4dsycq75smy202nkxi4i4jc1nr9x6z0wvlzs3";
+      sha256 = "1rp5wmgm2im24bwahavv54rc9ii7l30ng3zx92wvmx1ydwjj9nf7";
     };
   }
 )
