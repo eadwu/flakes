@@ -68,7 +68,6 @@
                 mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings;
               kernelPatches = [
                 kernelPatches.preempt
-                kernelPatches.bcachefs
                 kernelPatches.eevdf
                 kernelPatches.eevdf-bore
                 kernelPatches.extra-config
@@ -78,7 +77,7 @@
           );
         in kernel: patchset kernel;
 
-        linuxPackages_custom = customLinuxPackagesFor linux_testing_bcachefs;
+        linuxPackages_custom = customLinuxPackagesFor linux_latest;
         linux_custom = linuxPackages_custom.kernel;
       };
 
