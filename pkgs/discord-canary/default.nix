@@ -1,8 +1,5 @@
 { fetchurl
 , discord-canary
-, autoPatchelfHook
-, atomEnv
-, libxshmfence
 }:
 
 discord-canary.overrideAttrs (
@@ -14,13 +11,5 @@ discord-canary.overrideAttrs (
       url = "https://dl-canary.discordapp.net/apps/linux/${version}/discord-canary-${version}.tar.gz";
       sha256 = "1x5n78s6rdhy1x0fla2hhik39aia4npr935y6hcw37a41y4qlryz";
     };
-
-    nativeBuildInputs = (oldAttrs.nativeBuildInputs or [ ]) ++ [
-      autoPatchelfHook
-    ];
-
-    buildInputs = (oldAttrs.buildInputs or [ ])
-      ++ atomEnv.packages
-      ++ [ libxshmfence ];
   }
 )
