@@ -9,7 +9,7 @@ discord-canary.overrideAttrs (
 
     src = fetchurl {
       url = "https://dl-canary.discordapp.net/apps/linux/${version}/discord-canary-${version}.tar.gz";
-      sha256 = "10vq9w0m0qr2gfgi8fyl2qv82ka0ibqlvf729bkmq4xzlkx0gi2s";
+      sha256 = "1shig4csmbvfhpka8di656vnfy1nmc22b9a7y34a56s9k3vh70gy";
     };
   }
 )
