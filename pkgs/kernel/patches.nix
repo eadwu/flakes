@@ -56,13 +56,6 @@ in
       };
     };
 
-  eevdf =
-    {
-      name = "eevdf";
-      patch = ./eevdf.patch.xz;
-      extraStructuredConfig = {};
-    };
-
   eevdf-bore =
     {
       name = "eevdf-bore";

@@ -68,7 +68,6 @@
                 mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings;
               kernelPatches = [
                 kernelPatches.preempt
-                kernelPatches.eevdf
                 kernelPatches.eevdf-bore
                 kernelPatches.extra-config
               ];
