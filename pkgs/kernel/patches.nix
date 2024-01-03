@@ -181,7 +181,7 @@ in
         DEBUG_WX = yes;
         DEBUG_LIST = yes;
         DEBUG_SG = yes;
-        DEBUG_CREDENTIALS = yes;
+        # DEBUG_CREDENTIALS = yes;
         DEBUG_NOTIFIERS = yes;
 
         GCC_PLUGIN_LATENT_ENTROPY = yes;
