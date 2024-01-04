@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ pkgs, lib, ... }:
 
 with lib.kernel;
 
@@ -59,7 +59,10 @@ in
   eevdf-bore =
     {
       name = "eevdf-bore";
-      patch = ./eevdf-bore.patch.xz;
+      patch = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/firelzrd/bore-scheduler/62b82ef0da2f194e249146b2649f6b877aec6433/patches/linux-6.6-bore/0001-linux6.6.y-bore3.6.1.patch";
+        sha256 = "sha256-o561sCAjN+chtfpFBJu0ZR7s2UrItmy8vLhg8KwfxaA=";
+      };
       extraStructuredConfig.SCHED_BORE = yes;
     };
 
