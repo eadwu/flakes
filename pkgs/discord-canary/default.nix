@@ -5,11 +5,11 @@
 discord-canary.overrideAttrs (
   oldAttrs: rec {
     pname = "discord";
-    version = "0.0.245";
+    version = "0.0.246";
 
     src = fetchurl {
       url = "https://dl-canary.discordapp.net/apps/linux/${version}/discord-canary-${version}.tar.gz";
-      sha256 = "14n6f5d3i2nhs89v7ps5dz2y3jbl5cjqf2y3lmpsjyai45i44cnl";
+      sha256 = "0sqzl8k9bm592xwrs1g85c7l3vc3g26m4nk9iyc13fz5z7521362";
     };
   }
 )
