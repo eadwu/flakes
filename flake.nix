@@ -67,8 +67,8 @@
               structuredExtraConfig = with nixpkgs.lib;
                 mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings;
               kernelPatches = [
+                kernelPatches.ipc-classes
                 kernelPatches.preempt
-                kernelPatches.eevdf-bore
                 kernelPatches.extra-config
               ];
               modDirVersionArg = kernel.modDirVersion;

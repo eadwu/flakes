@@ -7,6 +7,16 @@ let
   mkForce = lib.mkOverride 36;
 in
 {
+  ipc-classes =
+    {
+      name = "ipc-classes";
+      patch = ./ipc-classes.patch.xz;
+      extraStructuredConfig = {
+        INTEL_HFI_THERMAL = yes;
+        IPC_CLASSES = yes;
+      };
+    };
+
   preempt =
     {
       name = "preempt";
