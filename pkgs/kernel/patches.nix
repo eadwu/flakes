@@ -60,8 +60,8 @@ in
     {
       name = "eevdf-bore";
       patch = pkgs.fetchurl {
-        url = "https://raw.githubusercontent.com/firelzrd/bore-scheduler/62b82ef0da2f194e249146b2649f6b877aec6433/patches/linux-6.6-bore/0001-linux6.6.y-bore3.6.1.patch";
-        sha256 = "sha256-o561sCAjN+chtfpFBJu0ZR7s2UrItmy8vLhg8KwfxaA=";
+        url = "https://raw.githubusercontent.com/firelzrd/bore-scheduler/9a5cbd23593ec4f5feca76fe943f16f5e1fae1f2/patches/linux-6.7-bore/0001-linux6.7.y-bore4.1.4.patch";
+        sha256 = "sha256-IunXkxTDc/i5oLaPZ4xVi3JuU7+vZ2aOWWwMF4O/t20=";
       };
       extraStructuredConfig.SCHED_BORE = yes;
     };
