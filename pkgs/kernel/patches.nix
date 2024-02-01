@@ -208,7 +208,7 @@ in
         # 10% compilation time increase, https://blog.herecura.eu/blog/2020-05-30-kconfig-hardening-tests/
         # SLUB_DEBUG_ON = yes;
         RESET_ATTACK_MITIGATION = yes;
-        AMD_IOMMU_V2 = yes;
+        # AMD_IOMMU_V2 = yes;
 
         SECURITY_WRITABLE_HOOKS = mkForce (option no); # disabled by default on my kernel anyway
 
