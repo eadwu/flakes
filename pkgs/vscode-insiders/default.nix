@@ -9,11 +9,11 @@ in
 ).overrideAttrs (
   _: rec {
     pname = "vscode-insiders";
-    version = "1707803226";
+    version = "1707889603";
 
     src = fetchurl {
-      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/b2598b92d18ea1132e9cd35df776c8c22a7f9730/code-insider-x64-1707803226.tar.gz";
-      sha256 = "0l8d88gwcz7nsskm7k0x8vhrds72wh4j0v6pgbnsskggr5xi7f4w";
+      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/4f2ff19ecacffa0aa4874db4d63ed4e899d98431/code-insider-x64-1707889603.tar.gz";
+      sha256 = "0kgar549fs5bgiyp67vhqf5d9waxjjj5955w90i5h7jph7c8nxs6";
     };
   }
 )
