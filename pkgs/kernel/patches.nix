@@ -246,7 +246,7 @@ in
 
         DRM_LEGACY = mkForce no;
         STAGING = mkForce no;
-        KSM = mkForce no;
+        # KSM = mkForce no;
         KALLSYMS_ALL = mkForce no;
         # X86_VSYSCALL_EMULATION = mkForce no; # required by many programs before 2013
 
