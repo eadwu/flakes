@@ -66,13 +66,6 @@ in
       extraStructuredConfig.SCHED_BORE = yes;
     };
 
-  ntfs3-fixes =
-    {
-      name = "ntfs3-fixes";
-      patch = ./ntfs3-fixes.patch.xz;
-      extraStructuredConfig = {};
-    };
-
   extra-config =
     {
       name = "extra-config";

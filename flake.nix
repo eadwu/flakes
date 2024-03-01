@@ -67,7 +67,6 @@
               structuredExtraConfig = with nixpkgs.lib;
                 mapAttrs (_: v: mkForce v) kernel.configfile.moduleStructuredConfig.settings;
               kernelPatches = [
-                kernelPatches.ntfs3-fixes
                 kernelPatches.eevdf-bore
                 kernelPatches.preempt
                 kernelPatches.extra-config
