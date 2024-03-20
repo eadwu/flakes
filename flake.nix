@@ -69,7 +69,6 @@
               kernelPatches = [
                 kernelPatches.eevdf-bore
                 kernelPatches.preempt
-                kernelPatches.extra-config
               ];
               modDirVersionArg = kernel.modDirVersion;
             }
