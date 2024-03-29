@@ -41,7 +41,7 @@
           overlays;
 
       overlays.imperial = inputs.imperial.overlay;
-      overlays.deploy-rs = inputs.deploy-rs.overlay;
+      overlays.deploy-rs = inputs.deploy-rs.overlays.default;
       overlays.emacs-overlay = inputs.emacs-overlay.overlay;
       overlays.default = final: prev: with final.pkgs; {
         kernelPatches = prev.kernelPatches // (callPackage ./pkgs/kernel/patches.nix { });
