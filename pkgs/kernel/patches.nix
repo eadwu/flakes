@@ -56,16 +56,6 @@ in
       };
     };
 
-  eevdf-bore =
-    {
-      name = "eevdf-bore";
-      patch = pkgs.fetchurl {
-        url = "https://raw.githubusercontent.com/firelzrd/bore-scheduler/9a5cbd23593ec4f5feca76fe943f16f5e1fae1f2/patches/linux-6.7-bore/0001-linux6.7.y-bore4.1.4.patch";
-        sha256 = "sha256-IunXkxTDc/i5oLaPZ4xVi3JuU7+vZ2aOWWwMF4O/t20=";
-      };
-      extraStructuredConfig.SCHED_BORE = yes;
-    };
-
   extra-config =
     {
       name = "extra-config";
