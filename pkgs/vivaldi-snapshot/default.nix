@@ -6,7 +6,7 @@
 , libxshmfence
 , mesa
 , enableWidevine ? false
-, proprietaryCodecs ? true
+, proprietaryCodecs ? false
 }:
 
 (
