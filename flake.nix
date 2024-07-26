@@ -6,9 +6,7 @@
 
   inputs.boxpub = { type = "github"; owner = "eadwu"; repo = "boxpub"; ref = "boxpub/2.x"; flake = false; };
   inputs.emacs-overlay = { type = "github"; owner = "nix-community"; repo = "emacs-overlay"; };
-  inputs.nixops = { type = "github"; owner = "NixOS"; repo = "nixops"; };
   inputs.plymouth-themes = { type = "github"; owner = "eadwu"; repo = "plymouth-themes"; flake = false; };
-  inputs.imperial = { type = "github"; owner = "eadwu"; repo = "imperial"; };
   inputs.deploy-rs = { type = "github"; owner = "serokell"; repo = "deploy-rs"; };
 
   inputs.privacy-haters = { type = "git"; url = "git://r-36.net/privacy-haters"; flake = false; };
@@ -17,7 +15,7 @@
   inputs.uhb-hosts = { type = "github"; owner = "Ultimate-Hosts-Blacklist"; repo = "Ultimate.Hosts.Blacklist"; flake = false; };
   inputs.mullvad-blocklists = { type = "github"; owner = "mullvad"; repo = "dns-blocklists"; flake = false; };
 
-  outputs = { self, nixpkgs, nixops, ... }@inputs:
+  outputs = { self, nixpkgs, ... }@inputs:
     let
       supportedSystems = [ "x86_64-linux" ];
 
@@ -40,7 +38,6 @@
           (final: prev: { })
           overlays;
 
-      overlays.imperial = inputs.imperial.overlay;
       overlays.deploy-rs = inputs.deploy-rs.overlays.default;
       overlays.emacs-overlay = inputs.emacs-overlay.overlay;
       overlays.default = final: prev: with final.pkgs; {
@@ -50,7 +47,6 @@
         liberation-mono = prev.nerdfonts.override { fonts = [ "LiberationMono" ]; };
 
         boxpub = import inputs.boxpub { inherit (stdenv.hostPlatform) system; };
-        nixopsUnstable = nixops.defaultPackage.${stdenv.hostPlatform.system};
 
         clight-modules = callPackage ./pkgs/clight-modules { };
 
@@ -86,7 +82,7 @@
         {
           inherit (pkgSet)
             ladspa-bs2b liberation-mono
-            boxpub nixopsUnstable
+            boxpub
             dual-plymouth-theme
             linux_custom
             ;
