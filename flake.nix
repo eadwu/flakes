@@ -14,6 +14,8 @@
   inputs.dd-hosts = { type = "github"; owner = "lightswitch05"; repo = "hosts"; flake = false; };
   inputs.uhb-hosts = { type = "github"; owner = "Ultimate-Hosts-Blacklist"; repo = "Ultimate.Hosts.Blacklist"; flake = false; };
   inputs.mullvad-blocklists = { type = "github"; owner = "mullvad"; repo = "dns-blocklists"; flake = false; };
+  inputs.badmojr-1hosts = { type = "github"; owner = "badmojr"; repo = "1Hosts"; flake = false; };
+  inputs.hagezi = { type = "github"; owner = "hagezi"; repo = "dns-blocklists"; flake = false; };
 
   outputs = { self, nixpkgs, ... }@inputs:
     let

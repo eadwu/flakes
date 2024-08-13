@@ -76,10 +76,15 @@ in
       (inputs.uhb-hosts + "/hosts/hosts0")
       (inputs.uhb-hosts + "/hosts/hosts1")
       (inputs.flakes-srcs + "/srcs/someone-who-cares")
+      (inputs.flakes-srcs + "/srcs/oisd-big")
+      (inputs.flakes-srcs + "/srcs/oisd-nsfw")
       (inputs.flakes-srcs + "/srcs/energized-unified")
       (inputs.flakes-srcs + "/srcs/energized-regional")
       (inputs.mullvad-blocklists + "/lists/*/*/*")
       (inputs.mullvad-blocklists + "/output/*/*.txt")
+      (inputs.badmojr-1hosts + "/Pro/hosts.txt")
+      (inputs.hagezi + "/hosts/ultimate.txt")
+      (inputs.hagezi + "/hosts/tif.txt")
     ];
 
     networking.hosts."0.0.0.0" = config.networking.blacklistHosts;
