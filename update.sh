@@ -6,6 +6,12 @@ ROOT="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 declare -A SRCS=(
   # General
   ["someone-who-cares"]="https://someonewhocares.org/hosts/hosts"
+  ["oisd-small"]="https://small.oisd.nl/simplednsplusdblpi"
+  ["oisd-big"]="https://big.oisd.nl/simplednsplusdblpi"
+  ["oisd-nsfw"]="https://nsfw.oisd.nl/simplednsplusdblpi"
+  ["hagezi"]="https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/ultimate.txt"
+  ["threat-intelligence-feeds"]="https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/tif.txt"
+  ["1hosts"]="https://github.com/badmojr/1Hosts/releases/download/latest/1hosts-Pro_hosts.win"
 
   # Specific
   ["default-gitignore"]="https://www.toptal.com/developers/gitignore/api/c,r,git,c++,java,rust,cmake,elisp,emacs,latex,linux,macos,scala,haskell,database,intellij,visualstudiocode"
