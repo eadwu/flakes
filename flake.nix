@@ -106,6 +106,7 @@
         adblock = import ./modules/adblock inputs;
         pam-keyring = import ./modules/pam-keyring.nix;
         sysfs = import ./modules/sysfs.nix;
+        firewall-extended = import ./modules/network/explicit-firewall.nix;
       };
     };
 }
