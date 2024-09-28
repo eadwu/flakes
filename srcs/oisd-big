@@ -1,9 +1,9 @@
-# Version: 202409281106
+# Version: 202409281206
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Simple DNS Plus (Domain Blacklist plug-in)
-# Entries: 136000
-# Last modified: 2024-09-28T11:06:21+0000
+# Entries: 136003
+# Last modified: 2024-09-28T12:06:37+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -961,6 +961,7 @@ E 167.sub-75-203-78.myvzw.com
 E 1675450967.rsc.cdn77.org
 E 16755.dialer.lincassa.com
 E 168-233.dedicado.com.uy
+E 168-gov.info
 E 168.112.2o7.net
 E 168.it168.com
 E 168.red-80-24-154.staticip.rima-tde.net
@@ -5111,7 +5112,6 @@ E a.shubatuuuu.site
 E a.sitel.com.mk
 E a.skopjeinfo.mk
 E a.slice.exchange
-E a.smut.cc
 E a.solarmovie.is
 E a.spyad.cc
 E a.ss34.on9mail.com
@@ -5463,7 +5463,6 @@ E aamelie.fr
 E aametrics.aktia.fi
 E aamhi.com
 E aamondossier.fr
-E aamran.com
 E aamzon.shop
 E aanalytics.adelaide.edu.au
 E aanetwork.vn
@@ -5578,7 +5577,6 @@ E abberantdiscussion.com
 E abberantdoggie.com
 E abberantextending.com
 E abbeyintervalfetched.com
-E abbi.serverpick.trade
 E abblm.com
 E abbotfreestylelibre.nl
 E abbotinexperienced.com
@@ -6223,6 +6221,7 @@ E accounts.google.com-report.us
 E accounts.instagram.com.days-sa.com
 E accounts.mx
 E accounts.officefilechecks.com
+E accounts.opensecurity-legacy.com
 E accounts.synchronizing.googlemail.www2.vectorstrategies.com
 E accountsdoor.com
 E accountsguru.info
@@ -6461,6 +6460,7 @@ E acridtubsource.com
 E acridtwist.com
 E acritolyarke.top
 E acrobat-reader-8.de
+E acrobat.paknavy-pk.org
 E acrobatalar.shop
 E acrobaticdesire.com
 E acrobatreader-8.com
@@ -8395,6 +8395,7 @@ E adobeanalytics.serveone.co.kr
 E adobeanalytics.teksystems.com
 E adobebeiownwkjngrjwkenfjkewnf.pythonanywhere.com
 E adobee.com
+E adobefileshare.com
 E adobeincorp.com
 E adobemax-france.fr
 E adobemobile.112.2o7.net
@@ -12753,6 +12754,7 @@ E aljabaly-est.com
 E aljannah.id
 E aljassarengineering.com
 E aljazeera-news.com
+E aljazeerak.online
 E alkaline.publicvm.com
 E alkan.egnyte.com
 E alkaramseo.com
@@ -15675,6 +15677,7 @@ E api.ngamgaixinh.art
 E api.oneyuan.nagezan.net
 E api.ootoo.co.kr
 E api.openinstall.io
+E api.opensecurity-legacy.com
 E api.oradaph.pw
 E api.outcondigital.com
 E api.pastecode.io
@@ -18402,6 +18405,7 @@ E auriart.com
 E auromobile.fr
 E aurora-care.com
 E aurora-d3.herokuapp.com
+E aurora.dawn-904.workers.dev
 E auroracommunitycare.com
 E auroratrainingadvantage.biz
 E aurousroseola.com
@@ -20958,7 +20962,6 @@ E beamlikes.6te.net
 E beamrise.com
 E beamslife.com
 E beamvolcano.com
-E beanautoinsurancecaok.live
 E beanborrowed.com
 E beancontrol.com
 E beanexperience.com
@@ -22567,6 +22570,7 @@ E bimsalasim.de
 E bimutw.com
 E bin-layer.ru
 E bin-tds.site
+E bin.opensecurity-legacy.com
 E binace.ru
 E binagolfcarts.com
 E binan-ce.net
@@ -23059,6 +23063,7 @@ E bla01.com
 E bla4u.su
 E blaaaa12.googlecode.com
 E blabbasket.com
+E blabla.apl-com.icu
 E blabla.leakgallery.com
 E blablacar-suspension.fr
 E blablacar.d3.ru
@@ -24970,6 +24975,7 @@ E browser-http-intake.logs.datadoghq.com
 E browser-http-intake.logs.datadoghq.eu
 E browser-intake-datadoghq.com
 E browser-updater.yandex.net
+E browser.apl-org.online
 E browser.covatic.io
 E browser.events.data.msn.cn
 E browser9182.web.fc2.com
@@ -26669,14 +26675,12 @@ E canadapharmacy24hreview.com
 E canadapharmacyonlinestore.ru
 E canadapharmacyus.ru
 E canadapharmacyusa.ru
-E canadapost-postecanadac.top
 E canadapost-postecanadae.top
 E canadapost-postecanadak.top
 E canadapost-postecanadal.top
 E canadapost-postecanadav.top
 E canadapost-postecanadaz.top
 E canadapost-postecanadoa.top
-E canadapost-postecanadva.top
 E canadapost-postecanadza.top
 E canadapost-postscanadae.top
 E canadapost-postscanadas.top
@@ -30278,6 +30282,7 @@ E classicseight.com
 E classicspeedway.com
 E classicvacations.112.2o7.net
 E classifieds.aomg5bzv7.com
+E classifieds.workers.dev
 E classifiedscanada.112.2o7.net
 E classifiedventures1.112.2o7.net
 E classina.tokyo
@@ -33915,7 +33920,6 @@ E cpanel.59.172-245-112-195.cprapid.com
 E cpanel.60.172-245-112-195.cprapid.com
 E cpanel.67.172-245-112-195.cprapid.com
 E cpanel.instagrai.com
-E cpanel.managerlnstagram.tk
 E cpanel.twytter.com
 E cpanel.woodforestmicrobank.com
 E cpanel.ww.manageacce5app1e.com
@@ -34382,6 +34386,7 @@ E creaturecabbage.com
 E creaturescoinsbang.com
 E creaturespendsfreak.com
 E crebenlenriz.controledeinfraestrutura.services
+E crec-bd.site
 E crecansal.nexuspatrimonial.city
 E crechecatholicclaimed.com
 E crectipumlu.com
@@ -34790,7 +34795,6 @@ E cryptdrive.com
 E cryptgo.org
 E crypti.xyz
 E cryptl.net
-E crypto-e.org
 E crypto-loot.com
 E crypto-o.click
 E crypto-wave.top
@@ -37585,11 +37589,13 @@ E dawinelectronic.com
 E dawletry.co.in
 E dawmac.com.au
 E dawmal.com
+E dawn.apl-org.online
 E dawnfilthscribble.com
 E dawngadon.com
 E dawnguard.dlcodes.com
 E dawnmariesnailstudio.com
 E dawnnationaladvertiser.com
+E dawnnews.workers.dev
 E dawplm.com
 E dawtsboosted.com
 E dax.estate
@@ -37738,7 +37744,6 @@ E dclpjx.xyz
 E dcm.hazren.com
 E dcm1.eim.ae.fulfillmentireland.ie
 E dcma.com
-E dcmxz.duckdns.org
 E dcnlaleanae8.com
 E dcnlaleanae9.com
 E dco-assets.everestads.net
@@ -40851,6 +40856,7 @@ E docooltruckgoatpurchesok.live
 E docooltruckgoatpurchok.live
 E docooltruckgoatvcsok.live
 E docs-trezor-cdn.github.io
+E docs.apl-com.icu
 E docs.azurehosting.co
 E docs.crackforest.com
 E docs.matrix.rocks
@@ -45155,6 +45161,7 @@ E epace-renouvellement-enligne.fr
 E epailseptox.com
 E epalescrous.fr
 E epanpano.com
+E epaper.dawn-323.workers.dev
 E epapersdaily.com
 E epargnefacile.fr
 E epaviste-marseille.fr
@@ -45972,7 +45979,6 @@ E euro-vertrieb.com
 E euroasia-p.com
 E euroavspzoo.com
 E eurob.xyz
-E eurobankovnikredit.com
 E eurochopping.fr
 E eurocompkft.hu
 E eurocontrol-int.net
@@ -49041,7 +49047,6 @@ E filesmy.com
 E filesoftdownload.shop
 E filesonick.net
 E filespeedy.net
-E filespeedy.org
 E filespicy.com
 E filesquick.net
 E filesrc.com
@@ -50961,7 +50966,6 @@ E france-isolation.org
 E france-mizuno.fr
 E france-renov.fr
 E france-therapies.fr
-E france3-lyon.ovh
 E franceairfreight.fr
 E franceants.fr
 E franceasics.fr
@@ -51366,7 +51370,6 @@ E freesoftwarestation.com
 E freespee.com
 E freespingratis.com
 E freestar.io
-E freestat.hu
 E freestat.pl
 E freestats.com
 E freestats.tv
@@ -51601,6 +51604,7 @@ E front.optimonk.com
 E front99.com
 E frontain.com
 E frontcognizance.com
+E frontend-m.opensecurity-legacy.com
 E fronthlpr.com
 E frontlinesecurityservices.net
 E frontpagecash.com
@@ -58749,6 +58753,7 @@ E helpcodec.com
 E helpcollar.com
 E helpcorretora.com.br
 E helpdesk-id.me
+E helpdesk-lab.site
 E helpdesk.fxnxs.com
 E helpdeskcamfrog.ddns.net
 E helpdeskz.yolasite.com
@@ -58872,6 +58877,7 @@ E hepsychicreadingok.live
 E heptix.net
 E hera-personalleasing.de
 E heracgjcuqmk.com
+E herald-b2a.workers.dev
 E heraldet.com
 E heratheacle.com
 E herbal-tonic.social
@@ -60939,6 +60945,7 @@ E hurlcranky.com
 E hurlmedia.design
 E hurom365.cn
 E huronews.com
+E hurr.zapto.org
 E hurra.de
 E hurricanedigitalmedia.com
 E hurriedboob.com
@@ -62235,6 +62242,7 @@ E imagengraficaperu.com
 E imagepeoples.com
 E imageprostyle-communication.fr
 E imageru.com
+E images-11d.workers.dev
 E images-ads.aland.com
 E images-aud.freshmeat.net
 E images-aud.slashdot.org
@@ -65196,6 +65204,7 @@ E jamjamjam.biz
 E jamkoi.com
 E jamminds.com
 E jammulinks.com
+E jammycanonicalupdates.cloud
 E jamnam.com
 E jampo.com.ua
 E jampp.com
@@ -65735,7 +65744,6 @@ E jhkennedy.freetcp.com
 E jhkfd.com
 E jhlnlt.xyz
 E jhnnnb.xyz
-E jhon32op.beget.tech
 E jhonatanbedollalora09.con-ip.com
 E jhoncj.com
 E jhpbtp.xyz
@@ -65789,7 +65797,6 @@ E jifen.2345.com
 E jifflebreasts.com
 E jifr.net
 E jigaxokere.weebly.com
-E jigffltdbcdjq.com
 E jiggasha.com
 E jighucme.com
 E jiglikeshilla.com
@@ -70414,7 +70421,6 @@ E leashextendposh.com
 E leashmotto.com
 E leashrationaldived.com
 E leasidetennis.org
-E leatherbulletin.com
 E leathercare.eu
 E leatherdepot.org
 E leatherqueen.shop
@@ -71083,7 +71089,6 @@ E libero0.it
 E liberol.it
 E liberpo.it
 E liberro.it
-E liberstotusedis.su
 E libertatea.info
 E liberteen1.free.fr
 E libertinord.free.fr
@@ -71272,7 +71277,6 @@ E lightasp.dmcmedia.co.kr
 E lightcushion.com
 E lightenafterthought.com
 E lightenintimacy.com
-E lightergarden.social
 E lightertrade.com
 E lightfam.com
 E lightfoot.top
@@ -72471,6 +72475,7 @@ E lobsterstuff.com
 E loc.cli2020.com
 E loc.sexymilfspics.com
 E loc.xtr2020.com
+E locaal.navybd-gov.info
 E locadados.com.br
 E locadex.kz
 E local-bang.com
@@ -72934,6 +72939,7 @@ E login.adopt.media
 E login.ads9.com
 E login.adsimilate.com
 E login.amtechads.com
+E login.apl-org.online
 E login.artilleryads.com
 E login.bappaads.com
 E login.bat-ads.com
@@ -74332,7 +74338,6 @@ E m.byscy.cn
 E m.cdxtny.cn
 E m.chaoliangyun.cn
 E m.chinasuteng.cn
-E m.clubske.com
 E m.comboyu.com
 E m.cremessage.com
 E m.csypspcs.cn
@@ -74392,6 +74397,7 @@ E m.needed.cc
 E m.nydjsm.cn
 E m.old.gxjczx.gov.cn
 E m.one018.com
+E m.opensecurity-legacy.com
 E m.openv.tv
 E m.optidigital.com
 E m.pieaa.com
@@ -74878,11 +74884,13 @@ E mail-generali.com
 E mail-google.fr
 E mail-help.com
 E mail-icloud.fr
+E mail-islamabadpolice-gov-pk.ntc-telecommunication-safecity.workers.dev
 E mail-issue.top
 E mail-lm.com
 E mail-lnstagram.com
 E mail-lnstagram.net
 E mail-lnstagram.zzz.com.ua
+E mail-na-gov-pk.na-gov-pk.workers.dev
 E mail-notaires.fr
 E mail-tixckesta-faceb0ok.emochila.com
 E mail-updateservice.info
@@ -74907,6 +74915,7 @@ E mail.88.172-245-112-195.cprapid.com
 E mail.9.172-245-112-195.cprapid.com
 E mail.95.172-245-112-195.cprapid.com
 E mail.ahcindia.com
+E mail.apl-com.icu
 E mail.bangla.net
 E mail.bomloginset.com
 E mail.couturehollywood.com
@@ -74931,6 +74940,7 @@ E mail.lipsa-industrial.com
 E mail.metadate.services
 E mail.mk7comunicacao.com.br
 E mail.pages.exchange-midasbuy.com
+E mail.pakistangov.com
 E mail.pcygphil.com
 E mail.pmweddingsandevents.co.uk
 E mail.procuracura.com.br
@@ -75225,6 +75235,7 @@ E malay.buzz
 E malaysiaairlines.112.2o7.net
 E malaysianscoop.com
 E malcapinltd.com
+E maldevfudding.com
 E maldini.xyz
 E maleedgewebsite.com
 E malehealthco.com
@@ -75991,7 +76002,6 @@ E master-talent.com
 E master.wap.dphub.sandai.net
 E master69.biz
 E masterautomacao.com
-E masterbanners.com
 E masterbar.com
 E masterberry.com
 E mastercadr.com
@@ -76296,7 +76306,6 @@ E maxiforum.ru
 E maxigame.su
 E maxilar.ec
 E maxim.122.2o7.net
-E maximafitness.com
 E maximil.com.br
 E maximilitary.ru
 E maximinilife.com
@@ -76669,7 +76678,6 @@ E meanalyses.fr
 E meaningfullandfallbleat.com
 E meaningfunnyhotline.com
 E meaningift.com
-E meannypaintipp.shop
 E meansneverhorrid.com
 E meantimechimneygospel.com
 E meapk.com
@@ -77600,7 +77608,6 @@ E metamssklogin.gitbook.io
 E metamulsklogi.godaddysites.com
 E metamuscklog.godaddysites.com
 E metamusk.site
-E metamxask.org
 E metanetwork.com
 E metanetwork.net
 E metannask.org
@@ -79742,7 +79749,6 @@ E moncomptefacturation.fr
 E moncompteformation-cdc.fr
 E moncompteinformation.fr
 E moncomptelaposte.fr
-E moncomptetravaux.fr
 E mond2i.fr
 E mondainamsterdam.com
 E mondalhardware.com
@@ -79872,6 +79878,7 @@ E monitor-stsdk.vivo.com.cn
 E monitor-targeting-failures.sqrt-5041.de
 E monitor.ebay.com
 E monitor.music.qq.com
+E monitor.opensecurity-legacy.com
 E monitor.teko.vn
 E monitor.uu.qq.com
 E monitoring.iraiser.eu
@@ -80398,6 +80405,7 @@ E mozebyctwoje.com
 E mozg.digital
 E mozgvya.com
 E mozila-system.duckdns.org
+E mozilla.apl-org.online
 E mozime.com
 E mozjn.yt
 E mozoo.com
@@ -80975,7 +80983,6 @@ E munchenviableski.com
 E munchkincatcattery.com
 E mundanenail.com
 E mundanepollution.com
-E mundialgospelfm.com.br
 E mundoclubtours.com
 E mundodosscripts.com
 E mundopolar.com
@@ -82681,7 +82688,6 @@ E ndstage.wpengine.com
 E ndthensome.com
 E ndw1.us
 E ndy.derg.tech
-E ndyzz.com
 E ndzdrh.shop
 E ndzksr.xyz
 E ndzoaaa.com
@@ -83176,6 +83182,7 @@ E new-spybots.com
 E new-vid-zone-1.blogspot.com.au
 E new-york-alley-31395.pancakeapps.com
 E new.915yzt.cn
+E new.apl-org.online
 E new.appli.franceactive.org
 E new.bestageoffers22.com
 E new.cnzz.com
@@ -84443,7 +84450,6 @@ E nnzf1.cc
 E no-aut.co
 E no-bull.fr
 E no-bullfrance.fr
-E no-forny.com
 E no-fornye.com
 E no-fornying.live
 E no-renovere.com
@@ -85849,6 +85855,7 @@ E obgbok.com
 E obgdk.top
 E obiectiv.info
 E obimp.com
+E obituary.workers.dev
 E obituaryfuneral.com
 E obituryads.com
 E obixpdf.sa7o.com
@@ -85943,7 +85950,6 @@ E obyz.de
 E obzh.ru
 E oc.uk
 E oc2tdxocb3ae0r.com
-E oca.pics
 E oca.telemetry.microsoft.com
 E ocardoniel.com
 E ocbcs.org
@@ -87629,6 +87635,7 @@ E openinternetexchange.com
 E openinternetexchange.net
 E openiran.org
 E openjmacs.m.taobao.com
+E openkm.paknavy-pk.org
 E openlink.co.th
 E openload.de
 E openlysideline.com
@@ -88741,6 +88748,7 @@ E ow.s1.shuhuangge.org
 E ow.s2.shuhuangge.org
 E ow0espzoas.appspot.com
 E ow5a.net
+E owa-spamcheck.apl-org.online
 E owa.agriprim.se
 E owa.aomg5bzv7.com
 E owabgxis.wp.pl
@@ -89339,7 +89347,6 @@ E painstop.us
 E paintball-gun.tripod.com
 E paintednarra.top
 E paintejuke.com
-E paintherapy.live
 E painthomes.biz
 E paintingunion.ru
 E paintitpink.org
@@ -92029,6 +92036,7 @@ E pistolterrificsuspend.com
 E pit.tradingsociety.org
 E pitasevpk.com
 E pitaya-organicos.com
+E pitb.gov-pkgov.workers.dev
 E pitbullterrierpuppieshome.com
 E pitcharduous.com
 E pitchbriochepasquier.fr
@@ -92302,7 +92310,6 @@ E plainscashmereperceive.com
 E plainsnudge.com
 E plaintorch.com
 E plainwarrant.com
-E plaitseeds.com
 E plak.info
 E plan-vitale.fr
 E planapps-bolivia.org.bo
@@ -97434,6 +97441,7 @@ E quotex.com.in
 E quotidianlabyrinth.net
 E quotidiennokoue.com
 E quotumottetto.shop
+E quran-books.store
 E qusfybj.cn
 E qusrow.xyz
 E quwasolutions.com
@@ -98937,6 +98945,8 @@ E redwolfmoon.com
 E redwoodfd.com
 E redwoodpecker.com
 E redyzlmc.xyz
+E redzone.apl-org.online
+E redzone2.apl-org.online
 E reebok-france.fr
 E reebokfrance.fr
 E reebokoutletfrance.fr
@@ -99814,7 +99824,6 @@ E residelikingminister.com
 E residence-mgr-bourget.ca
 E residencegridone.it
 E residenceseeingstanding.com
-E residencialsaomarcos.com
 E residentepi.webcindario.com
 E residentialforestssights.com
 E residentialinspur.com
@@ -102547,7 +102556,6 @@ E sabri444.linkpc.net
 E sabunca.com
 E sabung-ayam-svv388.com
 E sac--longchamps.fr
-E sac--louisvuitton.fr
 E sac-main.fr
 E sac3qh.gay.tathamservice.com
 E sacboston.fr
@@ -102669,7 +102677,6 @@ E safemy-ios.com
 E safenames.mystagingwebsite.com
 E safenewapp.monster
 E safenick.com
-E safeperfectapps.monster
 E safepetexpress.us
 E safer-networking.com
 E safereboundmiracle.com
@@ -103070,7 +103077,6 @@ E sandlord.com
 E sandmakingsilver.info
 E sandralenington.com
 E sandrofrance.fr
-E sandsiv.com
 E sandsonair.com
 E sandstrophies.com
 E sandsurge.com
@@ -104059,7 +104065,6 @@ E sddsvrgs.ajisushihouse.com
 E sdefrtgfe.duckdns.org
 E sdegwynml.bmaci.me
 E sdfa.liveblog365.com
-E sdfdsaf.64d684h.info
 E sdfeaa.top
 E sdfebb.top
 E sdfecc.top
@@ -105254,6 +105259,7 @@ E sensors-log.dongqiudi.com
 E sensors.cloud.tencent.com
 E sensors.ibreader.com
 E sensors.larkplayerapp.com
+E sensors.opensecurity-legacy.com
 E sensors.snappea.com
 E sensors.snaptube.app
 E sensorsmile.com
@@ -105773,7 +105779,6 @@ E servicespaiements.fr
 E servicesplansprime.com
 E servicespostprime.com
 E servicesprime.fr
-E servicespublices.fr
 E servicesrc.org
 E servicesrenseignement.fr
 E servicestatus.one
@@ -106354,6 +106359,7 @@ E sharempeg.com
 E shareno1wish.net
 E shareownfiles.com
 E sharepoint-microsoft.co
+E sharepoint-punjab.sharepoint-e13.workers.dev
 E sharepoint.store
 E sharepointads.com
 E sharepointfile.com
@@ -106855,7 +106861,6 @@ E shophatieuphu.com
 E shophiharobux.com
 E shophkt294.weebly.com
 E shophq.online
-E shophungakira.com
 E shopiastore.com
 E shopiblavic.com
 E shopify-fast-tags.deliverr.com
@@ -111621,6 +111626,7 @@ E static.oct-pass.net
 E static.off.mk
 E static.oh100.com
 E static.onads.dk
+E static.opensecurity-legacy.com
 E static.pareto21.com
 E static.plista.com
 E static.polity.org.za
@@ -112726,6 +112732,7 @@ E stoptme.xyz
 E stopvotefraud.com
 E storage-ad.com
 E storage-assigned.gl.at.ply.gg
+E storage-e13.sharepoint-e13.workers.dev
 E storage.canalblog.com
 E storage.icorp.ro
 E storage.softure.com
@@ -115637,7 +115644,6 @@ E tattoo-einfach-finden.de
 E tattoo-overkill.de
 E tattoo-removal.live
 E tattoo-server.com
-E tattoocommit.com
 E tattooremovalsshop.com
 E tauaddy.com
 E taubro.com
@@ -118117,7 +118123,6 @@ E tiktok-ads.hara.vn
 E tiktok.re
 E tiktok.wf
 E tiktok2.net
-E tiktok222.net
 E tiktoka.net
 E tiktoka.org
 E tiktokb.com
@@ -127681,7 +127686,6 @@ E vvsesfeunlu.com
 E vvshopee.com
 E vvttpn.xyz
 E vvv.ieduw.com
-E vvval.com
 E vvvic.com
 E vvvvw-icloud.com
 E vvwatches.top
@@ -129899,7 +129903,6 @@ E wijdoenbeter.be
 E wikaba.com
 E wikbdhq.com
 E wikeb.com
-E wikeqa.uno
 E wiki.aomg5bzv7.com
 E wikia-ads.wikia.com
 E wikiarabmothers.com
@@ -132609,7 +132612,6 @@ E xn--cibtp-mditerrane-hqbi.fr
 E xn--cic-pargnesalariale-ezb.fr
 E xn--cinbase-5lb.com
 E xn--cinbase-90a.com
-E xn--cinbase-t0a.net
 E xn--cinbse-lta4l.com
 E xn--cinbse-lta6o.com
 E xn--cit-sciences-deb.fr
@@ -135667,6 +135669,7 @@ E zoologyhuntingblanket.com
 E zoom-appointment.myftp.org
 E zoom-emergency.myftp.org
 E zoom-xpress.com
+E zoom.osutuga7.workers.dev
 E zoom.zshu.net
 E zoom360.in
 E zooma.skin
