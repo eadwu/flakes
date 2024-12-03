@@ -46,7 +46,6 @@
         kernelPatches = prev.kernelPatches // (callPackage ./pkgs/kernel/patches.nix { });
 
         ladspa-bs2b = callPackage ./pkgs/ladspa-bs2b { };
-        liberation-mono = prev.nerdfonts.override { fonts = [ "LiberationMono" ]; };
 
         boxpub = import inputs.boxpub { inherit (stdenv.hostPlatform) system; };
 
@@ -83,7 +82,7 @@
         in
         {
           inherit (pkgSet)
-            ladspa-bs2b liberation-mono
+            ladspa-bs2b
             boxpub
             dual-plymouth-theme
             linux_custom
