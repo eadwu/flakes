@@ -1,9 +1,9 @@
-# Version: 202501091709
+# Version: 202501091810
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Simple DNS Plus (Domain Blacklist plug-in)
-# Entries: 122271
-# Last modified: 2025-01-09T17:09:22+0000
+# Entries: 122266
+# Last modified: 2025-01-09T18:10:03+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -1773,7 +1773,6 @@ E 24-7clinic.com
 E 24-7pharmacy.info
 E 24-news.online
 E 24-sportnews.com
-E 24-xxx.biz
 E 24.eu
 E 24052107.live
 E 240aca2365.com
@@ -5310,7 +5309,6 @@ E a.wzu.com
 E a.xanga.com
 E a.xfreeservice.com
 E a.xigua110.com
-E a.xinwenge.net
 E a.xixiyishu.com
 E a.xizi.com
 E a.xlpu.cc
@@ -13774,6 +13772,7 @@ E analytics-events.inshorts.com
 E analytics-gateway.delta.dp.lightricks.com
 E analytics-google.org
 E analytics-ingestion-production.tubitv.com
+E analytics-ingestion-v3.main-production-custom.production.k8s.tubi.io
 E analytics-ingestion.production-public.tubi.io
 E analytics-ingress-global.bitmovin.com
 E analytics-ingress.bitmovin.com
@@ -21119,7 +21118,6 @@ E bidentonrccom.122.2o7.net
 E bideo-blog.xyz
 E bideo-cdn.com
 E bideo-cdn.xyz
-E bideo-chat.xyz
 E bideo-endpoint.com
 E bideo-schnellvpn.com
 E bidfhimuqwij.com
@@ -28596,6 +28594,8 @@ E clientinfo.phimmoizz.net
 E clientlog.midomi.com
 E clientlog.music.163.com
 E clientlog3.music.163.com
+E clientlogdep.music.163.com
+E clientlogsf.music.163.com
 E clientmetrics-augmentum.kik.com
 E clientmetrics-pa.googleapis.com
 E clientmetrics.kik.com
@@ -29588,6 +29588,7 @@ E collector.sspinc.io
 E collector.statowl.com
 E collector.superwall.me
 E collector.szlcsc.com
+E collector.t-idr.com
 E collector.taoxh.life
 E collector.unsplash.com
 E collector.vhx.tv
@@ -34537,6 +34538,7 @@ E data.game.xiaomi.com
 E data.gosquared.com
 E data.hicloud.com
 E data.kameleoon.io
+E data.kuiniuca.com
 E data.minute.ly
 E data.mistat.india.xiaomi.com
 E data.mistat.rus.xiaomi.com
@@ -41751,6 +41753,7 @@ E ercmkzq.cc
 E ercnnier.com
 E ercoeteasacom.com
 E ercofusa.blogspot.com
+E ercoils.com
 E erdeallyighab.com
 E erdecisesgeorg.info
 E erdelt.nl
@@ -44768,7 +44771,6 @@ E fgrupli.nyc3.digitaloceanspaces.com
 E fgtgr.buzz
 E fgts-liberado.epizy.com
 E fguhyg.cn
-E fgwerg.top
 E fgwuw.com
 E fh259by01r25.com
 E fhac.fr
@@ -50473,7 +50475,6 @@ E goldenstars.fr
 E goldenstatebrokers.com
 E goldenstatewarriorsstore.com
 E goldensurvey.com
-E goldenwatches.fr
 E goldenwest.co.za
 E goldfish.boleary.dev
 E goldfish.clickand.de
@@ -53597,7 +53598,6 @@ E heavespectaclescoefficient.com
 E heavycom.112.2o7.net
 E heavycom.122.2o7.net
 E heavydetail.com
-E heavyfigure.link
 E heavypersian.weebly.com
 E heavyplayground.com
 E heavyuniversecandy.com
@@ -63952,7 +63952,6 @@ E laughing-pike-c6b1d5.netlify.app
 E laughing-pike-c6b1d5.netlify.com
 E laughingrecordinggossipy.com
 E laughnetwork.com
-E laughteroccasionallywarp.com
 E laughtersoundhealing.com
 E laughtill.net
 E lauglyhousebuyers.com
@@ -73809,7 +73808,6 @@ E mutuellle-de-poitiers.fr
 E mutuza.win
 E mutzsotixck3ers-facebo0k.emochila.com
 E muuxxu.com
-E muwc.shop
 E muwmedia.com
 E muybjar.cn
 E muybn.com
@@ -75426,6 +75424,7 @@ E netadapterupdate.r1-de.storage.arubacloud.de
 E netadclick.com
 E netaffiliation.com
 E netagent.cz
+E netapm.music.163.com
 E netavenir.com
 E netbina.com
 E netbulvar.eu
@@ -86779,6 +86778,7 @@ E publiconesurvey.pages.dev
 E publicrecordlookup.com
 E publicsofa.com
 E publicspeaking.co.id
+E publictelemetry.tophat.com
 E publictresor.fr
 E publicunloadbags.com
 E publicus.com
@@ -98629,7 +98629,6 @@ E socsecure.fr
 E socssite.ru
 E sodallay.com
 E sodamash.com
-E sodaprostitutetar.com
 E sodepebrasil.com.br
 E sodexo-groupe.fr
 E sodexo-sas.fr
@@ -112029,7 +112028,6 @@ E uspandi.com
 E uspcworks.com
 E uspolitics.news
 E usps-mydeliver.com
-E usps-mypackage.com
 E usps-online-safe.com
 E usps-online.com
 E usps-pt.com
@@ -117273,7 +117271,6 @@ E wneia.iaskhot.com
 E wniamax.fr
 E wnjjhksaue.com
 E wnmaoc.xyz
-E wnojded.icu
 E wnrusisedprivatedq.info
 E wnrvrwabnxa.com
 E wnt-s0me-push.net
@@ -119714,7 +119711,6 @@ E xx-umomfzqik.today
 E xx3h.com
 E xxa.uji8979erd77.jp
 E xxad.cc
-E xxaks01081sspao.xyz
 E xxaks01091sspao.xyz
 E xxbeeilm.ru.gg
 E xxccdshj.com
@@ -120080,6 +120076,7 @@ E ydttxdqe.xyz
 E ydwlkj.com
 E ydworld.com
 E ydwrkwwqytj.xyz
+E ye.dun.163yun.com
 E ye185hcamw.com
 E yea.uploadimagex.com
 E yeabble.com
@@ -120492,7 +120489,6 @@ E yoiqacw.cn
 E yoiur.com
 E yokananu.net
 E yokeeroud.com
-E yokesandusj.sbs
 E yokonofrance.fr
 E yoli.my.id
 E yolkhandledwheels.com
@@ -121694,7 +121690,6 @@ E zimmermannparis.fr
 E zimpolo.com
 E zimu.nl
 E zinghouse.co.uk
-E zingmp3.pro
 E zingshop.net
 E zinhice.shop
 E zinipx.xyz
