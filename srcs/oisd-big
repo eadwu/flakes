@@ -1,9 +1,9 @@
-# Version: 202503202008
+# Version: 202503202109
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Simple DNS Plus (Domain Blacklist plug-in)
-# Entries: 192199
-# Last modified: 2025-03-20T20:08:25+0000
+# Entries: 192202
+# Last modified: 2025-03-20T21:09:03+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -107870,6 +107870,7 @@ E mc.admetrica.ru
 E mc.desmine.ru
 E mc.weather.com.cn
 E mc.yandex.com
+E mc.yandex.md
 E mc.yandex.ru
 E mc7clurd09pla4nrtat7ion.com
 E mcafee-service.us.com
@@ -160408,6 +160409,7 @@ E stats.tchncs.de
 E stats.tehila.gov.il
 E stats.telegraph.co.uk
 E stats.thoughtcatalog.com
+E stats.tiktoker.win
 E stats.tipser.com
 E stats.tirexo.blue
 E stats.topofblogs.com
@@ -164694,6 +164696,7 @@ E tags.hilabel.nl
 E tags.master-perf-tools.com
 E tags.mobsmart.net
 E tags.op-palvelut.fi
+E tags.pw.adn.cloud
 E tags.refinery89.com
 E tags.soloway.ru
 E tagserve.asia
