@@ -1,9 +1,9 @@
-# Version: 202504070309
+# Version: 202504070509
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Simple DNS Plus (Domain Blacklist plug-in)
-# Entries: 196008
-# Last modified: 2025-04-07T03:09:01+0000
+# Entries: 196006
+# Last modified: 2025-04-07T05:09:15+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -59,7 +59,6 @@ E 000macu.wcomhost.com
 E 000tristanprod.free.fr
 E 000webhost.fr
 E 000webhost.info
-E 000webhostapp.com
 E 001.0x1f4b0.com
 E 001.app
 E 001420990998183-dot-wetransfer-auth-file-342.appspot.com
@@ -44830,7 +44829,6 @@ E com-passy.xin
 E com-promotions.us
 E com-qski.xin
 E com-qsnk.xin
-E com-qwyi.xin
 E com-share.in
 E com-ssl1.ws
 E com-svse.xin
