@@ -38,7 +38,7 @@
         st = callPackage ./pkgs/st { inherit (prev) st; } packageAttrs.st;
 
         discord-canary = callPackage ./pkgs/discord-canary { inherit (prev) discord-canary; };
-        vivaldi-snapshot = callPackage ./pkgs/vivaldi-snapshot { inherit (prev) vivaldi; };
+        vivaldi-snapshot = callPackage ./pkgs/vivaldi-snapshot { };
 
         vscode-insiders = callPackage ./pkgs/vscode-insiders { inherit (prev) vscode; };
         vscode-insiders-with-extensions = prev.vscode-with-extensions.override {

@@ -1,17 +1,13 @@
 { fetchurl
-, vivaldi
-, lib
-, libdrm
-, libxkbcommon
-, libxshmfence
-, mesa
+, callPackage
 , enableWidevine ? false
 , proprietaryCodecs ? false
 }:
 
 (
-  vivaldi.override {
-    isSnapshot = true;
+  (callPackage ./vivaldi.nix { }).override {
+    branch = "snapshot";
+    vivaldiName = "vivaldi-snapshot";
     inherit enableWidevine proprietaryCodecs;
   }
 ).overrideAttrs (
