@@ -82,7 +82,7 @@ in
       (inputs.flakes-srcs + "/srcs/energized-regional")
       (inputs.mullvad-blocklists + "/lists/*/*/*")
       (inputs.mullvad-blocklists + "/output/*/*.txt")
-      (inputs.badmojr-1hosts + "/Pro/hosts.txt")
+      (inputs.badmojr-1hosts + "/Xtra/hosts.txt")
       (inputs.hagezi + "/hosts/ultimate.txt")
       (inputs.hagezi + "/hosts/tif.txt")
     ];
