@@ -9,11 +9,11 @@ in
 ).overrideAttrs (
   _: rec {
     pname = "vscode-insiders";
-    version = "";
+    version = "1761597447";
 
     src = fetchurl {
-      url = "https://update.code.visualstudio.com/latest/linux-x64/insider";
-      sha256 = "";
+      url = "https://vscode.download.prss.microsoft.com/dbazure/download/insider/00e7d11c2ef29538a0395dab7a5bf4be8719d790/code-insider-x64-1761597447.tar.gz";
+      sha256 = "1761597447";
     };
   }
 )
