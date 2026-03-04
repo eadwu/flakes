@@ -5,7 +5,7 @@
 discord-canary.overrideAttrs (
   oldAttrs: rec {
     pname = "discord";
-    version = "0.0.885";
+    version = "0.0.886";
 
     src = fetchurl {
       url = "https://dl-canary.discordapp.net/apps/linux/${version}/discord-canary-${version}.tar.gz";
