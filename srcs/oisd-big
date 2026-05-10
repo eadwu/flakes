@@ -1,9 +1,9 @@
-# Version: 202605100806
+# Version: 202605101427
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Simple DNS Plus (Domain Blacklist plug-in)
-# Entries: 402956
-# Last modified: 2026-05-10T08:06:24+0000
+# Entries: 402955
+# Last modified: 2026-05-10T14:27:45+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -312992,7 +312992,6 @@ E sg-log-emagzal.lazada.com
 E sg-match.taboola.com
 E sg-oracle.ridhokepret0900.workers.dev
 E sg-perbing.de
-E sg-public-data-api.hoyoverse.com
 E sg-sync.taboola.com
 E sg-trc-events.taboola.com
 E sg-vid-events.taboola.com
