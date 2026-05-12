@@ -1,9 +1,9 @@
-# Version: 202605121910
+# Version: 202605122207
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Simple DNS Plus (Domain Blacklist plug-in)
-# Entries: 405823
-# Last modified: 2026-05-12T19:10:36+0000
+# Entries: 405668
+# Last modified: 2026-05-12T22:07:24+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -1872,7 +1872,6 @@ E 1491516.weebly.com
 E 149351777.workers.dev
 E 149513674246621432.weebly.com
 E 149561coinbase.com
-E 1496pqr.cfd
 E 149b5a6b84.com
 E 14a7vj.close.futureisready.com
 E 14cpoff22.de
@@ -3199,6 +3198,7 @@ E 1vd2esrss.com
 E 1vfcuonline.weebly.com
 E 1vin777.com
 E 1vt.pages.dev
+E 1vzt2qp.top
 E 1w21.am.coinbase.cm
 E 1w2m.com
 E 1w9py5.close.futureisready.com
@@ -4711,7 +4711,6 @@ E 2minutetooncast.com
 E 2minutetunecast.com
 E 2mke5l187.de
 E 2mmlive.vip
-E 2mn4zka.cfd
 E 2mo3neop.de
 E 2moro.fr
 E 2motor.ru
@@ -4843,7 +4842,6 @@ E 2worldsconsultingservices.com
 E 2wq9u06jq.com
 E 2wqz2k.close.futureisready.com
 E 2wu0m0ms098w7148.xyz
-E 2wx9kva.top
 E 2x-mstr.live
 E 2x-tsla.com
 E 2x0zzv34h9h4-pages-dev.translate.goog
@@ -5521,7 +5519,6 @@ E 384t348g34ug.lat
 E 385131358347789444.weebly.com
 E 38574565.weebly.com
 E 38604322.weebly.com
-E 3865zrt.top
 E 3867.zzstzg.com
 E 38710f41e0.9334fb3562.com
 E 387431298338020-dot-wetransfer-auth-file-343.appspot.com
@@ -5947,7 +5944,6 @@ E 3vig.com
 E 3vinc.com
 E 3vk1qwn.cfd
 E 3vnofjidlv.com
-E 3w.w7rotm.lat
 E 3w90.co.cc
 E 3wcsgo.cc
 E 3we4.weebly.com
@@ -6826,6 +6822,7 @@ E 505vdi.top
 E 507041.com
 E 507172777994043085.weebly.com
 E 507222872.go2cloud.org
+E 5078347592.shop
 E 508uu.top
 E 509396244304366092.weebly.com
 E 509dd82b.liftmyresume.com
@@ -8892,6 +8889,7 @@ E 6zhewang.com
 E 6zk25is1c2uge1-pages-dev.translate.goog
 E 6zk25is1c2uge1.pages.dev
 E 6zmcb1x9fn.top
+E 6zt2qva.top
 E 6zvmvn.close.futureisready.com
 E 6zy9yqe1ew.com
 E 7-bit-casino.net
@@ -9182,6 +9180,7 @@ E 760a131226.com
 E 7612322.online
 E 761268518111840364.weebly.com
 E 761438af.webcindario.com
+E 7621eg74gr83g90-3.lat
 E 76236osm1.ru
 E 762741-coinbase.com
 E 762dd8340d.com
@@ -10119,6 +10118,7 @@ E 872055441668886464.weebly.com
 E 87260186u3.weebly.com
 E 87292733.weebly.com
 E 873482418024-29jungspl.start.page
+E 873r673g.lat
 E 87428g340g3.lat
 E 874330205840864724.weebly.com
 E 874449.com
@@ -10327,6 +10327,7 @@ E 897186-coinbase.com
 E 89721.click
 E 89734.click
 E 897345.click
+E 89743h304g3d1.lat
 E 89746123.weebly.com
 E 89757.net
 E 8977uyfsdo.lat
@@ -21495,25 +21496,17 @@ E adsensor.org
 E adserv.20six.net
 E adserv.aavalue.com
 E adserv.arrow.com
-E adserv.basedvd.com
 E adserv.bravenet.com
 E adserv.de
 E adserv.floppybank.com
 E adserv.happypuppy.com
-E adserv.it-analysis.com
-E adserv.lowyat.net
 E adserv.mako.co.il
 E adserv.mywebtimes.com
 E adserv.net
 E adserv.newcentury.net
-E adserv.novacomp.hu
 E adserv.postbulletin.com
-E adserv.quality-channel.com
 E adserv.sapo.pt
-E adserv.tacticalgamer.com
-E adserv.talkzilla.com
 E adserv.transindex.ro
-E adserv01.com
 E adserv1.mannixmarketing.com
 E adserv2.suumo.jp
 E adservant.mediapoint.de
@@ -21527,13 +21520,10 @@ E adserve.gogreece.com
 E adserve.jbs.org
 E adserve.kikizo.com
 E adserve.lasentinelle.mu
-E adserve.lewrockwell.com
 E adserve.ph
 E adserve.podaddies.com
-E adserve.precisionpop.com
 E adserve.shopzilla.com
 E adserve.tv
-E adserve.webtoolcafe.com
 E adserve.work
 E adserver-1277986481.ap-northeast-1.elb.amazonaws.com
 E adserver-1768966121.us-east-1.elb.amazonaws.com
@@ -21541,9 +21531,6 @@ E adserver-2.ig.com.br
 E adserver-4.ig.com.br
 E adserver-5.ig.com.br
 E adserver-e7.com
-E adserver-espnet.sportszone.com
-E adserver-pro.net
-E adserver-prod-alb.gra5phdxha.us-west-2.elasticbeanstalk.com
 E adserver-sync-elb-1682711292.us-east-1.elb.amazonaws.com
 E adserver-vpc-alb-0-2072243822.us-east-1.elb.amazonaws.com
 E adserver-vpc-alb-0-2075095491.us-west-2.elb.amazonaws.com
@@ -21552,7 +21539,6 @@ E adserver-vpc-alb-1-725730730.us-west-2.elb.amazonaws.com
 E adserver-vpc-alb-2-1898430250.us-east-1.elb.amazonaws.com
 E adserver-vpc-alb-2-553366957.us-west-2.elb.amazonaws.com
 E adserver-vpc-alb-3-578630024.us-west-2.elb.amazonaws.com
-E adserver.00web.com
 E adserver.100free.com
 E adserver.3digit.de
 E adserver.4clicks.org
@@ -21561,19 +21547,15 @@ E adserver.a24.com.tr
 E adserver.abv.bg
 E adserver.ads.com.ph
 E adserver.ads360.com
-E adserver.adsbyfpc.com
-E adserver.adtriple.es
 E adserver.advertist.com
 E adserver.adverty.com
 E adserver.airmiles.ca
-E adserver.allerinternett.com
 E adserver.alt.com
 E adserver.andreafiore.com
 E adserver.ariase.org
 E adserver.asiantb.com
 E adserver.associationheadquarters.com
 E adserver.bafrahaber.com
-E adserver.banneradministration.com
 E adserver.barrapunto.com
 E adserver.bdoce.cl
 E adserver.beggarspromo.com
@@ -21585,69 +21567,51 @@ E adserver.bizhat.com
 E adserver.bizland-inc.net
 E adserver.bloodhorse.com
 E adserver.bondage.com
-E adserver.brandilitynetwork.de
 E adserver.break-even.it
 E adserver.bridgebase.com
 E adserver.cams.com
 E adserver.cdnstream.com
 E adserver.click-fr.com
 E adserver.click4cash.de
-E adserver.clubsi.com
 E adserver.co.il
 E adserver.com
-E adserver.craftbits.com
-E adserver.crawlspace-interactive.com
-E adserver.cyberpresse.ca
 E adserver.cz.cc
 E adserver.dbusiness.com
-E adserver.designertoday.com
 E adserver.diariodosertao.com.br
 E adserver.digitoday.com
 E adserver.directcorp.de
-E adserver.directwest.com
 E adserver.dotmusic.com
 E adserver.download3000.com
 E adserver.easyad.info
 E adserver.echdk.pl
 E adserver.ecomviper.com
-E adserver.ekokatu.com
 E adserver.exgfnetwork.com
 E adserver.fa-mag.com
 E adserver.fbg.dk
 E adserver.filefront.com
 E adserver.finditquick.com
 E adserver.friendfinder.com
-E adserver.fuckaroo.org
 E adserver.gadu-gadu.pl
 E adserver.gameparty.net
 E adserver.gamigo.de
-E adserver.gb2.motorpresse.de
-E adserver.gb3.motorpresse.de
-E adserver.geenstijl.nl
-E adserver.geizkragen.de
 E adserver.global.ssl.fastly.net
 E adserver.globalnyt.dk
-E adserver.gruprc.ro
 E adserver.gunaxin.com
 E adserver.harktheherald.com
-E adserver.heavenmedia.com
 E adserver.hellasnet.gr
 E adserver.heraldextra.com
-E adserver.hipertextual.com
 E adserver.home.pl
 E adserver.hwupgrade.it
 E adserver.icimedias.ca
 E adserver.ilango.de
 E adserver.ilgazzettinovesuviano.com
 E adserver.ilmessaggero.it
-E adserver.inetzone.com
 E adserver.inflightinternet.com
 E adserver.info7.mx
 E adserver.infotorg.se
 E adserver.interfree.it
 E adserver.irishwebmasterforum.com
 E adserver.ision.de
-E adserver.itsfogo.com
 E adserver.janes.com
 E adserver.janes.org
 E adserver.janesguide.com
@@ -21662,10 +21626,7 @@ E adserver.lenouvelliste.com
 E adserver.linkwise.gr
 E adserver.lunarpages.com
 E adserver.lx.ro
-E adserver.lyrica8000.com
-E adserver.madeby.ws
 E adserver.magazyn.pl
-E adserver.mapmyfitness.com
 E adserver.mediapublishers.com
 E adserver.mia.mk
 E adserver.millionairemate.com
@@ -21673,11 +21634,9 @@ E adserver.mk
 E adserver.mobi
 E adserver.mobillex.com
 E adserver.muaban.net
-E adserver.mylinea.com
 E adserver.n9nedegrees.com
 E adserver.neotel.mk
 E adserver.netshahr.com
-E adserver.networkvision.net
 E adserver.news.com.au
 E adserver.newsfilter.org
 E adserver.ngz-network.de
@@ -21704,15 +21663,12 @@ E adserver.pressboard.ca
 E adserver.pressflex.com
 E adserver.quizdingo.com
 E adserver.raceonline.hu
-E adserver.revision3.com
 E adserver.rtvdrenthe.nl
 E adserver.rtvutrechtreclame.nl
 E adserver.sciflicks.com
-E adserver.sdreader.com
 E adserver.securityfocus.com
 E adserver.seedpeer.com
 E adserver.seniorfriendfinder.com
-E adserver.sevenload.com
 E adserver.sharewareonline.com
 E adserver.sitesense.com
 E adserver.sniffies.com
@@ -21731,58 +21687,39 @@ E adserver.theknot.com
 E adserver.thisislondon.co.uk
 E adserver.track-star.com
 E adserver.trader.ca
-E adserver.tradingmarkets.com
-E adserver.trafficperformance.de
 E adserver.trafficsyndicate.com
 E adserver.trojaner-info.de
 E adserver.twitpic.com
 E adserver.ubiyoo.com
-E adserver.us.outblaze.com
 E adserver.video
 E adserver.viewgames.co.kr
 E adserver.virginmedia.com
-E adserver.wasabimediagroup.com
 E adserver.webads.co.uk
 E adserver.webads.it
 E adserver.wenters.com
-E adserver.whdh.com
 E adserver.wolterskluwer.pl
-E adserver.wowsearch.info
 E adserver.x3.hu
-E adserver.yahoo.co.jp
 E adserver.yanosik.pl
-E adserver.zdnet.co.kr
 E adserver.zylom.com
 E adserver01.de
-E adserver04.ancestry.com
 E adserver1.adbrands.co.il
 E adserver1.adtech.com.tr
-E adserver1.eseohserve.com
 E adserver1.hookyouup.com
-E adserver1.journalregister.com
-E adserver1.mediainsight.de
 E adserver1.mokono.com
-E adserver1.shareconnector.com
 E adserver1.sonymusiceurope.com
-E adserver1.w00tmedia.net
-E adserver1.xtrafficnetworks.com
 E adserver2.creative.com
 E adserver2.exgfnetwork.com
 E adserver2.goals365.com
 E adserver2.n9nedegrees.com
 E adserver2.news-journalonline.com
 E adserver2.oxdl.com
-E adserver3.openadex.dk
 E adserver4.fluent.ltd.uk
 E adserverc.cliipa.com
 E adserverplus.com
 E adserverpub.com
 E adserversolutions.com
-E adserverstatus.com
 E adserverus.info
-E adservervv.geizkragen.de
 E adserverxxl.de
-E adserveuk.com
 E adservice.aiyouaiyou.cn
 E adservice.aliexpress.com
 E adservice.com
@@ -21798,14 +21735,10 @@ E adserviceretry.kugou.com
 E adservices.brandcdn.com
 E adserving-oss.bangdao-tech.com
 E adserving.autotrader.com
-E adserving.contextualmarketplace.com
-E adserving.eleven-agency.com
-E adserving.ezanga.com
 E adserving.fyi-marketing.com
 E adserving.menatech.net
 E adserving.unibet.com
 E adserving.versaneeds.com
-E adserving.yourfilehost.com
 E adserving03.epi.es
 E adservingfactory.com
 E adservingfront.com
@@ -21813,7 +21746,6 @@ E adservingnetwork.com
 E adservingvpc-1239633584.eu-west-1.elb.amazonaws.com
 E adservme.com
 E adservone.com
-E adservr.net
 E adservs.com
 E adserwer.xwords.pl
 E adsession.com
@@ -21836,7 +21768,6 @@ E adsfilebssdlbig.tx.kugou.com
 E adsfileretry.service.kugou.com
 E adsfloow.net
 E adsformsync.com
-E adsformula.sitescout.com
 E adsfs-id.heytapimg.com.akamaized.net
 E adsfs-sdkconfig.heytapimage.com
 E adsfs.heytapimage.com
@@ -21938,11 +21869,9 @@ E adsmogo.net
 E adsmoloco.com
 E adsmrapi.imbc.com
 E adsmusic.com
-E adsnap.zenfs.com
 E adsnative.com
 E adsnet.id
 E adsnew.gsmarena.com
-E adsnew.maktoob.com
 E adsniffer.com
 E adsninja.b-cdn.net
 E adsninja.ca
@@ -21953,13 +21882,11 @@ E adsolut.in
 E adsolution.imtt.qq.com
 E adsolutions.nl
 E adsonar.com
-E adsonlineinc.com
 E adsoss.uqualities.com
 E adsota.com
 E adsp.ciner.com.tr
 E adsp.haberturk.com
 E adsp.i2idata.com
-E adsp.jp
 E adspace.ro
 E adsparc.com
 E adsparc.net
@@ -21997,29 +21924,21 @@ E adsready.com
 E adsrevenue.net
 E adsrich.qq.com
 E adsroute.com
-E adsrv.adgroupm.com
 E adsrv.ads.eniro.com
 E adsrv.bangbros.com
 E adsrv.deviantart.com
 E adsrv.ea.com
 E adsrv.heraldtribune.com
-E adsrv.ilife.com
 E adsrv.iol.co.za
 E adsrv.kobi.tv
 E adsrv.lua.pl
 E adsrv.moebelmarkt.tv
-E adsrv.swidnica24.pl
-E adsrv.worldvillage.com
 E adsrv2.brownpride.com
-E adsrv2.gainesvillesun.com
-E adsrv2.stoo.com
 E adsrv2.swidnica24.pl
-E adsrv2.theledger.com
 E adsrv4k.com
 E adsrvr.org
 E adsrvr.receptiv.com
 E adsrvs.com
-E adss.hookupbucks.com
 E adss.video.qq.com
 E adsservices.uk
 E adssettings.365scores.com
@@ -22049,14 +21968,11 @@ E adsterra.com
 E adstest.weather.com
 E adstextview.qq.com
 E adstik.click
-E adstil.indiatimes.com
-E adstir.ad
 E adstnetwork.com
 E adstock.ru
 E adstoclick.com
 E adstook.com
 E adstoppedtotalkto.com
-E adstorage.jamba.net
 E adstore-1252524079.file.myqcloud.com
 E adstore-index-1252524079.file.myqcloud.com
 E adstore.jp
@@ -22070,7 +21986,6 @@ E adstub.net
 E adstudio.spotify.com
 E adstune.com
 E adstvb.akamaized.net
-E adsuccess.surehits.com
 E adsunflower.com
 E adsup.togothermany.cn
 E adsupervisor.com
@@ -22095,7 +22010,6 @@ E adsvolum.com
 E adsvolume.com
 E adsvr.deviantart.com
 E adsvr.kmib.co.kr
-E adsvr.taipeilink.net
 E adsvzkuzfcfbz.one
 E adsw.esm1.net
 E adswam.com
@@ -22120,9 +22034,7 @@ E adsys1.gametime.co.kr
 E adsyst.ru
 E adsystem.pages.dev
 E adsystem.simplemachines.org
-E adsystem.tt-forums.net
 E adsystem.wasu.tv
-E adszila.net
 E adszs.com
 E adszui.com
 E adt-stream.casacam.net
@@ -22168,7 +22080,6 @@ E adtegrity.com
 E adtegrity.net
 E adtelier.pl
 E adtelligent.com
-E adtendant.weatherforyou.com
 E adteractive.com
 E adtext.pl
 E adtheorent.com
@@ -22193,7 +22104,6 @@ E adtima.net.vn
 E adtima.org
 E adtima.vn
 E adtimaserver.vn
-E adtimes.nytimes.com
 E adtiming.com
 E adtingest.com
 E adtival.com
@@ -22223,7 +22133,6 @@ E adtrack.cmgdigital.com
 E adtrack.e.kuaishou.com
 E adtrack.quark.cn
 E adtrack.right-ads.com
-E adtrack.trafficwave.net
 E adtrack.uc.cn
 E adtrack.ucweb.com
 E adtrack.voicestar.com
@@ -22231,9 +22140,7 @@ E adtrack.xiaojukeji.com
 E adtrack1.midasplayer.com
 E adtracker.411web.com
 E adtracker.socialmedia.com
-E adtracker.valuedopinions.co.uk
 E adtrackeraa.com
-E adtrackerelite.com
 E adtracking.smartmediarep.com
 E adtracking06.agency-partner-platform.com
 E adtracking123.com
@@ -22244,12 +22151,10 @@ E adtradehub.pages.dev
 E adtrading.de
 E adtraff.ru
 E adtrafficquality.google
-E adtransfer.net
 E adtrhogpvnwkt.space
 E adtrieval.com
 E adtriplex.com
 E adtrk20.com
-E adtrue-track-server-1082517350.us-west-2.elb.amazonaws.com
 E adtrue.com
 E adtrue24.com
 E adtruth.com
@@ -22295,7 +22200,6 @@ E adult-dating.live
 E adult-engine-search.com
 E adult-shops.com
 E adult-top-list.com
-E adult.hard-core-xxx.com
 E adult.shengen.ru
 E adult.xyz
 E adultadrevenue.com
@@ -22303,7 +22207,6 @@ E adultadvertising.com
 E adultadvertising.net
 E adultadworld.com
 E adultan.com
-E adultbannerexchange.de
 E adultbanners.co.uk
 E adultcamchatfree.com
 E adultcamfree.com
@@ -22319,8 +22222,6 @@ E adultfriendfinder.com
 E adultfriendsearch.com
 E adultfrinendfindercomlogin2.weebly.com
 E adultgameexchange.com
-E adultgameserver.com
-E adultgameservers.com
 E adultgameshacked.com
 E adulthyperlinks.com
 E adultimate.net
@@ -22347,7 +22248,6 @@ E adultsjuniorfling.com
 E adulttoysale.top
 E adulttraffic.ru
 E adulttv.org
-E adultvidsonly.com
 E adultwebmastersonline.com
 E adunblock1.static-cloudflare.workers.dev
 E adunion.pconline.com.cn
@@ -22364,7 +22264,6 @@ E aduu.cn
 E aduwoc.footeo.com
 E adv-adserver.com
 E adv-analytics-collector.videograph.ai
-E adv-banner.iol.it
 E adv-ettoday.cdn.hinet.net
 E adv-front.devpnd.com
 E adv-img.edilportale.com
@@ -22373,9 +22272,7 @@ E adv-sv-show.focus.cn
 E adv-sv-stat.focus.cn
 E adv-web-tracking-logs.azurewebsites.net
 E adv.440network.com
-E adv.6rb.com
 E adv.abv.bg
-E adv.adwish.net
 E adv.alice.it
 E adv.all-free-download.com
 E adv.anhsangvacuocsong.vn
@@ -22390,7 +22287,6 @@ E adv.baovemoitruong.org.vn
 E adv.bgfactor.org
 E adv.blulab.net
 E adv.ccb.com
-E adv.cgiworld.net
 E adv.consulcesi.it
 E adv.dailyissue.co.kr
 E adv.dlh.net
@@ -22398,35 +22294,25 @@ E adv.domino.it
 E adv.donejty.pl
 E adv.dontcrack.com
 E adv.drtuber.com
-E adv.dynamic-design.eu
-E adv.easyurl.org
 E adv.ettoday.net
 E adv.exbii.com
 E adv.famous.bg
 E adv.forpsi.hu
-E adv.freechal.com
 E adv.freeonline.it
-E adv.ftv.com
-E adv.gamerzhut.com
 E adv.gazeta.pl
 E adv.gepime.com
 E adv.h2porn.com
 E adv.herocraft.com
-E adv.hito.bg
 E adv.hu
 E adv.hwupgrade.it
 E adv.ilsole24ore.it
 E adv.imadrep.co.kr
-E adv.imho.se
 E adv.khan.co.kr
 E adv.letitbit.net
 E adv.medscape.com
-E adv.mezon.ru
 E adv.musixmatch.com
 E adv.mxmcdn.net
-E adv.mytech.bg
 E adv.netinfo.bg
-E adv.netmedia.bg
 E adv.nexthardware.com
 E adv.noblepoker.com
 E adv.noi.md
@@ -22443,7 +22329,6 @@ E adv.rocks
 E adv.rockstar.bg
 E adv.sec.intl.miui.com
 E adv.sec.miui.com
-E adv.sitcom.tv
 E adv.skandalno.com
 E adv.starozagorci.com
 E adv.stznews.bg
@@ -22454,19 +22339,15 @@ E adv.vcmedia.vn
 E adv.virgilio.it
 E adv.vtbot.com
 E adv.vz.ru
-E adv.webadvertising.ch
 E adv.webmd.com
 E adv.webvariant.com
-E adv.webvariant.eu
 E adv.wisdom.bg
 E adv.wp.pl
 E adv.xossip.com
-E adv.yesasia.com
 E adv.yo.cz
 E adv.yomiuri.co.jp
 E adv.zdnet.co.kr
 E adv01.interfree.it
-E adv08.edintorni.net
 E adv1.eblocs.com
 E adv2.absoluteagency.com
 E adv2.downsave.com
@@ -22500,7 +22381,6 @@ E advanced-esim.fr
 E advanced-ledgr-start-eng.pages.dev
 E advanced-resolution.com
 E advanced-shake.pro
-E advancedadapters.com
 E advancedadblocker.pro
 E advancedaidevelopmenthu.pro
 E advancedailiteracy.com
@@ -22586,7 +22466,6 @@ E adventurerarmory.com
 E adventures4paws.com
 E adventuresailingcroatia.com
 E adventuresctlb2.com
-E adventuresinnetmarketing.com
 E adventuresinscamming.site
 E adventurous-context-656368.framer.app
 E adventurous-tetragon-867322.framer.app
@@ -22597,7 +22476,6 @@ E advenueplatform.com
 E adver.24h.com.vn
 E adver.betanews.net
 E adver.com.tw
-E adver.easymobi.cn
 E adver.pengyou.com
 E adver.qq.com
 E adverbs.napilapcsoport.hu
@@ -22607,8 +22485,6 @@ E advering.com
 E adverinivasion.com
 E adverity.com
 E adverline.com
-E adverline.fr
-E adverlinkz.com
 E adverrd.global.ssl.fastly.net
 E adversa.com
 E adversaldisplay.com
@@ -22623,7 +22499,6 @@ E advert-prod.hyrz.qq.com
 E advert-server.elecfans.com
 E advert-supervising-promotion-analysis.pages.dev
 E advert.58.com
-E advert.api.no
 E advert.api.thejoyrun.com
 E advert.bayarea.com
 E advert.diretta.it
@@ -22635,7 +22510,6 @@ E advert.eurotip.cz
 E advert.file.no
 E advert.funimation.com
 E advert.godt.no
-E advert.heise.de
 E advert.hu
 E advert.hwn.no
 E advert.leo.org
@@ -22652,12 +22526,10 @@ E advert.single.no
 E advert.smarter-wireless.net
 E advert.software
 E advert.swiftpass.cn
-E advert.trainingtools.com
 E advert.vg.no
 E advert.vgd.no
 E advert.vglive.no
 E advert.vgtv.no
-E advert.webdifusao-server.com
 E adverta.us
 E advertarium.com.ua
 E advertbox.ru
@@ -22668,7 +22540,6 @@ E advertica.com
 E adverticum.com
 E adverticum.hu
 E advertipros.com
-E advertise.about.com
 E advertise.baicizhan.com
 E advertise.baicizhan.org
 E advertise.cloudlinks.cn
@@ -22696,7 +22567,6 @@ E advertisementhappy.com
 E advertiser-business-network-customer-counterfeit.pages.dev
 E advertiser-business-network-policy-support.pages.dev
 E advertiser.cash
-E advertiser.edintorni.net
 E advertiser.net
 E advertisers-client-support-appeal-assessment.pages.dev
 E advertisers-client-support-assessment-bullying.pages.dev
@@ -22904,7 +22774,6 @@ E advertising-service-supervision-desk.pages.dev
 E advertising-service-supervision-hub.pages.dev
 E advertising-service-supervision-room.pages.dev
 E advertising-service-telemetry-center.pages.dev
-E advertising.550access.com
 E advertising.aolp.jp
 E advertising.apple.com
 E advertising.bayoubuzz.com
@@ -22919,20 +22788,15 @@ E advertising.entensity.net
 E advertising.finditt.com
 E advertising.goldseek.com
 E advertising.goo.ne.jp
-E advertising.hardwarezone.com
 E advertising.hiasys.com
 E advertising.ie
 E advertising.illinimedia.com
 E advertising.jp.msn.com
 E advertising.lycos.com
 E advertising.microsoft.com
-E advertising.mortgagebankers.org
 E advertising.net
-E advertising.nttr.co.jp
-E advertising.palltalk.com
 E advertising.paltalk.com
 E advertising.se
-E advertising.spreadomat.net
 E advertising.twitter.com
 E advertising.yahoo.com
 E advertising.yandex.ru
@@ -22940,11 +22804,9 @@ E advertisingagent.com
 E advertisingbanners.com
 E advertisingbox.com
 E advertisingcom.122.2o7.net
-E advertisingpurchase.com
 E advertisingvalue.info
 E advertisoo.com
 E advertix.space
-E advertizer-test1.asap-asp.net
 E advertjunction.com
 E advertlets.com
 E advertmarket.com
@@ -22956,14 +22818,10 @@ E advertpay-vip-ssl.xunlei.com
 E advertpay.net
 E advertpay.ru
 E advertpay.vip.xunlei.com
-E advertpro.webspawner.com
 E advertpro.ya.com
-E advertpro2.babymedia.no
 E advertrek.com
 E advertrex20.xyz
 E adverts.1foo.com
-E adverts.archant.co.uk
-E adverts.f-1.com
 E adverts.freeloader.com
 E adverts.rest
 E advertserve.com
@@ -23059,7 +22917,6 @@ E advrts.onelouder.com
 E advrts.s3.amazonaws.com
 E advrush.com
 E advscdn.com
-E advsecsmart.com
 E advserver.asiantb.com
 E advserver.cgv.vn
 E advservert.com
@@ -23079,14 +22936,9 @@ E adw9.com
 E adwaaalkhalej.com
 E adwadvert.com.ua
 E adwaengg.com
-E adwaken.cn
 E adwaken.com
 E adwalte.info
-E adware-2010.com
 E adware-guard.com
-E adware-pro-2009.com
-E adware-pro-live.com
-E adware.hu
 E adware.pro
 E adwarealert.com
 E adwarebazooka.com
@@ -23096,9 +22948,7 @@ E adwaredeluxe.com
 E adwaregold.com
 E adwarepatrol.com
 E adwareplatinum.com
-E adwarepro-site.com
 E adwarepro.com
-E adwareprosite.com
 E adwarepunisher.com
 E adwareremover.ws
 E adwaresafety.com
@@ -23118,7 +22968,6 @@ E adwetec.com
 E adwile.com
 E adwin.geenstijl.nl
 E adwires.com
-E adwiretracker.fwix.com
 E adwised.com
 E adwisedfs.com
 E adwitty.com
@@ -23131,7 +22980,6 @@ E adwokatkaras.pl
 E adwords-24.pl
 E adwords.google.com
 E adwords.google.sk
-E adwords.immortalnight.com
 E adworkmedia.com
 E adworks.rediff.com
 E adworld.com.tr
@@ -23170,7 +23018,6 @@ E adx.ads.heytapmobi.com
 E adx.adwangmai.com
 E adx.apicgate.com
 E adx.appsdk.com.cn
-E adx.arip.co.th
 E adx.autohome.com.cn
 E adx.baolongan.vn
 E adx.bixee.com
@@ -23192,7 +23039,6 @@ E adx.naonmedia.net
 E adx.nu
 E adx.op.cp18.ott.cibntv.net
 E adx.opera.com
-E adx.relaksit.ru
 E adx.rrt365.com
 E adx.sogaha.cn
 E adx.timesdaily.com
@@ -23255,7 +23101,6 @@ E adyoulike.com
 E adyun.com
 E adywind.com
 E adyxnckaseupgmk.com
-E adz.liberianobserver.com
 E adz.mobi
 E adz.rashflash.com
 E adz2you.com
@@ -23264,7 +23109,6 @@ E adzbazar.com
 E adzblockersentinel.net
 E adzcivwjgktmz.site
 E adzep.io
-E adzerk-proxy-705050069.us-east-1.elb.amazonaws.com
 E adzerk-www.s3.amazonaws.com
 E adzerk.s3.amazonaws.com
 E adzerver.com
@@ -23282,7 +23126,6 @@ E adzmath.com
 E adzmedia.com
 E adzmob.com
 E adzmobi.com
-E adzone.temp.co.za
 E adzones.com
 E adzonestatic.com
 E adzp.cn
@@ -23292,7 +23135,6 @@ E adztec.com
 E adztech-console.reviveservers.com
 E adztech-delivery.reviveservers.com
 E adztech-images.reviveservers.com
-E adztopia.com
 E adzuna.co.uk
 E ae-alimelog.taobao.com
 E ae-madetolastart.kleinanzegien.de
@@ -23581,7 +23423,6 @@ E aestheticrail.com
 E aesthetise.com
 E aesthetix.in
 E aestivum.ipromiseproject.info
-E aesxo.com
 E aet.spotify.com
 E aetatestilas.shop
 E aetchauffeurs.com
@@ -23687,7 +23528,6 @@ E af-cn.com
 E af-dbz.fit
 E af-next.com
 E af.click.ru
-E af.macro-line.com
 E af.moshimo.com
 E af.opera.com
 E af.to.123games.club
@@ -23712,7 +23552,6 @@ E afatourism.com
 E afbavrlcwefya.space
 E afbc25.top
 E afbcashidr.com
-E afbtracking09.com
 E afc.https443.org
 E afc1-trust.pages.dev
 E afc2.com
@@ -23808,7 +23647,6 @@ E affil.top4football.com
 E affilate.hh.ru
 E affilcrtopcolle.112.2o7.net
 E affilguard.com
-E affili.dmm.com
 E affili.ir
 E affili.net
 E affili.st
@@ -23825,16 +23663,11 @@ E affiliate.1800flowers.com
 E affiliate.2mdn.net
 E affiliate.ab1trk.com
 E affiliate.adgtracker.com
-E affiliate.adiclicks.com
 E affiliate.astraweb.com
 E affiliate.baazee.com
 E affiliate.bfashion.com
-E affiliate.biate.blucigs.com
 E affiliate.blucigs.com
-E affiliate.c2mclicks.com
 E affiliate.chiaki.vn
-E affiliate.cx
-E affiliate.distrigame.com
 E affiliate.domaindirect.net
 E affiliate.doteasy.com
 E affiliate.doubleyourdating.com
@@ -23854,12 +23687,9 @@ E affiliate.imperiaonline.org
 E affiliate.juno.co.uk
 E affiliate.k4.tinhte.vn
 E affiliate.kinguin.net
-E affiliate.landsend.com
 E affiliate.linkwise.gr
 E affiliate.mediatemple.net
 E affiliate.mogs.com
-E affiliate.ncbuy.com
-E affiliate.no.espotting.com
 E affiliate.plugnpay.com
 E affiliate.privatevpn.com
 E affiliate.rakuten.co.jp
@@ -23891,7 +23721,6 @@ E affiliatepacaaifications.info
 E affiliatepokernetwork.com
 E affiliatequality.com
 E affiliateroadmap.net
-E affiliates.about.com
 E affiliates.affiliatestar.com
 E affiliates.allposters.com
 E affiliates.audiobooks.com
@@ -23903,8 +23732,6 @@ E affiliates.bravenet.com
 E affiliates.cardfountain.com
 E affiliates.cdkeys.com
 E affiliates.centrebet.com
-E affiliates.coolonlineoffers.com
-E affiliates.copeac.com
 E affiliates.de
 E affiliates.flightconnections.com
 E affiliates.flirt4free.com
@@ -23920,7 +23747,6 @@ E affiliates.lifeselector.com
 E affiliates.loanpush.com
 E affiliates.londonmarketing.com
 E affiliates.macromedia.com
-E affiliates.matchmaker.com
 E affiliates.minglematch.com
 E affiliates.myfax.com
 E affiliates.net
@@ -23929,7 +23755,6 @@ E affiliates.nl
 E affiliates.org
 E affiliates.powweb.com
 E affiliates.quintura.com
-E affiliates.reunion.com
 E affiliates.streamray.com
 E affiliates.supergreenhosting.com
 E affiliates.systems
@@ -23937,7 +23762,6 @@ E affiliates.thinkhost.net
 E affiliates.thrixxx.com
 E affiliates.ticketnetwork.com
 E affiliates.treasureisland.com
-E affiliates.turbo-surfer.com
 E affiliates.tyroodr.com
 E affiliates.ufxpartners.com
 E affiliates.ultrahosting.com
@@ -23950,7 +23774,6 @@ E affiliateshop.com
 E affiliatesign.com
 E affiliatestonybet.com
 E affiliatesuccess.net
-E affiliatetalk.net
 E affiliatetracking.com
 E affiliatetracking.net
 E affiliatetrading.net
@@ -23958,16 +23781,13 @@ E affiliatetxt.nextmediaweb.com
 E affiliatewindow.com
 E affiliation.fotovista.com
 E affiliation.porn.fr
-E affiliation.rueducommerce.fr
 E affiliationjs.s3.amazonaws.com
 E affiliationv4.porn.fr
-E affiliaweb.eu
 E affilid.com
 E affilijack.de
 E affilio.ir
 E affiliride.com
 E affilirise.com
-E affilitracker.biz
 E affilixnetwork.site
 E affilliate.pages.dev
 E affina.com
@@ -23986,7 +23806,6 @@ E affirmbelievereceive.com
 E affirmdaily.online
 E affirmrevs.pages.dev
 E affirmwreathopportunity.com
-E affitools.net
 E affiwo.cyou
 E affixati.xyz
 E affixes.irish
@@ -24045,7 +23864,6 @@ E affstorm.com
 E affstrack.com
 E afftrack.com
 E afftrack001.com
-E afftracker.info
 E afftracking.justanswer.com
 E afftrackinglinks.com
 E afftrackr.com
@@ -24080,7 +23898,6 @@ E afiioankzbbgw.online
 E afikdvzf.com
 E afiles.protectionsfilesorg.ru
 E afiles.webengage.com
-E afiliados.submarino.com.br
 E afiliapub.click
 E afilliateapp.com
 E afilliatetraff.com
@@ -24123,7 +23940,6 @@ E afno.cn
 E afnwxy.site
 E afodreet.net
 E afojfr.cn
-E afoluta.com
 E afooexolgcutk.space
 E aformp.felixharms.com
 E afoshaclass.com.br
@@ -24131,8 +23947,6 @@ E afoutlets.top
 E afox2ate9z3zj7sur.pages.dev
 E afp.ai
 E afp.alicdn.com
-E afp.legacy.dotomi.weighted.com.akadns.net
-E afp.us.dotomi.weighted.com.akadns.net
 E afp.zol-img.com.cn
 E afpa-nice.fr
 E afpeng.alimama.com
@@ -24172,7 +23986,6 @@ E african-pilots.ru
 E african-pilots.store
 E africanbug.ddns.net
 E africancollectiveteam.org
-E africandevelopmentbank.com
 E africangamingleague.com
 E africangulf.ly
 E africanherbalhealth.com
@@ -24738,7 +24551,6 @@ E agentofdreams.com
 E agentogelonlineviadanabet100.weebly.com
 E agentopindopulsa.com
 E agentpounce.com
-E agentq.ditto.com
 E agentrate.com
 E agentratewww.blob.core.windows.net
 E agentro.store
@@ -24936,7 +24748,6 @@ E agnoia.net
 E agnolabcarolynn.pages.dev
 E agnqolfmjebpk.icu
 E agnruzedegphs.site
-E agnstaging.com
 E agnt-support.com
 E agnvbmaus.112.2o7.net
 E agnxomu.com
@@ -24972,7 +24783,6 @@ E agotijackel2owz8.pages.dev
 E agotirobloxid.pages.dev
 E agov13.weebly.com
 E agovoriliknopkibablo-net.com
-E agp-one.net
 E agpait.cheap
 E agpajhrr.com
 E agpappas2.weebly.com
@@ -25170,7 +24980,6 @@ E agzzpjnyx.com
 E ah-ha.com
 E ah.yimg.jp
 E ah5a65ytg.square.site
-E ah8.facebook.com
 E aha04346.vercel.app
 E ahadsply.com
 E ahafiqudgood.com
@@ -25512,7 +25321,6 @@ E ai.marketing
 E ai.net
 E ai.p.findology.com
 E ai.predicts.top
-E ai.pricegrabber.com
 E ai.smartgame.workers.dev
 E ai.taobao.com
 E ai0210.com
@@ -25758,6 +25566,7 @@ E aii.widgetmedia.co
 E aii18.store
 E aiiconn.com
 E aiie.help
+E aiiegrous.shop
 E aiil.top
 E aiimaginate.com
 E aiimeliorated.info
@@ -25843,7 +25652,6 @@ E ailsunhjkashleigh.pages.dev
 E ailteetsufoothu.net
 E ailun-agency.ru
 E ailvgo.com
-E aim-charts.pf.aol.com
 E aim-market.net
 E aim-tag.hcn.health
 E aim.loc.kr
@@ -27821,10 +27629,10 @@ E alderma4.weebly.com
 E aldermontevestaria.pro
 E alderwoodty.pro
 E aldeshahmed2.ddns.net
+E aldi-2026.com
 E aldi-blackfridaysale.shop
 E aldi-budget.com
 E aldi-dewalt.shop
-E aldi-eu.actinshop.shop
 E aldi-eu.activatorshop.shop
 E aldi-eu.adenos.shop
 E aldi-eu.aphthovir.shop
@@ -27865,7 +27673,6 @@ E aldi.ulmero.shop
 E aldi2026.com
 E aldiatvip.com
 E aldide.activatorshop.shop
-E aldide.aphthovir.shop
 E aldide.arfsarfs.shop
 E aldiesshop.com
 E aldiiofficiallteampl2025.blogspot.com
@@ -27966,7 +27773,6 @@ E alebilet.ofertaknxo204825.click
 E alebilet.ofertaknxo2739563.shop
 E alebilet.ofertamaj.pl
 E alebilet.pl-7534048.shop
-E alebilet.pl-830293242.shop
 E alebilet.pl-859421.icu
 E alebilet.pl-991144.cfd
 E alebilet.pl-oferta0304932342934.rest
@@ -29265,6 +29071,7 @@ E allegrolokalnie.kategorie-inne-832.cv
 E allegrolokalnie.kzulbt3950165.shop
 E allegrolokalnie.l23arg45el4.click
 E allegrolokalnie.let-nie-oka-zje-20-26-34f-06g.sbs
+E allegrolokalnie.letnie-okazje-20-26-5g6k-4r5gk.sbs
 E allegrolokalnie.letnie-okazje-20-26-5g6k-5tbkd.sbs
 E allegrolokalnie.letnie-okazje-2026-4erkv.sbs
 E allegrolokalnie.letnie-okazje-2026-4orgkvk.sbs
@@ -29366,6 +29173,7 @@ E allegrolokalnie.pl-416312.cfd
 E allegrolokalnie.pl-4237866.pro
 E allegrolokalnie.pl-50392.rest
 E allegrolokalnie.pl-521987632.lat
+E allegrolokalnie.pl-541247.cfd
 E allegrolokalnie.pl-5546423.click
 E allegrolokalnie.pl-569306.rest
 E allegrolokalnie.pl-6435523432.shop
@@ -29459,6 +29267,7 @@ E allegrolokalnie.pl-oferta7715661.click
 E allegrolokalnie.pl-oferta8238191.click
 E allegrolokalnie.pl-oferta82883.shop
 E allegrolokalnie.pl-oferta8391000.click
+E allegrolokalnie.pl-oferta887631.shop
 E allegrolokalnie.pl-oferta9070017.click
 E allegrolokalnie.pl-oferta926212.click
 E allegrolokalnie.pl-oferta9385629.click
@@ -29485,7 +29294,9 @@ E allegrolokalnie.pl-ogloszenie5987334291.click
 E allegrolokalnie.pl-ogloszenie5989223537.click
 E allegrolokalnie.pl-ogloszenie6789233412.click
 E allegrolokalnie.pl-ogloszenie6789233491.click
+E allegrolokalnie.pl-ogloszenie6789993281.cyou
 E allegrolokalnie.pl-ogloszenie6872399493.click
+E allegrolokalnie.pl-ogloszenie6897223471.cyou
 E allegrolokalnie.pl-ogloszenie6897223491.click
 E allegrolokalnie.pl-ogloszenie8598192.click
 E allegrolokalnie.pl-ogloszenie89231.sale
@@ -30103,6 +29914,7 @@ E aloffice.hataxe4797.workers.dev
 E alofogh.com
 E aloftriottomato.com
 E aloha25620.weebly.com
+E alohaape.com
 E alohadigest.com
 E alohafromdeer.com
 E alohamagic-healing.com
@@ -65365,6 +65177,7 @@ E brisolhavekt.info
 E brisolventiga.info
 E brisolventuk.info
 E brisoperation.com
+E bristle-lectures.com
 E bristle-repair.com
 E bristle-wash.com
 E bristlechurch.com
@@ -68368,7 +68181,6 @@ E buymodafinilxl.com
 E buymoneybills.com
 E buymore.com.ng
 E buynaro.com
-E buynist.com
 E buynship-marketplace.com
 E buyonek.com
 E buyonshop.com
@@ -68953,6 +68765,7 @@ E byjniyekeliur.com
 E byjofee.com
 E byk59.com
 E bykiin.com
+E bykoheu.com
 E bykraken.com
 E bylgay.hopto.org
 E bylgtmtqmhsotec.com
@@ -76092,7 +75905,6 @@ E centrilizesmart.pages.dev
 E centrin.com
 E centrinet.pages.dev
 E centrium24.polskateam.com
-E centrium24.polskservizes.com
 E centrixaccountants.com
 E centrmo.store
 E centrmolecula.ru
@@ -80206,6 +80018,7 @@ E cigaronne.ch
 E cigarsmokinfool.com
 E cigbest.de
 E cigibud.com
+E ciglkywj.shop
 E cigmama.com
 E cigmamagic.com
 E cigore.xyz
@@ -101854,6 +101667,7 @@ E daisprivate.com
 E daistxols.info
 E daisukimatch.jp
 E daisuo.cn
+E daisy-inspire.com
 E daisy24.cc
 E daisybabysitting.com
 E daisyveerasingham.com
@@ -111595,6 +111409,7 @@ E dishevelledborrowedpompous.com
 E dishevelleddeviseplucky.com
 E dishevelledreasonably.com
 E dishflcymuesx.site
+E dishiionourer.info
 E dishleyinsite.shop
 E dishonestthee.com
 E dishonourinventor.com
@@ -112238,6 +112053,7 @@ E diyqmnvsd.web.app
 E diysolarsetup.com
 E diytab.com
 E diythegift.de
+E diytoolshop.shop
 E diz4.live
 E diz4ce.live
 E diz4z73aymwyp.cloudfront.net
@@ -115139,6 +114955,7 @@ E doventria.club
 E doventrix.club
 E doverie.center
 E doverra.pro
+E dovetailetc.com
 E dovetulaeous.live
 E dovila.pro
 E dovis.agileum.com
@@ -124244,6 +124061,7 @@ E emberforgeconsulting.live
 E emberforgeinstitute.life
 E embergale-drift.com
 E emberglow-warden.com
+E emberglowhome.com
 E emberharborventures.life
 E emberheartg.info
 E emberis-velmire-app.com
@@ -131935,6 +131753,7 @@ E exmainclcknew.com
 E exmarkets.trade
 E exmono.com
 E exmovie.xyz
+E exmusicprof.com
 E exmwfltxyxwmr.website
 E exneop.com
 E exness.asia
@@ -143940,7 +143759,6 @@ E fotocincor.pro
 E fotofit.in
 E fotografannawennberg.com
 E fotoidea.com
-E fotoinstalll.ink
 E fotokopimakinesifiyatlari.net
 E fotokoroglu.com
 E fotolajt.pl
@@ -154341,6 +154159,7 @@ E glimmer-huts.com
 E glimmer-shard.com
 E glimmer-sword.com
 E glimmer-syllabus.com
+E glimmer-tutorials.com
 E glimmer-ways.com
 E glimmercheeringshield.com
 E glimmeret.com
@@ -162439,6 +162258,7 @@ E gylleu.com
 E gylor.xyz
 E gym.money
 E gymglamour.club
+E gymglamoursklep.club
 E gymhay.com
 E gymkr3vd3ykpdk521wj0.maherstcottage.com.au
 E gymmobil.com
@@ -180845,6 +180665,7 @@ E inpmmutbev.com
 E inpodia.com
 E inposet.top
 E inpost-10942605.endearingarrangements.com
+E inpost-59334582.harukataro.com
 E inpost-pl.bemidelo.life
 E inpost-pl.bond
 E inpost-pl.doyavol.ink
@@ -189797,6 +189618,7 @@ E josefsseibelaustralia.com
 E josejimenezjr.com
 E joselarios1.github.io
 E josemacedo.pt
+E josemorenoesteban.com
 E josemota.shop
 E josepertuz3865-lab.github.io
 E joseph-rallo.com
@@ -196651,6 +196473,7 @@ E kivancozel.com
 E kivancturkoglu.com
 E kivaruo.com
 E kivcoinlogix.gitbook.io
+E kivento.shop
 E kivkmopakxkwo.online
 E kivo.fun
 E kivomarel-tunaropix.pages.dev
@@ -221689,6 +221512,7 @@ E mahdikhaleghi.com
 E mahekdave.com
 E mahendrachemicals.com
 E mahernafoods.com
+E maherzitouni.shop
 E maheshkalvakuntala-ctrl.github.io
 E mahestri.id
 E mahetechasia.com
@@ -242220,7 +242044,6 @@ E n4qrsf6x88.com
 E n4sredirect.com
 E n4zt-2ho6-4s85.adobe-signature-sharedoc-mail-com-s-account.workers.dev
 E n5555n.com
-E n58.w7rotm.lat
 E n5a92p9zo.com
 E n5mijjt735elm.mocha.app
 E n5q-dx.ink
@@ -242497,6 +242320,7 @@ E nadiahumaiyun.com
 E nadiakinast.shop
 E nadiaviberti.it
 E nadiderestaurant.com
+E nadiewrelkioakad.com
 E nadinedapoz.shop
 E nadinefeil.shop
 E nadinehughes.com
@@ -244986,6 +244810,7 @@ E neriozaddgeyhik.weebly.com
 E neriphine.com
 E nerius2.weebly.com
 E nerixo-dava.net
+E nerkivo.shop
 E nerobet-vip.com
 E nerobet893.com
 E nerobetturkiyegiris.com
@@ -248477,6 +248302,7 @@ E nielectrical.net
 E nielsen.112.2o7.net
 E nienstedt06542.weebly.com
 E nieprzegapokazji.com
+E nieruhaserhaad.com
 E nietclix.tkburgers.com
 E nietzscheanpenguin.app
 E nietzscheanpenguin.com
@@ -251326,6 +251152,7 @@ E novitrk8.com
 E novivektor.store
 E novix-grade.cfd
 E novkaro.shop
+E novkilo.shop
 E novllscheck-state.today
 E novoacesso.ru.com
 E novocode.ltd
@@ -255240,7 +255067,6 @@ E ogrod-moje-zycie.myshopify.com
 E ogrod-oraz-taras.shop
 E ogrod-relax.shop
 E ogrod-taras.com
-E ogrod24.shop
 E ogrod24.slgo.pl
 E ogrod24h.shop
 E ogrod24shop.shop
@@ -260591,6 +260417,7 @@ E orolusentrix.com
 E oromoctolegionbranch093.weebly.com
 E orona.pro
 E ororealestatebali.com
+E ororivane.shop
 E orosrgkd.com
 E orourke360.com
 E orourkestrategies.com
@@ -272185,6 +272012,7 @@ E pl-8109.sbs
 E pl-812962.cfd
 E pl-81837281014.click
 E pl-829662192726bwgavsbnjsbsn726262738.club
+E pl-830293242.shop
 E pl-8349-oferta.click
 E pl-837224.click
 E pl-8492774.click
@@ -273465,6 +273293,8 @@ E plcpaukeovjtvwl.com
 E plcroboticagency.com
 E plcryptoinfo.com
 E plcxocydjdfhe.space
+E pldegotofisikokiet.com
+E pldegotofisikokietsico.com
 E pldev.112.2o7.net
 E pldi-alertzx00.weebly.com
 E pldia.co.uk
@@ -273804,6 +273634,7 @@ E plperhjuisusi.com
 E plperhjuisusire.com
 E plperhjuisusireki.com
 E plperhjuisusirekir.com
+E plpermitotigi.com
 E plpersikorohirito.com
 E plpersikorohiritogi.com
 E plperthiotseti.com
@@ -275756,6 +275587,7 @@ E ponchobase.com
 E ponchoshop.shop
 E ponctuell.com
 E pondan.com
+E pondarade.com
 E ponderax.store
 E pondering.shop
 E ponderliquidate.com
@@ -286553,6 +286385,7 @@ E puescc.com
 E puescgov.com
 E puescinc.com
 E pufdup.com
+E puff-classes.com
 E puffer-cmf.pages.dev
 E puffer.claims
 E puffer.express
@@ -309153,6 +308986,7 @@ E sbbkonto.cluster1.easy-hebergement.net
 E sbbneosq.com
 E sbbpnjhbxdu.com
 E sbbsupportcff.com
+E sbbubsidizations.info
 E sbc-2-0.webflow.io
 E sbc-d25516.webflow.io
 E sbc-rdc.com
@@ -316936,6 +316770,7 @@ E shipmentdoorwaydecade.com
 E shipmenthow.com
 E shipments-opensea.idcapital.top
 E shipmentupdates.com
+E shipmet.igetfamous.com
 E shipmypackage1.com
 E shipmyparts.com
 E shiporama.com
@@ -317078,6 +316913,7 @@ E shockdefined.com
 E shocked-failure.com
 E shocked-home.com
 E shockedfeature.pro
+E shockedhdefense.tuxtimes.com
 E shockify.st
 E shocking-honey.com
 E shockinggrass.com
@@ -317733,7 +317569,6 @@ E showsgame-5vs5.com
 E showsha.cam
 E showsplanet.nicklasfoundation.com
 E showsplash.com
-E showspulse.josemorenoesteban.com
 E showsteel.com
 E showticket.live
 E showtickets.live
@@ -327579,6 +327414,7 @@ E sortexampleposition.com
 E sorthurry.com
 E sortify.dev
 E sortingautobiographylecture.com
+E sortotag.original-diplom.com
 E sortswoopmarrying.com
 E sortuneven.com
 E sortyourspace.com
@@ -336531,6 +336367,7 @@ E streccssfularchaeologically.info
 E street-survey.com
 E street99.store
 E streetartkustoms.com
+E streetbeefz.net
 E streetbowlworldkitchen.pro
 E streetbukake.com
 E streetcafehalal.com
@@ -348351,6 +348188,7 @@ E thaibarque.com
 E thaibestclinic.com
 E thaicasinoforum.com
 E thaicigar.com
+E thaienquirer.net
 E thaifrawaistea.sa.com
 E thaigapousty.net
 E thaigolfbooking.com
@@ -350265,6 +350103,7 @@ E thistleharborfield.com
 E thistlehurstty.top
 E thisworks365.weebly.com
 E thithertoryyevolutionists.info
+E thithis.com
 E thituhu.sa.com
 E thiuu716.weebly.com
 E thivetranhbaovemoitruong2025.weebly.com
@@ -353483,6 +353322,7 @@ E toolsbytrack.com
 E toolsdiypar.com
 E toolshare.com.tr
 E toolshedshop.top
+E toolshopclearance-eu.shop
 E toolshopclearance.shop
 E toolshopclearance.store
 E toolshope.com
@@ -362347,6 +362187,7 @@ E twinklenightstime.com
 E twinklenmingle.com
 E twinklephone.com
 E twinkletoess.info
+E twinkling-courses.com
 E twinkling-destinations.com
 E twinkllee5star.info
 E twinkly2star.info
@@ -369888,6 +369729,7 @@ E uuser90accept.start.page
 E uustoughtonma.org
 E uusvideo.xyz
 E uutcoin.com
+E uutiyo4ty2189g43.lat
 E uutytp.com
 E uuu030.top
 E uuu822.com
@@ -379824,6 +379666,7 @@ E w7fy3q.close.futureisready.com
 E w7gx7y9wk.com
 E w7psnm.fit
 E w7psnm.yoga
+E w7rotm.lat
 E w7rpak.help
 E w7rpak.ink
 E w7rpak.luxe
@@ -380240,6 +380083,7 @@ E walkintubpro.com
 E walklight.net
 E walkme.k1.datto.com
 E walko.4lima.de
+E walkprincess.ofnextkin.com
 E walksalty.best
 E walksbit.com
 E walksoftusa.top
@@ -401719,6 +401563,7 @@ E zakup-dzis24.icu
 E zakupi-rf-pasport.com
 E zakupy1623632.click
 E zakupy5832752.click
+E zakupystrefa.shop
 E zakusochnajya-boba-lordfilm.ru
 E zakusochnaya-boba-lordfilms.ru
 E zakvavgzu.in
