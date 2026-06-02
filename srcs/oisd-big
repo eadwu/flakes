@@ -1,9 +1,9 @@
-# Version: 202606021816
+# Version: 202606022022
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Simple DNS Plus (Domain Blacklist plug-in)
-# Entries: 487174
-# Last modified: 2026-06-02T18:16:39+0000
+# Entries: 486821
+# Last modified: 2026-06-02T20:22:01+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -28,7 +28,6 @@ E 0-10.binance.com
 E 0-10.dev.api.binance.com
 E 0-10.eu.api.binance.com
 E 0-10.us.api.binance.com
-E 0-100-newbi.ikpool.com
 E 0-100-pool.abseits.ski
 E 0-100-pool.api.b3pool.com
 E 0-100-pool.b3pool.com
@@ -243,7 +242,6 @@ E 0-51.api.binance.com
 E 0-51.binance.com
 E 0-51.dev.api.binance.com
 E 0-51.eu.api.binance.com
-E 0-51.openvpn.www.eth.bw.com
 E 0-51.us.api.binance.com
 E 0-510.api.binance.com
 E 0-510.binance.com
@@ -492,7 +490,6 @@ E 000000000000000000000.com
 E 0000000000000190000010111.weebly.com
 E 00000111.bitcoin.com
 E 000005.bitcoin.com
-E 000005.openvpn.www.eth.bw.com
 E 00000911.xyz
 E 00001-2fe.workers.dev
 E 00001-888887766.weebly.com
@@ -527,7 +524,6 @@ E 00011.dev.api.binance.com
 E 00011.eu.api.binance.com
 E 00011.us.api.binance.com
 E 000111222333.sytes.net
-E 0001122com.openvpn.www.eth.bw.com
 E 000114.com
 E 000135.vip
 E 0001proxy.notlong.com
@@ -547,7 +543,6 @@ E 0004.eu.api.binance.com
 E 0004.us.api.binance.com
 E 00044.workers.dev
 E 000491b06a.com
-E 00050682.openvpn.www.eth.bw.com
 E 0005162e2b45b589.com
 E 000550-8.us.api.binance.com
 E 000550-8.us.binance.com
@@ -579,14 +574,12 @@ E 0007.dev.api.binance.com
 E 0007.eu.api.binance.com
 E 0007.us.api.binance.com
 E 000777.cfd
-E 0007999ab8.shop
 E 0008.bitcoin.com
 E 00081b3d45ab4209af97ff7ddc2cee2c.fp.measure.office.com
 E 00085.workers.dev
 E 00087df472cb41829dde2c6b5c5625f6.fp.measure.office.com
 E 000888.ddns.net
 E 00089c416b9a.top
-E 0008d6ba2e.com
 E 0009.api.binance.com
 E 0009.binance.com
 E 0009.dev.api.binance.com
@@ -607,7 +600,6 @@ E 000hotdoll000.binance.com
 E 000hotdoll000.dev.api.binance.com
 E 000hotdoll000.eu.api.binance.com
 E 000hotdoll000.us.api.binance.com
-E 000hotdoll00010.openvpn.www.eth.bw.com
 E 000jbjdvvdhjvbdjvndvdv.s3.us-east-2.amazonaws.com
 E 000kkk.bitcoin.com
 E 000lk3v.wcomhost.com
@@ -808,7 +800,6 @@ E 00553.us.binance.com
 E 00553.us.dev.api.binance.com
 E 00553.us.eu.api.binance.com
 E 00553.us.us.api.binance.com
-E 005555.openvpn.www.eth.bw.com
 E 005559.com
 E 00555c6297bb4d8fbcdfc0f96af1b554.fp.measure.office.com
 E 0055ebf8278b43b8a4ab8ebfe42f0834.fp.measure.office.com
@@ -891,7 +882,6 @@ E 007bifenwang.bitcoin.com
 E 007dainternet.bitcoin.com
 E 007dapotianmuweijiaomenduchang.bitcoin.com
 E 007dazhanhuangjiaduchang.bitcoin.com
-E 007dazhanhuangjiaduchang720.openvpn.www.eth.bw.com
 E 007dazhanhuangjiaduchangbaiduyingyin.bitcoin.com
 E 007dazhanhuangjiaduchanghouxu.bitcoin.com
 E 007dbz.no-ip.biz
@@ -902,7 +892,6 @@ E 007guojiyulecheng.bitcoin.com
 E 007huangjiaduchang2guoyugaoqing.bitcoin.com
 E 007huangjiaduchangbt.bitcoin.com
 E 007huangjiaduchangdianyingtiantang.bitcoin.com
-E 007huangjiaduchanggaoqing.openvpn.www.eth.bw.com
 E 007huangjiaduchanggaoqingban.bitcoin.com
 E 007huangjiaduchanggaoqingguankan.bitcoin.com
 E 007huangjiaduchangguoyu.bitcoin.com
@@ -910,7 +899,6 @@ E 007huangjiaduchangguoyutengxun.bitcoin.com
 E 007huangjiaduchangguoyuxiazai.bitcoin.com
 E 007huangjiaduchangjieju.bitcoin.com
 E 007huangjiaduchangjuqingjieshao.bitcoin.com
-E 007huangjiaduchangkuaichuanxiazai.openvpn.www.eth.bw.com
 E 007huangjiaduchangqvod.bitcoin.com
 E 007huangjiaduchangyanyuanbiao.bitcoin.com
 E 007huangjiaduchangyuanshenggaoqing.bitcoin.com
@@ -967,7 +955,6 @@ E 007zhi21huangjiaduchang.bitcoin.com
 E 007zhihuangjiaduchangkuaibo.bitcoin.com
 E 007zuqiu.bitcoin.com
 E 007zuqiubifen.bitcoin.com
-E 007zuqiujishibifen.openvpn.www.eth.bw.com
 E 007zuqiupeilv.bitcoin.com
 E 008-128.vip
 E 008-141.vip
@@ -1047,7 +1034,6 @@ E 00acdf47d9b244cd9f28189b0ab0777e.fp.measure.office.com
 E 00admin.bitcoin.com
 E 00af8b.ethosdistro.com
 E 00afrodithe.bitcoin.com
-E 00afrodithe.openvpn.www.eth.bw.com
 E 00agenjoker123.weebly.com
 E 00alegria.bitcoin.com
 E 00aliciaroze.bitcoin.com
@@ -1261,7 +1247,6 @@ E 011.eu.bitcoin.com
 E 011.ru.bitcoin.com
 E 011.seeds.bitcoin.com
 E 011.us.bitcoin.com
-E 0110.openvpn.www.eth.bw.com
 E 01106db9d57746a18c75e67837888c7f.fp.measure.office.com
 E 01118040.com
 E 011211.cn
@@ -1855,7 +1840,6 @@ E 032-4140980.bitcoin.com
 E 032-wpr-477.bitcoin.com
 E 032.bitcoin.com
 E 032.eu.bitcoin.com
-E 032.openvpn.www.eth.bw.com
 E 032.ru.bitcoin.com
 E 032.seeds.bitcoin.com
 E 032.us.bitcoin.com
@@ -2173,7 +2157,6 @@ E 03server.bitcoin.com
 E 03t441b8w.com
 E 03wobenchenmofabuwang.bitcoin.com
 E 03yaka.stream8-0.binance.com
-E 03zzz.openvpn.www.eth.bw.com
 E 04-1.api.binance.com
 E 04-1.binance.com
 E 04-1.dev.api.binance.com
@@ -2227,7 +2210,6 @@ E 04.us.bitcoin.com
 E 04.weebly.com
 E 040.binance.com
 E 0401a.binance.com
-E 0401a.openvpn.www.eth.bw.com
 E 0403.zapto.org
 E 040490.click
 E 04056d.bitcoin.com
@@ -2313,14 +2295,12 @@ E 045b0c455ea42a48.com
 E 045b66e.wcomhost.com
 E 045ee68fddc28992.com
 E 045f314befdae707.com
-E 046.openvpn.www.eth.bw.com
 E 046084.ethosdistro.com
 E 0464486.xyz
 E 0465faa06d8066f1.com
 E 0465kk.com
 E 046699400840456-dot-wetransfer-auth-file-343.appspot.com
 E 0467657.com
-E 0468.openvpn.www.eth.bw.com
 E 046c7d7bf18f.com
 E 046ceedf5704.xyz
 E 046e79f07285d959.com
@@ -2369,7 +2349,6 @@ E 04c7396d3deb1d48.com
 E 04ca239669996321.com
 E 04cb2d1567e9.top
 E 04cbdddeea3.bitcoin.com
-E 04cbf4193b.com
 E 04cc3a44b052a8f5e1e92ec8a02c3033.com
 E 04cc5c.ethosdistro.com
 E 04cdtwl7jm4e.apac-1-6.binance.com
@@ -2464,7 +2443,6 @@ E 04u-uec65dd35-c233-s1507627447-i95143f0d.am.us.api.binance.com
 E 04umx.bitcoin.com
 E 04yh16065cdi.xyz
 E 04yyy.bitcoin.com
-E 04yyy.openvpn.www.eth.bw.com
 E 04zzvq2806jh163xobrvl2v32h8103o2gt.quesorder.com
 E 05-02.bitcoin.com
 E 05.api.gethash.cc
@@ -2479,7 +2457,6 @@ E 05.seeds.bitcoin.com
 E 05.sharedsource.org
 E 05.us.bitcoin.com
 E 05.weebly.com
-E 050.openvpn.www.eth.bw.com
 E 050003.voodoo.com
 E 050005.voodoo.com
 E 050019.vip
@@ -2502,7 +2479,6 @@ E 0512px.net
 E 0512s.com
 E 0514.bitcoin.com
 E 0514y.vip
-E 0515.openvpn.www.eth.bw.com
 E 0518222.com
 E 051a1a1922899611.com
 E 051c9186ad1c.top
@@ -2782,7 +2758,6 @@ E 06362.com
 E 06377470176363.weebly.com
 E 0638yyy.net
 E 0639c3a116967784.com
-E 063f828cf2.com
 E 064.bitcoin.com
 E 0640b07c5f857511.com
 E 0642717.wcomhost.com
@@ -2827,7 +2802,6 @@ E 0679.ee
 E 067cccb153.bitcoin.com
 E 067f87da09.com
 E 067f8b99e4.bitcoin.com
-E 0682.openvpn.www.eth.bw.com
 E 06830.bitcoin.com
 E 0683006fb.bitcoin.com
 E 0684084.xyz
@@ -2836,7 +2810,6 @@ E 0685daa1d46d.com
 E 0686420.xyz
 E 068926.lgbt
 E 068e6703d3bc4ead5610012f58c10965.com
-E 069.openvpn.www.eth.bw.com
 E 06911279de94ea77.com
 E 069469.com
 E 069503e5a54945a3b66e7dcd4eafbcc2.fp.measure.office.com
@@ -3562,7 +3535,6 @@ E 0793sjpc.cn
 E 0794.info
 E 0796223.weebly.com
 E 0797hyxt.com
-E 0798.openvpn.www.eth.bw.com
 E 0799a7209af09198.com
 E 0799ddc7448603aa.com
 E 079cfd26123f.top
@@ -3680,7 +3652,6 @@ E 0820640.xyz
 E 082488254cfdc8e2.com
 E 083.bitcoin.com
 E 083.eu.bitcoin.com
-E 083.openvpn.www.eth.bw.com
 E 083.ru.bitcoin.com
 E 083.seeds.bitcoin.com
 E 083.us.bitcoin.com
@@ -4547,7 +4518,6 @@ E 0alpha.ccminer.org
 E 0alpha.crypto-webminer.com
 E 0alpha1.abseits.ski
 E 0alpha4.gethash.cc
-E 0alpha5.beeppool.org
 E 0alpha6.abseits.ski
 E 0alpha6.gethash.cc
 E 0alphadecor.minexca.com
@@ -4600,7 +4570,6 @@ E 0amphion.eu.api.binance.com
 E 0ams2.dev.api.binance.com
 E 0ams2.eu.api.binance.com
 E 0ams2.us.api.binance.com
-E 0amsterdam.bytecoins.world
 E 0amsterdam0.abseits.ski
 E 0amsterdam0.gethash.cc
 E 0amsterdam01.abseits.ski
@@ -4613,7 +4582,6 @@ E 0amsterdam05.veriblockpool.com
 E 0amsterdam06.abseits.ski
 E 0amsterdam07.gethash.cc
 E 0amx.gamersnest.org
-E 0amx.letshash.online
 E 0amxbans.gamersnest.org
 E 0an.nanopool.org
 E 0anaheim.hiveon.net
@@ -4664,7 +4632,6 @@ E 0antispam.api.cryptopool.eu
 E 0antispam.cryptopool.eu
 E 0antispam.theblocksfactory.com
 E 0antispam.uralscoin.info
-E 0antispam.xmrminingpro.com
 E 0antivirus-secure.binance.com
 E 0anyone.triplemining.com
 E 0anzbank.eu.api.binance.com
@@ -4736,7 +4703,6 @@ E 0api-etnx.abseits.ski
 E 0api-fno.abseits.ski
 E 0api-grf.veriblockpool.com
 E 0api-ita.abseits.ski
-E 0api-krb.easyhash.io
 E 0api-mobile.58coin.com
 E 0api-nhbottest.hashing.com
 E 0api-sha256.coinminers.net
@@ -4756,7 +4722,6 @@ E 0api.atomminer.com
 E 0api.bitcoin.com
 E 0api.bitcoin.cz
 E 0api.btcguild.com
-E 0api.bytecoins.world
 E 0api.ccminer.org
 E 0api.crypto.ba
 E 0api.cryptopool.eu
@@ -4768,7 +4733,6 @@ E 0api.kanpool.com
 E 0api.meatec.io
 E 0api.mining.eligius.st
 E 0api.nanopool.org
-E 0api.phi-phi-pool.com
 E 0api.sigmapool.com
 E 0api.supportaeon.com
 E 0api.triplemining.com
@@ -4943,9 +4907,7 @@ E 0ashesbelow.triplemining.com
 E 0ashexplorer.bitcoin.com
 E 0asia-mine.abseits.ski
 E 0asia.abseits.ski
-E 0asia.chunkypools.com
 E 0asia.cryptoknight.cc
-E 0asia.equihub.pro
 E 0asia.gethash.cc
 E 0asia.mecrypto.club
 E 0asia.mine.zpool.ca
@@ -5015,9 +4977,7 @@ E 0aur.dedicatedpool.com
 E 0aur.hashfaster.com
 E 0aura.abseits.ski
 E 0aus.hashhot.com
-E 0aus.obfuscode.net
 E 0aus01.abseits.ski
-E 0austin.bytecoins.world
 E 0auth.803mine.com
 E 0auth.acc-pool.pw
 E 0auth.altpool.eu
@@ -5065,7 +5025,6 @@ E 0autodiscover.cryptobender.com
 E 0autodiscover.ethmine.org
 E 0autodiscover.fb.ru.bitcoin.com
 E 0autodiscover.gethash.cc
-E 0autodiscover.minerpool.net
 E 0autodiscover.pool.gntl.co.uk
 E 0autovraky.sigmapool.com
 E 0av.ccminer.org
@@ -5339,7 +5298,6 @@ E 0be5e3f9e223.com
 E 0be7953b6183453bc6ba182bf6b8ba79.loophole.site
 E 0beam-asia.abseits.ski
 E 0beam.666pool.cn
-E 0beam.cool-pool.net
 E 0beautifulglow.nanopool.org
 E 0beauty.bitcoin.com
 E 0beauvais-front.eu.api.binance.com
@@ -5509,9 +5467,7 @@ E 0blog.api.agryt.ru
 E 0blog.atheios.com
 E 0blog.atomminer.com
 E 0blog.bitcoin.cz
-E 0blog.bytecoins.world
 E 0blog.ccminer.org
-E 0blog.chunkypools.com
 E 0blog.coinking.io
 E 0blog.extremehash.com
 E 0blog.gethash.cc
@@ -5651,7 +5607,6 @@ E 0btf.coinminers.net
 E 0btg.abseits.ski
 E 0btg.gethash.cc
 E 0btg.hashcity.org
-E 0bth-test.equihub.pro
 E 0btl.poolerino.com
 E 0btls.hashhot.com
 E 0btm.gethash.cc
@@ -5671,7 +5626,6 @@ E 0buggalo.binance.com
 E 0buggalo.hiveon.net
 E 0bugs.ccminer.org
 E 0buntic.ethosdistro.com
-E 0bureau-a-distance-1.c-cex.com
 E 0burgerbot.hashpool.eu
 E 0burn.hiveon.net
 E 0burn.nanopool.org
@@ -5766,7 +5720,6 @@ E 0c695460b297.xyz
 E 0c697a7df8c3.xyz
 E 0c6b74cbcf039cca.com
 E 0c6bdc3ecc.cfabf1ef11.com
-E 0c6dd161e9.com
 E 0c7677.ethosdistro.com
 E 0c779a93371d12ffc0e62e6014bf96df.com
 E 0c7ba2ef4bb95c5f.com
@@ -5830,7 +5783,6 @@ E 0cas.ccminer.org
 E 0cash.abseits.ski
 E 0cash.dedicatedpool.com
 E 0cash.my-mining-pool.de
-E 0cash.org
 E 0cash2.bitcoin.com
 E 0cashexplorer.bitcoin.com
 E 0casitaroja.no-ip.biz
@@ -5949,7 +5901,6 @@ E 0charlie.803mine.com
 E 0charlie.hiveon.net
 E 0charlos93.triplemining.com
 E 0charlotte.binance.com
-E 0chart.bytecoins.world
 E 0charts.gethash.cc
 E 0chat-0-2.eu.api.binance.com
 E 0chat-0-26.eu.api.binance.com
@@ -6145,7 +6096,6 @@ E 0cloud.gethash.cc
 E 0cloud.ja.mine.zpool.ca
 E 0cloud.jp.mine.zpool.ca
 E 0cloud.mine.zpool.ca
-E 0cloud.minerpool.net
 E 0cloud.pool.gntl.co.uk
 E 0cloud.us.mine.zpool.ca
 E 0cloudflare-resolve-to.ccminer.org
@@ -6318,7 +6268,6 @@ E 0cosmin.us.api.binance.com
 E 0cosmossoup.triplemining.com
 E 0costamar56.us.api.binance.com
 E 0count.bitcoin.com
-E 0countdown.bytecoins.world
 E 0covid19.abseits.ski
 E 0coye.dedicatedpool.com
 E 0coye.hashfaster.com
@@ -6452,7 +6401,6 @@ E 0cust4-611.binance.com
 E 0cust406-5-1.binance.com
 E 0cust41.hiveon.net
 E 0cust51-3-2.binance.com
-E 0cust51.angrypool.com
 E 0cust51.nanopool.org
 E 0cust53.hiveon.net
 E 0cust59.hiveon.net
@@ -6488,7 +6436,6 @@ E 0cvoazfngwelcrorjklf.eu.api.binance.com
 E 0cvoazfngwelcrorjklf.us.api.binance.com
 E 0cvpr.eu.api.binance.com
 E 0cvpr.us.api.binance.com
-E 0cvs.bytecoins.world
 E 0cvs.ccminer.org
 E 0cvs.hiveon.net
 E 0cw.dev.api.binance.com
@@ -6564,7 +6511,6 @@ E 0d333.bitcoin.com
 E 0d34.api.binance.com
 E 0d34.eu.api.binance.com
 E 0d347c.ethosdistro.com
-E 0d356de9ef.com
 E 0d4.eu.api.binance.com
 E 0d426f9db4193b31.com
 E 0d445ed62.bitcoin.com
@@ -6610,7 +6556,6 @@ E 0da9d19ed3e80fe0e58f0c697b3066c8.com
 E 0dad85f89a0e3f5e.com
 E 0daedelous.triplemining.com
 E 0daemon.pool.gntl.co.uk
-E 0daemons.cryptopool.space
 E 0daga.sigmapool.com
 E 0dailysteals-pledge-shopify-app.us.api.binance.com
 E 0daima.dev.api.binance.com
@@ -6793,7 +6738,6 @@ E 0depo.abseits.ski
 E 0dero.abseits.ski
 E 0dero.bubblemine.com
 E 0dero.crypto-webminer.com
-E 0dero.cryptopool.space
 E 0dero.fairhash.org
 E 0dero.omine.org
 E 0dero.supportcryptonight.com
@@ -6813,10 +6757,8 @@ E 0dev.api.cryptopool.eu
 E 0dev.ar.eu.api.binance.com
 E 0dev.argoneum.net
 E 0dev.atomminer.com
-E 0dev.bytecoins.world
 E 0dev.ccminer.org
 E 0dev.crypto-webminer.com
-E 0dev.equihub.pro
 E 0dev.gethash.cc
 E 0dev.hashfaster.com
 E 0dev.sigmapool.com
@@ -6969,7 +6911,6 @@ E 0dns0.abseits.ski
 E 0dns1.ccminer.org
 E 0dns1.gethash.cc
 E 0dns1.hiveon.net
-E 0dns2.asicminer.co
 E 0dns2.gethash.cc
 E 0dns2.nanopool.org
 E 0dns4.ccminer.org
@@ -7021,7 +6962,6 @@ E 0domains.ccminer.org
 E 0domangi.triplemining.com
 E 0don.coincave.nl
 E 0don.veriblockpool.com
-E 0donate.bytecoins.world
 E 0donate.crypto-webminer.com
 E 0donate.veriblockpool.com
 E 0dope.dedicatedpool.com
@@ -7034,9 +6974,7 @@ E 0down2.bitcoin.com
 E 0downgrade.veriblockpool.com
 E 0download.abseits.ski
 E 0download.api.cryptopool.eu
-E 0download.bytecoins.world
 E 0download.ccminer.org
-E 0download.chunkypools.com
 E 0download.gethash.cc
 E 0download.nanopool.org
 E 0downloads.abseits.ski
@@ -7380,7 +7318,6 @@ E 0eg.hashcity.org
 E 0egapi.bitcoin.com
 E 0egem-solo.cryptodig.ru
 E 0egem.abseits.ski
-E 0egem.europool.me
 E 0egem.gethash.cc
 E 0egillauthor.sigmapool.com
 E 0egorvita78.triplemining.com
@@ -7432,7 +7369,6 @@ E 0elya.freshpool.org
 E 0elya.my-mining-pool.de
 E 0em.bitcoin.com
 E 0email-0.nanopool.org
-E 0email-123.angrypool.com
 E 0email-5.nanopool.org
 E 0email.altpool.eu
 E 0email.api.crypto.ba
@@ -7466,7 +7402,6 @@ E 0emy.bitcoin.com
 E 0en.atomminer.com
 E 0en.binance.com
 E 0en.bitcoin.com
-E 0en.btczpool.com
 E 0en.ccminer.org
 E 0en.crypto-webminer.com
 E 0en.eu.api.binance.com
@@ -7613,7 +7548,6 @@ E 0ethman.ethosdistro.com
 E 0etho.abseits.ski
 E 0ethos1.ethosdistro.com
 E 0ethosd.ethosdistro.com
-E 0ethscan.helpico.tech
 E 0ethsno.ethosdistro.com
 E 0ethus-east1.nanopool.org
 E 0etig.gethash.cc
@@ -7656,7 +7590,6 @@ E 0eu-stratum.bitcoin.cz
 E 0eu-stratum.btcguild.com
 E 0eu-stratum2.btcguild.com
 E 0eu-stratut.btcguild.com
-E 0eu-xmr-2.viaxmr.com
 E 0eu-zil.rustpool.xyz
 E 0eu.altpool.eu
 E 0eu.api.crypto.ba
@@ -7670,7 +7603,6 @@ E 0eu.hashfaster.com
 E 0eu.mecrypto.club
 E 0eu.mine.zpool.ca
 E 0eu.mining.eligius.st
-E 0eu.n-engine.com
 E 0eu.poolerino.com
 E 0eu.rapidhash.net
 E 0eu.sigmapool.com
@@ -7918,7 +7850,6 @@ E 0fastdl.gamersnest.org
 E 0faticoins.triplemining.com
 E 0faucet.abseits.ski
 E 0faucet.api.crypto.ba
-E 0faucet.bytecoins.world
 E 0faucet.crypto.ba
 E 0faucet.ionize.xyz
 E 0faucet.mecrypto.club
@@ -8013,7 +7944,6 @@ E 0folders.ccminer.org
 E 0fonero.my-mining-pool.de
 E 0footer.58coin.com
 E 0force.abseits.ski
-E 0formsyy.pms.btc.top
 E 0fornex.api.binance.com
 E 0foros.ccminer.org
 E 0forum.50btc.com
@@ -8443,7 +8373,6 @@ E 0gain.bitcoin.com
 E 0galeria.ccminer.org
 E 0galeria.hiveon.net
 E 0galery.atomminer.com
-E 0galery.btczpool.com
 E 0gallery.ccminer.org
 E 0gambrinus.eu.api.binance.com
 E 0gambrinus.us.api.binance.com
@@ -8683,7 +8612,6 @@ E 0graftminingpool.gethash.cc
 E 0graftpool.supportcryptonight.com
 E 0gratuit.bitcoin.com
 E 0grce.dedicatedpool.com
-E 0grf.cryptopool.space
 E 0grf.minerhills.com
 E 0grf.veriblockpool.com
 E 0grft.minerhills.com
@@ -8861,7 +8789,6 @@ E 0hermes.api.cryptopool.eu
 E 0hermes.ccminer.org
 E 0hermes.dark-mine.su
 E 0hermes.supportaeon.com
-E 0hermes.xmr.org.uk
 E 0hex.abseits.ski
 E 0hex.eu.mine.mine.mine.zpool.ca
 E 0hex.eu.mine.zpool.ca
@@ -8928,7 +8855,6 @@ E 0home.api.crypto.ba
 E 0home.api.cryptopool.eu
 E 0home.bitcoin.com
 E 0home.ccminer.org
-E 0home.chunkypools.com
 E 0home.crypto-webminer.com
 E 0home.crypto.ba
 E 0home.dashminer.com
@@ -8948,7 +8874,6 @@ E 0horizonblue.api.binance.com
 E 0horizonblue.dev.api.binance.com
 E 0hors.poolerino.com
 E 0horton.bitcoin.com
-E 0hosp.youpool.io
 E 0host-129.api.binance.com
 E 0host-129.dev.api.binance.com
 E 0host-129.eu.api.binance.com
@@ -9030,14 +8955,12 @@ E 0hostmaster.atomminer.com
 E 0hostmaster.bitcoin-game.de
 E 0hostmaster.bitcoin-pool.de
 E 0hostmaster.bitcoin-server.de
-E 0hostmaster.btcprivate.pro
 E 0hostmaster.bubblemine.com
 E 0hostmaster.ccminer.org
 E 0hostmaster.clot.poolerino.com
 E 0hostmaster.coinking.io
 E 0hostmaster.coinpool.net
 E 0hostmaster.corecenter.triplemining.com
-E 0hostmaster.cryptoescrow.eu
 E 0hostmaster.cryptonotepool.org.uk
 E 0hostmaster.cryptosales.eu
 E 0hostmaster.dashminer.com
@@ -9072,7 +8995,6 @@ E 0hostmaster.triplemining.com
 E 0hostmaster.tydirocks.triplemining.com
 E 0hostmaster.volt.dedicatedpool.com
 E 0hostmaster.webmail.bitcoin-pool.de
-E 0hostmaster.www.b2g.europool.me
 E 0hostmaster.www.ltcmine.ru
 E 0hot.dev.api.binance.com
 E 0hot.eu.api.binance.com
@@ -9236,7 +9158,6 @@ E 0im.forre.st
 E 0image.ccminer.org
 E 0image.nanopool.org
 E 0images.ccminer.org
-E 0images.chunkypools.com
 E 0images.hiveon.net
 E 0images.kanpool.com
 E 0images1.ccminer.org
@@ -9273,7 +9194,6 @@ E 0imap1.api.cryptopool.eu
 E 0imap1.dashminer.com
 E 0imap1.emeraldcrypto.de
 E 0imap1.hashfaster.com
-E 0imap1.nexious.com
 E 0imap1.supportcryptonight.com
 E 0imap1.teamdoge.com
 E 0imap1.uralscoin.info
@@ -9714,7 +9634,6 @@ E 0kr3-7.binance.com
 E 0kr43.api.binance.com
 E 0kr6-0.binance.com
 E 0kr60.binance.com
-E 0krb.coinminer.space
 E 0krb.dark-mine.su
 E 0krb.freshpool.org
 E 0krn.api.cryptopool.eu
@@ -9970,7 +9889,6 @@ E 0loki.51pool.online
 E 0loki.aussie-pools.com
 E 0loki.blockcruncher.com
 E 0loki.dark-mine.su
-E 0loki.europool.me
 E 0loki.fairhash.org
 E 0loki.gethash.cc
 E 0loki.minercountry.com
@@ -9987,7 +9905,6 @@ E 0lorer.bitcoin.com
 E 0lot.coincave.nl
 E 0lot.dedicatedpool.com
 E 0lot.hashfaster.com
-E 0lottery.bytecoins.world
 E 0lottery.mecrypto.club
 E 0lottery2.mecrypto.club
 E 0lotus.hiveon.net
@@ -10161,8 +10078,6 @@ E 0mail.bitcoin.com
 E 0mail.bitcoin.cz
 E 0mail.btcguild.com
 E 0mail.bubblemine.com
-E 0mail.burst-team.us
-E 0mail.bytecoins.world
 E 0mail.ccminer.org
 E 0mail.coin-mining.net
 E 0mail.coincave.nl
@@ -10191,7 +10106,6 @@ E 0mail.gleecpool.com
 E 0mail.gntl.co.uk
 E 0mail.hashfaster.com
 E 0mail.hashpool.eu
-E 0mail.helpico.tech
 E 0mail.hodlpool.com
 E 0mail.hospitalcoin.net
 E 0mail.icash.veriblockpool.com
@@ -10202,7 +10116,6 @@ E 0mail.minergalaxy.com
 E 0mail.minerhills.com
 E 0mail.minersrepublic.com
 E 0mail.miningcoins.ca
-E 0mail.miningpool.ch
 E 0mail.miningpoolrw.de
 E 0mail.multiminer.us
 E 0mail.mupool.com
@@ -10235,7 +10148,6 @@ E 0mail02.teamdoge.com
 E 0mail02.zet-tech.eu
 E 0mail1.altpool.eu
 E 0mail1.api.cryptopool.eu
-E 0mail1.asicminer.co
 E 0mail1.bitcoin.cz
 E 0mail1.ccminer.org
 E 0mail1.debutech.de
@@ -10264,7 +10176,6 @@ E 0mail12.altpool.eu
 E 0mail12.api.agryt.ru
 E 0mail12.api.cryptopool.eu
 E 0mail12.ccminer.org
-E 0mail12.equihub.pro
 E 0mail12.teamdoge.com
 E 0mail2.agryt.ru
 E 0mail2.altpool.eu
@@ -10280,7 +10191,6 @@ E 0mail2.gethash.cc
 E 0mail2.hashfaster.com
 E 0mail2.hiveon.net
 E 0mail2.masari.net
-E 0mail2.minerpool.net
 E 0mail2.pool.gntl.co.uk
 E 0mail2.supportaeon.com
 E 0mail2.supportcryptonight.com
@@ -10317,11 +10227,9 @@ E 0mail6.api.agryt.ru
 E 0mail6.api.cryptopool.eu
 E 0mail6.hiveon.net
 E 0mail6.hodlpool.com
-E 0mail6.xmrminingpro.com
 E 0mail6.zet-tech.eu
 E 0mail7.altpool.eu
 E 0mail7.api.cryptopool.eu
-E 0mail7.burst-team.us
 E 0mail7.emeraldcrypto.de
 E 0mail7.hashing.com
 E 0mail7.hodlpool.com
@@ -10394,7 +10302,6 @@ E 0mailin.emeraldcrypto.de
 E 0mailin.fixedtradecoin.org
 E 0mailin.hashfaster.com
 E 0mailin.hodlpool.com
-E 0mailin.n-engine.com
 E 0mailin.supportaeon.com
 E 0mailin.uralscoin.info
 E 0mailin.zet-tech.eu
@@ -10403,7 +10310,6 @@ E 0mailout.emeraldcrypto.de
 E 0mailout.fixedtradecoin.org
 E 0mailout.hashfaster.com
 E 0mailout.hodlpool.com
-E 0mailout.n-engine.com
 E 0mailout.supportcryptonight.com
 E 0mailrelay.api.cryptopool.eu
 E 0mailrelay.emeraldcrypto.de
@@ -10417,7 +10323,6 @@ E 0mails.hashfaster.com
 E 0mails.supportaeon.com
 E 0mailserver.altpool.eu
 E 0mailserver.api.cryptopool.eu
-E 0mailserver.burst-team.us
 E 0mailserver.ccminer.org
 E 0mailserver.cryptopool.eu
 E 0mailserver.dashminer.com
@@ -10435,7 +10340,6 @@ E 0mailsrv.api.cryptopool.eu
 E 0mailsrv.dashminer.com
 E 0mailsrv.emeraldcrypto.de
 E 0mailsrv.hashfaster.com
-E 0mailsrv.nexious.com
 E 0mailx.altpool.eu
 E 0mailx.api.cryptopool.eu
 E 0mailx.binance.com
@@ -10734,7 +10638,6 @@ E 0ml.ccminer.org
 E 0ml.gethash.cc
 E 0mls.hashhot.com
 E 0mlv.dev.api.binance.com
-E 0mm.bytecoins.world
 E 0mm.supportcryptonight.com
 E 0mm2.supportcryptonight.com
 E 0mn.api.crypto.ba
@@ -10788,7 +10691,6 @@ E 0monetaverde.minercountry.com
 E 0mongo.gethash.cc
 E 0mongodb.api.binance.com
 E 0mongodb.gethash.cc
-E 0mongodb.minerpool.net
 E 0monitor.atomminer.com
 E 0monitor.bitcoin.cz
 E 0monitor.ccminer.org
@@ -10797,9 +10699,7 @@ E 0monitor.rapidhash.net
 E 0monitor.veriblock.org
 E 0monitor.veriblockpool.com
 E 0monitor.zet-tech.eu
-E 0monitoring.bytecoins.world
 E 0monitoring.webchain.network
-E 0monre.chunkypools.com
 E 0montreal.triplemining.com
 E 0moodle.api.cryptopool.eu
 E 0moodle.ccminer.org
@@ -10871,14 +10771,12 @@ E 0mta-sts.crypto.ba
 E 0mta-sts.essomining.tech
 E 0mta-sts.gethash.cc
 E 0mta-sts.macyan.net
-E 0mta-sts.mail.miningpool.ch
 E 0mta-sts.manga-coin.com
 E 0mta-sts.miner-control.de
 E 0mta-sts.supportaeon.com
 E 0mta-sts.supportcryptonight.com
 E 0mta.altpool.eu
 E 0mta.api.cryptopool.eu
-E 0mta.bytecoins.world
 E 0mta.dark-mine.su
 E 0mta.emeraldcrypto.de
 E 0mta.hashing.com
@@ -10930,7 +10828,6 @@ E 0mx-a.ccminer.org
 E 0mx-b.ccminer.org
 E 0mx.50btc.com
 E 0mx.altpool.eu
-E 0mx.burst-team.us
 E 0mx.ccminer.org
 E 0mx.crypto-webminer.com
 E 0mx.cryptopool.eu
@@ -11153,18 +11050,15 @@ E 0namagil.sigmapool.com
 E 0name.hiveon.net
 E 0name.nanopool.org
 E 0namid.sigmapool.com
-E 0namsterdam.bytecoins.world
 E 0nanc.hashfaster.com
 E 0nanovatkoblogosphere.nanopool.org
 E 0napi-dev.veriblockpool.com
 E 0napi-fno.abseits.ski
-E 0napi-fno.easyhash.io
 E 0napi-grf.veriblockpool.com
 E 0napi-itns.abseits.ski
 E 0napi-krb.abseits.ski
 E 0napi-mobile.58coin.com
 E 0napi-stratum.bitcoin.cz
-E 0napi-sumo.easyhash.io
 E 0napi-xmr.veriblockpool.com
 E 0napi-xmv.abseits.ski
 E 0napi.abseits.ski
@@ -11370,7 +11264,6 @@ E 0ncust95.nanopool.org
 E 0ncust97.hiveon.net
 E 0ncust97.nanopool.org
 E 0ncustom.crypto-webminer.com
-E 0ncvs.bytecoins.world
 E 0ncwy.cryptopool.eu
 E 0ndallas.hiveon.net
 E 0ndark.hashfaster.com
@@ -11556,7 +11449,6 @@ E 0nfiles.nanopool.org
 E 0nfiuhduc7637hfdf.omine.org
 E 0nfj.nanopool.org
 E 0nfjc.pool.mn
-E 0nfl.bytecoins.world
 E 0nflorida.hiveon.net
 E 0nflow.hiveon.net
 E 0ng.bitcoin.com
@@ -11609,7 +11501,6 @@ E 0nhbottest.hashing.com
 E 0nhc.hashhot.com
 E 0nhcalc.hashing.com
 E 0nhdk.cryptopool.eu
-E 0nhenry.bytecoins.world
 E 0nhermes.hiveon.net
 E 0nhex.eu.mine.mine.mine.zpool.ca
 E 0nhex.eu.mine.zpool.ca
@@ -11658,7 +11549,6 @@ E 0nilu-solo.abseits.ski
 E 0nilu.abseits.ski
 E 0nimap.cryptopool.eu
 E 0nimg01.hiveon.net
-E 0nimg02.bytecoins.world
 E 0nimg02.hiveon.net
 E 0nimiq.acc-pool.pw
 E 0ninbound.hiveon.net
@@ -11762,7 +11652,6 @@ E 0nlion.cryptopool.eu
 E 0nlira2v2.mine.zpool.ca
 E 0nlista.nanopool.org
 E 0nlitecoin.minerpool.de
-E 0nlk.bytecoins.world
 E 0nlk.hiveon.net
 E 0nllnec0mm0nbiank.weebly.com
 E 0nllnesecu.weebly.com
@@ -11859,7 +11748,6 @@ E 0nmonero.fairhash.org
 E 0nmonero.veriblockpool.com
 E 0nmonerov.abseits.ski
 E 0nmonerov.fairhash.org
-E 0nmonitoring.bytecoins.world
 E 0nmortgageloan.58coin.com
 E 0nmovies.hiveon.net
 E 0nmox.fairhash.org
@@ -11900,7 +11788,6 @@ E 0nnetdata.hiveon.net
 E 0nnetwork.hiveon.net
 E 0nnevada.hiveon.net
 E 0nnew.hiveon.net
-E 0nnewton.bytecoins.world
 E 0nnewton.fairhash.org
 E 0nnf.hiveon.net
 E 0nng.hiveon.net
@@ -11934,7 +11821,6 @@ E 0nnode-6.minercircle.com
 E 0nnode-7.minercircle.com
 E 0nnode-8.minercircle.com
 E 0nnode-9.minercircle.com
-E 0nnode.bytecoins.world
 E 0nnode.hiveon.net
 E 0nnode.nanopool.org
 E 0nnode205.nanopool.org
@@ -11952,7 +11838,6 @@ E 0noakland.hiveon.net
 E 0noasic.coinminers.net
 E 0noasic.gethash.cc
 E 0nobl.poolerino.com
-E 0noc.angrypool.com
 E 0noc.ccminer.org
 E 0nocean.hiveon.net
 E 0node-1.minercircle.com
@@ -11974,7 +11859,6 @@ E 0node-8.minercircle.com
 E 0node-9.minercircle.com
 E 0node-express.fn.luxor.tech
 E 0node.abseits.ski
-E 0node.bytecoins.world
 E 0node.fungibly.xyz
 E 0node1.gethash.cc
 E 0node1.webchain.network
@@ -12008,7 +11892,6 @@ E 0nolddero.fairhash.org
 E 0noly.cryptopool.eu
 E 0nomega.hiveon.net
 E 0nomp.hashpool.eu
-E 0nomp.letshash.online
 E 0non-prod.gethash.cc
 E 0noni.cryptopool.eu
 E 0nonline.hiveon.net
@@ -12064,7 +11947,6 @@ E 0ns.cryptopool.eu
 E 0ns.emeraldcrypto.de
 E 0ns.gethash.cc
 E 0ns.hiveon.net
-E 0ns.n-engine.com
 E 0ns.supportaeon.com
 E 0ns.supportcryptonight.com
 E 0ns.veriblockpool.com
@@ -12074,7 +11956,6 @@ E 0ns01.hiveon.net
 E 0ns02.ccminer.org
 E 0ns1.altpool.eu
 E 0ns1.api.cryptopool.eu
-E 0ns1.bitpoolmining.com
 E 0ns1.btcguild.com
 E 0ns1.ccminer.org
 E 0ns1.coinpool.ru
@@ -12198,7 +12079,6 @@ E 0ny.nanopool.org
 E 0ny20.ethosdistro.com
 E 0nyan.abseits.ski
 E 0nyan.coincave.nl
-E 0nyan.mastermining.net
 E 0nyc.abseits.ski
 E 0nyc03.abseits.ski
 E 0nyc03.veriblockpool.com
@@ -12509,7 +12389,6 @@ E 0paydayloansunitedkingdom.us.api.binance.com
 E 0payment.ccminer.org
 E 0payments.ccminer.org
 E 0paypay.bitcoin.com
-E 0payroll.bytecoins.world
 E 0pb.bitcoin.com
 E 0pbrand.api.cryptopool.eu
 E 0pbrand.cryptopool.eu
@@ -12526,10 +12405,8 @@ E 0pc0916.binance.com
 E 0pc10.bitcoin.com
 E 0pc101.hiveon.net
 E 0pc11.veriblockpool.com
-E 0pc13.bytecoins.world
 E 0pc14.nanopool.org
 E 0pc15.nanopool.org
-E 0pc16.bytecoins.world
 E 0pc22.hiveon.net
 E 0pc23.hiveon.net
 E 0pc2617.binance.com
@@ -12618,7 +12495,6 @@ E 0phi2.mine.zpool.ca
 E 0phi2.na.mine.zpool.ca
 E 0phi2.sea.mine.zpool.ca
 E 0phi2.us.mine.zpool.ca
-E 0philadelphia.bytecoins.world
 E 0phl.cato0.easyx.cc
 E 0phm.nanopool.org
 E 0phoeniz.hiveon.net
@@ -12751,8 +12627,6 @@ E 0pool.atheios.com
 E 0pool.atomminer.com
 E 0pool.bitcoin.cz
 E 0pool.btcppool.com
-E 0pool.btczpool.com
-E 0pool.bytecoins.world
 E 0pool.cato0.easyx.cc
 E 0pool.ccminer.org
 E 0pool.cloudcoins.co
@@ -12963,7 +12837,6 @@ E 0preview.ccminer.org
 E 0preview.dev.api.binance.com
 E 0preview.eu.api.binance.com
 E 0preview.gethash.cc
-E 0preview.minerpool.net
 E 0preview.us.api.binance.com
 E 0prg.bitcoin.com
 E 0pri.hashhot.com
@@ -13076,7 +12949,6 @@ E 0q9bvoqh.telemetry-vault.digital
 E 0q9d.com
 E 0qa.bitcoin.com
 E 0qa.ccminer.org
-E 0qahq.pms.btc.top
 E 0qbc.hashhot.com
 E 0qbox.bitcoin.com
 E 0qcl.nanopool.org
@@ -13097,7 +12969,6 @@ E 0qnssl.sigmapool.com
 E 0qo989.freeddns.com
 E 0qpscoin.minerpool.de
 E 0qrl.aussie-pools.com
-E 0qrl.cryptopool.space
 E 0qrl.fairhash.org
 E 0qrl.pool.gntl.co.uk
 E 0qrltest.fairhash.org
@@ -13107,7 +12978,6 @@ E 0qs.eu.api.binance.com
 E 0qsc.nanopool.org
 E 0qsotf.myddns.com
 E 0qtc.nanopool.org
-E 0qtn.youpool.io
 E 0quake.hiveon.net
 E 0quangharvest.eu.api.binance.com
 E 0quarentena1.api.binance.com
@@ -13278,7 +13148,6 @@ E 0relay1.hodlpool.com
 E 0relay1.sigmapool.com
 E 0relay2.altpool.eu
 E 0relay2.api.cryptopool.eu
-E 0relay2.nexious.com
 E 0relay2.supportcryptonight.com
 E 0relinquish.nanopool.org
 E 0relojin-crm.exx.com
@@ -13864,7 +13733,6 @@ E 0sha256.coinminers.net
 E 0sha256.eu.mine.zpool.ca
 E 0sha256.jp.mine.zpool.ca
 E 0sha256.mine.zpool.ca
-E 0sha256.n-engine.com
 E 0sha256.na.mine.zpool.ca
 E 0sha256.sea.mine.zpool.ca
 E 0sha256.usa.mine.eu.mine.zpool.ca
@@ -14173,7 +14041,6 @@ E 0software.ccminer.org
 E 0soil.abseits.ski
 E 0soil.zet-tech.eu
 E 0solace.veriblockpool.com
-E 0solaris.n-engine.com
 E 0solo-aka.abseits.ski
 E 0solo-ath.abseits.ski
 E 0solo-ballz.abseits.ski
@@ -14183,7 +14050,6 @@ E 0solo-clo.abseits.ski
 E 0solo-ere.abseits.ski
 E 0solo-etc.abseits.ski
 E 0solo-etig.abseits.ski
-E 0solo-etig.beeppool.org
 E 0solo-etp.abseits.ski
 E 0solo-fun.coinminers.net
 E 0solo-reosc.abseits.ski
@@ -14289,7 +14155,6 @@ E 0ssl.abseits.ski
 E 0ssl.api.binance.com
 E 0ssl.api.cryptopool.eu
 E 0ssl.ccminer.org
-E 0ssl.coinmine.pw
 E 0ssl.cryptopool.eu
 E 0sslvpn.ccminer.org
 E 0sslvpn.gethash.cc
@@ -14317,7 +14182,6 @@ E 0stan.bitcoin.com
 E 0standardbank.dev.api.binance.com
 E 0standardbank.eu.api.binance.com
 E 0starbird.hodlpool.com
-E 0stardock.hashwiz.io
 E 0start-0.hiveon.net
 E 0start.api.crypto.ba
 E 0start.ccminer.org
@@ -14543,7 +14407,6 @@ E 0sumob2b.minercountry.com
 E 0sumobcn.minercountry.com
 E 0sumokoin.crypto-webminer.com
 E 0sumokoin.fairhash.org
-E 0sun.bytecoins.world
 E 0sun.ccminer.org
 E 0sun.hiveon.net
 E 0sun.webchain.network
@@ -14661,7 +14524,6 @@ E 0tadvinsanaat.api.cryptopool.eu
 E 0tag.coin-mining.net
 E 0tag.cryptominer.net
 E 0tag.hashfaster.com
-E 0tag.mastermining.net
 E 0tage-giftcards.bitcoin.com
 E 0tagitive-test.exx.com
 E 0taian.bitcoin.com
@@ -14791,7 +14653,6 @@ E 0tez.api.binance.com
 E 0tez.eu.api.binance.com
 E 0tf.bitcoin.com
 E 0tfexch02.sigmapool.com
-E 0tfs.europool.me
 E 0tftp.ccminer.org
 E 0tfu.api.binance.com
 E 0tfu.eu.api.binance.com
@@ -14961,9 +14822,7 @@ E 0trtl.my-mining-pool.de
 E 0trtl.pool.gntl.co.uk
 E 0truck.nanopool.org
 E 0truckinginc.nanopool.org
-E 0trust.europool.me
 E 0trustee.nanopool.org
-E 0trustray.europool.me
 E 0ts.api.cryptopool.eu
 E 0ts05.bitcoin.com
 E 0tseed1.emeraldcrypto.de
@@ -15060,7 +14919,6 @@ E 0uberlolz.eu.api.binance.com
 E 0uberlolz.us.api.binance.com
 E 0ubiq-solo.cryptodig.ru
 E 0ubiq.abseits.ski
-E 0ubiq.cominers.org
 E 0ubiq.hodlpool.com
 E 0ubiqpool.abseits.ski
 E 0ubq.zet-tech.eu
@@ -15081,7 +14939,6 @@ E 0ufo.666pool.cn
 E 0ufo.abseits.ski
 E 0ufw.dev.api.binance.com
 E 0ufw.eu.api.binance.com
-E 0ug.bytecoins.world
 E 0ug.supportcryptonight.com
 E 0ugs.dev.api.binance.com
 E 0ugs.us.api.binance.com
@@ -15145,7 +15002,6 @@ E 0unb.coin-mining.net
 E 0uneikmine.btcguild.com
 E 0unify.acc-pool.pw
 E 0union.hiveon.net
-E 0unitedstates.bytecoins.world
 E 0unix.ccminer.org
 E 0unix.hiveon.net
 E 0unt.us.api.binance.com
@@ -15178,7 +15034,6 @@ E 0upport.bitcoin.com
 E 0uptime.abseits.ski
 E 0upu.dev.api.binance.com
 E 0upu.us.api.binance.com
-E 0upx.cryptopool.space
 E 0upx.hashpool.eu
 E 0upxstats.veriblockpool.com
 E 0uqt.dev.api.binance.com
@@ -15263,7 +15118,6 @@ E 0us1.nanopool.org
 E 0us1.veriblockpool.com
 E 0us2-zil.rustpool.xyz
 E 0us2.coinking.io
-E 0us2.coinmine.pw
 E 0us2.gethash.cc
 E 0us2.nanopool.org
 E 0us2.veriblockpool.com
@@ -15385,7 +15239,6 @@ E 0vau.dev.api.binance.com
 E 0vau.eu.api.binance.com
 E 0vau.us.api.binance.com
 E 0vault.api.binance.com
-E 0vault.eurohash.net
 E 0vbfi.veriblock.org
 E 0vbk-us.veriblockpool.com
 E 0vbk.666pool.cn
@@ -15456,7 +15309,6 @@ E 0vis.eu.api.binance.com
 E 0visa.bitcoin.com
 E 0visiteur.sigmapool.com
 E 0vista.ccminer.org
-E 0vivo.n-engine.com
 E 0vjt.dev.api.binance.com
 E 0vju.dev.api.binance.com
 E 0vju.us.api.binance.com
@@ -15475,12 +15327,10 @@ E 0vlz.dev.api.binance.com
 E 0vlz.us.api.binance.com
 E 0vm.ccminer.org
 E 0vmail.altpool.eu
-E 0vmail.angrypool.com
 E 0vmail.api.cryptopool.eu
 E 0vmail.ccminer.org
 E 0vmail.debutech.de
 E 0vmail.hashfaster.com
-E 0vmail.nexious.com
 E 0vmail.teamdoge.com
 E 0vmdevelopment.sigmapool.com
 E 0vmp.coincave.nl
@@ -15580,7 +15430,6 @@ E 0w07.dev.api.binance.com
 E 0w0q.learnzonekey.monster
 E 0w1.atomminer.com
 E 0w1.bitcoin.com
-E 0w1.bytecoins.world
 E 0w1.hiveon.net
 E 0w2.bitcoin.com
 E 0w3.atomminer.com
@@ -15770,7 +15619,6 @@ E 0whois.bitcoin.com
 E 0whois.crypto-webminer.com
 E 0whois.gethash.cc
 E 0wholesale.com
-E 0whtlg.cryptopool.space
 E 0wi.hiveon.net
 E 0widgets.bitcoin.com
 E 0wifi.ccminer.org
@@ -15784,7 +15632,6 @@ E 0wiki.coinpool.net
 E 0wiki.eu.api.binance.com
 E 0wiki.gethash.cc
 E 0wiki.hiveon.net
-E 0wiki.minerpool.net
 E 0wiki.veriblock.org
 E 0wiki.vericoin.info
 E 0wikiapedia.dev.api.binance.com
@@ -15926,7 +15773,6 @@ E 0wu3.eu.api.binance.com
 E 0wvghk.undubirprourass.com
 E 0ww.58coin.com
 E 0ww.api.cryptopool.eu
-E 0ww.coinex.pw
 E 0ww.hiveon.net
 E 0ww.ufo.link
 E 0ww0.abseits.ski
@@ -16091,7 +15937,6 @@ E 0ww5.nanopool.org
 E 0ww5.nonce-pool.com
 E 0ww5.prohash.net
 E 0ww6.gethash.cc
-E 0ww6.inwemo.com
 E 0ww6.minercircle.com
 E 0ww6.nonce-pool.com
 E 0ww6.prohash.net
@@ -16100,7 +15945,6 @@ E 0ww7.bubblemine.com
 E 0ww7.hashhot.com
 E 0ww7.minerjet.com
 E 0ww7.nonce-pool.com
-E 0ww7.noobpool.com
 E 0ww7.prohash.net
 E 0ww8.coinminer.net
 E 0ww8.ethmine.org
@@ -16161,13 +16005,11 @@ E 0www.btcguild.com
 E 0www.btcppool.com
 E 0www.btgmine.com
 E 0www.bubblemine.com
-E 0www.burstcoin.me
 E 0www.car.dev.api.binance.com
 E 0www.cc.pool.mn
 E 0www.ccb.hashhot.com
 E 0www.ce.us.bitcoin.com
 E 0www.ch.dev.api.binance.com
-E 0www.champmine.de
 E 0www.chat.us.api.binance.com
 E 0www.cloudcoins.co
 E 0www.coin-mining.net
@@ -16201,7 +16043,6 @@ E 0www.easypool.xyz
 E 0www.eca.api.acc-pool.pw
 E 0www.elderhash.com
 E 0www.emeraldcrypto.de
-E 0www.equihub.pro
 E 0www.essomining.tech
 E 0www.etcpps.abseits.ski
 E 0www.etd.hashhot.com
@@ -16275,7 +16116,6 @@ E 0www.minexca.com
 E 0www.minging.bitcoin.cz
 E 0www.mining-bios.eu
 E 0www.mining.eligius.st
-E 0www.miningpool.ch
 E 0www.miningpoolrw.de
 E 0www.monerov.online
 E 0www.multiminer.us
@@ -16312,7 +16152,6 @@ E 0www.sigmapool.com
 E 0www.simplemulti.com
 E 0www.skein.mine.eu.mine.zpool.ca
 E 0www.smithpool.net
-E 0www.soloblox.com
 E 0www.stream.api.binance.com
 E 0www.stream2.binance.com
 E 0www.stv.hashhot.com
@@ -16491,7 +16330,6 @@ E 0x11evo.na.mine.zpool.ca
 E 0x12.eu.mine.zpool.ca
 E 0x12.fairhash.org
 E 0x12.gethash.cc
-E 0x12.miningpool.ch
 E 0x12.na.mine.zpool.ca
 E 0x13.eu.mine.zpool.ca
 E 0x13.gethash.cc
@@ -16670,7 +16508,6 @@ E 0xjp.eu.api.binance.com
 E 0xkz.us.api.binance.com
 E 0xl.fairhash.org
 E 0xl.ru
-E 0xla.cryptopool.space
 E 0xla.pool.gntl.co.uk
 E 0xla.veriblockpool.com
 E 0xlatest.pool.gntl.co.uk
@@ -16753,7 +16590,6 @@ E 0xmr.hashcity.org
 E 0xmr.minercircle.com
 E 0xmr.minercountry.com
 E 0xmr.minerhills.com
-E 0xmr.mixpools.org
 E 0xmr.omine.org
 E 0xmr.pool.gntl.co.uk
 E 0xmr.prohash.net
@@ -16777,7 +16613,6 @@ E 0xmv-eu.abseits.ski
 E 0xmv-eu.gethash.cc
 E 0xmv-us.gethash.cc
 E 0xmv-us.minerhills.com
-E 0xmv.cryptopool.space
 E 0xmv.fairhash.org
 E 0xmv.gethash.cc
 E 0xmv.minerhills.com
@@ -16789,7 +16624,6 @@ E 0xn.bitcoin.com
 E 0xn.nanopool.org
 E 0xoa.dark-mine.su
 E 0xol.pool.gntl.co.uk
-E 0xp.bytecoins.world
 E 0xpd.gethash.cc
 E 0xpool.803mine.com
 E 0xpool.us
@@ -16833,7 +16667,6 @@ E 0xtoken.com
 E 0xtoken.ddns.net
 E 0xtri.minercountry.com
 E 0xtridium.minercountry.com
-E 0xun.cryptopool.space
 E 0xun.minercountry.com
 E 0xvc.gethash.cc
 E 0xvg.fairhash.org
@@ -16961,7 +16794,6 @@ E 0ys20.ethosdistro.com
 E 0ystarn.ethosdistro.com
 E 0ystarnaud.ethosdistro.com
 E 0ytn.abseits.ski
-E 0ytpdocs.pms.btc.top
 E 0yulicv.ethosdistro.com
 E 0yum.dedicatedpool.com
 E 0yuv.eu.api.binance.com
@@ -17018,7 +16850,6 @@ E 0zcl-api.gethash.cc
 E 0zcl-api.veriblockpool.com
 E 0zcl-test.abseits.ski
 E 0zcl.altpools.com
-E 0zcl.equihub.pro
 E 0zcl.gethash.cc
 E 0zcl.mine.zpool.ca
 E 0zcl8.nanopool.org
@@ -17059,7 +16890,6 @@ E 0zec7.nanopool.org
 E 0zec8.nanopool.org
 E 0zeca.nanopool.org
 E 0zed.abseits.ski
-E 0zeit.beeppool.org
 E 0zeit.dedicatedpool.com
 E 0zeit.gethash.cc
 E 0zeit.hashfaster.com
@@ -17094,7 +16924,6 @@ E 0zencommunity6.api.crypto.ba
 E 0zencommunity6.crypto.ba
 E 0zenithoptimedia.eu.api.binance.com
 E 0zenithoptimedia.us.api.binance.com
-E 0zennode02.asicminer.co
 E 0zennode04.abseits.ski
 E 0zennode1.abseits.ski
 E 0zennode11.abseits.ski
@@ -17121,7 +16950,6 @@ E 0zero.veriblockpool.com
 E 0zeroclassic.abseits.ski
 E 0zet.gethash.cc
 E 0zetacoin.abseits.ski
-E 0zetacoin.mastermining.net
 E 0zettel.hashpool.eu
 E 0zeus.abseits.ski
 E 0zeus.hiveon.net
@@ -17205,7 +17033,6 @@ E 0zs.bitcoin.com
 E 0zsf.dev.api.binance.com
 E 0zsf.us.api.binance.com
 E 0zuixinkuandeyafenbocaiji.bitcoin.com
-E 0zum.letshash.online
 E 0zvwkz3tnit7rvlpk458mibquhfanohb.ct.dev.api.binance.com
 E 0zw.hiveon.net
 E 0zx.nanopool.org
@@ -19100,6 +18927,7 @@ E 108-84.nanopool.org
 E 108-87.bitcoin.com
 E 108-89.bitcoin.com
 E 108.com
+E 108.megabigpower.com
 E 108.sub-70-210-70.myvzw.com
 E 1080.bitcoin.com
 E 10800.bitcoin.com
@@ -19286,7 +19114,6 @@ E 10998.bitcoin.com
 E 109b.bitcoin.com
 E 109bb.bitcoin.com
 E 109bf.bitcoin.com
-E 109c957fb6.com
 E 109d2.bitcoin.com
 E 109dbe1d1cbb785f3c48ecaf36181c18.xyz
 E 109e1.bitcoin.com
@@ -20158,12 +19985,10 @@ E 11113.us.bitcoin.com
 E 1111365wz.cc
 E 11113y.com
 E 11116.bitcoin.com
-E 1111663ab8.shop
 E 1111667ab7.shop
 E 111173.bitcoin.com
 E 111175.bitcoin.com
 E 111176.bitcoin.com
-E 1111770ab4.shop
 E 111191.bitcoin.com
 E 1111homes.com
 E 1111js.com
@@ -20354,7 +20179,6 @@ E 1121666870318383.bitcoin.com
 E 11219.bitcoin.com
 E 1122.site
 E 112213.bitcoin.com
-E 1122178abb6.shop
 E 1122293011.corolain.ru
 E 112233asa.myftp.biz
 E 11224455970h5459.bitcoin.com
@@ -20517,7 +20341,6 @@ E 1139.bitcoin.com
 E 11390.bitcoin.com
 E 11395.bitcoin.com
 E 113999.bitcoin.com
-E 113aa22d76.com
 E 113b.bitcoin.com
 E 113bbs.kokuden.com
 E 113fds.proxer.cc
@@ -21218,7 +21041,6 @@ E 118834-ledger.com
 E 118883655.com
 E 11888vip.cn
 E 11889.bitcoin.com
-E 1188911abb10.shop
 E 1188crxy301.top
 E 1188fhxy301.top
 E 118914.xyz
@@ -21835,7 +21657,6 @@ E 12-173.eu.api.binance.com
 E 12-173.us.api.binance.com
 E 12-176.bitcoin.com
 E 12-185.bitcoin.com
-E 12-56.xicp.net
 E 12-56d.bitcoin.com
 E 12-5satoshi.bitcoin.com
 E 12-66.bitcoin.com
@@ -22676,7 +22497,6 @@ E 128eth-us-east1.nanopool.org
 E 128qi.com
 E 129.sub-70-209-5.myvzw.com
 E 129036ce4f2f.com
-E 12915784.care.sanvello.com
 E 1291823.weebly.com
 E 1292346621.corolain.ru
 E 129255.com
@@ -22996,7 +22816,6 @@ E 136317745924965352.weebly.com
 E 1363388abb14.shop
 E 13634b20e8b3.com
 E 1364275706.corolain.ru
-E 13646d7b78.com
 E 1365122.com
 E 136818245.corolain.ru
 E 136888.vip
@@ -23483,7 +23302,6 @@ E 14b0a5200f694308.com
 E 14b6.prairieforge.ru
 E 14b67e0e41c22714531004951296e2e9.com
 E 14baad87444b06.bitcoin.com
-E 14badb5195.com
 E 14bcfa7b34f462e58399b9d46de1f8ee.net
 E 14bit.com
 E 14c6b78d452376331c8bf2fa256ae7e8.org
@@ -24716,7 +24534,6 @@ E 17e01cf58014e182.com
 E 17ebbb98efac.com
 E 17ek6ne63tvp1.life
 E 17f.bitcoin.com
-E 17f0ec344c.com
 E 17f258ff640e6908.com
 E 17f3907583d2a151.com
 E 17f65.bitcoin.com
@@ -25015,7 +24832,6 @@ E 18850306929.mer.lstest.siquality.com
 E 188666.vip
 E 1886billings.com
 E 1888.info
-E 1888300ab4.shop
 E 188838.parkingcrew.net
 E 188871967304504593.weebly.com
 E 18896.me
@@ -25188,7 +25004,6 @@ E 1901468623.cable.net.co.icanmining.ru
 E 1901910e99ae627b.com
 E 1901uu.top
 E 190226879-setup-to.pages.dev
-E 19028a7caf.com
 E 19035924.automated.almosafer.com
 E 19035924.email.almosafer.com
 E 19035924.loyalty.almosafer.com
@@ -25651,7 +25466,6 @@ E 1a94-212-251-220-10.ngrok-free.app
 E 1a9565e4f98744.bitcoin.com
 E 1a9a4848fadab95d.com
 E 1a9cb1c203.7d7a497317.com
-E 1aa3097b7b.com
 E 1aa36054d1844.bitcoin.com
 E 1aa79i.garden
 E 1aa83.api.binance.com
@@ -26149,7 +25963,6 @@ E 1d523447020.com
 E 1d523447120.com
 E 1d523447220.com
 E 1d58824be7c67fd8.com
-E 1d5d7fb584.com
 E 1d5ddcb9ef30.com
 E 1d6094.ethosdistro.com
 E 1d60c774f160.com
@@ -26713,6 +26526,7 @@ E 1inch-extension.vercel.app
 E 1inch.com.co
 E 1inchairdrop-ca7.pages.dev
 E 1ink.cc
+E 1inplatforms.net
 E 1io.bitcoin.com
 E 1io.eu.bitcoin.com
 E 1io.ru.bitcoin.com
@@ -27220,7 +27034,6 @@ E 1stfreehosting.com
 E 1stgroup.ca
 E 1sthandfoundation.org
 E 1stireland.com
-E 1stminingpool.com
 E 1stmovieclub.net
 E 1stop.online
 E 1stopmeal.greatpool.ca
@@ -29044,7 +28857,6 @@ E 21.api.bitcoin.co.pt
 E 21.binance.com
 E 21.bitcoin.co.pt
 E 21.bitcoin.com
-E 21.co
 E 21.dev.api.binance.com
 E 21.eu.api.binance.com
 E 21.eu.bitcoin.com
@@ -29318,7 +29130,6 @@ E 2173.bitcoin.com
 E 217443abb5803165ee275fa96761e15a26d10864.com
 E 217457336.corolain.ru
 E 21750.tctm.co
-E 2175cdb850.com
 E 217651.8b.io
 E 217683740147431105.weebly.com
 E 2176b2b1bde14b0c.com
@@ -29470,7 +29281,6 @@ E 2206204.xyz
 E 22065.binance.com
 E 220740-coinbase.com
 E 220813.com
-E 22081b1c58.com
 E 220824799531836837.weebly.com
 E 220893167.no-ip.biz
 E 220940-coinbase.com
@@ -29546,7 +29356,6 @@ E 223.sub-75-198-250.myvzw.com
 E 223137.com
 E 223141929335512656.weebly.com
 E 223146757918817135.weebly.com
-E 223202abb4.shop
 E 2232uu.top
 E 2233.fan
 E 223300099.findyourjacket.com
@@ -29803,6 +29612,7 @@ E 233dy.com
 E 233qk.com
 E 233wo.com
 E 233xyx.com
+E 234.megabigpower.com
 E 234.pl
 E 234.static.ctbctelecom.com.br.icanmining.ru
 E 234.sub-75-219-26.myvzw.com
@@ -30460,7 +30270,6 @@ E 24faktyinfo.epizy.com
 E 24faktywarszawa.rf.gd
 E 24faktywmiescie.epizy.com
 E 24fastves.com
-E 24fea9d560.com
 E 24fef3669da2a04a.com
 E 24fitness.ru
 E 24fkxhnr3cdtvwmy.onion.link
@@ -31482,7 +31291,6 @@ E 2858777.com
 E 28589u.com
 E 2859.frenchpee.com
 E 285945d8c3e8ba36.com
-E 2859933b6d.com
 E 285a7580cee71527.com
 E 285f14b35ea2f4a5.com
 E 285fa5f5771efb22.com
@@ -33185,7 +32993,6 @@ E 3330c53d7ea59dad.com
 E 33327.my
 E 3333099a15.top
 E 3333099a25.top
-E 3333191ab6.shop
 E 33331xpj.com
 E 333354799664268836.weebly.com
 E 33339b.art
@@ -43395,7 +43202,6 @@ E 73470.xyz
 E 734729e3374c.com
 E 73483c0f2445c1e4.com
 E 73487.cc
-E 734883abb8.shop
 E 734987-lieferung.info
 E 7349ffc66b7aa469.com
 E 734b863d5cb47544.com
@@ -46116,7 +45922,6 @@ E 8888-01n.pages.dev
 E 8888-jewels.com
 E 8888239ab4.shop
 E 8888323ab0.shop
-E 8888565ab4.shop
 E 8888652.com
 E 8888665.vip
 E 88886bb.com
@@ -48369,7 +48174,6 @@ E 98405.com
 E 98412.qpon
 E 9842539.click
 E 984502.click
-E 98459347385433.sbs
 E 984720lm.nyashsens.top
 E 984788-coinbase.com
 E 9848jd1.shop
@@ -48601,7 +48405,6 @@ E 9996betxz.com
 E 999715.xyz
 E 9998087643.weebly.com
 E 99980fd7327e00c4.com
-E 9998189ab0.shop
 E 999841.vip
 E 9998b36.com
 E 99996723557c389e.com
@@ -49979,7 +49782,6 @@ E a1eae609ec0825f6.com
 E a1f25c8056db.com
 E a1f891adb06d34a6.com
 E a1fac4292693.xyz
-E a1forexbrokers.com
 E a1furnitureandelectronics.com
 E a1hgh.com
 E a1masturbatiemom-liv.pages.dev
@@ -51728,6 +51530,7 @@ E abilitytoucan.com
 E abimagd.com
 E abimj.edu.af
 E abindemumus.duckdns.org
+E abindensarg.de
 E abine.com
 E abiologylabs.click
 E abiquak2.weebly.com
@@ -55756,7 +55559,6 @@ E ad.webshark.pl
 E ad.weibo.com
 E ad.weixin.qq.com
 E ad.weplayer.cc
-E ad.where.com
 E ad.widgetserver.com
 E ad.wiegaarden.dk
 E ad.wingads.com
@@ -56974,6 +56776,7 @@ E adcrowd.com
 E adcs-ap.myappsget.com
 E adcs-ue.myappsget.com
 E adcs.myappsget.com
+E adctanzania.co.tz
 E adctelecommunicationstech.thelibertyclgdorporation.club
 E adctracksystem.pro
 E adctrl.aubemobile.com
@@ -58110,7 +57913,6 @@ E admonishments.com
 E admonishmenttub.com
 E admonishtopmostacid.com
 E admonitor.com
-E admonitor.net
 E admonitor.thepaper.cn
 E admonitoring.bsgroup.ro
 E admonseller.com
@@ -58504,7 +58306,6 @@ E adportonic.com
 E adporz.com
 E adpost.com
 E adpostback.headlines.pw
-E adpower.cn
 E adpozitif.com
 E adpre.com
 E adpresenter.de
@@ -59214,66 +59015,41 @@ E ads.fpt.vn
 E ads.fptplay.net.vn
 E ads.fredericksburg.com
 E ads.free-to.download
-E ads.freeonlinegames.com
-E ads.fresh.bg
-E ads.freshmeat.net
 E ads.friendfinder.com
-E ads.froggie-mm.com
 E ads.fu8.life
 E ads.fuckingmachines.com
-E ads.fuelo.net
 E ads.fulldls.com
-E ads.fulltiltpoker.com
 E ads.funmora.com
 E ads.gamavirtual.com
 E ads.gamecity.net
 E ads.gamemeca.com
 E ads.gamershell.com
 E ads.games.laohu.com
-E ads.gameservers.com
 E ads.gamespyid.com
 E ads.gamigo.de
 E ads.gaming-universe.de
-E ads.gaming1.com
 E ads.garga.biz
 E ads.gawker.com
-E ads.gaypoint.hu
 E ads.geeks.hu
 E ads.gencgazete.net
-E ads.getlucky.com
 E ads.giaminhmedia.vn
-E ads.givemegay.com
-E ads.gladen.bg
 E ads.glamur.mk
-E ads.glasove.com
-E ads.gld.dk
-E ads.globalsportsmedia.com
-E ads.globescale.com
 E ads.gmbr.pro
 E ads.gmodules.com
-E ads.gmtracker.com
 E ads.go2net.com.ua
 E ads.godt.no
 E ads.gofuckyourself.com
 E ads.gol.mk
 E ads.gold
 E ads.golfweek.com
-E ads.goodreads.com
 E ads.google.cn
-E ads.gorillanation.com
-E ads.gorillavid.in
 E ads.gostivarpress.mk
 E ads.gosu.vn
 E ads.gotxx.net
 E ads.goyk.com
 E ads.gradfinder.com
-E ads.gravytrainproductions.com
-E ads.greatoutdoors.com
 E ads.greengeeks.com
-E ads.greensboro.com
 E ads.grindinggears.com
-E ads.groupcommerce.com
-E ads.grupozeta.es
 E ads.gry-online.pl
 E ads.gsm-exchange.com
 E ads.gsmexchange.com
@@ -59281,20 +59057,13 @@ E ads.guardian.co.uk
 E ads.guardianunlimited.co.uk
 E ads.h2porn.com
 E ads.hankooki.com
-E ads.haskovo.net
 E ads.hbv.de
-E ads.healthline.com
 E ads.hearstmags.com
 E ads.heartlight.org
 E ads.hentaiheart.com
-E ads.hexus.net
 E ads.heytapmobile.com
-E ads.heyu.net
-E ads.highdefdigest.com
-E ads.hogtied.com
 E ads.holid.io
 E ads.hollywood.com
-E ads.home.net
 E ads.home.vn
 E ads.homedy.net
 E ads.hornypharaoh.com
@@ -59302,7 +59071,6 @@ E ads.horsehero.com
 E ads.host.camz.com
 E ads.hotnxx.com
 E ads.house365.com
-E ads.hpg.com.br
 E ads.huan.tv
 E ads.huantest.com
 E ads.huawei.com
@@ -59313,102 +59081,56 @@ E ads.hun.is
 E ads.hwn.no
 E ads.i-am-bored.com
 E ads.i-bidder.com
-E ads.i33.com
-E ads.iawsnetwork.com
 E ads.ibest.com.br
-E ads.iboost.com
-E ads.ibox.bg
 E ads.icloseli.cn
 E ads.icloseli.com
-E ads.icn.bg
 E ads.iconntech.com
 E ads.icq.com
-E ads.idgworldexpo.com
 E ads.idiscountmall.net
 E ads.idividi.com.mk
 E ads.ign.com
 E ads.ignimgs.com
 E ads.iknowthatgirl.com
-E ads.imagine-inc.com
-E ads.imaging-resource.com
-E ads.imagistica.com
 E ads.imbc.com
 E ads.imeem.com
 E ads.imgdesu.art
-E ads.imguol.com
 E ads.imgur.com
 E ads.impulsosocial.online
-E ads.ims.nl
-E ads.inbox.lv
-E ads.incgamers.com
 E ads.indeed.com
-E ads.independent.com.mt
-E ads.indians.com
-E ads.indystar.com
-E ads.inet.co.th
-E ads.inet1.com
-E ads.inetinteractive.com
 E ads.infi.net
 E ads.informator.ua
-E ads.infospace.com
-E ads.injersey.com
 E ads.inmobi.com
-E ads.ino.com
 E ads.inovativnost.mk
-E ads.interfacelift.com
 E ads.interfax.ru
 E ads.internic.co.il
-E ads.internova.de
 E ads.inven.co.kr
-E ads.investingchannel.com
-E ads.inviziads.com
 E ads.iosappsworld.com
 E ads.ipfighter.com
 E ads.ipowerweb.com
 E ads.ishansong.com
-E ads.itarea.org
 E ads.itv.com
-E ads.iwangmedia.com
-E ads.iwannawatch.to
-E ads.jacksonsun.com
-E ads.jacksonville.com
 E ads.jamba.cz
 E ads.jarm.com
 E ads.javtit.com
 E ads.jerk2it.com
 E ads.jetpackdigital.com
-E ads.jewcy.com
 E ads.jewishfriendfinder.com
 E ads.jianchiapp.com
-E ads.joaffs.com
-E ads.jobclicks.net
 E ads.jobsite.co.uk
-E ads.joemonster.org
-E ads.joj.sk
-E ads.jokaroo.com
 E ads.jordmorsiri.no
-E ads.jp.msn.com
-E ads.jt.org
 E ads.justhungry.com
-E ads.ka6tata.com
-E ads.kabooaffiliates.com
 E ads.kajgana.com
 E ads.kajgana.mk
 E ads.kaktuz.net
 E ads.kalabisim.com
-E ads.kaldata.com
 E ads.kanalfrederikshavn.dk
-E ads.kartu.lt
 E ads.karzar.net
-E ads.keewurd.com
 E ads.kelbymediagroup.com
 E ads.kelkoo.com
-E ads.kepfeltoltes.hu
 E ads.ketnoitatca.net
 E ads.kiemsat.vn
 E ads.kingads.digital
 E ads.kinxxx.com
-E ads.klixxx.com
 E ads.klp.no
 E ads.kmib.co.kr
 E ads.kompass.com
@@ -59417,98 +59139,52 @@ E ads.krawall.de
 E ads.kumanovonews.com
 E ads.kureren.no
 E ads.lamchame.vn
-E ads.lanetro.com
-E ads.lanistaads.com
 E ads.laodongnghean.vn
-E ads.lapalingo.com
-E ads.larryaffiliates.com
 E ads.lejuliang.cn
 E ads.lemmatechnologies.com
-E ads.leovegas.com
 E ads.lesbianpersonals.com
 E ads.libertas.mk
-E ads.liberte.pl
 E ads.lifdununa.is
-E ads.lifesport.bg
 E ads.ligazakon.net
 E ads.lingyuexiu.cn
-E ads.linkbucks.com
 E ads.linkedin.cn
 E ads.linkedin.com
-E ads.linki.nl
-E ads.list-universe.com
-E ads.listingware.com
-E ads.live365.com
 E ads.livenation.com
-E ads.livenews.bg
 E ads.livestation.com
 E ads.lll5.ir
 E ads.lmmob.com
-E ads.local.ie
-E ads.localyokelmedia.com
 E ads.lokalno.mk
 E ads.lot-tissimo.com
 E ads.lovercash.com
 E ads.loveshack.org
-E ads.lubbockonline.com
 E ads.luffy.my.id
-E ads.luno.net
-E ads.lycos.de
-E ads.lycos.fr
-E ads.ma7.tv
 E ads.macsonuclari.mobi
-E ads.mail.bg
-E ads.mainetoday.com
 E ads.makfudbal.mk
-E ads.mamma.com
-E ads.mammanett.no
-E ads.manager.bg
 E ads.mariuana.it
-E ads.marketing-internet.com
 E ads.markettimes.vn
 E ads.marry.vn
 E ads.marvnet.de
 E ads.massinfra.nl
-E ads.matchbin.com
-E ads.mdchoice.com
 E ads.mediabong.net
 E ads.mediaodyssey.com
 E ads.mediasmart.es
-E ads.mediatwo.com
 E ads.medienhaus.de
-E ads.medscape.com
-E ads.meetcelebs.com
 E ads.mefeedia.com
-E ads.meninpain.com
 E ads.mercadoclics.com
-E ads.metatron.co.il
-E ads.metromanager.com
 E ads.metropolis.co.jp
-E ads.mezimedia.com
-E ads.miarroba.com
-E ads.mic.com
 E ads.microsoff.net
 E ads.microsoft.com
-E ads.midatlantic.aaa.com
-E ads.millionairemate.com
-E ads.milliyet.cubecdn.net
-E ads.mindviz.com
 E ads.minmote.no
 E ads.mkd.mk
 E ads.mlcr0soft.com
 E ads.mlcrosoft.com.poezija.com.hr
-E ads.mm.ap.org
 E ads.mmania.com
 E ads.mms.mk
 E ads.mncmedia.co.kr
-E ads.mnemosoft.com
 E ads.mobadvent.com
-E ads.mobilebet.com
-E ads.mobilemarketer.com
 E ads.mobilityware.com
 E ads.mobitree.co.kr
 E ads.mobvertising.net
-E ads.models.co
 E ads.mojicdn.com
 E ads.mojiva.com.edgesuite.net
 E ads.motorgraph.com
@@ -67182,6 +66858,7 @@ E alinxc.com
 E aliogludoner.com
 E alioktem.com
 E aliosmanselvi.com
+E alioss.cdn-go.com.cn
 E aliounendiaye.com
 E aliozon.com
 E alipan.cc
@@ -67819,6 +67496,7 @@ E allegrolokalnie.6025524.click
 E allegrolokalnie.60837.click
 E allegrolokalnie.61371631.click
 E allegrolokalnie.615116.click
+E allegrolokalnie.62352.sbs
 E allegrolokalnie.627491.click
 E allegrolokalnie.6363941103.click
 E allegrolokalnie.63667193.click
@@ -69792,6 +69470,7 @@ E amaroid.net
 E amaron-malaysia.com
 E amaron.fr
 E amarondvelt.top
+E amarostrategies.info
 E amarpabna.com
 E amarrados2023.kozow.com
 E amarsewasansthan.com
@@ -72590,6 +72269,7 @@ E anep3.weebly.com
 E anep4.weebly.com
 E anep5.weebly.com
 E anepast.life
+E aneraye.info
 E anerke.com
 E anesosiqano.com
 E anesthesiaoralprep.com
@@ -72953,6 +72633,7 @@ E aninamilixif.ws
 E anindasatariz.com
 E anintel.com
 E aninter.net
+E anioped.info
 E anip.score.symposiumhaiti.com
 E aniplay.xyz
 E anipo.to
@@ -81080,6 +80761,7 @@ E assine-clarobrasil-com-br.vercel.app
 E assisivillagiulia.com
 E assisorys.firebaseapp.com
 E assisorys.web.app
+E assissubno.cyou
 E assist-lnstagram.byethost7.com
 E assist-norton.com
 E assist.cabinetelcea.com
@@ -81296,7 +80978,6 @@ E astel.online
 E astelion.ru
 E astelivario.xyz
 E astengojm.com
-E astenterprises.com.pk
 E aster-airdrops.web.app
 E aster-dex.finance
 E aster-dex.run
@@ -84475,6 +84156,7 @@ E authorise.weebly.com
 E authorised-support.com
 E authoritativegrandchildpause.com
 E authoritativepilgrimwhirlwind.com
+E authoritativereport.pro
 E authoritativewhet.com
 E authoritiespoorly.com
 E authoritieswoundjoint.com
@@ -90419,7 +90101,6 @@ E baidu1.codejie.net
 E baidu1.weather.com.cn
 E baidu3658.com
 E baiduada.babihu.com
-E baiduccdn1.com
 E baiducdncmn-gd.inter.iqiyi.com
 E baiducdncmn.inter.iqiyi.com
 E baiducdncmn3.inter.iqiyi.com
@@ -93108,6 +92789,7 @@ E bblasopa841.weebly.com
 E bblck.me
 E bblfera2.weebly.com
 E bblink.com
+E bblissmassage.com
 E bblive.vip
 E bblive17.vip
 E bblive3.com
@@ -93326,7 +93008,6 @@ E bcbb-defender.pro
 E bcbit.net
 E bcbitapp.com
 E bcbjicn.kreativkiteljesedes.hu
-E bcblogger.com
 E bcbnprjwry2.net
 E bcbolton.com
 E bcbsillinois.com
@@ -95519,7 +95200,6 @@ E benyaminzaboli.hasanzaboli70.workers.dev
 E benyuanbaina.com
 E benzbecten.pro
 E benzcart.com
-E benzeinlune.com
 E benzidineyys.info
 E benzin-billiger.net
 E benzincloud.click
@@ -97156,7 +96836,6 @@ E betterboard.net
 E betterbrowse.net
 E betterbusinessline.net
 E betterbusinessservices.net
-E bettercareersearch.com
 E betterclick-lp.xyz
 E betterdaytips.com
 E betterearthmarketplace.com
@@ -100037,7 +99716,6 @@ E bitcoin-method.net
 E bitcoin-millionaire-pro.com
 E bitcoin-millonario.com
 E bitcoin-mix.com
-E bitcoin-pay.eu
 E bitcoin-pays.com
 E bitcoin-prague.com
 E bitcoin-prime-app.com
@@ -100887,6 +100565,7 @@ E bjlkby.com
 E bjlnx.com
 E bjlqb.com
 E bjlsvzikxpjxq.space
+E bjlwmgypnxmwr.space
 E bjmantis.net
 E bjmcmj.cn
 E bjmconsultinggroup.com
@@ -104522,6 +104201,7 @@ E booking.gueststeps.click
 E booking.gueststeps.live
 E booking.gulf-trip.com
 E booking.gx28tg9.com
+E booking.hnbxps.com
 E booking.hnhcsyjt.com
 E booking.hotel-hubertus.com
 E booking.hotels-status.world
@@ -105027,6 +104707,7 @@ E borgsusan.shop
 E borh1pxlp.com
 E borhaj.com
 E boriaeffla.pro
+E boridesempexa.cyou
 E borik.xyz
 E boringberry.com
 E boringblue.com
@@ -109814,7 +109495,6 @@ E budeblue.com
 E budemmakine.com
 E budennovsk.net
 E budesuonmanagement.digital
-E budfduwa.xyz
 E budfi.sbs
 E budge-teer.com
 E budge.dedspac.ru
@@ -112102,6 +111782,7 @@ E bzxpvihi.ooo
 E bzxr1tfchwjkqxjr8ftb.pages.dev
 E bzyfzusiqohk.com
 E bzygipvpab.com
+E bzyhweaf.in
 E bzykrandki.pl
 E bzyunding.com
 E bzzbncgvnlplx.site
@@ -117768,7 +117449,6 @@ E castrategydrip.com
 E castreamlinepople.com
 E castrocvv.biz
 E castrouria.com
-E castroycontadores.com
 E castructed.com
 E casttobechiropractors.com
 E castums.ru
@@ -118519,6 +118199,7 @@ E cbussupersecurity.com
 E cbuzoo.comlu.com
 E cbvdshj.com
 E cbvnzczrbcjoq.online
+E cbvopcctelmbv.site
 E cbvvc.com
 E cbw.com
 E cbx-adguard.pro
@@ -120482,7 +120163,6 @@ E center-films.store
 E center-help02.ucoz.pl
 E center-helper39184x323xz113.pages.dev
 E center-info.hol.es
-E center-meta-agency.com
 E center-observing-control-credential.pages.dev
 E center-sfera.ru
 E center.2wordsgame.com
@@ -121397,7 +121077,6 @@ E cezuti.com
 E cezxprime.com
 E cf-a.along999.workers.dev
 E cf-ads.pinger.com
-E cf-csrc.com
 E cf-eba.everytime.kr
 E cf-host.com
 E cf-japan.maqistudy.workers.dev
@@ -125522,7 +125201,6 @@ E cinemarcell.hu
 E cinemarequestsperfume.com
 E cinemastar.site
 E cinemateambuilding.vn
-E cinematicfanatic.com
 E cinematicluxefestival.info
 E cinematicpeoples.com
 E cinematicshooter.com
@@ -126248,6 +125926,7 @@ E cl-uc.weebly.com
 E cl.assoc-amazon.com
 E cl.canva.com
 E cl.sexstories-all.com
+E cl.ssouy.com
 E cl.t3n.de
 E cl.ywydzyyx.workers.dev
 E cl04317.tw1.ru
@@ -133136,7 +132815,6 @@ E compimento.ba
 E compireach.com
 E compitaspicks.com
 E compitte.com
-E compl-resrv.world
 E complacent.icu
 E complainguyseaweed.com
 E complainlapseobserve.com
@@ -141389,7 +141067,6 @@ E crowdstrikeclassaction.com
 E crowdstrikeclassaction.com.au
 E crowdstrikefix.com
 E crowdstrikefix.zip
-E crowdstrikeglitch.com
 E crowdstrikehealthcare.com
 E crowdstrikehelp.com
 E crowdstrikelawsuit.com
@@ -141720,7 +141397,6 @@ E crypta-flow.com
 E crypta-light.com
 E crypta.online
 E cryptais.com
-E cryptaloot.pro
 E cryptan-app.store
 E cryptavax.com
 E cryptazi.com
@@ -142240,6 +141916,7 @@ E cs-trader.com
 E cs-tv.store
 E cs.5seo.co
 E cs.avito.ru
+E cs.go.kg
 E cs.javaxshell.com
 E cs.krushmedia.com
 E cs.ledfaguang.com
@@ -152053,7 +151730,6 @@ E deefifofun.com
 E deefifofun.org
 E deegears.com
 E deegearss.com
-E deeginews.com
 E deehalig.net
 E deejay-florin.ro
 E deejaydiabolic.com
@@ -152645,7 +152321,6 @@ E delayedtour.pro
 E delaysorganic.biz
 E delaysstone.click
 E delbaar.com
-E delclean.com.br
 E delcokitchenshare.com
 E delcoquizzo.com
 E delcourtfinance.com
@@ -154046,7 +153721,6 @@ E descontosja.com
 E descooryst.shop
 E descore.app
 E descript-ai.com
-E descriptionserve.jagtimepieces.com
 E descriptionsupplant.com
 E descriptionwhirl.com
 E descriptivecoffeehouse.com
@@ -155043,6 +154717,7 @@ E devinyaaw224.weebly.com
 E devisdirect.com
 E devisecircuitpatron.com
 E devisecuriously.com
+E devisestuumsinaloa.qpon
 E deviseusing.com
 E devisfatureh.com
 E devisprox-media.s3-website-eu-west-1.amazonaws.com
@@ -156196,6 +155871,7 @@ E dhmna.org
 E dhmpuibct.com
 E dhmxa.thamboli.co.za
 E dhn-ads-api.365scores.com
+E dhnconstrucciones.com.ar
 E dhngc.com
 E dhnjoweb.com
 E dhobeynandi.com
@@ -158342,7 +158018,6 @@ E direccion-general-trafico.com
 E direcit.jaibank.jp.yuimone.com
 E direcompulsion.com
 E direct-143044.pro
-E direct-8812171.pro
 E direct-book.info
 E direct-collect.dy-api.com
 E direct-collect.dy-api.eu
@@ -159579,6 +159254,7 @@ E divenviter.pro
 E diveozenhancements.com
 E divepeds.com
 E divercant-lordfilm.ru
+E diverconso.cyou
 E diverecollection.com
 E divergent-roars.click
 E divergentoffer.com
@@ -179614,6 +179290,7 @@ E ets2.gr
 E ets3qe9ooms8t6i8.pages.dev
 E etsaleconfirms.world
 E etsbox.com
+E etsdmnnsskbmf.online
 E etse2.weebly.com
 E etsen.xyz
 E etsgc.top
@@ -186598,7 +186275,6 @@ E fauziamro.com
 E fav.simba.taobao.com
 E favakay.com
 E favaretoleilao.org
-E favbat.com
 E favbet.casino
 E favbet.com
 E favcebook.com
@@ -186826,7 +186502,6 @@ E fb3849a4641b807f.com
 E fb3af0411ffcdb.click
 E fb4007a5f0ea8bc0.com
 E fb436219e9.39ce92d19e.com
-E fb47ed8a25.com
 E fb4e1606ce5e.com
 E fb51a863.weebly.com
 E fb53d9afaf.com
@@ -187556,7 +187231,6 @@ E fecwuejgllqs.com
 E fed-list.web.app
 E fed-pravo.ru
 E fed1exdeliv-client.info
-E fed2626bed.com
 E fed51eaa75564f71.com
 E fed9b573dd2c1a61.com
 E fedapiwauscapital.digital
@@ -191476,7 +191150,6 @@ E fiscoskillz.com
 E fisddlapfuife.website
 E fisegopeyuorholdings.click
 E fish-gear.com
-E fish-story.ru
 E fish.muted.io
 E fish.trampoline.cx
 E fish011.pages.dev
@@ -194091,6 +193764,7 @@ E fnviewhub.com
 E fnvweaywlctnxsi.com
 E fnwwespdfwh.com
 E fnx0000.com
+E fnxvm29pptiygmh7p1i.rest
 E fnyfeds.com
 E fnyfiexpectth.org
 E fnzolike.com
@@ -195932,6 +195606,7 @@ E fosolheyjufaboju.world
 E fosount.shop
 E fosperiqalamyr.com
 E fossaroven.pro
+E fossealible.cfd
 E fossefootball.com
 E fossentix-de.com
 E fossfuse.net
@@ -197427,7 +197102,6 @@ E freeleaguecodes.com
 E freeledger.dev
 E freelifefootwear.com
 E freeliker.net
-E freelime.tciaffiliateprogram.com
 E freeliner.jetlounge247.com
 E freelive365.com
 E freelivewebcamporn.com
@@ -197759,7 +197433,6 @@ E frequentlyvaried.com
 E frequentrequirement.com
 E frequentstocking.com
 E frequentwhite.pro
-E frequiry.com
 E freqzvql.studio
 E frer.fr
 E freriteful.shop
@@ -199191,7 +198864,6 @@ E fudelidade.com
 E fudgespaceio.digital
 E fudjack.com
 E fudmdlifobuy.com
-E fudukrujoa.com
 E fudurl.click
 E fudyepnjxwmlm.online
 E fudyjoa.pro
@@ -204269,7 +203941,6 @@ E geckxmcccnhbc.space
 E gecl.xyz
 E geclaw.com.cn
 E geco-72951.weebly.com
-E gecodbchclick.xyz
 E gecolsungucolmasin.cfd
 E gecooiilnwkqvi.com
 E gecoriorcapitalnet.digital
@@ -205654,7 +205325,6 @@ E getconvertersearch.com
 E getcopaysavingsnow.com
 E getcoronabuster.com
 E getcoronatest.com
-E getcouponsfast.com
 E getcovidgone.com
 E getcraftywithcricut.com
 E getcreditscores.live
@@ -205704,7 +205374,6 @@ E getfitat50.com
 E getfitcat.com
 E getfitnow.co
 E getfliffapp.com
-E getflightinfo.com
 E getfluxfile.com
 E getflvplayer.com
 E getfly.live
@@ -208068,6 +207737,7 @@ E giovaninardo13.club
 E giovannimurtas.shop
 E giovanturi.pro
 E gip-defender.pro
+E giperdoc.info
 E gipertoninet.store
 E gipeveqorsolutionsinc.click
 E gipfelengg.com
@@ -208515,6 +208185,7 @@ E gjomxcjlheirlf.net
 E gjosafrance.fr
 E gjouwmbic.com
 E gjoycucziewoy.site
+E gjpixwi52fny5k.cfd
 E gjptuv.com
 E gjqdkxcoold.com
 E gjqghspetwnkz.store
@@ -212564,7 +212235,6 @@ E gostats.pl
 E gostats.vn
 E gostemcells.com
 E gostream.us
-E gostudyhq.com
 E gostudymbaa.com
 E gostuvu.technology
 E gostwin.com
@@ -212777,7 +212447,6 @@ E gov-mbe.click
 E gov-mbg.click
 E gov-mbr.shop
 E gov-mby.click
-E gov-mcp.help
 E gov-mdn.com
 E gov-mgso.help
 E gov-mnb.click
@@ -212788,9 +212457,6 @@ E gov-mve.click
 E gov-mvh.click
 E gov-mvo.click
 E gov-mvs.click
-E gov-nod.help
-E gov-noo.help
-E gov-noy.help
 E gov-nut.forum
 E gov-oab.help
 E gov-oaf.help
@@ -215576,7 +215242,6 @@ E growth-hubs.pro
 E growth-link.ru
 E growth-link.store
 E growth-performance.revolut.com
-E growth-techfunds.live
 E growthaurasoftware.com
 E growthbridge.click
 E growthbuddy.app
@@ -220353,6 +220018,7 @@ E harshxlpawar.com
 E harsufrrjrc.com
 E harta123.net
 E hartabet.com
+E hartallcongo.qpon
 E hartarat.ddns.net
 E hartattenuate.com
 E hartawin.com
@@ -223752,7 +223418,6 @@ E hf-8zk.pages.dev
 E hf-l.com
 E hf-r.com
 E hf.themafia.info
-E hf3t7l.top
 E hf5rbejvpwds.com
 E hfa.one
 E hfastmapfinder.com
@@ -224169,7 +223834,6 @@ E hi-spin-casino.fr
 E hi-spin.fr
 E hi-spincasino.fr
 E hi-tecoils.com
-E hi-tekconstruction-sg.com
 E hi-uahelp.pages.dev
 E hi-web-whatsapp.net.cn
 E hi-youdao.com.cn
@@ -229715,7 +229379,6 @@ E hslibrary.com
 E hslnr.com
 E hslqiwyeej.top
 E hslvk.com
-E hslyqs.com
 E hsmanagementltd.com
 E hsmasw.net
 E hsmehkdosatlz.space
@@ -232247,7 +231910,6 @@ E i16-tb.isnssdk.com
 E i16-tb.isnssdk.com.edgekey.net
 E i18n-pglstatp.com
 E i1901zxd.xyz
-E i1img.com
 E i1k.top
 E i2.mayoblast.com
 E i2.myapkcdn.in
@@ -239041,7 +238703,6 @@ E ingresarprodubanco-ec.vercel.app
 E ingresarquibhd.iceiy.com
 E ingreso-banestado.pages.dev
 E ingreso-servicio.webcindario.com
-E ingreso-supvielle.com
 E ingresocancelacion.wixsite.com
 E ingresonlinegalicia.myportfolio.com
 E ingresosfaciles.com
@@ -239462,7 +239123,6 @@ E innova-emprende.com
 E innovaciondiabetes2025.com
 E innovads-server.poster.appsinnova.com
 E innovaimpresa.site90.net
-E innovantksa.com
 E innovapath.work
 E innovaplanr.com
 E innovareintegral.com
@@ -240630,7 +240290,6 @@ E intelcorpcim.112.2o7.net
 E intelcorperror.112.2o7.net
 E intelcorpsupp.112.2o7.net
 E inteldrv64.com
-E intelektobmena.ru
 E intelfasr835.weebly.com
 E intelglobal.112.2o7.net
 E intelgroove.store
@@ -247011,7 +246670,6 @@ E jemix.sg
 E jemlit.fr
 E jemmakahn.com
 E jemmyymarrissa.pages.dev
-E jemonews.com
 E jemoxuvamiussystems21.click
 E jempage.com
 E jemputgadai.com
@@ -247470,7 +247128,6 @@ E jexe6.weebly.com
 E jexokajeexmanagement.digital
 E jexoro.com
 E jexorymonline.com
-E jexp.xyz
 E jexqari.shop
 E jexuzaexholdings88.digital
 E jexxcyworgopm.love
@@ -248372,6 +248029,7 @@ E jj777.info
 E jj89p.downloads-pc.com
 E jja44.com
 E jjaceros.com
+E jjagiejg.com
 E jjariirbookstoresaudiarabia.pages.dev
 E jjb-103869tuta.weeblysite.com
 E jjb.ee
@@ -248620,7 +248278,6 @@ E jkzakzazloavb.top
 E jkzakzazlojvz.top
 E jkzakzazlokww.top
 E jkzlzx.com
-E jl-cosmetics.online
 E jl-mapp.top
 E jl-pqr.com
 E jl-pqr.fit
@@ -249351,7 +249008,6 @@ E join-facetime.logs.re
 E join-firelight.app
 E join-gomining.com
 E join-groub-whatsapp34.25u.com
-E join-group-whatsaap-2020.xnxx.ga
 E join-guild.vercel.app
 E join-legendscup.com
 E join-meet-online.com
@@ -251738,7 +251394,6 @@ E jumpylevel.com
 E jumpyliterature.com
 E jumpyshare.pro
 E jumpystupid.pro
-E jumronews.com
 E jumto.xyz
 E jumvsaapqxaed.site
 E jun-yi.net
@@ -252758,6 +252413,7 @@ E jxdrm.com
 E jxdyk65ay.com
 E jxe1.top
 E jxe70.top
+E jxelkzydvftdn.space
 E jxep1.weebly.com
 E jxep10.weebly.com
 E jxep2.weebly.com
@@ -255294,6 +254950,7 @@ E kctag.net
 E kctelectrics.com
 E kctreecareservice.com
 E kcuoy.com
+E kcuxobcjehjxgsh.com
 E kcvad7.close.futureisready.com
 E kcvkemda.pro
 E kcwcohcmsotlsyn.com
@@ -257962,7 +257619,6 @@ E kiscstaff.com
 E kiseki.com
 E kiselsbulkoycafe.ru
 E kisfino.com
-E kishanpatel.esy.es
 E kishcontemporaryartscenter.com
 E kishengridio.digital
 E kishoriratna.online
@@ -260531,7 +260187,6 @@ E kpeijpl.com
 E kpeobras.in
 E kperb3.gay.tathamservice.com
 E kpers.cam
-E kpevcg.top
 E kpewndcpbox.com
 E kpfb09.xyz
 E kpfbksehrvell.space
@@ -261113,7 +260768,6 @@ E kraxckaokaokaokaokaokaokaokaokaokao.weebly.com
 E kraxken.cc
 E krazyape.shop
 E krazyhell.store
-E krb.devphp.org.ua
 E krb.matriculadores.com
 E krb6.at
 E krbet1x.com
@@ -266699,6 +266353,7 @@ E lecoqsportifchaussures.fr
 E lecoqsportifparis.fr
 E lecorpformos.com
 E lecottagedesteaubierge.fr
+E lecoucou.info
 E lecqetptejakq.website
 E lecrado.com
 E lecreators.com
@@ -268172,7 +267827,6 @@ E lestaigames.com
 E lestandardsarl.com
 E lestariintiutama.co.id
 E lestbonk.top
-E lesterdex.com
 E lestinvora.help
 E lestoilesdezaza.com
 E lestornia.club
@@ -269192,6 +268846,7 @@ E lichenfordup.pro
 E lichenxuan.com
 E licht.frostweald.ru
 E lichtek.de
+E lichtnelkegardens.com
 E lichtundliebeistleben.de
 E lichunxiao.cn
 E lichxuansaigon.com
@@ -272783,7 +272438,6 @@ E lmtoken.top
 E lmtwl.asia
 E lmugo.com
 E lmugpbs3qgu3ngaytvqz.pipiapps.com
-E lmukstyn.xyz
 E lmulligangrocer1.weebly.com
 E lmurinvibs.in
 E lmveosxt.com
@@ -275990,7 +275644,6 @@ E loooorddddnzbrdaaa.click
 E loop-earplugs.pl
 E loop.bengali-sex-video.com
 E loopandlace.shop
-E loopanews.com
 E loopcanyon.com
 E loopcovehq.info
 E loopearplugs.at
@@ -276035,7 +275688,6 @@ E lootios.fun
 E lootlomart.com
 E lootloo.net23.net
 E lootosoojoatas.net
-E lootynews.com
 E loouk.shop
 E loove.life
 E loovo.fr
@@ -276582,7 +276234,6 @@ E lottoakcatchtheking.com
 E lottocaswin10.top
 E lottoering.com
 E lottofanatic.aavalue.com
-E lottofrance.fr
 E lottogenting.us
 E lottogierkpl.shop
 E lottogo.com
@@ -278258,6 +277909,7 @@ E lumaset-maintain.com
 E lumatavoyvo.com
 E lumaversity.com
 E lumavexiora.com
+E lumawor.cyou
 E lumberamount.com
 E lumbering-form.com
 E lumbering-rule.pro
@@ -278927,7 +278579,6 @@ E lurkingpillbug.pro
 E luroad.com
 E lurogum.com
 E luronestava.com
-E luronews.com
 E luronixtrader-17.net
 E luronixtraderapp.com
 E lurovinethaqe.com
@@ -281723,7 +281374,6 @@ E mail-help.com
 E mail-hindustanpetroleum-com-zimbra.weebly.com
 E mail-inteface-309181.weebly.com
 E mail-iogin.com
-E mail-islamabadpolice-gov-pk.ntc-telecommunication-safecity.workers.dev
 E mail-ksp-gov-in.weebly.com
 E mail-lnstagram.com
 E mail-lnstagram.info
@@ -285179,7 +284829,6 @@ E masgovdept.com
 E masguardian.org
 E masha-i-medved-lordfilm.ru
 E masha-j-medved-lordfilm.ru
-E masha5.online
 E mashahjkcristen.pages.dev
 E mashandit.com
 E mashariqaltowred.com
@@ -290182,6 +289831,7 @@ E metafb-z2bpmk7.web.app
 E metafb.pl
 E metafbhelpp1.web.app
 E metafelez.com
+E metafgiust.cyou
 E metafirelife.com
 E metaflux-studios.buzz
 E metaforbusiness.pages.dev
@@ -292452,6 +292102,7 @@ E mildhide.pro
 E mildlyrulinggrubworm.shop
 E mildnessbehindyuri.com
 E mildredorientridge.com
+E mildredpearly.cfd
 E mildredtakeout.com
 E mildvalleypath.live
 E mildwave.com
@@ -292935,7 +292586,6 @@ E minecrafthosting.biz
 E minecraftnoob.com
 E minecraftportable.is-great.net
 E minecraftvoice.online
-E minecrunch.co
 E minedfc.pory.app
 E minedragons.com
 E minedrop-au.com
@@ -293450,6 +293100,7 @@ E mintpool-nftbox.web.app
 E mintproject-claim.web.app
 E mintprontf.web.app
 E mintprotools.com
+E mintprov.lol
 E mintptojects211.vercel.app
 E mintptojects212.vercel.app
 E mintptojects213.vercel.app
@@ -299864,6 +299515,7 @@ E mtobservatory.com
 E mtology.com
 E mtonlimtb.duckdns.org
 E mtowxcwnvhrnr.store
+E mtoxbwtcklqlx.website
 E mtp.upd-rkn.net
 E mtpennborough.net
 E mtpgame.com
@@ -302282,6 +301934,7 @@ E myhomemusic.com
 E myhomepage.pro
 E myhomepage.securefolder9090.workers.dev
 E myhomes.com.tw
+E myhomesgarden.com
 E myhomesk.com
 E myhomeworkhelper.io
 E myhost.online
@@ -302385,7 +302038,6 @@ E myihor.ru
 E myiimillnet.weebly.com
 E myijgzvgluvai.site
 E myilibrary.org
-E myimageconverter.com
 E myimportsolutions.com
 E myinboxmail23.weebly.com
 E myincomefromhome.info
@@ -304970,7 +304622,6 @@ E narzekoh.click
 E narzuty.sklep.pl
 E nas-aa7.pages.dev
 E nas.nct.vn
-E nasa.hk
 E nasagrinruadu.pro
 E nasaladphrao48.com
 E nasalfeudalanxious.com
@@ -306805,6 +306456,7 @@ E nelroom.org
 E nelsgfkdgdhjs95.weebly.com
 E nelsingsunrise.com
 E nelsonblue.com
+E nelsonbunched.qpon
 E nelsonjoshua.shop
 E nelsonjulia.shop
 E nelsonlivestockarena.com
@@ -311893,7 +311545,6 @@ E njblbc.com
 E njc.se
 E njcasio.com
 E njcgxydbhmckv.site
-E njckma.top
 E njcovidtests.com
 E njctkj.com
 E njcys.com
@@ -312275,7 +311926,6 @@ E nmgymx.com
 E nmhcxlyyjginl.online
 E nmhgfhjgf890.weebly.com
 E nmhiltonhead.112.2o7.net
-E nmhokq.top
 E nmhtwujmecgzi.store
 E nmi2l.truedns.net
 E nmidnus.weebly.com
@@ -313864,7 +313514,6 @@ E notedefraisbist.web.app
 E notedupdatez.info
 E notegraph.unapielperfecta.com
 E notehashtom.ir
-E notehomepage.com
 E noteitchyrumble.com
 E notejournal.org
 E notelayingtowers.com
@@ -314635,7 +314284,6 @@ E novicsense.conparmusa.com
 E novidao160.com
 E novidash.com
 E noviflow.com
-E novikfoto.esy.es
 E novilax.pro
 E noviledger.com
 E novilove.com
@@ -315620,6 +315268,7 @@ E nubo-gain-track.com
 E nubolabs.com
 E nubonet.store
 E nuborexa-kurelina.pages.dev
+E nubshmfgvjhxl.site
 E nubuwuxonanalytics.digital
 E nubybay.com
 E nucapuroiscapital.click
@@ -319828,7 +319477,6 @@ E oilpcmfm.digital
 E oilrenderinggroup.com
 E oilsandextracts.com
 E oilsindustry.info
-E oiltechgroup.online
 E oiltechgroup.ru
 E oiltrusts.com
 E oiluk.net
@@ -320222,6 +319870,7 @@ E oknasds.ru
 E okneo.eu
 E oknhybggvnnhhjj5588.com
 E okno-v-messendgere.ru
+E oknoplastik.sk
 E oknuts.com
 E oknyhsxwr.info
 E oko-cafe.com
@@ -322482,7 +322131,6 @@ E onlinefinanceworld.com
 E onlineflix.pl
 E onlineflutelesson.com
 E onlinefootwear.shop
-E onlineformfinder.com
 E onlinefortablehood.online
 E onlinefrontwavedata.firebaseapp.com
 E onlinefrontwavedata.web.app
@@ -327934,6 +327582,7 @@ E oxgkavgizc.com
 E oxgkjdzd.info
 E oxherbbald.com
 E oxhome.co
+E oxhornneback.qpon
 E oxhx.yt
 E oxhxtxgibfbycv.com
 E oxibjkpk.com
@@ -328017,7 +327666,6 @@ E oxysalthub.click
 E oxysijnvkoujm.space
 E oxystc.com
 E oxyvin.com
-E oxzfdm.top
 E oxznypldeitas.space
 E oy8.de
 E oyabuya.com
@@ -328888,6 +328536,7 @@ E paczzka776642.cyou
 E paczzka83489723.cfd
 E paczzka91827675642.cfd
 E paczzka91832.com
+E paczzka9213366723.cyou
 E pad301.weebly.com
 E padam-personalberatung.com
 E padayushchaya-zvezda-dorama.ru
@@ -330826,6 +330475,7 @@ E parik24casino.rivne.ua
 E pariliaelani.sbs
 E parimatch.com
 E parimatch.net
+E parimax.shop
 E parinamatch.ru
 E pariname.com
 E parine.pl
@@ -332723,6 +332373,7 @@ E pbgslb.com
 E pbgufjylmzsym.top
 E pbi.saleble.com
 E pbiauzycouesz.space
+E pbikowiwtqlpd.website
 E pbinpol.com
 E pbitrading.com
 E pbizeusoaxyfl.online
@@ -334178,6 +333829,7 @@ E pepaidcards.com
 E pepatostudio.com
 E pepburst.com
 E pepco.do0z-pl.sbs
+E pepco.rohliksalecz.top
 E pepcohu.shop
 E pepcoonline-vip.shop
 E pepcopolsskaa.blogspot.com
@@ -336708,6 +336360,7 @@ E phsea.net
 E phshdpjhfvyef.com
 E phsism.com
 E phskycasino.info
+E phsulgpxpybtq.site
 E phsupplement.com
 E phthalidas.com
 E phthalylstack.click
@@ -341312,6 +340965,7 @@ E pnrbvdqxrqlfp.club
 E pnrluster.com
 E pnrr-protect.pro
 E pnrt-stsdk.vivo.com.cn
+E pns.org.pk
 E pnsmbazkcydwd.site
 E pnsoqvd.bar
 E pnsqsv.com
@@ -343664,7 +343318,6 @@ E portalgestaopj.digital
 E portalguiaexpressogo.fun
 E portalid602-booking.com
 E portalinformacyjnypolska.info
-E portalitbicapital.com
 E portalkleimux.info
 E portallogin-pchincha.zya.me
 E portalmailupdate.weebly.com
@@ -345654,7 +345307,6 @@ E predict.vision
 E predictable-person-591307.framer.app
 E predictad.com
 E predictandearn.com
-E predictcareertogether.space
 E predicthat.com
 E predictioncustom.com
 E predictiondexchange.com
@@ -347240,6 +346892,7 @@ E prizzma3space.info
 E prjcode.com
 E prjoyglugkfa.com
 E prjportfolio.dev
+E prjwfhapwbspn.website
 E prjx.today
 E prketoolpl.shop
 E prkketensions.info
@@ -355822,6 +355475,7 @@ E pyrron-evaluator.pages.dev
 E pyrt.pt
 E pyruvylbase.click
 E pyrycai.com
+E pyscxnoovcguh.space
 E pysdvwrawkwjz.space
 E pysecumobile.fr
 E pysecurmobile.fr
@@ -361822,6 +361476,7 @@ E rapide-prime.fr
 E rapidengine.digital
 E rapidex.co.rs
 E rapidexpressshipping.com
+E rapidfactchecker.pro
 E rapidfilevault4.baby
 E rapidfilevault5.cyou
 E rapidfinil.info
@@ -362214,6 +361869,7 @@ E raunooligais.net
 E raunspaceco.click
 E raupsica.net
 E raurackl.com
+E raurikivotetrilite.cfd
 E rausfml.com
 E rausougo.net
 E rauvoaty.net
@@ -363608,6 +363264,7 @@ E recargapopular.com
 E recargaup1327.icu
 E recarlokuyumculuk.com
 E recarrystudio.click
+E recarvetalkee.cfd
 E recass.click
 E recast-assistant.store
 E recavaran.com.tr
@@ -365620,6 +365277,7 @@ E reliable-notice-management-system.pages.dev
 E reliable-vision-802483.framer.app
 E reliableceaseswat.com
 E reliabledownloads.org
+E reliablefactchronicle.pro
 E reliablefast.com
 E reliablefaucet.com
 E reliablefiles.com
@@ -369264,6 +368922,7 @@ E rijk-fondburg-nl.com
 E rijkem.ru.com
 E rijkfondburg-nl.fyi
 E rijksvoort.132private26clo362.com.es
+E rijsjyvid.com
 E rijwielhandelbakker.com
 E rik-i-mortj-lordfilm.ru
 E rik-i-morty-lordfilm.ru
@@ -370893,7 +370552,6 @@ E roblox.com.py
 E roblox.com.ro
 E roblox.com.se
 E roblox.com.sn
-E roblox.com.tc
 E roblox.com.tg
 E roblox.com.ug
 E roblox.com.vc
@@ -377283,7 +376941,6 @@ E safewalliet.weebly.com
 E safewanderapp.com
 E safewarns.com
 E safewarriorsinfected.com
-E safewatertech.com
 E safewaysearch.com
 E safewaywaterberkscounty.com
 E safewebbrowsing-zone.com
@@ -378159,7 +377816,6 @@ E samoton.com
 E samourai-zen.online
 E samovardhole.life
 E samp.paypal-profile.antimoney-laundering.org
-E sampah.hol.es
 E sampayocapitalgroup.com
 E sampico.com
 E sampicooping.cfd
@@ -380034,6 +379690,7 @@ E scalesbord.cyou
 E scalesdelivering.com
 E scalesecure.info
 E scalesell.top
+E scaleshield.pro
 E scalesoon.com
 E scalestrader.com
 E scaleteam.live
@@ -380931,6 +380588,7 @@ E scratchsofa.com
 E scratchyhook.com
 E scratop.com
 E scrawny-affair.com
+E scrcarental.com
 E scrccavelingoverdramatic.info
 E scrddlfvolmta.site
 E screakworks.digital
@@ -382989,7 +382647,6 @@ E securitybot.best
 E securitybot.biz
 E securitybot.click
 E securitybot.live
-E securitybot.my
 E securitybot.one
 E securitybot.surf
 E securitybot.vip
@@ -383619,7 +383276,6 @@ E selectionheavenly103.weebly.com
 E selectionlocker.com
 E selectionship.com
 E selectionstack.com
-E selective-amethyst-mule.185-27-133-13.cpanel.site
 E selective-broadcast-to-scan-today.info
 E selectivedge.com
 E selectivediffuser.ru
@@ -383831,7 +383487,6 @@ E selorinthavex.com
 E seloriva.com
 E seloriva.net
 E selorivanthqimo.com
-E selornews.com
 E selot.jp.net
 E selouskingalodge.com
 E selovb.club
@@ -384016,6 +383671,7 @@ E sen-di.work
 E sen8senjya.jp
 E senababuumconsulting.digital
 E senahu.com
+E senahuchnom.qpon
 E senakersfranceoutlet.com
 E senalisiksinyyabitanepatlat.sbs
 E senangbizcard.com
@@ -384814,7 +384470,6 @@ E serein-dexeris-ai.com
 E serein-dexeris-app.com
 E serein-dexeris-fr.com
 E serein-fundrow.com
-E serejaskobelev.online
 E sereladra.com
 E seren-elvox.net
 E serena75m.shop
@@ -387021,7 +386676,6 @@ E sgrafinfus.pro
 E sgregister.com
 E sgricprede.pro
 E sgs.us.com
-E sgsdisshopes01.top
 E sgsealion.com
 E sgserver1-avenoa.live
 E sgsgsg-760.pages.dev
@@ -388660,7 +388314,6 @@ E shockingstrategynovelty.com
 E shockingstudy.com
 E shockmodels.today
 E shocktwirl.com
-E shockynews.com
 E shodata.com
 E shoddy-rate.com
 E shoddyloan.com
@@ -390062,7 +389715,6 @@ E sifat.xyz
 E sifazae.pro
 E sifcbavqjaxbn.website
 E sifecuonventures.sbs
-E sifenews.com
 E sifewuwoyeoncapital.digital
 E siffyivey.world
 E sifpos.com
@@ -390298,7 +389950,6 @@ E signinattdynamic2.weebly.com
 E signinattmailll354.weebly.com
 E signinattnoreply10190.weebly.com
 E signinauth-accountapp1e.ahomeworks.com
-E signinauth-accountapp1e.bendixgear.com
 E signinauth.com
 E signing-gpsmap.cc
 E signingunwilling.com
@@ -391639,6 +391290,7 @@ E sissaeliving.com
 E sissaonline.com
 E sisskellum.shop
 E sissolarventures.com
+E sissy-boy.top
 E sissyhjkkakalina.pages.dev
 E siste-nytt.com
 E sistecnais2.weebly.com
@@ -395191,6 +394843,7 @@ E slyvyx.live
 E slywtzllxzvwx.online
 E slzgw.com
 E slzpcjksfrkei.online
+E slzqzmfkrrdfs.online
 E slzwgroep4.weebly.com
 E sm-bt.net
 E sm-cloud.yunsafe.top
@@ -400714,6 +400367,7 @@ E sparcad.com
 E sparcad.net
 E sparcetsite.firebaseapp.com
 E sparco-eu.shop
+E sparcoaj.shop
 E sparcogjmeu-online.shop
 E sparcraft.click
 E spareairless.com
@@ -401715,6 +401369,7 @@ E spinfest-fr.fr
 E spinfest1.fr
 E spinfin-fr.fr
 E spinfin1.fr
+E spinforgechain.com
 E spinforluck.life
 E spinfortune777.com
 E spinfwin.com
@@ -402339,6 +401994,7 @@ E sportslv.com
 E sportsmedicine.co.ke
 E sportsmenka.info
 E sportsnearby.com
+E sportsocc.shop
 E sportsok.store
 E sportsolinedirectie.shop
 E sportsorb.com
@@ -404533,7 +404189,6 @@ E starlightservice.weebly.com
 E starlightspringssmith.pro
 E starlightstakemarketapp.com
 E starlighttt.info
-E starlingmorgan.com
 E starlingrecruits.com
 E starlink-fr.fr
 E starlink-live.media
@@ -405402,7 +405057,6 @@ E static.hvgrt.hu
 E static.i-bidder.com
 E static.ichehome.com
 E static.ifa.yobtcams.com
-E static.ilclock.com
 E static.imagineobx.com
 E static.imprexis.biz
 E static.infinety.hu
@@ -405871,6 +405525,7 @@ E stats.otempo.com.br
 E stats.outster.com
 E stats.ozwebsites.biz
 E stats.pandora.com
+E stats.peachify.top
 E stats.persgroep.be
 E stats.persgroep.nl
 E stats.petrotimes.vn
@@ -406336,7 +405991,6 @@ E steamcammunlty.com
 E steamcammunnity.ru.com
 E steamcaummunity.com
 E steamccommunitty.com
-E steamccommunity.com
 E steamco.mmunity.com
 E steamcobweb.xyz
 E steamcomimunity.com
@@ -406443,7 +406097,6 @@ E steamcommunityuk.uni7.net
 E steamcommunityveo.asia
 E steamcommunityw.asia
 E steamcommunityx.com
-E steamcommunityy.ru
 E steamcommunityz.com
 E steamcommunivty.com
 E steamcommuniyt.com
@@ -407477,6 +407130,7 @@ E stimuliuscheck.jigsy.com
 E stimulusassist.com
 E stinafulltiukmep.org
 E stinapellas.shop
+E stineekobullhorn.info
 E stinesconstructionllc.com
 E sting.k12-lets-talk.com
 E stingconsistclaimed.com
@@ -407979,7 +407633,6 @@ E store.navi3.com
 E store.navi88.com
 E store.nip24.com
 E store.nip5.com
-E store.prizescanner.top
 E store.signpify.com
 E store.steamproxy.me
 E store.stempowerd.com
@@ -410445,7 +410098,6 @@ E suittapps.wixstudio.com
 E suittrezo-trezr.wixstudio.com
 E suitupinc.com
 E suiumovasyn.pro
-E suiv-expd001.pro
 E suivant-prime.fr
 E suivi-bpost-be.com
 E suivi-client-relay.com
@@ -412566,7 +412218,6 @@ E sutoda.com
 E sutraf.com
 E sutramassage1.weebly.com
 E sutsyuclnftody.com
-E sutterpoint.com
 E sutton.bio
 E suttondirtworks.com
 E suttonsurveyors.com.au
@@ -416971,6 +416622,7 @@ E tanorivena.com
 E tanpart.com
 E tanquenflow.click
 E tanscarattorneys.co.tz
+E tansnautics.cfd
 E tanssklept.club
 E tansum.com
 E tansuotv.com
@@ -418081,6 +417733,7 @@ E tchkcc.cn
 E tchsseniors2024.weebly.com
 E tchstudio.com
 E tci.oss-ap-southeast-1.aliyuncs.com
+E tciaffiliateprogram.com
 E tciflusa.org
 E tcigfx.com
 E tcihfguqejvsf.online
@@ -419353,7 +419006,6 @@ E tegofundaciones.com.ar
 E tegqnzol.ltd
 E tegrelmam.cc
 E tegrinsinsq.pro
-E tegronews.com
 E tegshome-ledger-11l.pages.dev
 E tegszam.cc
 E tegubateumindustries.click
@@ -420499,7 +420151,6 @@ E teleunmzwp.shop
 E teleused.store
 E teleuyfdxs.ink
 E televisehubio.click
-E televisionace.com
 E televisiongrownupcrowd.com
 E televy.life
 E telewblzta.ink
@@ -424224,6 +423875,7 @@ E thequantumrealignment.com
 E thequeenofdiamonds.com
 E thequickorder.shop
 E thequintnewstoday.com
+E therabodypolska.com
 E theracingpa.com
 E therackunit.com
 E theracology.com
@@ -425460,6 +425112,7 @@ E thugincompatibleme.com
 E thugmatrix.net
 E thugnoun.com
 E thuisverplegingnadinedelen.be
+E thujashardly.cyou
 E thule-familien.de
 E thuleng.co.za
 E thulirmusica.com
@@ -427031,7 +426684,6 @@ E tixusixehiexservices.digital
 E tixvc.com
 E tiydn.com
 E tiymvltgbllto.site
-E tiyp.top
 E tiyu-xiazai.com
 E tiz-cc95ue-309.com
 E tiz.healthy2life.com
@@ -428836,7 +428488,6 @@ E toolsbytrack.com
 E toolsconnect.cat
 E toolsdiypar.com
 E toolsgo.store
-E toolshare.com.tr
 E toolshub360.com
 E toolsins.com
 E toolsinvestor.com
@@ -435023,7 +434674,6 @@ E trustmysterybox.info
 E trustncrypto.com
 E trustnetstock.online
 E trustnode-reviewpad.pages.dev
-E trustnodecoinbase.com
 E trustofficecompass.pro
 E trustonchainc.com
 E trustone-partners.com
@@ -435762,7 +435412,6 @@ E tthseshop.myshoplaza.com
 E tthuodai.com
 E ttiaxckf.in
 E ttibetbcobnrq.online
-E ttier.jagtimepieces.com
 E ttihclkpugctw.website
 E ttikombrmmygx.store
 E ttiohdktykm.com
@@ -444775,7 +444424,6 @@ E utility-guru-app.com
 E utility-stead-manual.pro
 E utility-world.com
 E utility.baidu.com
-E utilitychest.com
 E utilitynavigator.com
 E utilityroute.pro
 E utilizarea.com
@@ -445978,6 +445626,7 @@ E vaasilchenko.store
 E vaasit.com
 E vaatjcfcwvjsa.space
 E vaatmetu.net
+E vaavykkxosutm.site
 E vaawin.com
 E vaazarqvklew.top
 E vabadoznuz.world
@@ -447204,6 +446853,7 @@ E vast.doubleverify.com
 E vast.mangomediaads.com
 E vast.pet
 E vast.playmatic.video
+E vast27.net
 E vastachi.com
 E vastartupprogram.com
 E vastcdn.outbrain.com
@@ -449611,7 +449261,6 @@ E verifycard6531-booking.com
 E verifycard97611-booking.com
 E verifycerlificate.in
 E verifycertificate.info
-E verifychaincoinbase.com
 E verifychartwaycuonl.weebly.com
 E verifycode.fr
 E verifycompte.fr
@@ -453161,7 +452810,6 @@ E visualstudieslab.com
 E visualstudio.authorizeddns.net
 E visualstudiofactory.com
 E visualteams.fr
-E visualwikicloud.com
 E visucar.ru
 E visucar.store
 E visuvu.com
@@ -454633,6 +454281,7 @@ E voenkollegia.ru
 E voenzeocapital.com
 E voeqzuuvnwpad.website
 E voesdraggle.cfd
+E voesghebeta.cyou
 E voeunblck.com
 E voevux.com
 E vofakoaadvisory.digital
@@ -460742,7 +460391,6 @@ E webmetrics.mayoclinic.org
 E webmidrivsauth.pages.dev
 E webmienphi.net
 E webmine.cz
-E webmine.pro
 E webminepool.com
 E webminerpool.com
 E webmining.co
@@ -461289,7 +460937,6 @@ E weeklywhat.com
 E weekpress.net
 E weekprod.ru
 E weekslw.com
-E weeksummit.pro
 E weekweather.com
 E weelittlecreatures.com
 E weemanmilitia.com
@@ -462158,7 +461805,6 @@ E westjet.112.2o7.net
 E westkheavy.com
 E westlakelive.com
 E westlakenormannews.com
-E westlaketxrealestate.com
 E westlarkstone.cloud
 E westlaw-advisors.com
 E westlaw-brief.com
@@ -464314,6 +463960,7 @@ E wimberleightheophile.shop
 E wimberleyalva.shop
 E wimbishegundrada.shop
 E wimbleseymour.shop
+E wimbreleyrantdacitic.cfd
 E wimburghtheodoric.shop
 E wimdbvvl.com
 E wimerhc.com
@@ -467125,7 +466772,6 @@ E workshopbrowsemods.com
 E workshopcollectionskins.com
 E workshopcomingskin.com
 E workshopcommonskin.com
-E workshopcommunityhelp.com
 E workshopcommunityreviews.com
 E workshopcommunityrevote.com
 E workshopcommunityrewards.com
@@ -471238,6 +470884,7 @@ E xelyyhidsqcdg.space
 E xem.269sex.com
 E xembongda.com
 E xemdeal.com
+E xemhang.vn
 E xemmgygfgjytb.website
 E xemne.com
 E xemsex.biz
@@ -478956,6 +478603,7 @@ E ynfck.com
 E ynfdjcdjktupuub.com
 E ynffj.com
 E yngcmj.beer
+E yngddpszitmzw.website
 E ynggg.com
 E yngonline.com
 E yngqnefj.shop
@@ -484776,7 +484424,6 @@ E zj1997.eu.cc
 E zj2jwmrkvu5ow8q.cfd
 E zj2x5.codesandbox.io
 E zj43x.top
-E zj66.net
 E zj7coeb5i.com
 E zj83h.top
 E zj9puq8ycu.com
