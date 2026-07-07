@@ -18,7 +18,7 @@ let
       nativeBuildInputs = with pkgs; [ ripgrep ];
     } ''
     cat ${lib.concatStringsSep " " config.networking.blacklistFiles} | \
-      rg . | rg -v '^#' | awk 'sub($1 FS,"")' | sed 's@ @\n@g' | awk '{print $1}' | \
+      rg . | rg -v '^#' | awk '{ for(i=2; i<=NF; i++) print ''$i }' | \
       sed 's/^[[:space:]]*//' | sed 's/[[:space:]]*$//' | \
       sort | uniq > hosts.txt
     ${optionalString (config.networking.whitelist != [ ]) ''
@@ -80,7 +80,7 @@ in
       (inputs.flakes-srcs + "/srcs/oisd-nsfw")
       (inputs.flakes-srcs + "/srcs/energized-unified")
       (inputs.flakes-srcs + "/srcs/energized-regional")
-      (inputs.mullvad-blocklists + "/lists/*/*/*")
+      (inputs.mullvad-blocklists + "/files/*")
       (inputs.mullvad-blocklists + "/output/*/*.txt")
       (inputs.badmojr-1hosts + "/Xtra/hosts.txt")
       (inputs.hagezi + "/hosts/ultimate.txt")
