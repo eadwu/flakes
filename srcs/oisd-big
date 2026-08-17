@@ -1,9 +1,9 @@
-# Version: 202608171612
+# Version: 202608171705
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Simple DNS Plus (Domain Blacklist plug-in)
-# Entries: 269203
-# Last modified: 2026-08-17T16:12:40+0000
+# Entries: 269278
+# Last modified: 2026-08-17T17:05:16+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -18201,6 +18201,8 @@ E aldi-us.ecoglassflow.com
 E aldi-us.fathomdepot.shop
 E aldi-us.glyphmart.shop
 E aldi-us.grocercorner.shop
+E aldi-us.grocercrate.shop
+E aldi-us.grocerdepot.shop
 E aldi-us.grocerfresh.shop
 E aldi-us.grocerpantry.shop
 E aldi-us.grocershelf.shop
@@ -18220,9 +18222,14 @@ E aldi.belvaro.shop
 E aldi.belvito.shop
 E aldi.corveto.shop
 E aldi.demlora.shop
+E aldi.heathstore.shop
+E aldi.helrino.shop
 E aldi.helvado.shop
+E aldi.hermart.shop
 E aldi.hervado.shop
 E aldi.ilanor.shop
+E aldi.ironquillmarket.shop
+E aldi.ironquillmart.shop
 E aldi.jelvito.shop
 E aldi.jynlor.shop
 E aldi.kavrex.shop
@@ -18244,20 +18251,34 @@ E aldi.rivello.shop
 E aldi.selvito.shop
 E aldi.solvito.shop
 E aldi.storvento.shop
+E aldi.ulviano.shop
+E aldi.verlito.shop
 E aldi.vynzor.shop
+E aldi.wilvian.shop
 E aldi.xanvexo.shop
 E aldi.xylvor.shop
 E aldi.zelario.shop
 E aldi.zynlor.shop
 E aldi2026.com
 E aldiatvip.com
+E aldica.blanexmake.shop
+E aldica.blivonmake.shop
+E aldica.brenavmake.shop
 E aldica.brivexmake.shop
+E aldica.clorixmake.shop
+E aldica.crovenmake.shop
 E aldica.dravonmake.shop
+E aldica.drelixmake.shop
+E aldica.fravonmake.shop
+E aldica.frimexmake.shop
+E aldica.gralixmake.shop
 E aldica.grolanmake.shop
 E aldica.plorexmake.shop
+E aldica.prenixmake.shop
 E aldica.skarixmake.shop
 E aldica.skunovmake.shop
 E aldica.tralovmake.shop
+E aldica.trelixmake.shop
 E aldideals.jorqav.shop
 E aldideals.korexi.shop
 E aldideals.lorqix.shop
@@ -18266,18 +18287,30 @@ E aldideals.nyqiva.shop
 E aldideals.orqiva.shop
 E aldideals.ovqero.shop
 E aldideals.paryxo.shop
+E aldideals.pavqen.shop
+E aldideals.preqon.shop
 E aldideals.qalivo.shop
 E aldidiscountsonline.com
 E aldiesshop.com
 E aldieu.alcorintobuy.shop
 E aldieu.alcorvanniceday.shop
+E aldieu.amberquoniceday.shop
 E aldieu.ardelintobuy.shop
 E aldieu.ardelvixniceday.shop
 E aldieu.ashmorenniceday.shop
+E aldieu.aurellixniceday.shop
+E aldieu.baltrionniceday.shop
+E aldieu.beralvonniceday.shop
 E aldieu.brenoxilniceday.shop
+E aldieu.bylcorvenniceday.shop
 E aldieu.bylorextobuy.shop
+E aldieu.calvionxniceday.shop
 E aldieu.cenvirotobuy.shop
+E aldieu.ceramorniceday.shop
 E aldieu.cerolantobuy.shop
+E aldieu.cindarvexniceday.shop
+E aldieu.corlunixniceday.shop
+E aldieu.daelquorniceday.shop
 E aldieu.delvirotobuy.shop
 E aldieu.dunoraltobuy.shop
 E aldieu.dyverintobuy.shop
@@ -18304,8 +18337,12 @@ E aldimart.freshboardhouse.shop
 E aldimart.freshhallway.shop
 E aldimart.freshharvestway.shop
 E aldimart.freshmarkethouse.shop
+E aldimart.freshmarketyard.shop
+E aldimart.freshpavilion.shop
+E aldimart.freshplazaway.shop
 E aldimart.grocerarcadia.shop
 E aldimart.grocerbayview.shop
+E aldimart.grocerboardhouse.shop
 E aldimart.grocerhallway.shop
 E aldimart.grocerharvestway.shop
 E aldimart.yorleymart.shop
@@ -18326,6 +18363,12 @@ E aldiuk-gd.techpulseretail.com
 E aldiuk-market.stylecoveretail.com
 E aldiuk-store.animefoggellc.com
 E aldiuk-store.thegiftinghavenllc.com
+E aldiuk.alderbybasket.shop
+E aldiuk.alderbygrocer.shop
+E aldiuk.alderbymarket.shop
+E aldiuk.alderbymart.shop
+E aldiuk.alderbypantry.shop
+E aldiuk.briarfordgrocer.shop
 E aldius-fine.primevalellc.com
 E aldius-market.fahionprinwated.com
 E aldius-market.plthsadaoyroly.com
@@ -28410,6 +28453,7 @@ E auroravalleycrest.com
 E aurorawoodlandcraft.info
 E aurorra-fortune.com
 E aurorra.net
+E aurostudio.mom
 E aurousroseola.com
 E aurovancebtcv28.com
 E aurovancebtcv28.live
@@ -40147,6 +40191,7 @@ E bond-space-rythm.lovable.app
 E bond.iad-03.braze.com
 E bondblock.site
 E bondcurve.site
+E bonddatasuite.site
 E bondevobit-platform.com
 E bondfondif.com
 E bondgoferce.site
@@ -44767,6 +44812,7 @@ E bursamucevherat.com
 E bursaopel.com
 E bursarilo-ai.com
 E bursarilo-solution.com
+E bursarilo.com
 E bursatemlak.com
 E bursatmgd.com
 E bursenixai-es.live
@@ -70700,6 +70746,7 @@ E diamondhanded-orb.pages.dev
 E diamondhanded.pages.dev
 E diamondit.shop
 E diamondores.com
+E diamondpendantnecklace.com
 E diamondpickaxeforge.com
 E diamondplay.ru
 E diamondprofit-engine.com
@@ -90268,8 +90315,15 @@ E finnhair.co.uk
 E finnhydra.com
 E finnickiooest.info
 E finnwgkig.diowebhost.com
+E finny0-et32.sbs
 E finny1-soluta29.sbs
+E finny4-eius96.sbs
 E finny4-sint32.sbs
+E finny5-voluptatem47.sbs
+E finny6-et13.sbs
+E finny7-molestiae15.sbs
+E finny7-nostrum84.sbs
+E finny8-fugit54.sbs
 E finnybxu0.diowebhost.com
 E fino-inversoria-ai.com
 E finocenter.com
@@ -90715,11 +90769,15 @@ E fishyps.vic.edu.au
 E fisio0-vitae75.sbs
 E fisio2-eos97.sbs
 E fisio3-soluta97.sbs
+E fisio4-et40.sbs
 E fisio4-omnis96.sbs
 E fisio4-pariatur76.sbs
+E fisio4-quas17.sbs
 E fisio4-quis45.sbs
 E fisio5-est9.sbs
+E fisio5-ut41.sbs
 E fisio6-dolorum90.sbs
+E fisio7-omnis33.sbs
 E fisio9-asperiores92.sbs
 E fisio9-eveniet34.sbs
 E fisiotiburtina.com
@@ -91989,6 +92047,7 @@ E fluxrp.com
 E fluxsignal.click
 E fluxviewbase.com
 E fluxvioon.com
+E fluxvista.net
 E fluxworksj.site
 E fluxyt.xyz
 E fluyeenonda.com
@@ -118942,6 +119001,7 @@ E intelibroker.com
 E inteligencia-artificial.live
 E inteligenciaelectoral.org.mx
 E inteliora.pro
+E intelkeflex400trade.com
 E intellariotradepro-app.com
 E intellariotradeproapp.com
 E intellariotradeproapp.pro
@@ -147094,6 +147154,7 @@ E mervantrust.live
 E mervelo.shop
 E mervian.pro
 E mervixozalvexa.com
+E mervul.shop
 E mes-avoirs-sante.com
 E mes-details-prime.com
 E mes-envois-relais.com
@@ -151378,6 +151439,7 @@ E monoslot2.com
 E monoslot3.com
 E monoslot4.com
 E monoslot9.com
+E monosripro.rest
 E monostiddchs.life
 E monotheistyyic.info
 E monotintspyyulus.guru
@@ -155013,6 +155075,7 @@ E mywedding-beacon.team-rec.jp
 E mywedphoto.ru
 E mywifiext.fr
 E mywiila.com
+E mywinadvantage.com
 E mywinnetwork.ddns.net
 E mywinning11.com
 E mywondertrip.com
@@ -155831,6 +155894,7 @@ E nastyeraser.com
 E nastyproduce.pro
 E nastyshoreawaiting.com
 E nasuha.shariainstitute.com
+E nasuklid.live
 E nasuwaa.com
 E nasviclorum.pro
 E nasywey.pro
@@ -155844,6 +155908,7 @@ E naszesiedlceinfo.com
 E nataliafenixart.blogspot.com
 E nataliamagnin.shop
 E natalianicod.shop
+E nataliapeplinska.mom
 E nataliasadkova1.duckdns.org
 E nataliawalthphotography.com
 E nataliearabella.com
@@ -164606,6 +164671,7 @@ E ohpollyfrance.fr
 E ohrdsplu.com
 E ohrsf.com
 E ohrwqkwiylehz.space
+E ohs-uk.com
 E ohsports.com
 E ohsresources.com
 E ohston.com
@@ -164642,6 +164708,7 @@ E oi8uytt.web.app
 E oibero.it
 E oibuervndlsmz.com
 E oicfkmbppdusr.website
+E oiclitrace.site
 E oidgctozcfsrr.site
 E oidiscover.com
 E oidzrvnbsbgmx.online
@@ -168897,6 +168964,7 @@ E overdueknee.com
 E overenpostovinischrankyict.liveblog365.com
 E overestimatejerseyrefrigerator.com
 E overexccposures.info
+E overfdonac.rest
 E overfueled.com
 E overfxdyqgwvr.space
 E overgaainweb.ddnsgeek.com
@@ -177104,6 +177172,7 @@ E plinkojeuxbonus.fr
 E plinkojeuxcasino.fr
 E plinkoprediction.fr
 E plinksplanet.com
+E plinprophiteo.net
 E plinterla-19859001.codehs.me
 E plinth-brief-prism.s3.ap-northeast-1.amazonaws.com
 E plinthsgrubby.shop
@@ -182734,6 +182803,7 @@ E prowlenthusiasticcongest.com
 E prowlgrabbed.com
 E prox5dcrea.dynv6.net
 E proxcima.com
+E proxelbit20trade.com
 E proxena-images.reviveservers.com
 E proxena-secure.reviveservers.com
 E proxgemini.zeabur.app
@@ -198708,6 +198778,7 @@ E ruretetilop.com
 E rurhmgw2.readthisintro.xyz
 E rurik.at.ua
 E rurogroobou.com
+E rurtizathextrade.com
 E ruru-fashion.blogspot.com
 E rurwqiooekti.com
 E rus-news.biz
@@ -205244,6 +205315,7 @@ E servers-desktops.wixstudio.com
 E serversafesolutions.com
 E serversbot.xyz
 E serversecure-irseykk-cloudsecurity.parvino.vu
+E serversecure-mosttxy-cloudsecurity.parvino.vu
 E serversecurity.xyz
 E serverside-twitter.pages.dev
 E serverside4285.tagcommander.com
@@ -234576,6 +234648,7 @@ E tracking-genesisaffiliates.com
 E tracking-live.kr3m.com
 E tracking-na.hawksearch.com
 E tracking-orbs.pages.dev
+E tracking-polska-support.fccdesign.org
 E tracking-prime.fr
 E tracking-rce.veeseo.com
 E tracking-relais.com
@@ -244145,6 +244218,7 @@ E valkorprime.org
 E valkorprimegpt-de.live
 E valkorprimegpt.com
 E valkorprimegpt.live
+E valkorprimetrade.com
 E valkyriesartistry.com
 E vallealto.unocode.dev
 E valleprofitra-es.fyi
@@ -245501,6 +245575,7 @@ E velorcty.shop
 E velorentias.store
 E veloriaconnectivecenter.site
 E veloriancommunitynetworkhub.site
+E velorinthmarnexa.com
 E velorixant.com
 E veloryx-nexantra.pro
 E veloryxnexantra-fr.com
