@@ -1,9 +1,9 @@
-# Version: 202610171707
+# Version: 202610171807
 # Title: oisd nsfw
 # Description: Block. Don't break.
 # Syntax: Simple DNS Plus (Domain Blacklist plug-in)
-# Entries: 474558
-# Last modified: 2026-10-17T17:07:02+0000
+# Entries: 474638
+# Last modified: 2026-10-17T18:07:24+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -13,6 +13,7 @@
 # Entry: "E example.com" should block access to "example.com" and "subdomain.example.com" but not "thiseexample.com"
 
 E 0-0.asia
+E 0-3353djb.garden
 E 0-57.com
 E 0-pc.zip
 E 0-pussy.vip
@@ -26,6 +27,7 @@ E 0.webcam.free.fr
 E 000-sex-you-tube.blogspot.com
 E 0000.1.free.fr
 E 00000.la
+E 0000114.com
 E 0000120.xyz
 E 0000121.xyz
 E 0000124.xyz
@@ -568,6 +570,7 @@ E 04fq.top
 E 04hd.com
 E 04jigrm.garden
 E 04l2im.garden
+E 04lqldn.garden
 E 04nx5b.garden
 E 04oral.blogspot.com
 E 04porn.cc
@@ -887,6 +890,7 @@ E 0817tg.com
 E 081879.com
 E 08211.com.cn
 E 0823js.com
+E 08255.net
 E 082992.com
 E 082mm.com
 E 082qs.com
@@ -1246,6 +1250,7 @@ E 099i.com
 E 099kk.com
 E 099ll.com
 E 099mm.com
+E 099mn5.garden
 E 099oo.com
 E 099p.com
 E 099rc.com
@@ -1343,6 +1348,7 @@ E 0e6qyx.garden
 E 0ehxpl.garden
 E 0ems.com
 E 0eur.com
+E 0evmpk.garden
 E 0ewznl.garden
 E 0eyj2.cc
 E 0f0nbg.garden
@@ -1361,13 +1367,16 @@ E 0gayq4t6br0.xyz
 E 0ggvm9.garden
 E 0gj.xyz
 E 0gjqn.cc
+E 0gqenm.garden
 E 0gt.top
 E 0h2e86.garden
 E 0ha5ug.garden
 E 0hbmx.com
+E 0hbpdf.garden
 E 0hd.cc
 E 0hhx.com
 E 0hqgklo.cn
+E 0ih7f6.garden
 E 0j2.cc
 E 0j5z7c5.garden
 E 0j7p68.garden
@@ -1391,6 +1400,7 @@ E 0lnbz3.garden
 E 0lss01.garden
 E 0masale.com
 E 0mpq5.xyz
+E 0mtr2ybcl.garden
 E 0mu9kl.garden
 E 0mwet2.garden
 E 0mwvup.garden
@@ -1446,6 +1456,7 @@ E 0rffiefriends.com
 E 0rg097.garden
 E 0rifooyz.6ecz8f.com
 E 0rj.cc
+E 0rnpy0.garden
 E 0rxc86.com
 E 0sex.club
 E 0sex.homes
@@ -1465,6 +1476,7 @@ E 0te1pu.garden
 E 0tf.top
 E 0tmkav.garden
 E 0tn.xyz
+E 0tx87l2.garden
 E 0u2qbko52.garden
 E 0u5mpi.garden
 E 0u5zoj.garden
@@ -1492,6 +1504,7 @@ E 0wvn.com
 E 0ww.xyz
 E 0x0.free.fr
 E 0x1s5i1mc.garden
+E 0x5bbi.garden
 E 0x7121.com
 E 0xah99.garden
 E 0xaw9bp4p4.dylgczse.com
@@ -1525,6 +1538,7 @@ E 0yyw6l.garden
 E 0z0d7.xyz
 E 0z4t25.garden
 E 0z6tm6.com
+E 0zc5qg.garden
 E 0zk.cc
 E 0zn4wa.cn
 E 0zt3.com
@@ -2313,6 +2327,7 @@ E 11gpd.com
 E 11haokk.com
 E 11honeyteens.blogspot.com
 E 11ig.cc
+E 11info.cn
 E 11itm.com
 E 11javx.top
 E 11jd.cc
@@ -2529,6 +2544,7 @@ E 123hzpzs.com
 E 123impudique.blogspot.com
 E 123lesbiennes.com
 E 123linkss.blogspot.com
+E 123mana88.lol
 E 123meetandfuckgames.blogspot.com
 E 123milf.com
 E 123movie.cam
@@ -2718,6 +2734,7 @@ E 12mobi.nl
 E 12moral.cyou
 E 12movies.top
 E 12ne.com
+E 12on14.com
 E 12pix.wordpress.com
 E 12pktruckin.com
 E 12porn.cc
@@ -2780,6 +2797,7 @@ E 131dh.shop
 E 131you.com
 E 131zw.com
 E 13240skylineblvd.com
+E 1324xxnr.icu
 E 132jj.com
 E 132lampman.com
 E 1330033.com
@@ -2799,6 +2817,7 @@ E 133zx.com
 E 1342050.com
 E 1345highway8.com
 E 13486077277.com
+E 1348jwca.vip
 E 134briston.com
 E 13512359999.com
 E 13516.com.cn
@@ -2841,6 +2860,7 @@ E 13987133168.com
 E 139dns.com
 E 139fm.cyou
 E 139hm.com
+E 139shaiya.cn
 E 13aa.cc
 E 13adil777.lol
 E 13av.biz
@@ -3083,6 +3103,7 @@ E 161112.com
 E 161361.com
 E 161614.xyz
 E 161777.org.cn
+E 1618ing.com
 E 161hh.com
 E 161nn.com
 E 161oo.com
@@ -3205,10 +3226,12 @@ E 16r.net.cn
 E 16s8.com
 E 16sexgirls.blogspot.com
 E 16studio.info
+E 16tcqo8.garden
 E 16thn.blogspot.com
 E 16wen.cc
 E 16xiaolou.xyz
 E 16xxx.best
+E 16xxx.cc
 E 16xxx.click
 E 16xxxbluefilm.co.uk
 E 16yiko.xyz
@@ -4048,6 +4071,7 @@ E 18plusporn.com
 E 18pluss.ru
 E 18plusselfies.blogspot.com
 E 18plussexcams.nl
+E 18plussexdating.nl
 E 18plusshare.blogspot.com
 E 18plusteenporn.blogspot.com
 E 18plusvidz.blogspot.com
@@ -4502,6 +4526,7 @@ E 19gaobk.com
 E 19gayboys.com
 E 19girlsporn.com
 E 19girlstube.com
+E 19glf6.garden
 E 19hdporn.com
 E 19hdsex.com
 E 19hghg.com
@@ -4560,6 +4585,7 @@ E 1adultpassword.com
 E 1adultstore.com
 E 1aemcnv.garden
 E 1af4tb.garden
+E 1alarrc.garden
 E 1altefrauen.com
 E 1amateurlinks.com
 E 1amateurpornlinks.com
@@ -4732,6 +4758,7 @@ E 1freeadultvideos.blogspot.com
 E 1freepornfinder.com
 E 1freesexchat.com
 E 1freetube.com
+E 1fsx8b.garden
 E 1fuli.one
 E 1funidea.com
 E 1fv0lq6e.sbs
@@ -4925,6 +4952,7 @@ E 1miyun.com
 E 1mobilporn.blogspot.com
 E 1motsu-samurai.com
 E 1motv.com
+E 1mpzafn.garden
 E 1mtx4p.cn
 E 1mylf.com
 E 1mylfdom.com
@@ -5101,6 +5129,7 @@ E 1prostitutki-yaroslavlya.com
 E 1publicagent.com
 E 1punjabisex.com
 E 1punjabisexvideo.com
+E 1pvtos3qq.garden
 E 1pz17.xyz
 E 1pz28.xyz
 E 1pz30.xyz
@@ -5317,6 +5346,7 @@ E 1uuavx.top
 E 1uy.xyz
 E 1v1sex.sbs
 E 1v2.xyz
+E 1v3y7f.garden
 E 1v97.top
 E 1vag.com
 E 1videosgratuites.unblog.fr
@@ -5451,6 +5481,7 @@ E 1zk.me
 E 1zk.top
 E 1zooxxxsexporn.black
 E 1zooxxxsexpornmovies.com
+E 1zw24e.garden
 E 1zyovm5.garden
 E 1zzs.com
 E 1zzzz.com.cn
@@ -6370,6 +6401,7 @@ E 248ll.com
 E 248tube.com
 E 2496aa.com
 E 2496ff.com
+E 249999.xyz
 E 24adult.net
 E 24adultchat.com
 E 24adultdating.com
@@ -6389,6 +6421,7 @@ E 24caobk.com
 E 24caoka.com
 E 24daoaa.com
 E 24doxera.net
+E 24element.online
 E 24escorts.uk
 E 24fa.com
 E 24fam.cc
@@ -6797,6 +6830,7 @@ E 26online.org
 E 26p-cheapest-phone-sex.co.uk
 E 26p-live-phone-sex.co.uk
 E 26pos.com
+E 26rp90.garden
 E 26sasplace.xyz
 E 26sexdd.top
 E 26ttdplace.xyz
@@ -7302,6 +7336,7 @@ E 2d257bj.garden
 E 2d8sw.cc
 E 2d8v.com
 E 2d94.com
+E 2d9rhw.garden
 E 2date.at
 E 2db.xyz
 E 2de9gy.info
@@ -7415,6 +7450,7 @@ E 2hdavx.top
 E 2hdporn.com
 E 2hentai.com
 E 2here.cn
+E 2hgnwk.garden
 E 2hgo.com
 E 2hhav.top
 E 2hhhh.net
@@ -7781,6 +7817,7 @@ E 2yydstxt226.com
 E 2yye.com
 E 2yyf.com
 E 2yz6q8cnm.garden
+E 2z084f.garden
 E 2z0vl9.garden
 E 2z1.xyz
 E 2z2ygaydi0dg3.xyz
@@ -7885,6 +7922,7 @@ E 30somethingmag.com
 E 30twal.garden
 E 30vorbei.ch
 E 30xt.cc
+E 30y18ip.garden
 E 30yiko.xyz
 E 30yuanfenglou.cc
 E 31.flyd1314.xyz
@@ -7965,6 +8003,7 @@ E 31vaktipornotr.cfd
 E 31vaktipornotrr.cfd
 E 31vaktipornotur.cfd
 E 31vaktipornoturk.cfd
+E 31vaktipornoturkce.cfd
 E 31vaktipornxa.shop
 E 31vaktipornxa1.shop
 E 31vaktipornxb.shop
@@ -8265,6 +8304,7 @@ E 34643hsarhearh.blogspot.com
 E 346x.com
 E 34782.ru
 E 347mk.cn
+E 349849.com
 E 349jj.com
 E 34av.org
 E 34daoav.com
@@ -8379,6 +8419,7 @@ E 35sex484.shop
 E 35v.top
 E 35wang.com
 E 35xiaojie.com
+E 35xr14.garden
 E 35xt.cc
 E 35xturkpornocu.site
 E 35xxx.com
@@ -8421,6 +8462,7 @@ E 360spa-rencontre.fr
 E 360vegaspodcast.com
 E 360vila.com.br
 E 360vintagevegas.com
+E 360vkan.com
 E 360wkt.com
 E 360xitao.com
 E 360xxxx.com
@@ -9009,6 +9051,7 @@ E 3dcartoonxxx.com
 E 3dcelebrities.blogspot.com
 E 3dcentaurporn.com
 E 3dcfnm.blogspot.com
+E 3dcharacterdesign.com
 E 3dchinafc.com
 E 3dchinas.com
 E 3dcjm.com
@@ -9455,6 +9498,7 @@ E 3legy.com
 E 3li.tv
 E 3ljtx2y.garden
 E 3lka.cn
+E 3loctn.garden
 E 3lsq.com
 E 3ltesxo.garden
 E 3lyfl.cc
@@ -10211,6 +10255,7 @@ E 43zk.com
 E 44062.cc
 E 440ex3.garden
 E 440mm.com
+E 440wxq.garden
 E 440yy.com
 E 441100.xyz
 E 442498.com
@@ -10623,6 +10668,7 @@ E 4ani.top
 E 4arabporn.com
 E 4asia.top
 E 4av.app
+E 4av5od.garden
 E 4avmo.com
 E 4ay5yysh.com
 E 4b15.top
@@ -10679,6 +10725,7 @@ E 4chan.com
 E 4chan.fr
 E 4chan.moe
 E 4chan.uk
+E 4ck3k9u.garden
 E 4club.com
 E 4club.forex
 E 4club.media
@@ -11023,6 +11070,7 @@ E 4hudy522.com
 E 4hudy566.com
 E 4hudy577.com
 E 4hudy622.com
+E 4hudy655.com
 E 4hudy755.com
 E 4hudy766.com
 E 4hudy788.com
@@ -11061,10 +11109,12 @@ E 4ib1lnw.garden
 E 4ibo.pro
 E 4ici65kj.sbs
 E 4idols.com
+E 4ifl5i.garden
 E 4ig.cc
 E 4iki.org
 E 4iks.net
 E 4iljt0k.garden
+E 4in44.com
 E 4ipornhub.com
 E 4isto.blogspot.com
 E 4iv.one
@@ -11089,6 +11139,7 @@ E 4k2.one
 E 4k5.xyz
 E 4k60-porn.pages.dev
 E 4k69.com
+E 4k7.cn
 E 4k8ext.garden
 E 4kadult.com
 E 4kanalrapeporn.com
@@ -11304,6 +11355,7 @@ E 4mfszek.top
 E 4mgcy0.garden
 E 4mnp0.cc
 E 4mob71a.garden
+E 4motor138.lol
 E 4movies.store
 E 4mpg.com
 E 4mt.cc
@@ -11428,6 +11480,7 @@ E 4qg.xyz
 E 4qgasea.garden
 E 4qig7v.cfd
 E 4qig7v.cyou
+E 4qmpdw.garden
 E 4qq8.com
 E 4qtbq.xyz
 E 4quarantineporn.com
@@ -12605,11 +12658,13 @@ E 52cxd5.garden
 E 52days.garden
 E 52dw1p.garden
 E 52easycontrol.com
+E 52ebuy.cn
 E 52ehome.com
 E 52els.com
 E 52elsonic.com
 E 52fhz.com
 E 52fin.com
+E 52foshan.cn
 E 52gaogg.com
 E 52gaoxx.com
 E 52gua.net
@@ -12626,6 +12681,7 @@ E 52iv.app
 E 52iv.love
 E 52iv.uk
 E 52jd.cc
+E 52jiankong.com
 E 52jiaoqu.com
 E 52jiaoqu.vip
 E 52jingping.com
@@ -12771,6 +12827,7 @@ E 53dushu.com
 E 53dushu.top
 E 53e4.com
 E 53f.hreuozhf.com
+E 53fpxb.garden
 E 53gaoaa.com
 E 53gv.com
 E 53jgk.com
@@ -12992,6 +13049,7 @@ E 564pp.com
 E 564uu.com
 E 564vk.top
 E 5656bk.com
+E 5665xxnr.icu
 E 566880.com
 E 566r.com
 E 567.gay
@@ -13178,6 +13236,7 @@ E 58sauna.com
 E 58seaa.com
 E 58seff.com
 E 58shufa.com
+E 58t.net
 E 58tiaohao.com
 E 58tl.net
 E 58toci.cyou
@@ -13262,6 +13321,7 @@ E 59sex.com
 E 59sgbs.cc
 E 59zzy.com
 E 5a1b020fe688.com
+E 5a2d0.xyz
 E 5a5a.net.cn
 E 5a6a7a.com
 E 5a6u.com
@@ -13331,9 +13391,11 @@ E 5dh.xyz
 E 5dhfz.net.cn
 E 5dices.nl
 E 5dlc.top
+E 5dog97.garden
 E 5dollah.com
 E 5dosug.com
 E 5duz00k.com
+E 5e0dw5.garden
 E 5e83.top
 E 5e8c8z.com
 E 5ebec.dev
@@ -13398,6 +13460,7 @@ E 5gu.xyz
 E 5gugo.com
 E 5guyschilling.blogspot.com
 E 5h0hpe.garden
+E 5h0wv5.garden
 E 5h63.com
 E 5h69.com
 E 5h71.top
@@ -13405,6 +13468,7 @@ E 5h7ct7.cc
 E 5hbrb.pro
 E 5help1.com
 E 5hf3sv89.vip
+E 5hhd.com
 E 5hk6rd.garden
 E 5hlj6sh.cn
 E 5hrsb9.garden
@@ -13489,6 +13553,7 @@ E 5maosb.com
 E 5matey.com
 E 5mayk.com
 E 5mcmuh.garden
+E 5me8hr.garden
 E 5mfq2u.garden
 E 5mgmfk.garden
 E 5minutequickie.com
@@ -13532,6 +13597,7 @@ E 5o.pics
 E 5o2rat.garden
 E 5o4fmd.garden
 E 5o86st.garden
+E 5o967mi.garden
 E 5obl70.garden
 E 5ocs.com
 E 5oqvdg.cfd
@@ -13753,6 +13819,7 @@ E 6-video.cz
 E 6-w.top
 E 6-x.top
 E 6-xl.com
+E 6.mr
 E 6.tv
 E 600000.sh
 E 6000a.pw
@@ -14051,6 +14118,7 @@ E 65789f.com
 E 657haber.com
 E 657xe.com
 E 658965.pw
+E 658u4j.garden
 E 658xe.com
 E 658zz.com
 E 659144.com
@@ -14096,8 +14164,10 @@ E 663217.com.cn
 E 66349.blogspot.com
 E 66368.com
 E 6636z432.blogspot.com
+E 663jjj.com
 E 663qk.com
 E 664ii.com
+E 665.net.cn
 E 665468f.com
 E 6655jd.com
 E 6655zyz.com
@@ -14194,6 +14264,7 @@ E 66dpw.vip
 E 66dushu.cc
 E 66e.nddtkril.com
 E 66e2.xoninywd.cc
+E 66ebook.com
 E 66escort.com
 E 66f5.com
 E 66fen.xyz
@@ -14250,6 +14321,7 @@ E 6704665.com
 E 6704667.com
 E 670dtl.top
 E 670wm.com
+E 671.net.cn
 E 671seav.com
 E 671sex.com
 E 671tt.com
@@ -14835,6 +14907,7 @@ E 6h5c.com
 E 6h6ys2.garden
 E 6ha1j5.com
 E 6hao.top
+E 6haodaohang2026.top
 E 6haxab.mom
 E 6hcbg.xyz
 E 6hcw.xyz
@@ -14959,6 +15032,7 @@ E 6od.cc
 E 6ofo.net.cn
 E 6okfgr.garden
 E 6om742.garden
+E 6opxko.garden
 E 6oq330.garden
 E 6ouporn.com
 E 6our.com
@@ -15069,6 +15143,7 @@ E 6tyrihfp.cyou
 E 6u4i3h.com.cn
 E 6u58zf.cn
 E 6ugt.com
+E 6ui4bv.garden
 E 6ummdo.garden
 E 6ut3i0.garden
 E 6utx.com
@@ -15085,6 +15160,7 @@ E 6vob.cn
 E 6vp.cc
 E 6vr2rb.garden
 E 6w93.top
+E 6web.ch
 E 6webcam.ch
 E 6webfind.com.cn
 E 6wgxm.ddhhyadc.cc
@@ -15164,6 +15240,7 @@ E 703pp.com
 E 703yy.com
 E 7042.com.cn
 E 70426.blogspot.com
+E 7049sq.garden
 E 704ii.com
 E 704kk.com
 E 705ee.com
@@ -15487,6 +15564,7 @@ E 752uu.com
 E 753gg.com
 E 753hs.com
 E 753uu.com
+E 753yc.vip
 E 753yu.com
 E 7542ck.cc
 E 75478.cc
@@ -16325,6 +16403,7 @@ E 7qo.cc
 E 7qwg3.live
 E 7qww.com
 E 7r.522027.xyz
+E 7r0zbht.garden
 E 7r1b3.org
 E 7r3driza.cyou
 E 7r3rxo.garden
@@ -16343,6 +16422,7 @@ E 7rh.xyz
 E 7rlgui.garden
 E 7rn.top
 E 7rp.xyz
+E 7rqzsa.garden
 E 7rr.xyz
 E 7rs0nd.garden
 E 7ruan.com
